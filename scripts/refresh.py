@@ -300,7 +300,22 @@ def main():
             groups[bucket(a)].append(a)
     # Completeness first: keep all verified, distinct reports from all target periods.
     selected=list({a['url']:a for items in groups.values() for a in items}.values())
-    for a in selected:enrich_record(a)
+    for a in selected:
+        # A source-fetched record has already been tagged with article-body context.
+        # Do not retag it later using its generic headline/abstract alone.
+        if not a.get('categories') and not a.get('technologies'):
+            enrich_record(a)
+    try:
+        edits=json.loads((DATA/'editorial_overrides.json').read_text(encoding='utf-8')).get('articles',{})
+    except (OSError,ValueError,AttributeError):
+        edits={}
+    for a in selected:
+        edit=edits.get(a.get('url'))
+        if edit:
+            a['technologies']=edit['technologies']
+            a['categories']=edit['categories']
+            a['entities']=list(dict.fromkeys((a.get('entities') or [])+edit.get('entities',[])))
+            a['search_text']=edit.get('search_text','')+' '+' '.join(a['entities'])
     selected.sort(key=lambda a:(a['date'],a.get('importance_score',0)),reverse=True)
     briefings=build_briefs(selected)
     # Preserve independently researched issues; a machine-generated summary must not replace one.
