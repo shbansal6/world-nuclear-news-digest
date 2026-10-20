@@ -65,3 +65,12 @@ a{color:var(--blue)}[hidden]{display:none!important}a:focus-visible,button:focus
 .archive-year{scroll-margin-top:105px}
 @media(max-width:1000px){.weekly-layout{grid-template-columns:1fr}.weekly-sidebar{position:static;order:-1}.archive-control{position:relative}}
 @media(max-width:680px){.archive-control{display:grid;grid-template-columns:1fr 1fr}.archive-control label{margin-bottom:-7px}.archive-control select{max-width:initial}.archive-control input[type="search"]{grid-column:1/-1}.archive-control .counter{grid-column:1/-1}.hero{padding:25px}.hero h1{font-size:28px}.period-wrap{margin-left:12px;padding-left:14px}.period-tick{left:-20px}}
+
+/* Archive-first landing page, matching the approved Neutron Bytes screenshot. */
+.status-strip{display:flex;gap:22px;flex-wrap:wrap;align-items:center;color:#7890a3;font-size:10px;margin:0 0 12px}
+.status-strip b{color:#285a7b;font-size:12px}
+.status-strip .microhint{margin-left:auto;color:#738f9c}
+.page .section-eyebrow:first-child{margin-top:9px}
+#archive .section-eyebrow{margin-top:7px}
+#archive .section-head{margin-bottom:13px}
+@media(max-width:700px){.status-strip{gap:10px}.status-strip .microhint{margin-left:0}}
