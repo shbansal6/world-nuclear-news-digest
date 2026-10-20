@@ -1,0 +1,241 @@
+{
+  "generated_at": "2026-10-19",
+  "editorial_note": "Oct 12–18 first issue assembled from checked WNN article sources. Subsequent workflow issues are automatically grouped from WNN reporting.",
+  "briefings": [
+    {
+      "week_start": "2026-10-12",
+      "week_end": "2026-10-18",
+      "title": "Commissioning gains, SMR development and fuel-cycle buildout",
+      "overview": "The week combined two concrete reactor commissioning milestones with a broader pipeline of SMR development, Polish project supply-chain work, fuel-cycle investments, fleet refurbishment and policy decisions. This source-linked briefing separates operating or construction milestones from proposals, development agreements and regulatory steps.",
+      "article_count": 21,
+      "generated_at": "2026-10-19",
+      "sections": [
+        {
+          "category": "Construction, commissioning & international new build",
+          "takeaway": "Physical deployment milestones led the week: Bangladesh's Rooppur 1 reached criticality and Slovakia's Mochovce 4 connected to the grid. Elsewhere, India's PHWR construction preparations and Polish AP1000 procurement illustrate the work required well before a reactor generates electricity.",
+          "items": [
+            {
+              "date": "2026-10-12",
+              "title": "Bangladesh's Rooppur 1 achieves criticality",
+              "category": "New build & milestones",
+              "summary": "Bangladesh's first commercial nuclear unit reached first criticality during commissioning.",
+              "url": "https://www.world-nuclear-news.org/articles/bangladeshs-rooppur-1-achieves-criticality",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-16",
+              "title": "Mochovce 4 connected to the grid",
+              "category": "New build & milestones",
+              "summary": "Slovakia's Mochovce 4 began supplying electricity to the grid, marking a commissioning milestone.",
+              "url": "https://www.world-nuclear-news.org/articles/mochovce-4-connected-to-the-grid",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-16",
+              "title": "Multiple milestones for India's nuclear projects",
+              "category": "New build & milestones",
+              "summary": "India reported progress on Kakrapar units 5 and 6, component manufacturing for fleet construction and a design milestone in its SMR programme.",
+              "url": "https://www.world-nuclear-news.org/articles/multiple-milestones-for-indias-nuclear-projects",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-14",
+              "title": "Westinghouse places initial orders for Polish plant",
+              "category": "New build & milestones",
+              "summary": "Westinghouse issued conditional orders for safety-related AP1000 modules to four Polish companies, an early supply-chain milestone for Poland's first plant.",
+              "url": "https://www.world-nuclear-news.org/articles/westinghouse-places-initial-orders-for-polish-plant",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-13",
+              "title": "Agreement signed on second Polish nuclear power plant",
+              "category": "New build & milestones",
+              "summary": "Polish state entities agreed on responsibilities for preparatory work for the country's proposed second nuclear power station.",
+              "url": "https://www.world-nuclear-news.org/articles/agreement-signed-on-second-polish-nuclear-power-plant",
+              "links": [],
+              "source": "World Nuclear News"
+            }
+          ]
+        },
+        {
+          "category": "SMRs & advanced reactor development",
+          "takeaway": "The sector saw progress at different levels of maturity rather than a single wave of firm build decisions. Poland announced a proposed six-unit BWRX-300 venture, China's ACP100 underwent pre-fuel hot testing, and the US provided further research support to a molten-chloride reactor experiment. Materials qualification and maritime applications remain development workstreams.",
+          "items": [
+            {
+              "date": "2026-10-15",
+              "title": "Joint venture formed for six-unit SMR plant in Poland",
+              "category": "SMRs & advanced reactors",
+              "summary": "SGE and ZE PAK agreed to create a venture for a potential 1,800 MW project at Pątnów comprising as many as six BWRX-300 reactors.",
+              "url": "https://www.world-nuclear-news.org/articles/joint-venture-formed-for-six-unit-smr-plant-in-poland",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-14",
+              "title": "Hot testing of Chinese SMR under way",
+              "category": "SMRs & advanced reactors",
+              "summary": "Hot functional testing began at the ACP100/Linglong One small reactor demonstration project in Hainan, a pre-fuel-loading commissioning step.",
+              "url": "https://www.world-nuclear-news.org/articles/hot-testing-of-chinese-smr-under-way",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-15",
+              "title": "US DOE funding to accelerate molten salt reactor development",
+              "category": "SMRs & advanced reactors",
+              "summary": "US DOE approved cost-shared funding for the Molten Chloride Reactor Experiment, which is targeting first criticality in 2027.",
+              "url": "https://www.world-nuclear-news.org/articles/us-doe-funding-to-accelerate-molten-chloride-reactor-development",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-16",
+              "title": "Thorizon, TNO launch MSR materials programme",
+              "category": "SMRs & advanced reactors",
+              "summary": "Thorizon and TNO launched corrosion and materials testing to support qualification and licensing of molten-salt reactor components.",
+              "url": "https://www.world-nuclear-news.org/articles/thorizon-tno-launch-msr-materials-programme",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-14",
+              "title": "US maritime nuclear firm Bluecore Energy announces uranium purchase",
+              "category": "Uranium & fuel",
+              "summary": "Bluecore Energy announced acquisition of low-enriched uranium as it advances its maritime nuclear development plans.",
+              "url": "https://www.world-nuclear-news.org/articles/us-maritime-nuclear-firm-bluecore-energy-announces-uranium-purchase",
+              "links": [],
+              "source": "World Nuclear News"
+            }
+          ]
+        },
+        {
+          "category": "Fuel cycle, enrichment & supply chain",
+          "takeaway": "Fuel availability remained central to future capacity growth. Urenco's additional enrichment cascade represented installed operating capacity, while Newcleo's MOX development centre and Bluecore's uranium purchase were earlier-stage fuel readiness steps—not new commercial enrichment capacity.",
+          "items": [
+            {
+              "date": "2026-10-12",
+              "title": "Milestone for Urenco USA expansion project",
+              "category": "Uranium & fuel",
+              "summary": "Urenco USA brought a sixth new enrichment cascade into production, reaching 75% completion of its current capacity addition.",
+              "url": "https://www.world-nuclear-news.org/articles/milestone-for-urenco-usa-expansion-project",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-15",
+              "title": "Newcleo opens MOX fuel development centre",
+              "category": "Uranium & fuel",
+              "summary": "Newcleo inaugurated a EUR10 million fuel engineering and testing centre in France to support its mixed-oxide fuel development work.",
+              "url": "https://www.world-nuclear-news.org/articles/newcleo-opens-mox-fuel-development-centre",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-14",
+              "title": "US maritime nuclear firm Bluecore Energy announces uranium purchase",
+              "category": "Uranium & fuel",
+              "summary": "Bluecore Energy announced acquisition of low-enriched uranium as it advances its maritime nuclear development plans.",
+              "url": "https://www.world-nuclear-news.org/articles/us-maritime-nuclear-firm-bluecore-energy-announces-uranium-purchase",
+              "links": [],
+              "source": "World Nuclear News"
+            }
+          ]
+        },
+        {
+          "category": "Existing fleet & long-term operations",
+          "takeaway": "Work on the current reactor fleet continued alongside new-build activity. Bruce 4 refurbishment, EDF replacement steam-generator delivery and the IAEA's Oskarshamn long-term-operation review highlight the component, safety and oversight investment needed to extend plant service life.",
+          "items": [
+            {
+              "date": "2026-10-15",
+              "title": "Milestone for Bruce 4 refurbishment",
+              "category": "Operations & restarts",
+              "summary": "Bruce Power completed installation of 480 calandria tubes for the unit 4 refurbishment, progressing its major component replacement programme.",
+              "url": "https://www.world-nuclear-news.org/articles/milestone-for-bruce-4-refurbishment",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-15",
+              "title": "MHI delivers replacement steam generators for French reactor",
+              "category": "Operations & restarts",
+              "summary": "Mitsubishi Heavy Industries delivered three replacement steam generators intended for EDF's Cruas unit 2.",
+              "url": "https://www.world-nuclear-news.org/articles/mhi-delivers-replacement-steam-generators-for-french-reactor",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-13",
+              "title": "IAEA carries out fresh LTO review mission to Oskarshamn",
+              "category": "Operations & restarts",
+              "summary": "The IAEA reviewed safety preparations for long-term operation at Sweden's Oskarshamn 3 reactor.",
+              "url": "https://www.world-nuclear-news.org/articles/iaea-carries-out-fresh-lto-review-mission-to-oskarshamn",
+              "links": [],
+              "source": "World Nuclear News"
+            }
+          ]
+        },
+        {
+          "category": "Policy, permitting & waste management",
+          "takeaway": "New nuclear programmes and asset clean-up moved through institutional gates. The Czech Temelín SMR project entered environmental review, Namibia appointed a nuclear coordinator, and Norwegian authorities and contractors advanced plans for spent-fuel management and transfers of decommissioning responsibilities.",
+          "items": [
+            {
+              "date": "2026-10-13",
+              "title": "Czech SMR environmental impact assessment submitted",
+              "category": "Policy & regulation",
+              "summary": "ČEZ submitted environmental impact documentation for a proposed Rolls-Royce SMR at Temelín, advancing the project's permitting process.",
+              "url": "https://www.world-nuclear-news.org/articles/czech-smr-environmental-impact-assessment-submitted",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-14",
+              "title": "Namibia takes step towards nuclear power",
+              "category": "Policy & regulation",
+              "summary": "Namibia appointed a Nuclear Commissioner to coordinate the institutions and planning needed for a potential domestic nuclear power programme.",
+              "url": "https://www.world-nuclear-news.org/articles/namibia-takes-step-towards-nuclear-power",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-16",
+              "title": "Norwegian used fuel to be stored in Sweden",
+              "category": "Waste & decommissioning",
+              "summary": "Norwegian Nuclear Decommissioning selected Studsvik to manage and process used research-reactor fuel under an agreement running through 2055.",
+              "url": "https://www.world-nuclear-news.org/articles/norwegian-used-fuel-to-be-stored-in-sweden",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-13",
+              "title": "NND applies to take over Kjeller nuclear facilities",
+              "category": "Waste & decommissioning",
+              "summary": "Norwegian Nuclear Decommissioning applied for the licence to take responsibility for Kjeller research facilities ahead of decommissioning.",
+              "url": "https://www.world-nuclear-news.org/articles/nnd-applies-to-take-over-kjeller-nuclear-facilities",
+              "links": [],
+              "source": "World Nuclear News"
+            }
+          ]
+        },
+        {
+          "category": "Corporate and legal developments",
+          "takeaway": "The legacy Hanhikivi-1 dispute underscores that geopolitical and contractual risks can continue long after a nuclear project is terminated. The legal position should be read from the underlying reporting rather than treated as a final resolution.",
+          "items": [
+            {
+              "date": "2026-10-12",
+              "title": "Hanhikivi-1 termination decision cases 'to continue'",
+              "category": "Corporate & financing",
+              "summary": "Disputes surrounding the terminated Hanhikivi 1 nuclear project remain in arbitration and related proceedings.",
+              "url": "https://www.world-nuclear-news.org/articles/hanhikivi-1-termination-decision-cases-to-continue",
+              "links": [],
+              "source": "World Nuclear News"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
