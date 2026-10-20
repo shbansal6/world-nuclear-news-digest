@@ -53,30 +53,54 @@ def entities_for(s):
     return found
 
 def enrich_record(a, article_excerpt=''):
-    """Identify actual mentioned entities from article text. Do not store copyrighted body text."""
+    """Tag the reported development, not every secondary subject named in the article.
+    Recompute auto-tags on each run to correct older false-positive assignments.
+    """
     title=a.get('title','')
     summary=a.get('summary','')
     description=a.get('description','')
-    full=' '.join((title,summary,description,article_excerpt))
+    main=' '.join((title,summary,description))
+    full=' '.join((main,article_excerpt))
     existing=list(a.get('entities') or [])
     a['entities']=list(dict.fromkeys(existing+entities_for(full)))
-    tech=list(a.get('technologies') or [])
-    themes=list(a.get('categories') or [])
-    for cat in TECHNOLOGIES:
-        if COMPILED[cat].search(full) and cat not in tech:tech.append(cat)
-    if not tech:tech.append('Traditional fission')
-    for cat in CATEGORIES:
-        if COMPILED[cat].search(full) and cat not in themes:themes.append(cat)
-    old=OLD.get(a.get('category',''))
-    if old and old not in themes:themes.append(old)
-    # A story with named hyperscalers AND an actual power arrangement merits the customer tag.
-    if (re.search(r'\b(google|amazon|microsoft|oracle|meta)\b',full,re.I)
-        and re.search(r'\b(energy|electricity|power supply|purchase|offtake|ppa)\b',full,re.I)
-        and 'Offtakes & customers' not in themes):
-        themes.append('Offtakes & customers')
-    a['technologies']=[x for x in TECHNOLOGIES if x in tech]
-    a['categories']=[x for x in CATEGORIES if x in themes]
-    # Only extracted entities and summary-level keywords retained, not copied article text.
+
+    # Primary technology is driven by article heading/summary, not examples used
+    # in the body to compare SMRs with large-reactor uprates.
+    original=a.get('category','')
+    maintech=main+' '+original
+    tech=[]
+    if COMPILED['Fusion'].search(maintech):tech.append('Fusion')
+    if COMPILED['Microreactors'].search(maintech):tech.append('Microreactors')
+    if COMPILED['Advanced fission'].search(maintech) and not (tech==['Microreactors']):
+        tech.append('Advanced fission')
+    if (COMPILED['Traditional fission'].search(maintech) or not tech) and 'Traditional fission' not in tech:
+        tech.append('Traditional fission')
+
+    scored={}
+    for label in CATEGORIES:
+        # Distinguish article subject from background references.
+        score=5*bool(COMPILED[label].search(title))+3*bool(COMPILED[label].search(summary))
+        if COMPILED[label].search(article_excerpt):score+=1
+        if OLD.get(original)==label:score+=5
+        scored[label]=score
+    if re.search(r'\b(google|amazon|microsoft|oracle|meta)\b',main,re.I) and re.search(r'\b(power purchase|power agreement|supply electricity|offtake|ppa|energy supply)\b',main,re.I):
+        scored['Offtakes & customers']+=6
+    # A plant uprate/customer agreement may describe "construction jobs" and
+    # quote government aspirations; neither makes the article a new-build or
+    # policy decision.
+    if re.search(r'construction jobs?',full,re.I) and not re.search(r'\b(reactor construction|construction permit|nuclear construction|construction of|construction starts|first concrete|commissioning|grid connected)\b',main,re.I):
+        scored['Construction & licensing']=min(scored['Construction & licensing'],2)
+    if not re.search(r'\b(policy|regulat|licen[cs]|legisl|law|minister|iaea|nrc|government|parliament)\b',main,re.I) and OLD.get(original)!='Policy & international':
+        scored['Policy & international']=min(scored['Policy & international'],2)
+    if re.search(r'\b(uprate|capacity increase|efficiency upgrade)\b',article_excerpt,re.I) and re.search(r'\b(power purchase|offtake|customer|new nuclear capacity)\b',main,re.I):
+        scored['Restarts & uprates']+=5
+    if re.search(r'\b(investments? of|billion|million|funding|financing)\b',article_excerpt,re.I) and re.search(r'\b(customer|power purchase|ppa|890 mw|agreement)\b',main,re.I):
+        scored['Capital & financing']+=2
+    # Keep no more than three high-relevance commercial tags. Rank score is
+    # for topic fit, not a quota on whether the article is in the archive.
+    selected=sorted([(v,k) for k,v in scored.items() if v>=3],key=lambda vk:(-vk[0],CATEGORIES.index(vk[1])))[:3]
+    a['technologies']=[t for t in TECHNOLOGIES if t in tech]
+    a['categories']=[label for _,label in selected]
     a['search_text']=' '.join(a['entities']+[title,summary])
     a['importance_score']=importance(a,full)
     return a
