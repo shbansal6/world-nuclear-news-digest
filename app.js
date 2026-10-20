@@ -7,7 +7,7 @@ const TECHNOLOGIES=['Traditional fission','Advanced fission','Microreactors','Fu
 const THEMES=['Restarts & uprates','Offtakes & customers','Construction & licensing','Fuel & supply chain','Capital & financing','Policy & international'];
 const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const state={year:'all',month:'all',tech:'all',theme:'all',q:'',sort:'recent',expanded:false,visible:100};
-let articles=[],briefings=[],metadata={};
+let articles=[],briefings=[],metadata={},overrides={};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function validUrl(u){try{const p=new URL(u);return p.protocol==='https:'||p.protocol==='http:'?p.href:''}catch{return ''}}
 function dateLabel(d){if(!/^\d{4}-\d\d-\d\d$/.test(d))return d||'';return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})}
@@ -57,7 +57,13 @@ function hydrate(x){
  const inferred=tagsFor(n);
  n.technologies=[...new Set([...(Array.isArray(n.technologies)?n.technologies:[]),...inferred.technologies])].filter(t=>TECHNOLOGIES.includes(t));
  n.categories=[...new Set([...(Array.isArray(n.categories)?n.categories:[]),...inferred.categories])].filter(t=>THEMES.includes(t));
- n.searchblob=[n.title,n.summary,n.category,n.search_text,...n.entities,...n.technologies,...n.categories,n.url].join(' ').toLowerCase();
+ const edit=overrides[n.url];
+ if(edit){
+   n.entities=[...new Set([...n.entities,...(edit.entities||[])])];
+   n.technologies=edit.technologies||n.technologies;
+   n.categories=edit.categories||n.categories;
+ }
+ n.searchblob=[n.title,n.summary,n.category,n.search_text,edit?.search_text,...n.entities,...n.technologies,...n.categories,n.url].join(' ').toLowerCase();
  return n;
 }
 function sourceLinks(a){
@@ -155,7 +161,8 @@ function initEvents(){
 async function start(){
  const fetchJson=async path=>{const r=await fetch(path+'?v='+Date.now(),{cache:'no-cache'});if(!r.ok)throw Error('Missing '+path+': '+r.status);return r.json()};
  try{
-  const [news,weeklyData]=await Promise.all([fetchJson('data/articles.json'),fetchJson('data/briefings.json').catch(()=>({briefings:[]}))]);
+  const [news,weeklyData,edits]=await Promise.all([fetchJson('data/articles.json'),fetchJson('data/briefings.json').catch(()=>({briefings:[]})),fetchJson('data/editorial_overrides.json').catch(()=>({articles:{}}))]);
+  overrides=edits.articles||{};
   metadata=Array.isArray(news)?{}:news;
   articles=(Array.isArray(news)?news:news.articles||[]).filter(a=>a.date&&a.title&&a.url).map(hydrate).sort((a,b)=>b.date.localeCompare(a.date)||a.title.localeCompare(b.title));
   briefings=loadBriefings(weeklyData);
