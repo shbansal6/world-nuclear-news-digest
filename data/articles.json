@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19",
+  "updated_at": "2026-10-20",
   "methodology": "All discovered in-scope World Nuclear News articles, without a monthly or quarterly quota; metadata and multi-label tags inferred from source text. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.",
   "articles": [
     {
