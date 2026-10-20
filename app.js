@@ -6,7 +6,7 @@ const $=id=>document.getElementById(id), site=document.body.dataset.source==='nb
 const TECHNOLOGIES=['Traditional fission','Advanced fission','Microreactors','Fusion'];
 const THEMES=['Restarts & uprates','Offtakes & customers','Construction & licensing','Fuel & supply chain','Capital & financing','Policy & international'];
 const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
-const state={year:'all',month:'all',tech:'all',theme:'all',q:'',expanded:false,visible:100};
+const state={year:'all',month:'all',tech:'all',theme:'all',q:'',sort:'recent',expanded:false,visible:100};
 let articles=[],briefings=[],metadata={};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function validUrl(u){try{const p=new URL(u);return p.protocol==='https:'||p.protocol==='http:'?p.href:''}catch{return ''}}
@@ -68,7 +68,7 @@ function sourceLinks(a){
 }
 function tagChips(a){return '<div class="taggroup">'+a.technologies.map(t=>'<button type="button" class="tagchip tech" data-tech="'+esc(t)+'">'+esc(t)+'</button>').join('')+a.categories.map(t=>'<button type="button" class="tagchip" data-cat="'+esc(t)+'">'+esc(t)+'</button>').join('')+'</div>';}
 function card(a){return '<article class="news-card'+(state.expanded?' expanded':'')+'"><div class="story-top"><span class="story-category">'+esc(a.categories[0]||a.category||'Nuclear developments')+'</span><span class="story-date">'+dateLabel(a.date)+'</span></div><h4>'+esc(a.title)+'</h4>'+tagChips(a)+'<div class="story-teaser">'+esc(compact(a.summary,250))+'</div><div class="story-full">'+esc(a.summary)+'</div>'+sourceLinks(a)+'</article>'}
-function filtered(){return articles.filter(a=>(state.year==='all'||a.date.slice(0,4)===state.year)&&(state.month==='all'||a.date.slice(5,7)===state.month)&&(state.tech==='all'||a.technologies.includes(state.tech))&&(state.theme==='all'||a.categories.includes(state.theme))&&(!state.q||state.q.split(/\s+/).every(term=>a.searchblob.includes(term)))));}
+function filtered(){const result=articles.filter(a=>(state.year==='all'||a.date.slice(0,4)===state.year)&&(state.month==='all'||a.date.slice(5,7)===state.month)&&(state.tech==='all'||a.technologies.includes(state.tech))&&(state.theme==='all'||a.categories.includes(state.theme))&&(!state.q||state.q.split(/\s+/).every(term=>a.searchblob.includes(term)))));if(state.sort==='significant')result.sort((a,b)=>(Number(b.importance_score)||0)-(Number(a.importance_score)||0)||b.date.localeCompare(a.date));return result;}
 function renderList(){
  const found=filtered(), subset=found.slice(0,state.visible), years=new Map();
  subset.forEach(a=>{const y=a.date.slice(0,4);if(!years.has(y))years.set(y,new Map());const k=periodKey(a);if(!years.get(y).has(k))years.get(y).set(k,[]);years.get(y).get(k).push(a)});
@@ -141,9 +141,10 @@ function updateView(){
  const hash=decodeURIComponent(location.hash||'#archive');
  if(hash.startsWith('#weekly'))weekly(hash.replace('#weekly-',''));else{$('weekly').classList.remove('active');$('archive').classList.remove('hidden');if(hash.startsWith('#year-')){const y=hash.slice(6);if($('yrfilter').value!==y&&/^\d{4}$/.test(y)){state.year=y;$('yrfilter').value=y;updateMonth();}}renderList();}
 }
-function resetView(){state.year='all';state.month='all';state.tech='all';state.theme='all';state.q='';state.visible=100;['yrfilter','monthfilter','techfilter','catfilter'].forEach(id=>$(id).value='all');$('q').value='';updateMonth();renderList();}
+function resetView(){state.year='all';state.month='all';state.tech='all';state.theme='all';state.q='';state.sort='recent';state.visible=100;$('sortfilter').value='recent';['yrfilter','monthfilter','techfilter','catfilter'].forEach(id=>$(id).value='all');$('q').value='';updateMonth();renderList();}
 function initEvents(){
  ['yrfilter','monthfilter','techfilter','catfilter'].forEach((id)=>$(id).addEventListener('change',e=>{const key={yrfilter:'year',monthfilter:'month',techfilter:'tech',catfilter:'theme'}[id];state[key]=e.target.value;state.visible=100;if(key==='year')updateMonth();if(location.hash.startsWith('#weekly'))location.hash='#archive';renderList();}));
+ $('sortfilter').addEventListener('change',e=>{state.sort=e.target.value;state.visible=100;renderList()});
  $('q').addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();state.visible=100;if(location.hash.startsWith('#weekly'))location.hash='#archive';renderList()});
  $('expand').addEventListener('click',()=>{state.expanded=!state.expanded;$('expand').textContent=state.expanded?'Show summaries':'Show detail';document.querySelectorAll('.news-card').forEach(c=>c.classList.toggle('expanded',state.expanded))});
  $('reset').addEventListener('click',e=>{e.preventDefault();resetView();location.hash='#archive'});
