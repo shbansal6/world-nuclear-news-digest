@@ -396,14 +396,10 @@
                 "BWRX-300"
               ],
               "technologies": [
-                "Traditional fission",
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain",
-                "Capital & financing",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "Westinghouse BWRX-300 Timeline for Polish nuclear units slips in updated programme Poland's Council of Ministers has adopted an update to the country's nuclear power programme - a strategic document outlining the development of nuclear energy in Poland - with the first nuclear power plant now expected to start up in 2036 and the second one in 2040.",
               "importance_score": 10
@@ -450,8 +446,8 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Policy & international"
+                "Policy & international",
+                "Construction & licensing"
               ],
               "search_text": "Last Energy's Texas micro-modular reactor clears safety analysis The Department of Energy's approval of the Documented Safety Analysis clears Last Energy's planned pilot reactor at Texas A&M-RELLIS to move into the readiness review, the final step before authorisation for criticality and reactor operations.",
               "importance_score": 10
@@ -469,8 +465,6 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Offtakes & customers",
-                "Construction & licensing",
                 "Policy & international"
               ],
               "search_text": "Green Party drops nuclear phase-out policy Members of the Green Party of England and Wales have voted at their autumn conference to include nuclear among a list of low-carbon forms of energy.",
@@ -511,10 +505,7 @@
               "technologies": [
                 "Traditional fission"
               ],
-              "categories": [
-                "Offtakes & customers",
-                "Fuel & supply chain"
-              ],
+              "categories": [],
               "search_text": "Constellation Energy Google Orano Podcast: World Nuclear Symposium 2026 More than 1,300 people from 65 countries gathered in London in September for the 2026 World Nuclear Symposium. The World Nuclear News team was there and bring you reports from a range of the discussions and speeches which took place.",
               "importance_score": 0
             },
@@ -532,9 +523,7 @@
               "technologies": [
                 "Traditional fission"
               ],
-              "categories": [
-                "Capital & financing"
-              ],
+              "categories": [],
               "search_text": "Orano Orano inaugurates lead-212 production facility An opening ceremony has been held for Europe's first industrial-scale facility for the production of lead-212-based targeted alpha therapies, the Alpha Therapy Laboratory in Valenciennes, France.",
               "importance_score": 10
             }
@@ -630,9 +619,7 @@
               "technologies": [
                 "Fusion"
               ],
-              "categories": [
-                "Construction & licensing"
-              ],
+              "categories": [],
               "search_text": "Westinghouse Europe delivers final ITER vacuum vessel sector Fusion for Energy, in collaboration with Ansaldo Nucleare, Westinghouse and Walter Tosto, has completed manufacturing Europe's final vacuum vessel sector for the International Thermonuclear Experimental Reactor at Cadarache in south-eastern France.",
               "importance_score": 20
             }
@@ -684,15 +671,10 @@
                 "Hatch"
               ],
               "technologies": [
-                "Traditional fission",
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Restarts & uprates",
-                "Offtakes & customers",
-                "Construction & licensing",
-                "Capital & financing",
-                "Policy & international"
+                "Offtakes & customers"
               ],
               "search_text": "Constellation Energy Google Amazon Oracle NextEra Energy Georgia Power Fortum Duane Arnold Point Beach Calvert Cliffs Vogtle Hatch Google and Oracle deals support long-term US plant operations Google and Constellation Energy have announced a long-term collaboration to bring 890 MW of new nuclear capacity onto the PJM Interconnection grid, as well as a power purchase agreement. Meanwhile, Oracle is to subscribe to output from the Point Beach nuclear power plant.",
               "importance_score": 71
@@ -820,8 +802,8 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain"
+                "Fuel & supply chain",
+                "Construction & licensing"
               ],
               "search_text": "Urenco German uranium oxide storage facility commissioned Uranium enrichment services provider Urenco has officially commissioned the uranium oxide storage facility at its site in Gronau, Germany. Construction of the facility was completed several years ago.",
               "importance_score": 10
@@ -859,7 +841,6 @@
               ],
               "categories": [
                 "Construction & licensing",
-                "Fuel & supply chain",
                 "Capital & financing"
               ],
               "search_text": "Constellation Energy Westinghouse Moves to bolster US nuclear workforce development Westinghouse and the University of South Carolina are partnering to create a multidisciplinary nuclear workforce development programme to support US fleet deployment of AP1000 plants. Meanwhile, the New York Power Authority has awarded USD10 million in funding to support nuclear workforce development programmes across the state.",
@@ -895,14 +876,10 @@
                 "Westinghouse"
               ],
               "technologies": [
-                "Traditional fission",
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain",
-                "Capital & financing",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "Westinghouse USA, South Korea targeting six AP1000 and two APR1400 units A USD120 billion framework agreement to build six Westinghouse AP1000 units and two of South Korea's APR1400 units in the USA has been outlined by the US Department of Commerce.",
               "importance_score": 32
@@ -942,8 +919,7 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Capital & financing"
+                "Construction & licensing"
               ],
               "search_text": "Rosatom Tianwan 7 brought to minimum controllable power level The new Tianwan Nuclear Power Plant unit 7 has achieved a self-sustaining controlled nuclear chain reaction and is at its minimum controllable power level.",
               "importance_score": 10
@@ -963,8 +939,7 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Capital & financing"
+                "Construction & licensing"
               ],
               "search_text": "Westinghouse First concrete poured for Bailong 2 nuclear power unit First concrete was poured for the nuclear island of Bailong Nuclear Power Plant's unit 2 at 18:27 on Sunday 27 September.",
               "importance_score": 40
@@ -988,11 +963,9 @@
                 "BWRX-300"
               ],
               "technologies": [
-                "Traditional fission",
                 "Advanced fission"
               ],
               "categories": [
-                "Construction & licensing",
                 "Capital & financing"
               ],
               "search_text": "GE Vernova BWRX-300 Polish entrepreneurs invest in SGE's BWRX-300 projects A group of Polish business people have invested a total of PLN500 million (USD128 million) in SGE’s plans to build fleets of small modular reactors in Poland, the UK and elsewhere in Europe.",
@@ -1013,8 +986,7 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Capital & financing",
-                "Policy & international"
+                "Capital & financing"
               ],
               "search_text": "EDF Hinkley Point B becomes second AGR plant transferred for decommissioning Ownership of the Hinkley Point B nuclear power station in Somerset, England - which was permanently shut down four years ago - has transferred from EDF Energy to the Nuclear Decommissioning Authority for the plant's decommissioning.",
               "importance_score": 10
@@ -1032,8 +1004,6 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain",
                 "Capital & financing"
               ],
               "search_text": "Sellafield selects partners for asset care framework The successful partners have been identified for a new delivery framework, valued at up to GBP3.6 billion (USD4.8 billion), for asset care and asset creation activities at the UK's Sellafield site in Cumbria, in northwest England.",
@@ -1054,10 +1024,8 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain",
                 "Capital & financing",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "Westinghouse Polimex Mostostal to build Polish AP1000 assembly halls Polish construction engineering firm Polimex Mostostal has been selected by Bechtel to deliver, assemble and commission two large-scale assembly halls as part of the project to construct the country's first nuclear power plant.",
               "importance_score": 10
@@ -1084,8 +1052,6 @@
               ],
               "categories": [
                 "Restarts & uprates",
-                "Construction & licensing",
-                "Capital & financing",
                 "Policy & international"
               ],
               "search_text": "Rosatom Armenia to make new nuclear decision 'in near future' Armenian Prime Minister Nikol Pashinyan met with Rosatom Director General Alexey Likhachev to discuss further life extension options for the Armenian Nuclear Power Plant, as well as options for new nuclear capacity.",
@@ -1105,8 +1071,6 @@
               ],
               "categories": [
                 "Restarts & uprates",
-                "Construction & licensing",
-                "Fuel & supply chain",
                 "Policy & international"
               ],
               "search_text": "Legislative amendment paves way for continued operation of Borssele As the Dutch Senate approves an amendment to the Nuclear Energy Act, allowing a possible life extension of the Borssele nuclear power plant beyond 2033, the government said it has reached an agreement on acquiring 70% of the shares of operator EPZ.",
@@ -1128,8 +1092,8 @@
               ],
               "categories": [
                 "Restarts & uprates",
-                "Capital & financing",
-                "Policy & international"
+                "Policy & international",
+                "Capital & financing"
               ],
               "search_text": "US Nuclear Regulatory Commission NRC completes environmental review of Crane restart The US regulator, together with the Department of Energy Office of Energy Dominance Financing, has issued an environmental assessment and finding of no significant impact for environmental effects from proposed Federal actions related to reauthorising power operations at the Christopher Crane Clean Energy Center in Pennsylvania.",
               "importance_score": 58
@@ -1147,8 +1111,7 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Restarts & uprates",
-                "Policy & international"
+                "Restarts & uprates"
               ],
               "search_text": "Taiwan regulator completes review of restart plan Taiwan's nuclear regulator has completed its review of Taipower's plans for the restart of the Maanshan nuclear power plant, which was submitted earlier this year.",
               "importance_score": 30
@@ -1187,14 +1150,9 @@
                 "Rosatom"
               ],
               "technologies": [
-                "Advanced fission"
+                "Traditional fission"
               ],
-              "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain",
-                "Capital & financing",
-                "Policy & international"
-              ],
+              "categories": [],
               "search_text": "Rosatom Four key issues when building nuclear in different countries, according to Rosatom Scaling-up nuclear capacity remains one of the major challenges for the global nuclear industry, and Polina Lion, chief sustainability officer of Russia’s state nuclear corporation Rosatom, outlined four priority areas for action at World Nuclear Symposium in London.",
               "importance_score": 10
             },
@@ -1217,14 +1175,9 @@
                 "BWRX-300"
               ],
               "technologies": [
-                "Traditional fission",
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Offtakes & customers",
-                "Construction & licensing",
-                "Fuel & supply chain",
-                "Capital & financing",
                 "Policy & international"
               ],
               "search_text": "GE Vernova Westinghouse BWRX-300 Saskatchewan firms up nuclear power ambitions The Government of Saskatchewan has released a plan that establishes a goal of having at least 2,600 MWe of nuclear generating capacity online in the Canadian province by 2050.",
@@ -1269,7 +1222,7 @@
               "source": "World Nuclear News",
               "entities": [],
               "technologies": [
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
                 "Policy & international"
@@ -1362,12 +1315,11 @@
                 "Urenco"
               ],
               "technologies": [
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
                 "Fuel & supply chain",
-                "Capital & financing"
+                "Construction & licensing"
               ],
               "search_text": "US Department of Energy Urenco General Matter submits licence application for enrichment plant A licence application has been submitted to the US Nuclear Regulatory Commission by General Matter for its proposed commercial uranium enrichment facility in Paducah, Kentucky.",
               "importance_score": 10
@@ -1446,8 +1398,8 @@
                 "Advanced fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain"
+                "Fuel & supply chain",
+                "Construction & licensing"
               ],
               "search_text": "X-energy Milestone for X-Energy's TRISO-X fuel facility Construction of the 214,000-square-foot building which will house the TX-1 advanced nuclear fuel facility in Oak Ridge, Tennessee, has been completed.",
               "importance_score": 15
@@ -1551,12 +1503,10 @@
               "source": "World Nuclear News",
               "entities": [],
               "technologies": [
-                "Traditional fission",
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "Power start-up for Mochovce 4 Slovakia's Mochovce 4 began power generation at 15:33 on Monday, which operator Slovenske elektrárne describes as the last major stage before the unit is put into operation.",
               "importance_score": 10
@@ -1575,13 +1525,10 @@
                 "Urenco"
               ],
               "technologies": [
-                "Traditional fission",
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "EDF Orano Urenco Nuward targets 10 SMRs in five EU countries As the European Industrial Alliance on SMRs says it is now assessing a second round of applications, Nuward's CEO has said that it aims to start construction of the first of an initial fleet of 10 units in 2030.",
               "importance_score": 10
@@ -1598,8 +1545,7 @@
                 "Rosatom"
               ],
               "technologies": [
-                "Traditional fission",
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
                 "Construction & licensing"
@@ -1650,13 +1596,10 @@
                 "BWRX-300"
               ],
               "technologies": [
-                "Traditional fission",
                 "Advanced fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Capital & financing",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "GE Vernova Darlington BWRX-300 GE Vernova, Hitachi, SGE and Samsung C&T sign BWRX-300s MoU An agreement to work together to identify and develop market opportunities for the deployment of BWRX-300 small modular reactors in Europe was signed on the sidelines of the United Nations General Assembly in New York.",
               "importance_score": 28
@@ -1775,10 +1718,9 @@
                 "Advanced fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain",
                 "Capital & financing",
-                "Policy & international"
+                "Construction & licensing",
+                "Fuel & supply chain"
               ],
               "search_text": "US Nuclear Regulatory Commission TerraPower Bechtel steps away from TerraPower project TerraPower says it intends to rebid the engineering, procurement and construction contract for the project to build the first-of-a-kind Natrium reactor in Kemmerer, Wyoming, following the two companies' decision to move forward separately.",
               "importance_score": 28
@@ -1798,9 +1740,8 @@
                 "Advanced fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain",
-                "Capital & financing"
+                "Capital & financing",
+                "Construction & licensing"
               ],
               "search_text": "Kairos Power Samsung C&T invests in Kairos Power Kairos Power and Samsung C&T have announced the signing of a binding term sheet for the South Korean engineering and construction firm to make a strategic investment in Kairos Power and for the companies to collaborate on the commercial deployment of Kairos Power's fluoride salt-cooled, high-temperature reactor technology.",
               "importance_score": 10
@@ -1836,10 +1777,7 @@
               "technologies": [
                 "Traditional fission"
               ],
-              "categories": [
-                "Fuel & supply chain",
-                "Policy & international"
-              ],
+              "categories": [],
               "search_text": "White Paper aims to facilitate safe and secure transport of radioactive materials A series of recommendations have been made to mitigate the denial or delay of transport of radioactive materials which nuclear power plants, hospitals, industries and researchers rely on.",
               "importance_score": 17
             },
@@ -1861,11 +1799,9 @@
                 "newcleo"
               ],
               "technologies": [
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Restarts & uprates",
-                "Construction & licensing",
                 "Policy & international"
               ],
               "search_text": "EDF newcleo Italy's Senate approves a return to nuclear power Prime Minister Giorgia Meloni's bill paving the way for a return to nuclear power in Italy after four decades was passed in the Senate by 81 votes to 51, with seven abstentions.",
@@ -1889,10 +1825,7 @@
               "technologies": [
                 "Traditional fission"
               ],
-              "categories": [
-                "Construction & licensing",
-                "Policy & international"
-              ],
+              "categories": [],
               "search_text": "Demolition of exhaust stack changes Stade skyline The 80-metre-high exhaust stack has been demolished at the decommissioned Stade nuclear power plant in Lower Saxony, Germany. Since 1970, the stack had been a prominent feature of the power plant's skyline and shaped the site for decades.",
               "importance_score": 10
             },
@@ -1971,10 +1904,7 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Offtakes & customers",
-                "Construction & licensing",
-                "Capital & financing",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "Westinghouse EDF Natural draft cooling tower is preferred JEK2 option A feasibility study of four cooling tower options for Slovenia's proposed JEK2 new nuclear project has proposed a natural draft cooling tower of between 193 metres and 198 metres.",
               "importance_score": 10
@@ -2019,8 +1949,7 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "UK nuclear regulators set out plans to implement reforms The Office for Nuclear Regulation and the Environment Agency have informed ministers of the changes they have already made or intend to make in order to speed up the licensing process for new nuclear technologies and construction projects.",
               "importance_score": 17
@@ -2055,11 +1984,10 @@
               "source": "World Nuclear News",
               "entities": [],
               "technologies": [
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Capital & financing"
+                "Construction & licensing"
               ],
               "search_text": "Third unit at Changjiang site commissioned Unit 3 of the Changjiang nuclear power plant in China's island province of Hainan has entered commercial operation. The unit is the first of two Hualong One (HPR1000) reactors being constructed as Phase II of the plant.",
               "importance_score": 10
@@ -2119,8 +2047,6 @@
                 "Fusion"
               ],
               "categories": [
-                "Construction & licensing",
-                "Capital & financing",
                 "Policy & international"
               ],
               "search_text": "China sets out fusion progress, collaboration opportunities China's aim to achieve the commercial utilisation of fusion energy by 2050, and the benefits to be gained from international collaboration, have been set out at Fusion for the Future: Engineering the Key Pathway to Realising Fusion Energy, a side event at the 70th IAEA General Conference.",
@@ -2152,12 +2078,9 @@
               "source": "World Nuclear News",
               "entities": [],
               "technologies": [
-                "Advanced fission",
                 "Fusion"
               ],
-              "categories": [
-                "Policy & international"
-              ],
+              "categories": [],
               "search_text": "UK, USA enhance cooperation on fusion energy A number of collaboration agreements have been announced between US and UK partners aimed at accelerating the commercial deployment of nuclear fusion power plants around the world.",
               "importance_score": 10
             }
@@ -2181,11 +2104,9 @@
                 "Palisades"
               ],
               "technologies": [
-                "Traditional fission",
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
                 "Capital & financing"
               ],
               "search_text": "EDF Holtec Palisades Holtec postpones planned stock market launch Holtec Nuclear Corporation is postponing the initial public offering it announced in July, due to market conditions. The company's CEO has said market concerns about the AI sector have played a part in the decision.",
@@ -2248,8 +2169,8 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Policy & international"
+                "Policy & international",
+                "Construction & licensing"
               ],
               "search_text": "US Nuclear Regulatory Commission Blue Energy submits first construction application to NRC Blue Energy has submitted the first part of its construction permit application to the US Nuclear Regulatory Commission for its planned gas-to-nuclear project in Texas.",
               "importance_score": 25
@@ -2298,9 +2219,6 @@
                 "Advanced fission"
               ],
               "categories": [
-                "Restarts & uprates",
-                "Construction & licensing",
-                "Capital & financing",
                 "Policy & international"
               ],
               "search_text": "IAEA's projections suggest there could be 1,000 SMRs by 2060 The International Atomic Energy Agency has released its annual projections of future energy demands and nuclear power capacity - and suggested in its 'high case' scenario that by 2060 there could be as much as 284 GWe capacity provided by small modular reactors, which would be the equivalent of 946 SMRs if they average 300 MWe capacity, or 1,136 SMRs if they…",
@@ -2369,10 +2287,7 @@
                 "Advanced fission"
               ],
               "categories": [
-                "Offtakes & customers",
-                "Construction & licensing",
-                "Fuel & supply chain",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "Amazon X-energy US Nuclear Regulatory Commission EDF Xe-100 UK regulators to begin Xe-100 design assessment The Department for Energy Security and Net Zero has directed UK regulators to begin the Generic Design Assessment of the X-energy Xe-100 high-temperature gas-cooled reactor, after completing reviews of X-energy UK Holdings Ltd's application.",
               "importance_score": 10
@@ -2450,13 +2365,7 @@
               "technologies": [
                 "Traditional fission"
               ],
-              "categories": [
-                "Restarts & uprates",
-                "Construction & licensing",
-                "Fuel & supply chain",
-                "Capital & financing",
-                "Policy & international"
-              ],
+              "categories": [],
               "search_text": "Industry groups call for governments commitment for nuclear growth Nine industry associations participating in the Roadmaps to New Nuclear conference in Paris have reaffirmed the industry's commitment to advancing the peaceful use of nuclear technology and called on governments to support this growth.",
               "importance_score": 10
             },
@@ -2485,11 +2394,9 @@
                 "Amazon"
               ],
               "technologies": [
-                "Microreactors"
+                "Traditional fission"
               ],
-              "categories": [
-                "Offtakes & customers"
-              ],
+              "categories": [],
               "search_text": "Amazon Podcast - Norman Foster's symposium speech on nuclear energy Internationally-renowned architect Lord Norman Foster was one of the key speakers at World Nuclear Symposium in London. In his speech he said that nuclear's ability to provide a \"vast amount of power\" with \"a tiny imprint\" means that micro-modular power units should be being produced at \"industrial-scale, like jet engines\" with the potential to autonomously…",
               "importance_score": 0
             }
@@ -2563,8 +2470,7 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Restarts & uprates",
-                "Policy & international"
+                "Restarts & uprates"
               ],
               "search_text": "Chubu withdraws restart applications for Hamaoka units Japanese utility Chubu Electric Power Company has said it will withdraw applications for regulatory reviews of units 3 and 4 at its Hamaoka nuclear power plant in Shizuoka Prefecture after an independent committee found that workers felt under pressure from senior management to manipulate earthquake data submitted to the regulator.",
               "importance_score": 30
@@ -2655,9 +2561,9 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
+                "Capital & financing",
                 "Fuel & supply chain",
-                "Capital & financing"
+                "Construction & licensing"
               ],
               "search_text": "Bannerman completes Etango funding, moves towards FID Bannerman Energy has completed an AUD124 million (USD89 million) underwritten placement which - together with the company's other financial arrangements - is expected to fully fund the Namibian Etango project through construction and ramp-up as the company moves towards a Final Investment Decision.",
               "importance_score": 22
@@ -2681,14 +2587,10 @@
                 "BWRX-300"
               ],
               "technologies": [
-                "Traditional fission",
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain",
-                "Capital & financing",
-                "Policy & international"
+                "Fuel & supply chain"
               ],
               "search_text": "GE Vernova Ontario Power Generation Westinghouse EDF Orano Vogtle Darlington BWRX-300 Orano CEO's confident bet on Mongolian production The CEO of French fuel cycle company Orano says he expects the company will be producing \"multi-million pounds\" of uranium per year from its operations in Mongolia by the end of the decade, as senior leaders discussed advances in the entire nuclear value chain at World Nuclear Symposium 2026.",
               "importance_score": 10
@@ -2767,8 +2669,7 @@
               "source": "World Nuclear News",
               "entities": [],
               "technologies": [
-                "Traditional fission",
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
                 "Construction & licensing"
@@ -2808,8 +2709,7 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "Zaporizhzhia reconnected to external power after 18 days A local ceasefire brokered by the International Atomic Energy Agency has allowed work to successfully take place to restore off-site power to the Zaporizhzhia nuclear power plant.",
               "importance_score": 10
@@ -2824,12 +2724,10 @@
               "source": "World Nuclear News",
               "entities": [],
               "technologies": [
-                "Traditional fission",
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Capital & financing"
+                "Construction & licensing"
               ],
               "search_text": "Key commissioning tests completed at Changjiang 4 Cold functional tests have been completed at unit 4 of the Changjiang nuclear power plant in China's Hainan province, China National Nuclear Corporation has announced.",
               "importance_score": 10
@@ -2865,8 +2763,7 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "Local ceasefire in place for Zaporizhzhia power line repairs The International Atomic Energy Agency says that a seventh ceasefire is in place to allow demining and repair work to take place to restore external power to the Zaporizhzhia Nuclear Power Plant.",
               "importance_score": 10
@@ -2893,11 +2790,7 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Restarts & uprates",
-                "Offtakes & customers",
-                "Fuel & supply chain",
-                "Capital & financing",
-                "Policy & international"
+                "Capital & financing"
               ],
               "search_text": "Google Fortum Summit hears of surging interest in investing in nuclear projects The growing interest in investing in nuclear energy, and how to ensure projects are structured to attract it, were key themes at the World Nuclear Symposium Finance Summit, which was also told that financiers feel like they are missing out if they haven't done nuclear deals.",
               "importance_score": 10
@@ -2938,8 +2831,6 @@
                 "Advanced fission"
               ],
               "categories": [
-                "Offtakes & customers",
-                "Construction & licensing",
                 "Capital & financing"
               ],
               "search_text": "Google Amazon US maritime nuclear energy company raises USD50 million Bluecore Energy, a developer of small modular, water-cooled reactors designed to operate aboard floating barges, has announced the close of a USD50 million seed financing to accelerate development, testing, and deployment of its floating nuclear energy systems.",
@@ -2981,8 +2872,8 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Capital & financing"
+                "Capital & financing",
+                "Construction & licensing"
               ],
               "search_text": "Argentina aims for 2027 launch of RA-10 multipurpose reactor The National Atomic Energy Commission and the Secretariat for Nuclear Affairs say commissioning of the RA-10 multipurpose reactor will begin before the end of the year - and outlined plans for private financing for the associated production plant.",
               "importance_score": 17
@@ -3019,9 +2910,6 @@
                 "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain",
-                "Capital & financing",
                 "Policy & international"
               ],
               "search_text": "Podcast: World Nuclear Outlook Report's key findings The World Nuclear Outlook Report outlines a record year for nuclear energy generation in 2025, highlights where that growth is coming from, assesses the progress towards ambitious future capacity goals, and also makes policy recommendations to help achieve them. Its author, Jonathan Cobb, joined the World Nuclear News podcast to discuss its findings in depth.",
@@ -3037,13 +2925,9 @@
               "source": "World Nuclear News",
               "entities": [],
               "technologies": [
-                "Advanced fission"
+                "Traditional fission"
               ],
-              "categories": [
-                "Construction & licensing",
-                "Capital & financing",
-                "Policy & international"
-              ],
+              "categories": [],
               "search_text": "Africa must be part of global nuclear renaissance, says Togolese leader The African continent \"is not asking for a handout of nuclear technology\" and should be recognised as a market for such technology, Faure Essozimna Gnassingbe, President of Togo's Council of Ministers, told World Nuclear Symposium delegates in London.",
               "importance_score": 10
             },
@@ -3068,11 +2952,7 @@
               "technologies": [
                 "Traditional fission"
               ],
-              "categories": [
-                "Construction & licensing",
-                "Capital & financing",
-                "Policy & international"
-              ],
+              "categories": [],
               "search_text": "Fresh record set for nuclear generation in 2025 Nuclear reactors worldwide generated 2,702 TWh of electricity in 2025, beating the previous year's record of 2,667 TWh, according to the World Nuclear Outlook Report, which also calculates that if all national nuclear targets were achieved, total capacity would more than triple by 2050.",
               "importance_score": 10
             }
@@ -3092,12 +2972,10 @@
               "source": "World Nuclear News",
               "entities": [],
               "technologies": [
-                "Advanced fission",
-                "Microreactors"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing",
-                "Policy & international"
+                "Construction & licensing"
               ],
               "search_text": "Norman Foster says nuclear is key for 'Electrical Revolution' Architect Norman Foster says that nuclear's ability to provide a \"vast amount of power\" with \"a tiny imprint\" means that micro-modular power units should be being produced at \"industrial-scale, like jet engines\" with the potential to autonomously power new developments and move beyond the \"obsolete idea of a grid\".",
               "importance_score": 10
@@ -3140,12 +3018,7 @@
               "technologies": [
                 "Fusion"
               ],
-              "categories": [
-                "Construction & licensing",
-                "Fuel & supply chain",
-                "Capital & financing",
-                "Policy & international"
-              ],
+              "categories": [],
               "search_text": "Proxima announces plan for German HTS production facility Munich-based stellarator company Proxima Fusion and the State of Lower Saxony have signed a memorandum of understanding to build Europe's first large-scale fusion-grade high-temperature superconducting tape facility.",
               "importance_score": 28
             }
