@@ -134,19 +134,26 @@ def parse_article(u):
             if len(t)>65 and 'cookie' not in t.lower() and 'newsletter' not in t.lower():
                 description=t; break
     if not description: return None
-    # Read only related hyperlinks contained in the story, never navbar/footer links.
+    # Only capture hyperlinks appearing between the article title and its news-sidebar sections.
+    # Never mistake 'Most Read' or general site navigation for a cited primary source.
     links=[]
-    scope=h1.find_parent('article') or h1.find_parent('main') or h1.parent
-    if scope:
-        for link in scope.find_all('a',href=True)[:120]:
-            href=urllib.parse.urljoin(BASE,link['href'].strip())
-            p=urllib.parse.urlparse(href)
-            if p.scheme!='https' or not p.hostname or href.rstrip('/')==u.rstrip('/'): continue
-            if any(bad in p.path.lower() for bad in ('privacy','cookie','newsletter','facebook','twitter','linkedin')):continue
-            label=shorten(link.get_text(' ',strip=True) or p.hostname,45)
-            if not label:continue
-            if href not in [x['url'] for x in links]:links.append({'label':label,'url':href})
-            if len(links)==3:break
+    for node in h1.next_elements:
+        if isinstance(node,str) and node.strip().lower() in ('most read','related information','related stories','newsletter subscription'):
+            break
+        if getattr(node,'name',None) in ('h2','h3','h4'):
+            heading=node.get_text(' ',strip=True).lower()
+            if heading in ('most read','related information','related stories','podcasts & features'):
+                break
+        if getattr(node,'name',None)!='a' or not node.has_attr('href'):
+            continue
+        href=urllib.parse.urljoin(BASE,node['href'].strip())
+        p=urllib.parse.urlparse(href)
+        if p.scheme!='https' or not p.hostname or href.rstrip('/')==u.rstrip('/'):continue
+        if any(bad in p.path.lower() for bad in ('privacy','cookie','newsletter','facebook','twitter','linkedin')):continue
+        label=shorten(node.get_text(' ',strip=True) or p.hostname,45)
+        if not label:continue
+        if href not in [z['url'] for z in links]:links.append({'label':label,'url':href})
+        if len(links)==3:break
     # Prevent category detection from unrelated footer/navigation.
     orig = ''
     section = soup.find('meta',attrs={'property':'article:section'})
