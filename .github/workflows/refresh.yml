@@ -42,8 +42,14 @@ jobs:
         run: pip install --disable-pip-version-check -r requirements.txt
       - name: Validate interactive website script before publishing
         run: node --check app.js
+      - name: Check Python collector syntax
+        run: python -m py_compile scripts/refresh.py scripts/taxonomy.py scripts/audit.py
       - name: Refresh WNN archive and weekly briefing
         run: python scripts/refresh.py
+      - name: Validate historical archive and critical PPAs
+        run: python scripts/audit.py
+      - name: Test rendered homepage and global searches
+        run: node scripts/smoke.js
       - name: Commit source-linked data
         run: |
           git config user.name "github-actions[bot]"
