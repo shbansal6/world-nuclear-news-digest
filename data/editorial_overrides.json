@@ -1,0 +1,40 @@
+{
+  "notes": "Evidence-reviewed overrides for stories where a generic headline/lead omits transaction mechanics.",
+  "articles": {
+    "https://www.world-nuclear-news.org/articles/new-end-user-agreements-support-long-term-us-plant-operations": {
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Offtakes & customers",
+        "Restarts & uprates",
+        "Capital & financing"
+      ],
+      "entities": [
+        "Google",
+        "Constellation Energy",
+        "Oracle",
+        "NextEra Energy",
+        "Point Beach",
+        "PJM Interconnection"
+      ],
+      "search_text": "Google Constellation 20-year PPA 890 MW nuclear uprate 11 reactors PJM $4.3 billion investment Oracle NextEra Point Beach nuclear output subscription 15 year 2700 MW"
+    },
+    "https://www.world-nuclear-news.org/articles/constellation-amazon-agree-nuclear-focused-power-purchase-deal": {
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Offtakes & customers",
+        "Restarts & uprates",
+        "Capital & financing"
+      ],
+      "entities": [
+        "Constellation Energy",
+        "Amazon",
+        "Calvert Cliffs"
+      ],
+      "search_text": "Amazon Constellation 20-year nuclear power purchase agreement 690 MW 190 MW Calvert Cliffs uprate"
+    }
+  }
+}
