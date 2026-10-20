@@ -296,6 +296,15 @@ def main():
         selected.extend(chosen)
     selected.sort(key=lambda a:(a['date'],rank(a)),reverse=True)
     briefings=build_briefs(selected)
+    # Preserve independently researched issues; a machine-generated summary must not replace one.
+    existing_issues=[]
+    try:
+        existing_issues=json.loads((DATA/'briefings.json').read_text(encoding='utf-8')).get('briefings',[])
+    except (OSError,ValueError,AttributeError):
+        pass
+    editorial={x['week_start']:x for x in existing_issues if x.get('editorial') and x.get('week_start')}
+    briefings=list(editorial.values())+[x for x in briefings if x['week_start'] not in editorial]
+    briefings.sort(key=lambda x:x['week_start'],reverse=True)
     payload={'updated_at':TODAY.isoformat(),'methodology':'Selected public WNN articles by date and topic; article descriptions are concise extracts, not editorial endorsements. Date and source links verified at retrieval.','articles':selected}
     (DATA/'articles.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (DATA/'briefings.json').write_text(json.dumps({'generated_at':TODAY.isoformat(),'briefings':briefings},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
