@@ -597,23 +597,23 @@
       "sections": [
         {
           "category": "Uranium & fuel",
-          "takeaway": "5 source-linked development(s) in this sector, including Milestone for X-Energy's TRISO-X fuel facility; Agreement clears way for resumption of Niger uranium project.",
+          "takeaway": "5 source-linked development(s) in this sector, including Agreement clears way for resumption of Niger uranium project; Milestone for X-Energy's TRISO-X fuel facility.",
           "items": [
-            {
-              "date": "2026-09-25",
-              "title": "Milestone for X-Energy's TRISO-X fuel facility",
-              "summary": "Construction of the 214,000-square-foot building which will house the TX-1 advanced nuclear fuel facility in Oak Ridge, Tennessee, has been completed.",
-              "category": "Uranium & fuel",
-              "url": "https://www.world-nuclear-news.org/articles/milestone-for-x-energys-triso-xs-fuel-facility",
-              "links": [],
-              "source": "World Nuclear News"
-            },
             {
               "date": "2026-09-25",
               "title": "Agreement clears way for resumption of Niger uranium project",
               "summary": "The Mining Convention for the Madouela project formalises a framework agreement announced in August and triggers the process to discontinue international arbitration proceedings over the project in Niger.",
               "category": "Uranium & fuel",
               "url": "https://www.world-nuclear-news.org/articles/agreement-clears-way-for-resumption-of-niger-uranium-project",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-09-25",
+              "title": "Milestone for X-Energy's TRISO-X fuel facility",
+              "summary": "Construction of the 214,000-square-foot building which will house the TX-1 advanced nuclear fuel facility in Oak Ridge, Tennessee, has been completed.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/milestone-for-x-energys-triso-xs-fuel-facility",
               "links": [],
               "source": "World Nuclear News"
             },
@@ -1458,17 +1458,8 @@
       "sections": [
         {
           "category": "Uranium & fuel",
-          "takeaway": "3 source-linked development(s) in this sector, including Ur-Energy makes first shipment from Wyoming uranium project; IAEA project focuses on research reactor testing of fuels and materials.",
+          "takeaway": "3 source-linked development(s) in this sector, including IAEA project focuses on research reactor testing of fuels and materials; Ur-Energy makes first shipment from Wyoming uranium project.",
           "items": [
-            {
-              "date": "2026-08-21",
-              "title": "Ur-Energy makes first shipment from Wyoming uranium project",
-              "summary": "Ur-Energy has made the first shipment of uranium from its Shirley Basin uranium mine, marking the project's transition to full operations and making the company a multi-asset uranium producer.",
-              "category": "Uranium & fuel",
-              "url": "https://www.world-nuclear-news.org/articles/ur-energy-makes-first-shipment-from-wyoming-uranium-project",
-              "links": [],
-              "source": "World Nuclear News"
-            },
             {
               "date": "2026-08-21",
               "title": "IAEA project focuses on research reactor testing of fuels and materials",
@@ -1481,6 +1472,15 @@
                   "url": "https://www.iaea.org/projects/crp/t34006"
                 }
               ],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-08-21",
+              "title": "Ur-Energy makes first shipment from Wyoming uranium project",
+              "summary": "Ur-Energy has made the first shipment of uranium from its Shirley Basin uranium mine, marking the project's transition to full operations and making the company a multi-asset uranium producer.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/ur-energy-makes-first-shipment-from-wyoming-uranium-project",
+              "links": [],
               "source": "World Nuclear News"
             },
             {
@@ -1592,15 +1592,6 @@
             },
             {
               "date": "2026-08-12",
-              "title": "First fuel loaded into Tianwan unit 7",
-              "category": "New build & milestones",
-              "summary": "China began loading fuel for Tianwan unit 7, a VVER-1200 reactor, ahead of initial criticality.",
-              "url": "https://www.world-nuclear-news.org/articles/first-fuel-loaded-into-tianwan-unit-7",
-              "links": [],
-              "source": "World Nuclear News"
-            },
-            {
-              "date": "2026-08-12",
               "title": "Australian reactor marks 20 years of operations",
               "summary": "Australia's nuclear science and technology organisation ANSTO is marking 20 years of operations for its multi-purpose nuclear reactor at Lucas Heights in southern Sydney.",
               "category": "New build & milestones",
@@ -1611,6 +1602,15 @@
                   "url": "https://www.world-nuclear-news.org/Articles/Nuclear-power-is-part-of-Australia-s-future"
                 }
               ],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-08-12",
+              "title": "First fuel loaded into Tianwan unit 7",
+              "category": "New build & milestones",
+              "summary": "China began loading fuel for Tianwan unit 7, a VVER-1200 reactor, ahead of initial criticality.",
+              "url": "https://www.world-nuclear-news.org/articles/first-fuel-loaded-into-tianwan-unit-7",
+              "links": [],
               "source": "World Nuclear News"
             },
             {
@@ -1945,7 +1945,7 @@
       "sections": [
         {
           "category": "Uranium & fuel",
-          "takeaway": "5 source-linked development(s) in this sector, including Approval for VVER fuel production in Germany; Wyoming uranium project ramp-up 'slower than anticipated'.",
+          "takeaway": "5 source-linked development(s) in this sector, including Approval for VVER fuel production in Germany; INB carrying out new uranium-focused geological studies.",
           "items": [
             {
               "date": "2026-07-24",
@@ -1958,19 +1958,19 @@
             },
             {
               "date": "2026-07-22",
-              "title": "Wyoming uranium project ramp-up 'slower than anticipated'",
-              "summary": "Peninsula Energy has announced it is withdrawing its 2026 production guidance for the Lance Uranium Project in Wyoming but has reconfirmed its 2027 production guidance of 500,000-600,000 pounds U3O8 (192-231 tU).",
+              "title": "INB carrying out new uranium-focused geological studies",
+              "summary": "Indústrias Nucleares do Brasil says that a new phase of geological research in the Caetité region on uranium deposits is part of plans to reach self-sufficiency in uranium production.",
               "category": "Uranium & fuel",
-              "url": "https://www.world-nuclear-news.org/articles/wyoming-uranium-project-ramp-up-slower-than-anticipated",
+              "url": "https://www.world-nuclear-news.org/articles/inb-carrying-out-geological-research-on-uranium-deposits",
               "links": [],
               "source": "World Nuclear News"
             },
             {
               "date": "2026-07-22",
-              "title": "INB carrying out new uranium-focused geological studies",
-              "summary": "Indústrias Nucleares do Brasil says that a new phase of geological research in the Caetité region on uranium deposits is part of plans to reach self-sufficiency in uranium production.",
+              "title": "Wyoming uranium project ramp-up 'slower than anticipated'",
+              "summary": "Peninsula Energy has announced it is withdrawing its 2026 production guidance for the Lance Uranium Project in Wyoming but has reconfirmed its 2027 production guidance of 500,000-600,000 pounds U3O8 (192-231 tU).",
               "category": "Uranium & fuel",
-              "url": "https://www.world-nuclear-news.org/articles/inb-carrying-out-geological-research-on-uranium-deposits",
+              "url": "https://www.world-nuclear-news.org/articles/wyoming-uranium-project-ramp-up-slower-than-anticipated",
               "links": [],
               "source": "World Nuclear News"
             },
@@ -2287,19 +2287,19 @@
             },
             {
               "date": "2026-07-07",
-              "title": "Criticality for fourth US microreactor to meet 4 July deadline",
-              "summary": "Aalo Atomics announced that its Critical Test Reactor at the Idaho National Laboratory successfully achieved initial criticality in the early hours of Saturday morning, becoming the fourth microreactor under US Department of Energy authorisation to achieve the milestone by 4 July 2026.",
+              "title": "Agreement could see prototype microreactor built at Berkeley",
+              "summary": "Chiltern Vital Group has signed a letter of intent with Cambridge Atomworks to consider the construction of the prototype Odin microreactor on the Berkeley Green Science and Technology Park in Gloucestershire, England.",
               "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/criticality-for-fourth-us-microreactor-meets-deadline",
+              "url": "https://www.world-nuclear-news.org/articles/agreement-could-see-prototype-microreactor-built-at-berkeley",
               "links": [],
               "source": "World Nuclear News"
             },
             {
               "date": "2026-07-07",
-              "title": "Agreement could see prototype microreactor built at Berkeley",
-              "summary": "Chiltern Vital Group has signed a letter of intent with Cambridge Atomworks to consider the construction of the prototype Odin microreactor on the Berkeley Green Science and Technology Park in Gloucestershire, England.",
+              "title": "Criticality for fourth US microreactor to meet 4 July deadline",
+              "summary": "Aalo Atomics announced that its Critical Test Reactor at the Idaho National Laboratory successfully achieved initial criticality in the early hours of Saturday morning, becoming the fourth microreactor under US Department of Energy authorisation to achieve the milestone by 4 July 2026.",
               "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/agreement-could-see-prototype-microreactor-built-at-berkeley",
+              "url": "https://www.world-nuclear-news.org/articles/criticality-for-fourth-us-microreactor-meets-deadline",
               "links": [],
               "source": "World Nuclear News"
             }
