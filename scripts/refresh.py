@@ -217,14 +217,6 @@ def read_articles():
     j=json.loads(p.read_text(encoding='utf-8'))
     return j if isinstance(j,list) else j.get('articles',[])
 
-def rank(a):
-    title=a.get('title','')
-    x=3*len(PRIORITY.findall(title)) + (4 if OFFTAKE.search(title) else 0)
-    if re.search(r'\b(?:podcast|viewpoint|opinion|in pictures|in brief)\b',title,re.I):x-=6
-    if re.search(r'\b(?:signs|approved|reaches|starts|commission|construction|license|begins|deal|restar|contracts)\b',title,re.I):x+=4
-    if a.get('category')=='Other nuclear':x-=2
-    return x
-
 def bucket(a):
     d=a['date']
     if d[:4]=='2024':return d[:4]+'-Q'+str((int(d[5:7])-1)//3+1)
@@ -264,11 +256,12 @@ def build_briefs(stories):
         if selection:
             grouped=defaultdict(list)
             for a in sorted(selection,key=lambda z:z['date'],reverse=True):
-                grouped[a['category']].append(a)
+                for label in (a.get('categories') or [a.get('category','Other nuclear')]):
+                    grouped[label].append(a)
             sections=[]
             for cat,items in sorted(grouped.items(),key=lambda kv:-len(kv[1])):
                 examples='; '.join(x['title'] for x in items[:2])
-                sections.append({'category':cat,'takeaway':f'{len(items)} source-linked development(s) in this sector, including {examples}.','items':items[:9]})
+                sections.append({'category':cat,'takeaway':f'{len(items)} source-linked development(s) in this sector, including {examples}.','items':items})
             output.append({'week_start':start.isoformat(),'week_end':finish.isoformat(),
                 'title':'Global nuclear developments — week of '+start.strftime('%B %-d, %Y'),
                 'overview':f'{len(selection)} World Nuclear News articles across {len(grouped)} nuclear-industry sectors. The report groups developments by topic and links to each original article; it does not claim independent verification.',
