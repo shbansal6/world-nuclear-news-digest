@@ -921,15 +921,18 @@
         "Point Beach",
         "Calvert Cliffs",
         "Vogtle",
-        "Hatch"
+        "Hatch",
+        "PJM Interconnection"
       ],
       "technologies": [
         "Traditional fission"
       ],
       "categories": [
-        "Offtakes & customers"
+        "Offtakes & customers",
+        "Restarts & uprates",
+        "Capital & financing"
       ],
-      "search_text": "Constellation Energy Google Amazon Oracle NextEra Energy Georgia Power Fortum Duane Arnold Point Beach Calvert Cliffs Vogtle Hatch Google and Oracle deals support long-term US plant operations Google and Constellation Energy have announced a long-term collaboration to bring 890 MW of new nuclear capacity onto the PJM Interconnection grid, as well as a power purchase agreement. Meanwhile, Oracle is to subscribe to output from the Point Beach nuclear power plant.",
+      "search_text": "Google Constellation 20-year PPA 890 MW nuclear uprate 11 reactors PJM $4.3 billion investment Oracle NextEra Point Beach nuclear output subscription 15 year 2700 MW Constellation Energy Google Amazon Oracle NextEra Energy Georgia Power Fortum Duane Arnold Point Beach Calvert Cliffs Vogtle Hatch PJM Interconnection",
       "importance_score": 71
     },
     {
@@ -1192,9 +1195,11 @@
         "Traditional fission"
       ],
       "categories": [
-        "Offtakes & customers"
+        "Offtakes & customers",
+        "Restarts & uprates",
+        "Capital & financing"
       ],
-      "search_text": "Constellation Energy Amazon Calvert Cliffs Constellation, Amazon agree nuclear-focused power purchase deal A 20-year power purchase agreement signed by tech giant Amazon will enable Constellation to add 190 MW of capacity and extend the operating life of the Calvert Cliffs nuclear power plant in Maryland in the US.",
+      "search_text": "Amazon Constellation 20-year nuclear power purchase agreement 690 MW 190 MW Calvert Cliffs uprate Constellation Energy Amazon Calvert Cliffs",
       "importance_score": 56
     },
     {
