@@ -1,38 +1,164 @@
-/* World Nuclear News Research Digest — local JSON, no client-side APIs */
-(function(){
-'use strict';
+/* One UI for the World Nuclear News and Neutron Bytes research libraries.
+ * Every search runs across the FULL in-memory archive before pagination, not DOM cards.
+ */
+(()=>{'use strict';
+const $=id=>document.getElementById(id), site=document.body.dataset.source==='nb'?'nb':'wnn';
+const TECHNOLOGIES=['Traditional fission','Advanced fission','Microreactors','Fusion'];
+const THEMES=['Restarts & uprates','Offtakes & customers','Construction & licensing','Fuel & supply chain','Capital & financing','Policy & international'];
 const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
-const CATS=['All sectors','New build & milestones','SMRs & advanced reactors','Nuclear PPAs & offtake','Operations & restarts','Uranium & fuel','Policy & regulation','Corporate & financing','Waste & decommissioning','Fusion & research','Other nuclear'];
-let articles=[],briefings=[],metadata={},selectedCategory='All sectors',filterText='',locationKey='';
-const byId=id=>document.getElementById(id);
-const escape=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const url=x=>/^https:\/\/(www\.)?world-nuclear-news\.org\//i.test(x||'')||/^https:\/\//i.test(x||'')?x:'#';
-const dateStr=s=>{const d=new Date((s||'2000-01-01')+'T12:00:00Z');return d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'});};
-const monthKey=a=>(a.date||'').slice(0,7);
-const periodKey=a=>a.date.slice(0,4)==='2024'?'2024-Q'+Math.ceil(Number(a.date.slice(5,7))/3):monthKey(a);
-const periodLabel=p=>p.includes('-Q')?'Q'+p.slice(-1)+' '+p.slice(0,4):MONTHS[Number(p.slice(5,7))-1]+' '+p.slice(0,4);
-const periodList=()=>{let out=[];for(let m=1;m<=12;m++)out.push('2025-'+String(m).padStart(2,'0'));for(let m=1;m<=12;m++)if(new Date(2026,m-1,1)<=new Date())out.push('2026-'+String(m).padStart(2,'0'));return ['2024-Q1','2024-Q2','2024-Q3','2024-Q4',...out];};
-const weeks=()=>briefings.slice().sort((a,b)=>b.week_start.localeCompare(a.week_start));
-const summary=t=>escape(t||'Read the original World Nuclear News report for details.');
-function metrics(){return [articles.length,new Set(articles.map(x=>periodKey(x))).size,new Set(articles.map(x=>x.category)).size,briefings.length];}
-function sourceLinks(a){let h='<a href="'+escape(url(a.url))+'" target="_blank" rel="noopener noreferrer">01 / WNN ORIGINAL ↗</a>';const seen=new Set([a.url]);(a.links||[]).forEach((x,i)=>{if(i>1||!x.url||seen.has(x.url)||!/^https:\/\//i.test(x.url))return;seen.add(x.url);h+='<a class="secondary" href="'+escape(url(x.url))+'" target="_blank" rel="noopener noreferrer">0'+(i+2)+' / '+escape((x.label||'RELATED SOURCE').slice(0,34)).toUpperCase()+' ↗</a>';});return '<div class="sources">'+h+'</div>';}
-function articleCard(a){return '<article class="article"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><span class="tag">'+escape(a.category||'Other nuclear')+'</span><span class="date">'+dateStr(a.date)+'</span></div><h3>'+escape(a.title)+'</h3><p>'+summary(a.summary)+'</p>'+sourceLinks(a)+'</article>';}
-function fullList(items){return items.length?'<div class="article-list">'+items.map(articleCard).join('')+'</div>':'<div class="notice">No verified articles indexed for this selection yet. The historical backfill refreshes through the repository workflow. <a href="https://www.world-nuclear-news.org/search" target="_blank" rel="noopener">Browse the original source ↗</a></div>';}
-function layoutLead(label,title,desc){return '<div class="eyebrow">'+escape(label)+'</div><h1>'+title+'</h1><p class="dek">'+desc+'</p>';}
-function navHtml(){let p=location.hash||'#/';let h='<a class="nav-link '+(p==='#/'?'active':'')+'" href="#/"><span class="nav-icon">◈</span>Overview</a><a class="nav-link '+(p.startsWith('#/weekly')?'active':'')+'" href="#/weekly"><span class="nav-icon">▤</span>Weekly briefings</a>';[2026,2025,2024].forEach(y=>{h+='<div class="nav-group"><span>ARCHIVE / '+y+'</span><span class="nav-year">'+(y===2024?'QTR':'MO')+'</span></div>';const keys=periodList().filter(z=>z.startsWith(String(y))).reverse();keys.forEach(k=>{h+='<a class="nav-sub '+(p==='#/period/'+k?'active':'')+'" href="#/period/'+k+'"><span>'+periodLabel(k).replace(' '+y,'')+'</span><span class="subcount">'+articles.filter(a=>periodKey(a)===k).length+'</span></a>';});});byId('nav').innerHTML=h;}
-function setCrumb(s){byId('crumb').textContent=s.toUpperCase();}
-function overview(){setCrumb('Overview');let m=metrics(),top=articles.slice(0,4),latest=weeks()[0],year=periodList().slice().reverse().slice(0,6);let s=layoutLead('GLOBAL NUCLEAR RESEARCH / 2024—2026','Nuclear developments.<br><em>Signal, not noise.</em>','A source-linked reference desk for the global nuclear market. Explore quarterly 2024 history, monthly developments for 2025 and 2026, and a new briefing every Monday.');s+='<div class="kpis"><div class="kpi"><small>News indexed</small><strong>'+m[0]+'</strong><span>Verified WNN links</span></div><div class="kpi"><small>Periods populated</small><strong>'+m[1]+'</strong><span>Historical archive</span></div><div class="kpi"><small>Sector coverage</small><strong>'+m[2]+'</strong><span>Research taxonomy</span></div><div class="kpi"><small>Weekly briefs</small><strong>'+m[3]+'</strong><span>Monday editions</span></div></div>';
-s+='<div class="hero-panel"><div class="stamp">MONDAY RESEARCH NOTE / '+escape(latest?latest.week_start:'UPCOMING')+'</div><h2>'+escape(latest?latest.title:'Weekly nuclear sector intelligence')+'</h2><p>'+escape(latest?latest.overview:'The weekly desk groups source-verified World Nuclear News reporting by theme, highlighting meaningful developments and linking to the original articles.')+'</p><a href="#/weekly">OPEN WEEKLY BRIEFING ↗</a></div>';
-s+='<div class="section-head"><h2>Browse the archive</h2><a href="#/period/'+periodList().slice(-1)[0]+'">LATEST MONTH ↗</a></div><div class="period-grid">'+year.map(k=>'<a class="period-card" href="#/period/'+k+'"><span class="year">'+k.slice(0,4)+' / '+(k.includes('-Q')?'QUARTER':'MONTH')+'</span><strong>'+periodLabel(k).replace(' '+k.slice(0,4),'')+'</strong><small>'+articles.filter(a=>periodKey(a)===k).length+' SOURCE-LINKED STORIES →</small></a>').join('')+'</div>';
-s+='<div class="section-head"><h2>Most recent coverage</h2><a href="#/period/'+periodList().slice(-1)[0]+'">BROWSE ARTICLES ↗</a></div>'+fullList(top);byId('view').innerHTML=s;}
-function selectionBar(){return '<div class="toolbar"><input id="search" class="search" aria-label="Search news" placeholder="Search companies, projects, countries, topics…" value="'+escape(filterText)+'"><select class="select" id="sector" aria-label="Filter sector">'+CATS.map(c=>'<option value="'+escape(c)+'"'+(selectedCategory===c?' selected':'')+'>'+escape(c)+'</option>').join('')+'</select></div>';}
-function period(p){if(!periodList().includes(p)){location.hash='#/';return;}setCrumb(periodLabel(p));let full=articles.filter(a=>periodKey(a)===p);let filtered=full.filter(a=>(selectedCategory==='All sectors'||a.category===selectedCategory)&&(!filterText||[a.title,a.summary,a.category].join(' ').toLowerCase().includes(filterText.toLowerCase())));let s=layoutLead('HISTORICAL ARCHIVE / '+p.slice(0,4),escape(periodLabel(p))+'<br><em>Nuclear news</em>','Dated reporting from World Nuclear News, organized by industry theme. Links lead directly to the original article; secondary links are included only when identified from the source.');s+='<div class="kpis"><div class="kpi"><small>Articles</small><strong>'+full.length+'</strong><span>In this period</span></div><div class="kpi"><small>Sectors</small><strong>'+new Set(full.map(a=>a.category)).size+'</strong><span>Topics covered</span></div><div class="kpi"><small>Coverage</small><strong>'+escape(p.includes('-Q')?'Quarterly':'Monthly')+'</strong><span>2024 / 2025 / 2026</span></div><div class="kpi"><small>Source</small><strong>WNN</strong><span>Original reporting</span></div></div>';s+=selectionBar()+'<div id="results"><div class="count-label">'+filtered.length+' OF '+full.length+' ARTICLES SHOWN</div>'+fullList(filtered)+'</div>';byId('view').innerHTML=s;byId('search').addEventListener('input',e=>{filterText=e.target.value;updateResults(p);});byId('sector').addEventListener('change',e=>{selectedCategory=e.target.value;updateResults(p);});}
-function updateResults(p){let full=articles.filter(a=>periodKey(a)===p);let filtered=full.filter(a=>(selectedCategory==='All sectors'||a.category===selectedCategory)&&(!filterText||[a.title,a.summary,a.category].join(' ').toLowerCase().includes(filterText.toLowerCase())));byId('results').innerHTML='<div class="count-label">'+filtered.length+' OF '+full.length+' ARTICLES SHOWN</div>'+fullList(filtered);}
-function briefPage(start){let ss=weeks();let chosen=ss.find(x=>x.week_start===start)||ss[0];setCrumb('Weekly updates');let s=layoutLead('THE MONDAY NUCLEAR BRIEF','Weekly <em>intelligence</em>','A dated, source-linked roundup of global nuclear developments, grouped by sector. The automated edition uses only World Nuclear News reporting and does not imply original interviews or independent verification.');if(!chosen){s+='<div class="notice">The first weekly report has not yet been built. The scheduled source refresh will generate the initial report and display it here.</div>';byId('view').innerHTML=s;return;}
-s+='<div class="brief-layout"><div><div class="hero-panel"><div class="stamp">WEEK OF '+dateStr(chosen.week_start)+' – '+dateStr(chosen.week_end)+'</div><h2>'+escape(chosen.title)+'</h2><p>'+escape(chosen.overview)+'</p><div class="stamp">SOURCE-LINKED · '+chosen.article_count+' ARTICLES · '+escape(chosen.generated_at||'')+'</div></div>';
-(chosen.sections||[]).forEach(section=>{s+='<section class="brief-card"><div class="eyebrow">SECTOR UPDATE</div><h2>'+escape(section.category)+'</h2><div class="takeaway">'+escape(section.takeaway||'Key World Nuclear News developments this week.')+'</div><div class="brief-items">'+(section.items||[]).map(a=>'<div class="brief-item"><div class="meta">'+dateStr(a.date)+'</div><h3>'+escape(a.title)+'</h3><p>'+summary(a.summary)+'</p>'+sourceLinks(a)+'</div>').join('')+'</div></section>';});s+='</div><aside class="brief-nav"><h4>WEEKLY EDITIONS</h4>'+ss.map(a=>'<a class="'+(chosen.week_start===a.week_start?'active':'')+'" href="#/weekly/'+a.week_start+'">'+dateStr(a.week_start)+'<span style="float:right">'+(a.article_count||0)+'</span></a>').join('')+'</aside></div>';byId('view').innerHTML=s;}
-function navigate(){const hash=decodeURIComponent((location.hash||'#/').slice(2)),parts=hash.split('/');locationKey=hash;document.title='World Nuclear News Digest | '+(parts[0]==='period'?periodLabel(parts[1]):parts[0]==='weekly'?'Weekly Updates':'Overview');navHtml();if(parts[0]==='period')period(parts[1]);else if(parts[0]==='weekly')briefPage(parts[1]);else overview();window.scrollTo({top:0,behavior:'instant'});byId('sidebar').classList.remove('open');}
-function synthesizeBrief(items,start,end){let by={};items.forEach(a=>{(by[a.category]||(by[a.category]=[])).push(a)});return {week_start:start,week_end:end,title:'Global nuclear developments — week of '+dateStr(start),overview:items.length+' reported developments across '+Object.keys(by).length+' industry sectors. Each item is attributed to its original World Nuclear News article.',article_count:items.length,generated_at:'On-site source aggregation',sections:Object.entries(by).map(([category,arr])=>({category,takeaway:arr.length+' new World Nuclear News report'+(arr.length===1?'':'s')+' this week, including '+arr.slice(0,2).map(a=>a.title).join('; ')+'.',items:arr}))};}
-async function boot(){let results=await Promise.allSettled([fetch('data/articles.json?'+Date.now()).then(x=>x.json()),fetch('data/briefings.json?'+Date.now()).then(x=>x.json())]);if(results[0].status==='fulfilled'){const data=results[0].value;articles=(Array.isArray(data)?data:data.articles||[]).filter(a=>a.url&&a.date&&a.title).sort((a,b)=>b.date.localeCompare(a.date));metadata=Array.isArray(data)?{}:data;}if(results[1].status==='fulfilled'){const data=results[1].value;briefings=Array.isArray(data)?data:data.briefings||[];}if(!briefings.length&&articles.length){let d=new Date();let monday=new Date(d);monday.setDate(d.getDate()-((d.getDay()+6)%7));let start=monday.toISOString().slice(0,10);let prior=new Date(monday);prior.setDate(monday.getDate()-7);let e=new Date(monday);e.setDate(monday.getDate()-1);let subset=articles.filter(a=>a.date>=prior.toISOString().slice(0,10)&&a.date<=e.toISOString().slice(0,10));if(subset.length)briefings=[synthesizeBrief(subset,prior.toISOString().slice(0,10),e.toISOString().slice(0,10))];}byId('lastupdated').textContent='UPDATED '+escape(metadata.updated_at||'2026-10-19');navigate();}
-window.addEventListener('hashchange',()=>{filterText='';selectedCategory='All sectors';navigate();});byId('menu').addEventListener('click',()=>byId('sidebar').classList.toggle('open'));boot();
+const state={year:'all',month:'all',tech:'all',theme:'all',q:'',expanded:false,visible:100};
+let articles=[],briefings=[],metadata={};
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function validUrl(u){try{const p=new URL(u);return p.protocol==='https:'||p.protocol==='http:'?p.href:''}catch{return ''}}
+function dateLabel(d){if(!/^\d{4}-\d\d-\d\d$/.test(d))return d||'';return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})}
+function periodKey(a){let d=a.date||'';return d.slice(0,4)<='2024'?d.slice(0,4)+'-Q'+Math.ceil(Number(d.slice(5,7))/3):d.slice(0,7)}
+function periodName(k){if(k.includes('-Q'))return 'Quarter '+k.slice(-1);return MONTHS[Number(k.slice(5,7))-1]||k}
+function compact(s,n=325){s=String(s||'').replace(/\s+/g,' ').trim();return s.length>n?s.slice(0,n).replace(/\s+\S*$/,'')+'…':s}
+const any=(s,re)=>re.test(s);
+function tagsFor(a){
+ const content=[a.title,a.summary,a.category,(a.entities||[]).join(' '),(a.search_text||''),a.description||''].join(' ').toLowerCase();
+ const title=(a.title||'').toLowerCase(), initial=(a.category||'').toLowerCase();
+ const tech=[],tags=[];
+ const put=(list,v)=>{if(!list.includes(v))list.push(v)};
+ if(any(content,/\b(?:fusion|tokamak|stellarator|plasma confinement|inertial confinement)\b/))put(tech,'Fusion');
+ if(any(content,/\b(?:microreactor|micro-reactor|micro reactor|nuclear battery|kilopower|project pele|e-vinci|evinci|dome test|dome demonstration)\b/))put(tech,'Microreactors');
+ if(any(content,/\b(?:smr|small modular|advanced reactor|molten.salt|fast neutron|fast reactor|bwrx|bwrx-300|xe-100|nuscale|kairos|x-energy|oklo|newcleo|fourth.generation|gen iv|htgr|pebble.bed|natrium|terrapower)\b/)&&!tech.includes('Microreactors'))put(tech,'Advanced fission');
+ if(any(content,/\b(?:ap1000|apr1400|epr2?|vver|pwr|bwr|candu|phwr|fleet|large reactor|traditional|conventional|existing nuclear|nuclear station|nuclear plant|existing unit|reactor units|vogtle|calvert cliffs|palisades|three mile island)\b/)||(tech.length===0&&!any(content,/\bfusion\b/)))put(tech,'Traditional fission');
+ const original={
+ 'offtake & customers':'Offtakes & customers','nuclear ppas & offtake':'Offtakes & customers',
+ 'operations & restarts':'Restarts & uprates','restarts & uprates':'Restarts & uprates',
+ 'new build & milestones':'Construction & licensing','construction & licensing':'Construction & licensing',
+ 'smrs & advanced reactors':'Construction & licensing','uranium & fuel':'Fuel & supply chain',
+ 'fuel & supply chain':'Fuel & supply chain','corporate & financing':'Capital & financing',
+ 'capital & financing':'Capital & financing','policy & regulation':'Policy & international',
+ 'policy & international':'Policy & international'
+ };
+ if(original[initial])put(tags,original[initial]);
+ if(any(content,/\b(?:offtake|off.take|power purchase agreement|power purchase|ppa\b|customer agreement|energy supply agreement|electricity supply agreement|long.term supply agreement|power supply agreement|contracted power|buy nuclear power|supply electricity|subscribe to.*electricity|subscription to.*power)\b/) || (any(content,/\b(?:google|amazon|microsoft|meta|oracle|data cent(?:re|er)|hyperscaler)\b/) && any(content,/\b(?:energy|electricity|power|offtake|capacity purchase|power supply)\b/)))
+   put(tags,'Offtakes & customers');
+ if(any(content,/\b(?:restart|re.start|recommission|uprate|power boost|capacity increase|capacity expansion|efficiency upgrade|operating life|life extension|life.time extension|refurbish|reactor refurbishment|extended operations?|long.term operation)\b/))
+   put(tags,'Restarts & uprates');
+ if(any(content,/\b(?:licen[cs]|construction|building works|commission|criticality|grid connection|connected to the grid|permit|site approval|environmental impact|design certification|construction milestone|first power|first concrete|first nuclear)\b/))
+   put(tags,'Construction & licensing');
+ if(any(content,/\b(?:uranium|fuel cycle|haleu|leu\b|enrich|centrifuge|triso|mox\b|fuel supply|fuel fabrication|fuel production|mining|supply chain|components|steam generator|supplier|equipment procurement|conversion plant)\b/))
+   put(tags,'Fuel & supply chain');
+ if(any(content,/\b(?:funding|financing|finance|fundraise|capital raise|equity|investment|investor|invests|venture funding|ipo\b|acquisition|loan guarantee|grant funding|debt package|secured .*million|secured .*\$|loan facility|joint venture)\b/))
+   put(tags,'Capital & financing');
+ if(any(content,/\b(?:policy|regulation|regulatory|legislation|parliament|government|nrc\b|iaea\b|minister|national programme|international partnership|bilateral agreement|country agreement|nuclear law|national strategy)\b/))
+   put(tags,'Policy & international');
+ return {technologies:tech,categories:tags};
+}
+function hydrate(x){
+ const n=Object.assign({},x);
+ n.date=String(n.date||'').slice(0,10);
+ n.title=String(n.title||'');
+ n.summary=String(n.summary||'');
+ n.entities=Array.isArray(n.entities)?n.entities:[];
+ const inferred=tagsFor(n);
+ n.technologies=[...new Set([...(Array.isArray(n.technologies)?n.technologies:[]),...inferred.technologies])].filter(t=>TECHNOLOGIES.includes(t));
+ n.categories=[...new Set([...(Array.isArray(n.categories)?n.categories:[]),...inferred.categories])].filter(t=>THEMES.includes(t));
+ n.searchblob=[n.title,n.summary,n.category,n.search_text,...n.entities,...n.technologies,...n.categories,n.url].join(' ').toLowerCase();
+ return n;
+}
+function sourceLinks(a){
+ const list=[{url:a.url,label:site==='nb'?'Neutron Bytes':'World Nuclear News'},...(Array.isArray(a.links)?a.links:[])];
+ const seen=new Set();let result=[];
+ list.forEach(l=>{const u=validUrl(l.url);if(!u||seen.has(u))return;seen.add(u);if(result.length<4)result.push('<a target="_blank" rel="noopener noreferrer" href="'+esc(u)+'">'+esc(l.label||'Original linked source')+' <span>↗</span></a>')});
+ return '<div class="sources">'+result.join('')+'</div>';
+}
+function tagChips(a){return '<div class="taggroup">'+a.technologies.map(t=>'<button type="button" class="tagchip tech" data-tech="'+esc(t)+'">'+esc(t)+'</button>').join('')+a.categories.map(t=>'<button type="button" class="tagchip" data-cat="'+esc(t)+'">'+esc(t)+'</button>').join('')+'</div>';}
+function card(a){return '<article class="news-card'+(state.expanded?' expanded':'')+'"><div class="story-top"><span class="story-category">'+esc(a.categories[0]||a.category||'Nuclear developments')+'</span><span class="story-date">'+dateLabel(a.date)+'</span></div><h4>'+esc(a.title)+'</h4>'+tagChips(a)+'<div class="story-teaser">'+esc(compact(a.summary,250))+'</div><div class="story-full">'+esc(a.summary)+'</div>'+sourceLinks(a)+'</article>'}
+function filtered(){return articles.filter(a=>(state.year==='all'||a.date.slice(0,4)===state.year)&&(state.month==='all'||a.date.slice(5,7)===state.month)&&(state.tech==='all'||a.technologies.includes(state.tech))&&(state.theme==='all'||a.categories.includes(state.theme))&&(!state.q||state.q.split(/\s+/).every(term=>a.searchblob.includes(term)))));}
+function renderList(){
+ const found=filtered(), subset=found.slice(0,state.visible), years=new Map();
+ subset.forEach(a=>{const y=a.date.slice(0,4);if(!years.has(y))years.set(y,new Map());const k=periodKey(a);if(!years.get(y).has(k))years.get(y).set(k,[]);years.get(y).get(k).push(a)});
+ $('results').textContent=found.length.toLocaleString()+' developments';
+ $('scope').textContent=state.q?'Search across all '+articles.length.toLocaleString()+' indexed developments (all source records and company metadata).':'Showing '+Math.min(found.length,state.visible).toLocaleString()+' of '+found.length.toLocaleString()+' matching developments. Global search spans all years; use a filter to narrow the view.';
+ let html='';
+ if(!found.length){$('archive-content').innerHTML='<div class="empty">No matching news. Try a broader search or clear your filters.</div>';$('loadmore').hidden=true;return;}
+ for(const [year,periods] of years){
+  const allYear=found.filter(a=>a.date.startsWith(year));
+  html+='<section class="archive-year" id="year-'+esc(year)+'"><div class="year-header"><div class="year-number">'+year+'</div><div class="year-info"><div class="year-kicker">'+(Number(year)<=2024?'QUARTERLY COVERAGE':'MONTHLY COVERAGE')+'</div><h3>Source-linked nuclear developments · technology and transaction tags</h3></div><div class="year-count">'+allYear.length+'<span>matching developments</span></div></div><div class="period-wrap">';
+  for(const [key,arr] of periods){
+   const allPeriod=found.filter(a=>periodKey(a)===key);
+   html+='<section class="period" id="period-'+key+'"><div class="period-heading"><div class="period-tick"></div><div><div class="period-name">'+esc(periodName(key))+'</div><div class="period-sub">'+allPeriod.length+' matching developments</div></div></div><div class="period-cards">'+arr.map(card).join('')+'</div></section>';
+  } html+='</div></section>';
+ }
+ $('archive-content').innerHTML=html;
+ $('loadmore').hidden=found.length<=state.visible;
+ $('loadmore').textContent='Show more developments ('+(found.length-state.visible)+' remaining)';
+}
+function updateMonth(){
+ const sel=$('monthfilter'), y=state.year,enabled=(y==='2025'||y==='2026');
+ sel.disabled=!enabled;
+ if(!enabled)state.month='all';
+ const present=[...new Set(articles.filter(a=>a.date.startsWith(y+'-')).map(a=>a.date.slice(5,7)))].sort((a,b)=>b.localeCompare(a));
+ sel.innerHTML='<option value="all">All months</option>'+present.map(m=>'<option value="'+m+'">'+MONTHS[Number(m)-1]+'</option>').join('');
+ sel.value=state.month;
+}
+function renderNav(){
+ const years=[...new Set(articles.map(a=>a.date.slice(0,4)))].sort().reverse();
+ $('yrfilter').innerHTML='<option value="all">All years</option>'+years.map(y=>'<option value="'+y+'">'+y+'</option>').join('');
+ $('techfilter').innerHTML='<option value="all">All technologies</option>'+TECHNOLOGIES.map(t=>'<option>'+esc(t)+'</option>').join('');
+ $('catfilter').innerHTML='<option value="all">All categories</option>'+THEMES.map(t=>'<option>'+esc(t)+'</option>').join('');
+ $('yearnav').innerHTML=years.map(y=>'<a href="#year-'+y+'" data-year="'+y+'"><b>'+y+'</b><span>'+articles.filter(a=>a.date.startsWith(y)).length+'</span></a>').join('');
+ $('total').textContent=articles.length.toLocaleString();
+ $('periods').textContent=new Set(articles.map(periodKey)).size;
+ $('briefcount').textContent=briefings.length;
+ $('asof').textContent='Archive updated '+(metadata.updated_at||'—');
+ updateMonth();
+}
+function makeBriefing(st,ed){
+ const items=articles.filter(a=>a.date>=st&&a.date<=ed);
+ if(!items.length)return null;
+ const grouped={};items.forEach(a=>{const key=a.categories[0]||'Other developments';(grouped[key]||(grouped[key]=[])).push(a)});
+ return {week_start:st,week_end:ed,generated_at:'Source-record roundup',article_count:items.length,title:'Nuclear developments — week of '+dateLabel(st),overview:'Source-linked developments for the completed week, organized by sector. Refer to the original articles for the full reporting.',sections:Object.entries(grouped).map(([category,items])=>({category,takeaway:items.length+' developments indexed in '+category.toLowerCase()+'.',items}))};
+}
+function generateRecentWeeks(){
+ const list=[];let d=new Date('2026-10-12T12:00:00Z');
+ for(let i=0;i<6;i++){const end=new Date(d);end.setUTCDate(d.getUTCDate()+6);const b=makeBriefing(d.toISOString().slice(0,10),end.toISOString().slice(0,10));if(b)list.push(b);d.setUTCDate(d.getUTCDate()-7)}
+ return list;
+}
+function loadBriefings(input){
+ const output=(Array.isArray(input)?input:input?.briefings||[]).filter(b=>b.week_start>='2026-09-07');
+ const seen=new Set(output.map(b=>b.week_start));
+ // Preview issues for uncovered recent weeks, using only source records, no invented reporting.
+ generateRecentWeeks().forEach(b=>{if(!seen.has(b.week_start))output.push(b)});
+ return output.sort((a,b)=>b.week_start.localeCompare(a.week_start)).slice(0,7);
+}
+function weekly(start){
+ $('archive').classList.add('hidden');$('weekly').classList.add('active');
+ const chosen=briefings.find(b=>b.week_start===start)||briefings[0];
+ $('weekly-nav').innerHTML=briefings.map(b=>'<a class="'+(b===chosen?'active':'')+'" href="#weekly-'+esc(b.week_start)+'">'+dateLabel(b.week_start)+' <span style="float:right">'+Number(b.article_count||0)+'</span></a>').join('');
+ if(!chosen){$('weekly-main').innerHTML='<div class="empty">No weekly editions are indexed yet.</div>';return}
+ let h='<div class="weekly-note"><div class="section-eyebrow" style="margin:0">WEEK OF '+dateLabel(chosen.week_start).toUpperCase()+' — '+dateLabel(chosen.week_end).toUpperCase()+'</div><h3>'+esc(chosen.title)+'</h3><p>'+esc(chosen.overview||'Source-linked nuclear market news for the week.')+'</p><div class="notice">'+(chosen.editorial?'Researched briefing':'Automated source-linked roundup')+' · '+Number(chosen.article_count||0)+' news items</div>';
+ for(const s of (chosen.sections||[])){h+='<section class="weekly-sector"><h4>'+esc(s.category)+'</h4><p class="explanation">'+esc(s.takeaway||'')+'</p>';
+  for(const item of (s.items||[])){const a=hydrate(item);h+='<div class="weekly-event"><h5>'+esc(a.title)+'</h5><p>'+esc(a.summary)+'</p>'+tagChips(a)+sourceLinks(a)+'</div>'}
+  h+='</section>';
+ } h+='</div>';$('weekly-main').innerHTML=h;
+}
+function updateView(){
+ const hash=decodeURIComponent(location.hash||'#archive');
+ if(hash.startsWith('#weekly'))weekly(hash.replace('#weekly-',''));else{$('weekly').classList.remove('active');$('archive').classList.remove('hidden');if(hash.startsWith('#year-')){const y=hash.slice(6);if($('yrfilter').value!==y&&/^\d{4}$/.test(y)){state.year=y;$('yrfilter').value=y;updateMonth();}}renderList();}
+}
+function resetView(){state.year='all';state.month='all';state.tech='all';state.theme='all';state.q='';state.visible=100;['yrfilter','monthfilter','techfilter','catfilter'].forEach(id=>$(id).value='all');$('q').value='';updateMonth();renderList();}
+function initEvents(){
+ ['yrfilter','monthfilter','techfilter','catfilter'].forEach((id)=>$(id).addEventListener('change',e=>{const key={yrfilter:'year',monthfilter:'month',techfilter:'tech',catfilter:'theme'}[id];state[key]=e.target.value;state.visible=100;if(key==='year')updateMonth();if(location.hash.startsWith('#weekly'))location.hash='#archive';renderList();}));
+ $('q').addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();state.visible=100;if(location.hash.startsWith('#weekly'))location.hash='#archive';renderList()});
+ $('expand').addEventListener('click',()=>{state.expanded=!state.expanded;$('expand').textContent=state.expanded?'Show summaries':'Show detail';document.querySelectorAll('.news-card').forEach(c=>c.classList.toggle('expanded',state.expanded))});
+ $('reset').addEventListener('click',e=>{e.preventDefault();resetView();location.hash='#archive'});
+ $('loadmore').addEventListener('click',()=>{state.visible+=100;renderList()});
+ document.addEventListener('click',e=>{const tag=e.target.closest('.tagchip');if(!tag)return;const type=tag.hasAttribute('data-tech')?'tech':'theme';state[type]=tag.getAttribute(type==='tech'?'data-tech':'data-cat');$(type==='tech'?'techfilter':'catfilter').value=state[type];state.visible=100;location.hash='#archive';renderList();document.getElementById('archive').scrollIntoView({behavior:'smooth'})});
+ window.addEventListener('hashchange',updateView);
+}
+async function start(){
+ const fetchJson=async path=>{const r=await fetch(path+'?v='+Date.now(),{cache:'no-cache'});if(!r.ok)throw Error('Missing '+path+': '+r.status);return r.json()};
+ try{
+  const [news,weeklyData]=await Promise.all([fetchJson('data/articles.json'),fetchJson('data/briefings.json').catch(()=>({briefings:[]}))]);
+  metadata=Array.isArray(news)?{}:news;
+  articles=(Array.isArray(news)?news:news.articles||[]).filter(a=>a.date&&a.title&&a.url).map(hydrate).sort((a,b)=>b.date.localeCompare(a.date)||a.title.localeCompare(b.title));
+  briefings=loadBriefings(weeklyData);
+  renderNav();initEvents();updateView();
+ }catch(e){$('archive-content').innerHTML='<div class="empty">The archive could not load. Please refresh the page. '+esc(e.message)+'</div>';console.error(e);}
+} start();
 })();
