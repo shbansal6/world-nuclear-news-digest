@@ -40,6 +40,8 @@ jobs:
           python-version: '3.12'
       - name: Install source reader
         run: pip install --disable-pip-version-check -r requirements.txt
+      - name: Validate interactive website script before publishing
+        run: node --check app.js
       - name: Refresh WNN archive and weekly briefing
         run: python scripts/refresh.py
       - name: Commit source-linked data
