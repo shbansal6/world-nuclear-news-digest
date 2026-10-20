@@ -19,6 +19,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
+from taxonomy import enrich_record
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -158,7 +159,13 @@ def parse_article(u):
     orig = ''
     section = soup.find('meta',attrs={'property':'article:section'})
     if section:orig=section.get('content','')
-    return {'date':date.isoformat(),'title':title,'summary':shorten(description),'category':category(title,description,orig),'url':u,'links':links,'source':'World Nuclear News'}
+    # Extract context for entity recognition and tags without redistributing article text.
+    paras=[]
+    for p in h1.find_all_next('p',limit=18):
+        val=p.get_text(' ',strip=True)
+        if len(val)>35 and not any(q in val.lower() for q in ('cookies policy','subscribe to our newsletter')):paras.append(val)
+    record={'date':date.isoformat(),'title':title,'summary':shorten(description),'category':category(title,description,orig),'url':u,'links':links,'source':'World Nuclear News'}
+    return enrich_record(record,' '.join(paras[:14]))
 
 def crawl_sitemaps():
     pending=[BASE+'/sitemap.xml']
@@ -224,36 +231,31 @@ def bucket(a):
     return d[:7]
 
 def select_candidates(found, existing):
-    pending=[(u,d) for u,d in found.items() if u not in existing]
-    if not pending:return []
-    # Balance archive months rather than allowing one busy month to dominate.
-    groups=defaultdict(list);undated=[]
-    for u,d in pending:
-        if d and START<=d<=END:
-            k=str(d.year)+'-'+str(d.month).zfill(2)
-            groups[k].append(u)
-        elif d is None:undated.append(u)
-    picked=[]
-    for k in sorted(groups,reverse=True):
-        # A sitemap last-modified date can differ from actual publication date.
-        picked.extend(groups[k][:180])
-    # If dates absent in XML, sample from both ends, accommodating either ordering.
-    if undated:
-        picked.extend(undated[:1900])
-        picked.extend(undated[-1900:])
-    if not groups and not undated:
-        picked.extend([u for u,d in pending][:3800])
-    # Keep initial backfill bounded in Actions; subsequent runs pick up new stories.
-    out=list(dict.fromkeys(picked))[:4600]
-    print('Fetching article pages:',len(out),flush=True)
-    return out
+    """Fetch every in-scope article; no monthly or quarterly inclusion quotas.
+    Bound one Actions execution to 3,000 unindexed URLs, not a per-period record cap.
+    Future weekly runs continue backfilling pending published URLs.
+    """
+    dated=[];undated=[]
+    for u,d in found.items():
+        if u in existing:continue
+        if d is not None:
+            if d.year<2024:continue
+            dated.append((d,u))
+        else:undated.append(u)
+    dated.sort(reverse=True)
+    # Important: missing dates in a sitemap should not prevent discovery of articles.
+    pending=list(dict.fromkeys([u for _,u in dated]+undated))
+    batch=pending[:3000]
+    print('Pending in-scope candidate pages:',len(pending),'fetch this run:',len(batch),flush=True)
+    return batch
+
 
 def build_briefs(stories):
     # The Monday edition reviews the fully completed Mon–Sun week.
     # Include recent weeks for navigation and retain historical generated editions.
     last_monday=TODAY-dt.timedelta(days=TODAY.weekday())
     output=[]
-    earliest=max(dt.date(2026,7,1),last_monday-dt.timedelta(days=7*20))
+    earliest=max(dt.date(2026,9,7),last_monday-dt.timedelta(days=7*6))
     monday=last_monday
     while monday>=earliest:
         start=monday-dt.timedelta(days=7)
@@ -296,12 +298,10 @@ def main():
         d=parse_date(a.get('date'))
         if d and START<=d<=END and a.get('url') and a.get('title'):
             groups[bucket(a)].append(a)
-    selected=[]
-    for key, items in groups.items():
-        cap=75 if key.startswith('2024-Q') else 48
-        chosen=sorted(items,key=lambda a:(rank(a),a['date']),reverse=True)[:cap]
-        selected.extend(chosen)
-    selected.sort(key=lambda a:(a['date'],rank(a)),reverse=True)
+    # Completeness first: keep all verified, distinct reports from all target periods.
+    selected=list({a['url']:a for items in groups.values() for a in items}.values())
+    for a in selected:enrich_record(a)
+    selected.sort(key=lambda a:(a['date'],a.get('importance_score',0)),reverse=True)
     briefings=build_briefs(selected)
     # Preserve independently researched issues; a machine-generated summary must not replace one.
     existing_issues=[]
@@ -312,7 +312,8 @@ def main():
     editorial={x['week_start']:x for x in existing_issues if x.get('editorial') and x.get('week_start')}
     briefings=list(editorial.values())+[x for x in briefings if x['week_start'] not in editorial]
     briefings.sort(key=lambda x:x['week_start'],reverse=True)
-    payload={'updated_at':TODAY.isoformat(),'methodology':'Selected public WNN articles by date and topic; article descriptions are concise extracts, not editorial endorsements. Date and source links verified at retrieval.','articles':selected}
+    briefings=[x for x in briefings if x['week_start']>='2026-09-07'][:7]
+    payload={'updated_at':TODAY.isoformat(),'methodology':'All discovered in-scope World Nuclear News articles, without a monthly or quarterly quota; metadata and multi-label tags inferred from source text. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.','articles':selected}
     (DATA/'articles.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (DATA/'briefings.json').write_text(json.dumps({'generated_at':TODAY.isoformat(),'briefings':briefings},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Published:',len(selected),'articles in',len(groups),'periods;',len(briefings),'weekly briefings.',flush=True)
