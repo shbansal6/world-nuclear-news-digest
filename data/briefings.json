@@ -241,13 +241,13 @@
       "week_start": "2026-10-05",
       "week_end": "2026-10-11",
       "title": "Global nuclear developments — week of October 5, 2026",
-      "overview": "24 World Nuclear News articles across 10 nuclear-industry sectors. The report groups developments by topic and links to each original article; it does not claim independent verification.",
+      "overview": "24 World Nuclear News articles across 8 nuclear-industry sectors. The report groups developments by topic and links to each original article; it does not claim independent verification.",
       "article_count": 24,
       "generated_at": "2026-10-20",
       "sections": [
         {
-          "category": "New build & milestones",
-          "takeaway": "8 source-linked development(s) in this sector, including JAIF estimates economic impact from nuclear power plants; Hydraulic tests completed at Turkey's Akkuyu 1.",
+          "category": "Construction & licensing",
+          "takeaway": "13 source-linked development(s) in this sector, including JAIF estimates economic impact from nuclear power plants; Hydraulic tests completed at Turkey's Akkuyu 1.",
           "items": [
             {
               "date": "2026-10-09",
@@ -343,6 +343,88 @@
               "importance_score": 15
             },
             {
+              "date": "2026-10-08",
+              "title": "Last Energy's Texas micro-modular reactor clears safety analysis",
+              "summary": "The Department of Energy's approval of the Documented Safety Analysis clears Last Energy's planned pilot reactor at Texas A&M-RELLIS to move into the readiness review, the final step before authorisation for criticality and reactor operations.",
+              "category": "Policy & regulation",
+              "url": "https://www.world-nuclear-news.org/articles/last-energy-texas-micro-modular-reactor-clears-safety-analysis",
+              "links": [
+                {
+                  "label": "Reforming Nuclear Reactor Testing at the…",
+                  "url": "https://www.whitehouse.gov/presidential-actions/2025/05/reforming-nuclear-reactor-testing-at-the-department-of-energy/"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Policy & international",
+                "Construction & licensing"
+              ],
+              "search_text": "Last Energy's Texas micro-modular reactor clears safety analysis The Department of Energy's approval of the Documented Safety Analysis clears Last Energy's planned pilot reactor at Texas A&M-RELLIS to move into the readiness review, the final step before authorisation for criticality and reactor operations.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-10-07",
+              "title": "Swiss citizens may get to vote on construction of new reactors",
+              "summary": "The Alliance for Secure Electricity Supply has launched a campaign for the lifting of the ban on new nuclear power plant construction in Switzerland. It comes as a broad coalition claims to have collected enough signatures in support of a referendum against the construction of new plants.",
+              "category": "Nuclear PPAs & offtake",
+              "url": "https://www.world-nuclear-news.org/articles/swiss-citizens-may-get-to-vote-on-construction-of-new-reactors",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Offtakes & customers",
+                "Construction & licensing"
+              ],
+              "search_text": "Swiss citizens may get to vote on construction of new reactors The Alliance for Secure Electricity Supply has launched a campaign for the lifting of the ban on new nuclear power plant construction in Switzerland. It comes as a broad coalition claims to have collected enough signatures in support of a referendum against the construction of new plants.",
+              "importance_score": 15
+            },
+            {
+              "date": "2026-10-07",
+              "title": "German uranium oxide storage facility commissioned",
+              "summary": "Uranium enrichment services provider Urenco has officially commissioned the uranium oxide storage facility at its site in Gronau, Germany. Construction of the facility was completed several years ago.",
+              "category": "Waste & decommissioning",
+              "url": "https://www.world-nuclear-news.org/articles/german-uranium-oxide-storage-facility-commissioned",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Urenco"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Fuel & supply chain",
+                "Construction & licensing"
+              ],
+              "search_text": "Urenco German uranium oxide storage facility commissioned Uranium enrichment services provider Urenco has officially commissioned the uranium oxide storage facility at its site in Gronau, Germany. Construction of the facility was completed several years ago.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-10-07",
+              "title": "Deployable Energy to test its Unity nuclear battery in DOME",
+              "summary": "Deployable Energy's Unity demonstration reactor has been selected by the US Department of Energy's National Reactor Innovation Center for testing inside the Demonstration of Microreactor Experiments, or DOME, testbed at the Idaho National Laboratory in 2027.",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/deployable-energy-to-test-its-unity-nuclear-battery-in-dome",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Microreactors"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Deployable Energy to test its Unity nuclear battery in DOME Deployable Energy's Unity demonstration reactor has been selected by the US Department of Energy's National Reactor Innovation Center for testing inside the Demonstration of Microreactor Experiments, or DOME, testbed at the Idaho National Laboratory in 2027.",
+              "importance_score": 10
+            },
+            {
               "date": "2026-10-07",
               "title": "Key equipment installed in BREST-OD-300 turbine hall",
               "summary": "Two separator-superheaters, each 16 metres tall and weighing 95 tonnes, have been installed in their design positions for the innovative lead-cooled BREST-OD-300 fast neutron reactor.",
@@ -363,6 +445,26 @@
                 "Construction & licensing"
               ],
               "search_text": "Key equipment installed in BREST-OD-300 turbine hall Two separator-superheaters, each 16 metres tall and weighing 95 tonnes, have been installed in their design positions for the innovative lead-cooled BREST-OD-300 fast neutron reactor.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-10-06",
+              "title": "BWXT's BANR microreactor selected for Canadian project",
+              "summary": "BWX Technologies says that its BANR microreactor has been selected by Prodigy Clean Energy, Pabineau First Nation and Eel River Bar First Nation for a proposed project in Belledune in New Brunswick.",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/bwxts-banr-microreactor-selected-for-canadian-project",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "BWXT"
+              ],
+              "technologies": [
+                "Microreactors"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "BWXT BWXT's BANR microreactor selected for Canadian project BWX Technologies says that its BANR microreactor has been selected by Prodigy Clean Energy, Pabineau First Nation and Eel River Bar First Nation for a proposed project in Belledune in New Brunswick.",
               "importance_score": 10
             },
             {
@@ -407,7 +509,113 @@
           ]
         },
         {
-          "category": "Policy & regulation",
+          "category": "Capital & financing",
+          "takeaway": "4 source-linked development(s) in this sector, including Slovakia buys out Czech stake in new nuclear project company; Fusion firm Xcimer announces fresh DOE milestones award.",
+          "items": [
+            {
+              "date": "2026-10-08",
+              "title": "Slovakia buys out Czech stake in new nuclear project company",
+              "summary": "ČEZ has sold its 49% stake in JESS, the company formed to develop new nuclear capacity in Slovakia, for EUR189 million (USD211 million).",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/slovakia-buys-out-czech-stake-in-new-nuclear-project",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "CEZ"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Capital & financing"
+              ],
+              "search_text": "CEZ Slovakia buys out Czech stake in new nuclear project company ČEZ has sold its 49% stake in JESS, the company formed to develop new nuclear capacity in Slovakia, for EUR189 million (USD211 million).",
+              "importance_score": 47
+            },
+            {
+              "date": "2026-10-07",
+              "title": "Fusion firm Xcimer announces fresh DOE milestones award",
+              "summary": "American laser fusion company Xcimer says it has finalised an agreement for up to USD30.5 million of funding through the US Department of Energy's Milestone-based Fusion Development Program.",
+              "category": "Fusion & research",
+              "url": "https://www.world-nuclear-news.org/articles/fusion-firm-xcimer-announces-fresh-doe-milestones-funding",
+              "links": [
+                {
+                  "label": "published its roadmap",
+                  "url": "https://xcimer.energy/wp-content/uploads/2026/04/XEC-20260224-Commercialization-of-LFE-Whtppr-SHARED-24-FEB-26.pdf"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [
+                "US Department of Energy"
+              ],
+              "technologies": [
+                "Fusion"
+              ],
+              "categories": [
+                "Capital & financing"
+              ],
+              "search_text": "US Department of Energy Fusion firm Xcimer announces fresh DOE milestones award American laser fusion company Xcimer says it has finalised an agreement for up to USD30.5 million of funding through the US Department of Energy's Milestone-based Fusion Development Program.",
+              "importance_score": 32
+            },
+            {
+              "date": "2026-10-06",
+              "title": "Google and Oracle deals support long-term US plant operations",
+              "summary": "Google and Constellation Energy have announced a long-term collaboration to bring 890 MW of new nuclear capacity onto the PJM Interconnection grid, as well as a power purchase agreement. Meanwhile, Oracle is to subscribe to output from the Point Beach nuclear power plant.",
+              "category": "Nuclear PPAs & offtake",
+              "url": "https://www.world-nuclear-news.org/articles/new-end-user-agreements-support-long-term-us-plant-operations",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Constellation Energy",
+                "Google",
+                "Amazon",
+                "Oracle",
+                "NextEra Energy",
+                "Georgia Power",
+                "Fortum",
+                "Duane Arnold",
+                "Point Beach",
+                "Calvert Cliffs",
+                "Vogtle",
+                "Hatch",
+                "PJM Interconnection"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Offtakes & customers",
+                "Restarts & uprates",
+                "Capital & financing"
+              ],
+              "search_text": "Google Constellation 20-year PPA 890 MW nuclear uprate 11 reactors PJM $4.3 billion investment Oracle NextEra Point Beach nuclear output subscription 15 year 2700 MW Constellation Energy Google Amazon Oracle NextEra Energy Georgia Power Fortum Duane Arnold Point Beach Calvert Cliffs Vogtle Hatch PJM Interconnection",
+              "importance_score": 71
+            },
+            {
+              "date": "2026-10-06",
+              "title": "DOE offers Vistra loan for reactor upgrades and uprates",
+              "summary": "The US Department of Energy has announced a conditional loan commitment of up to USD4.2 billion to finance uprates and modernisation projects at Vistra Corp's Beaver Valley, Davis-Besse and Perry nuclear power plants.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/doe-offers-vistra-loan-for-reactor-upgrades-and-uprates",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Vistra",
+                "US Department of Energy"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Capital & financing"
+              ],
+              "search_text": "Vistra US Department of Energy DOE offers Vistra loan for reactor upgrades and uprates The US Department of Energy has announced a conditional loan commitment of up to USD4.2 billion to finance uprates and modernisation projects at Vistra Corp's Beaver Valley, Davis-Besse and Perry nuclear power plants.",
+              "importance_score": 32
+            }
+          ]
+        },
+        {
+          "category": "Policy & international",
           "takeaway": "3 source-linked development(s) in this sector, including Latest Terrestrial Energy topical report submission could lead to faster deployment; Last Energy's Texas micro-modular reactor clears safety analysis.",
           "items": [
             {
@@ -473,6 +681,138 @@
           ]
         },
         {
+          "category": "Fuel & supply chain",
+          "takeaway": "3 source-linked development(s) in this sector, including Thorizon, Urenco to cooperate on MSR fuel cycle; Poland begins ordering long-lead components for first AP1000.",
+          "items": [
+            {
+              "date": "2026-10-08",
+              "title": "Thorizon, Urenco to cooperate on MSR fuel cycle",
+              "summary": "A memorandum of understanding with the molten salt reactor developer Thorizon will examine Urenco's potential role in the molten salt fuel supply chain and how depleted uranium could become a fuel resource for advanced nuclear.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/thorizon-urenco-to-cooperate-on-msr-fuel-cycle",
+              "links": [
+                {
+                  "label": "read more about MSRs",
+                  "url": "https://world-nuclear.org/information-library/nuclear-power-reactors/other/molten-salt-reactors"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [
+                "Urenco"
+              ],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Fuel & supply chain"
+              ],
+              "search_text": "Urenco Thorizon, Urenco to cooperate on MSR fuel cycle A memorandum of understanding with the molten salt reactor developer Thorizon will examine Urenco's potential role in the molten salt fuel supply chain and how depleted uranium could become a fuel resource for advanced nuclear.",
+              "importance_score": 30
+            },
+            {
+              "date": "2026-10-08",
+              "title": "Poland begins ordering long-lead components for first AP1000",
+              "category": "New build & milestones",
+              "summary": "Poland advanced procurement of long-lead equipment for its planned first AP1000 nuclear project.",
+              "url": "https://www.world-nuclear-news.org/articles/poland-begins-ordering-long-lead-components-for-first-ap1000",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing",
+                "Fuel & supply chain"
+              ],
+              "search_text": "Poland begins ordering long-lead components for first AP1000 Poland advanced procurement of long-lead equipment for its planned first AP1000 nuclear project.",
+              "importance_score": 15
+            },
+            {
+              "date": "2026-10-07",
+              "title": "German uranium oxide storage facility commissioned",
+              "summary": "Uranium enrichment services provider Urenco has officially commissioned the uranium oxide storage facility at its site in Gronau, Germany. Construction of the facility was completed several years ago.",
+              "category": "Waste & decommissioning",
+              "url": "https://www.world-nuclear-news.org/articles/german-uranium-oxide-storage-facility-commissioned",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Urenco"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Fuel & supply chain",
+                "Construction & licensing"
+              ],
+              "search_text": "Urenco German uranium oxide storage facility commissioned Uranium enrichment services provider Urenco has officially commissioned the uranium oxide storage facility at its site in Gronau, Germany. Construction of the facility was completed several years ago.",
+              "importance_score": 10
+            }
+          ]
+        },
+        {
+          "category": "Restarts & uprates",
+          "takeaway": "2 source-linked development(s) in this sector, including Framatome to continue maintaining Sizewell B plant; Google and Oracle deals support long-term US plant operations.",
+          "items": [
+            {
+              "date": "2026-10-09",
+              "title": "Framatome to continue maintaining Sizewell B plant",
+              "summary": "Framatome and EDF have renewed their long-term service agreement covering a comprehensive range of maintenance and outage services to support the long-term operation strategy of the Sizewell B nuclear power plant in Suffolk, England.",
+              "category": "Operations & restarts",
+              "url": "https://www.world-nuclear-news.org/articles/framatome-to-continue-maintaining-sizewell-b-plant",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "EDF",
+                "Framatome"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Restarts & uprates"
+              ],
+              "search_text": "EDF Framatome Framatome to continue maintaining Sizewell B plant Framatome and EDF have renewed their long-term service agreement covering a comprehensive range of maintenance and outage services to support the long-term operation strategy of the Sizewell B nuclear power plant in Suffolk, England.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-10-06",
+              "title": "Google and Oracle deals support long-term US plant operations",
+              "summary": "Google and Constellation Energy have announced a long-term collaboration to bring 890 MW of new nuclear capacity onto the PJM Interconnection grid, as well as a power purchase agreement. Meanwhile, Oracle is to subscribe to output from the Point Beach nuclear power plant.",
+              "category": "Nuclear PPAs & offtake",
+              "url": "https://www.world-nuclear-news.org/articles/new-end-user-agreements-support-long-term-us-plant-operations",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Constellation Energy",
+                "Google",
+                "Amazon",
+                "Oracle",
+                "NextEra Energy",
+                "Georgia Power",
+                "Fortum",
+                "Duane Arnold",
+                "Point Beach",
+                "Calvert Cliffs",
+                "Vogtle",
+                "Hatch",
+                "PJM Interconnection"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Offtakes & customers",
+                "Restarts & uprates",
+                "Capital & financing"
+              ],
+              "search_text": "Google Constellation 20-year PPA 890 MW nuclear uprate 11 reactors PJM $4.3 billion investment Oracle NextEra Point Beach nuclear output subscription 15 year 2700 MW Constellation Energy Google Amazon Oracle NextEra Energy Georgia Power Fortum Duane Arnold Point Beach Calvert Cliffs Vogtle Hatch PJM Interconnection",
+              "importance_score": 71
+            }
+          ]
+        },
+        {
           "category": "Other nuclear",
           "takeaway": "2 source-linked development(s) in this sector, including Podcast: World Nuclear Symposium 2026; Orano inaugurates lead-212 production facility.",
           "items": [
@@ -530,103 +870,7 @@
           ]
         },
         {
-          "category": "Corporate & financing",
-          "takeaway": "2 source-linked development(s) in this sector, including Slovakia buys out Czech stake in new nuclear project company; DOE offers Vistra loan for reactor upgrades and uprates.",
-          "items": [
-            {
-              "date": "2026-10-08",
-              "title": "Slovakia buys out Czech stake in new nuclear project company",
-              "summary": "ČEZ has sold its 49% stake in JESS, the company formed to develop new nuclear capacity in Slovakia, for EUR189 million (USD211 million).",
-              "category": "Corporate & financing",
-              "url": "https://www.world-nuclear-news.org/articles/slovakia-buys-out-czech-stake-in-new-nuclear-project",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "CEZ"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Capital & financing"
-              ],
-              "search_text": "CEZ Slovakia buys out Czech stake in new nuclear project company ČEZ has sold its 49% stake in JESS, the company formed to develop new nuclear capacity in Slovakia, for EUR189 million (USD211 million).",
-              "importance_score": 47
-            },
-            {
-              "date": "2026-10-06",
-              "title": "DOE offers Vistra loan for reactor upgrades and uprates",
-              "summary": "The US Department of Energy has announced a conditional loan commitment of up to USD4.2 billion to finance uprates and modernisation projects at Vistra Corp's Beaver Valley, Davis-Besse and Perry nuclear power plants.",
-              "category": "Corporate & financing",
-              "url": "https://www.world-nuclear-news.org/articles/doe-offers-vistra-loan-for-reactor-upgrades-and-uprates",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "Vistra",
-                "US Department of Energy"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Capital & financing"
-              ],
-              "search_text": "Vistra US Department of Energy DOE offers Vistra loan for reactor upgrades and uprates The US Department of Energy has announced a conditional loan commitment of up to USD4.2 billion to finance uprates and modernisation projects at Vistra Corp's Beaver Valley, Davis-Besse and Perry nuclear power plants.",
-              "importance_score": 32
-            }
-          ]
-        },
-        {
-          "category": "Fusion & research",
-          "takeaway": "2 source-linked development(s) in this sector, including Fusion firm Xcimer announces fresh DOE milestones award; Europe delivers final ITER vacuum vessel sector.",
-          "items": [
-            {
-              "date": "2026-10-07",
-              "title": "Fusion firm Xcimer announces fresh DOE milestones award",
-              "summary": "American laser fusion company Xcimer says it has finalised an agreement for up to USD30.5 million of funding through the US Department of Energy's Milestone-based Fusion Development Program.",
-              "category": "Fusion & research",
-              "url": "https://www.world-nuclear-news.org/articles/fusion-firm-xcimer-announces-fresh-doe-milestones-funding",
-              "links": [
-                {
-                  "label": "published its roadmap",
-                  "url": "https://xcimer.energy/wp-content/uploads/2026/04/XEC-20260224-Commercialization-of-LFE-Whtppr-SHARED-24-FEB-26.pdf"
-                }
-              ],
-              "source": "World Nuclear News",
-              "entities": [
-                "US Department of Energy"
-              ],
-              "technologies": [
-                "Fusion"
-              ],
-              "categories": [
-                "Capital & financing"
-              ],
-              "search_text": "US Department of Energy Fusion firm Xcimer announces fresh DOE milestones award American laser fusion company Xcimer says it has finalised an agreement for up to USD30.5 million of funding through the US Department of Energy's Milestone-based Fusion Development Program.",
-              "importance_score": 32
-            },
-            {
-              "date": "2026-10-05",
-              "title": "Europe delivers final ITER vacuum vessel sector",
-              "summary": "Fusion for Energy, in collaboration with Ansaldo Nucleare, Westinghouse and Walter Tosto, has completed manufacturing Europe's final vacuum vessel sector for the International Thermonuclear Experimental Reactor at Cadarache in south-eastern France.",
-              "category": "Fusion & research",
-              "url": "https://www.world-nuclear-news.org/articles/europe-delivers-final-iter-vacuum-vessel-sector",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "Westinghouse"
-              ],
-              "technologies": [
-                "Fusion"
-              ],
-              "categories": [],
-              "search_text": "Westinghouse Europe delivers final ITER vacuum vessel sector Fusion for Energy, in collaboration with Ansaldo Nucleare, Westinghouse and Walter Tosto, has completed manufacturing Europe's final vacuum vessel sector for the International Thermonuclear Experimental Reactor at Cadarache in south-eastern France.",
-              "importance_score": 20
-            }
-          ]
-        },
-        {
-          "category": "Nuclear PPAs & offtake",
+          "category": "Offtakes & customers",
           "takeaway": "2 source-linked development(s) in this sector, including Swiss citizens may get to vote on construction of new reactors; Google and Oracle deals support long-term US plant operations.",
           "items": [
             {
@@ -685,131 +929,26 @@
           ]
         },
         {
-          "category": "SMRs & advanced reactors",
-          "takeaway": "2 source-linked development(s) in this sector, including Deployable Energy to test its Unity nuclear battery in DOME; BWXT's BANR microreactor selected for Canadian project.",
+          "category": "Fusion & research",
+          "takeaway": "1 source-linked development(s) in this sector, including Europe delivers final ITER vacuum vessel sector.",
           "items": [
             {
-              "date": "2026-10-07",
-              "title": "Deployable Energy to test its Unity nuclear battery in DOME",
-              "summary": "Deployable Energy's Unity demonstration reactor has been selected by the US Department of Energy's National Reactor Innovation Center for testing inside the Demonstration of Microreactor Experiments, or DOME, testbed at the Idaho National Laboratory in 2027.",
-              "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/deployable-energy-to-test-its-unity-nuclear-battery-in-dome",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Microreactors"
-              ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "Deployable Energy to test its Unity nuclear battery in DOME Deployable Energy's Unity demonstration reactor has been selected by the US Department of Energy's National Reactor Innovation Center for testing inside the Demonstration of Microreactor Experiments, or DOME, testbed at the Idaho National Laboratory in 2027.",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-10-06",
-              "title": "BWXT's BANR microreactor selected for Canadian project",
-              "summary": "BWX Technologies says that its BANR microreactor has been selected by Prodigy Clean Energy, Pabineau First Nation and Eel River Bar First Nation for a proposed project in Belledune in New Brunswick.",
-              "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/bwxts-banr-microreactor-selected-for-canadian-project",
+              "date": "2026-10-05",
+              "title": "Europe delivers final ITER vacuum vessel sector",
+              "summary": "Fusion for Energy, in collaboration with Ansaldo Nucleare, Westinghouse and Walter Tosto, has completed manufacturing Europe's final vacuum vessel sector for the International Thermonuclear Experimental Reactor at Cadarache in south-eastern France.",
+              "category": "Fusion & research",
+              "url": "https://www.world-nuclear-news.org/articles/europe-delivers-final-iter-vacuum-vessel-sector",
               "links": [],
               "source": "World Nuclear News",
               "entities": [
-                "BWXT"
+                "Westinghouse"
               ],
               "technologies": [
-                "Microreactors"
+                "Fusion"
               ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "BWXT BWXT's BANR microreactor selected for Canadian project BWX Technologies says that its BANR microreactor has been selected by Prodigy Clean Energy, Pabineau First Nation and Eel River Bar First Nation for a proposed project in Belledune in New Brunswick.",
-              "importance_score": 10
-            }
-          ]
-        },
-        {
-          "category": "Operations & restarts",
-          "takeaway": "1 source-linked development(s) in this sector, including Framatome to continue maintaining Sizewell B plant.",
-          "items": [
-            {
-              "date": "2026-10-09",
-              "title": "Framatome to continue maintaining Sizewell B plant",
-              "summary": "Framatome and EDF have renewed their long-term service agreement covering a comprehensive range of maintenance and outage services to support the long-term operation strategy of the Sizewell B nuclear power plant in Suffolk, England.",
-              "category": "Operations & restarts",
-              "url": "https://www.world-nuclear-news.org/articles/framatome-to-continue-maintaining-sizewell-b-plant",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "EDF",
-                "Framatome"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Restarts & uprates"
-              ],
-              "search_text": "EDF Framatome Framatome to continue maintaining Sizewell B plant Framatome and EDF have renewed their long-term service agreement covering a comprehensive range of maintenance and outage services to support the long-term operation strategy of the Sizewell B nuclear power plant in Suffolk, England.",
-              "importance_score": 10
-            }
-          ]
-        },
-        {
-          "category": "Uranium & fuel",
-          "takeaway": "1 source-linked development(s) in this sector, including Thorizon, Urenco to cooperate on MSR fuel cycle.",
-          "items": [
-            {
-              "date": "2026-10-08",
-              "title": "Thorizon, Urenco to cooperate on MSR fuel cycle",
-              "summary": "A memorandum of understanding with the molten salt reactor developer Thorizon will examine Urenco's potential role in the molten salt fuel supply chain and how depleted uranium could become a fuel resource for advanced nuclear.",
-              "category": "Uranium & fuel",
-              "url": "https://www.world-nuclear-news.org/articles/thorizon-urenco-to-cooperate-on-msr-fuel-cycle",
-              "links": [
-                {
-                  "label": "read more about MSRs",
-                  "url": "https://world-nuclear.org/information-library/nuclear-power-reactors/other/molten-salt-reactors"
-                }
-              ],
-              "source": "World Nuclear News",
-              "entities": [
-                "Urenco"
-              ],
-              "technologies": [
-                "Advanced fission"
-              ],
-              "categories": [
-                "Fuel & supply chain"
-              ],
-              "search_text": "Urenco Thorizon, Urenco to cooperate on MSR fuel cycle A memorandum of understanding with the molten salt reactor developer Thorizon will examine Urenco's potential role in the molten salt fuel supply chain and how depleted uranium could become a fuel resource for advanced nuclear.",
-              "importance_score": 30
-            }
-          ]
-        },
-        {
-          "category": "Waste & decommissioning",
-          "takeaway": "1 source-linked development(s) in this sector, including German uranium oxide storage facility commissioned.",
-          "items": [
-            {
-              "date": "2026-10-07",
-              "title": "German uranium oxide storage facility commissioned",
-              "summary": "Uranium enrichment services provider Urenco has officially commissioned the uranium oxide storage facility at its site in Gronau, Germany. Construction of the facility was completed several years ago.",
-              "category": "Waste & decommissioning",
-              "url": "https://www.world-nuclear-news.org/articles/german-uranium-oxide-storage-facility-commissioned",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "Urenco"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Fuel & supply chain",
-                "Construction & licensing"
-              ],
-              "search_text": "Urenco German uranium oxide storage facility commissioned Uranium enrichment services provider Urenco has officially commissioned the uranium oxide storage facility at its site in Gronau, Germany. Construction of the facility was completed several years ago.",
-              "importance_score": 10
+              "categories": [],
+              "search_text": "Westinghouse Europe delivers final ITER vacuum vessel sector Fusion for Energy, in collaboration with Ansaldo Nucleare, Westinghouse and Walter Tosto, has completed manufacturing Europe's final vacuum vessel sector for the International Thermonuclear Experimental Reactor at Cadarache in south-eastern France.",
+              "importance_score": 20
             }
           ]
         }
@@ -819,13 +958,13 @@
       "week_start": "2026-09-28",
       "week_end": "2026-10-04",
       "title": "Global nuclear developments — week of September 28, 2026",
-      "overview": "23 World Nuclear News articles across 9 nuclear-industry sectors. The report groups developments by topic and links to each original article; it does not claim independent verification.",
+      "overview": "23 World Nuclear News articles across 7 nuclear-industry sectors. The report groups developments by topic and links to each original article; it does not claim independent verification.",
       "article_count": 23,
       "generated_at": "2026-10-20",
       "sections": [
         {
-          "category": "New build & milestones",
-          "takeaway": "6 source-linked development(s) in this sector, including Moves to bolster US nuclear workforce development; NPCIL signs MoU for Gujarat nuclear power projects.",
+          "category": "Construction & licensing",
+          "takeaway": "10 source-linked development(s) in this sector, including Moves to bolster US nuclear workforce development; NPCIL signs MoU for Gujarat nuclear power projects.",
           "items": [
             {
               "date": "2026-10-02",
@@ -868,6 +1007,29 @@
               "importance_score": 28
             },
             {
+              "date": "2026-10-02",
+              "title": "Second part of construction permit application submitted for SMRs at Palisades",
+              "summary": "Holtec has submitted the Preliminary Safety Analysis Report to the US Nuclear Regulatory Commission for two small modular reactor units at the Palisades Energy Center in Michigan, completing the second phase of the Construction Permit Application process.",
+              "category": "Policy & regulation",
+              "url": "https://www.world-nuclear-news.org/articles/second-part-of-construction-permit-application-submitted-for-pioneer-smrs",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Holtec",
+                "Palisades"
+              ],
+              "technologies": [
+                "Traditional fission",
+                "Advanced fission"
+              ],
+              "categories": [
+                "Construction & licensing",
+                "Policy & international"
+              ],
+              "search_text": "Holtec Palisades Second part of construction permit application submitted for SMRs at Palisades Holtec has submitted the Preliminary Safety Analysis Report to the US Nuclear Regulatory Commission for two small modular reactor units at the Palisades Energy Center in Michigan, completing the second phase of the Construction Permit Application process.",
+              "importance_score": 10
+            },
+            {
               "date": "2026-10-01",
               "title": "USA, South Korea targeting six AP1000 and two APR1400 units",
               "summary": "A USD120 billion framework agreement to build six Westinghouse AP1000 units and two of South Korea's APR1400 units in the USA has been outlined by the US Department of Commerce.",
@@ -908,6 +1070,33 @@
               "importance_score": 10
             },
             {
+              "date": "2026-09-30",
+              "title": "First construction permit issued for BWRX-300 SMR in the US",
+              "summary": "The US Nuclear Regulatory Commission has issued a construction permit for the Tennessee Valley Authority's planned GE Vernova Hitachi BWRX‑300 small modular reactor at the Clinch River site.",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/first-construction-permit-issued-for-bwrx300-smr-in-us",
+              "links": [
+                {
+                  "label": "for its gas-plus-nuclear project in Texas",
+                  "url": "https://www.world-nuclear-news.org/articles/blue-energy-submits-first-construction-application-to-nrc"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [
+                "GE Vernova",
+                "Tennessee Valley Authority",
+                "BWRX-300"
+              ],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "GE Vernova Tennessee Valley Authority BWRX-300 First construction permit issued for BWRX-300 SMR in the US The US Nuclear Regulatory Commission has issued a construction permit for the Tennessee Valley Authority's planned GE Vernova Hitachi BWRX‑300 small modular reactor at the Clinch River site.",
+              "importance_score": 33
+            },
+            {
               "date": "2026-09-29",
               "title": "Tianwan 7 brought to minimum controllable power level",
               "summary": "The new Tianwan Nuclear Power Plant unit 7 has achieved a self-sustaining controlled nuclear chain reaction and is at its minimum controllable power level.",
@@ -925,6 +1114,49 @@
                 "Construction & licensing"
               ],
               "search_text": "Rosatom Tianwan 7 brought to minimum controllable power level The new Tianwan Nuclear Power Plant unit 7 has achieved a self-sustaining controlled nuclear chain reaction and is at its minimum controllable power level.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-29",
+              "title": "Polimex Mostostal to build Polish AP1000 assembly halls",
+              "summary": "Polish construction engineering firm Polimex Mostostal has been selected by Bechtel to deliver, assemble and commission two large-scale assembly halls as part of the project to construct the country's first nuclear power plant.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/polimex-mostostal-to-build-polish-ap1000-assembly-halls",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Westinghouse"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Capital & financing",
+                "Construction & licensing"
+              ],
+              "search_text": "Westinghouse Polimex Mostostal to build Polish AP1000 assembly halls Polish construction engineering firm Polimex Mostostal has been selected by Bechtel to deliver, assemble and commission two large-scale assembly halls as part of the project to construct the country's first nuclear power plant.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-29",
+              "title": "General Matter submits licence application for enrichment plant",
+              "summary": "A licence application has been submitted to the US Nuclear Regulatory Commission by General Matter for its proposed commercial uranium enrichment facility in Paducah, Kentucky.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/general-matter-submits-enrichment-plant-licence-application",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "US Department of Energy",
+                "Urenco"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Fuel & supply chain",
+                "Construction & licensing"
+              ],
+              "search_text": "US Department of Energy Urenco General Matter submits licence application for enrichment plant A licence application has been submitted to the US Nuclear Regulatory Commission by General Matter for its proposed commercial uranium enrichment facility in Paducah, Kentucky.",
               "importance_score": 10
             },
             {
@@ -950,9 +1182,31 @@
           ]
         },
         {
-          "category": "Corporate & financing",
-          "takeaway": "4 source-linked development(s) in this sector, including Polish entrepreneurs invest in SGE's BWRX-300 projects; Hinkley Point B becomes second AGR plant transferred for decommissioning.",
+          "category": "Capital & financing",
+          "takeaway": "8 source-linked development(s) in this sector, including Moves to bolster US nuclear workforce development; Polish entrepreneurs invest in SGE's BWRX-300 projects.",
           "items": [
+            {
+              "date": "2026-10-02",
+              "title": "Moves to bolster US nuclear workforce development",
+              "summary": "Westinghouse and the University of South Carolina are partnering to create a multidisciplinary nuclear workforce development programme to support US fleet deployment of AP1000 plants. Meanwhile, the New York Power Authority has awarded USD10 million in funding to support nuclear workforce development programmes across the state.",
+              "category": "New build & milestones",
+              "url": "https://www.world-nuclear-news.org/articles/moves-to-bolster-us-nuclear-workforce-development",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Constellation Energy",
+                "Westinghouse"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing",
+                "Capital & financing"
+              ],
+              "search_text": "Constellation Energy Westinghouse Moves to bolster US nuclear workforce development Westinghouse and the University of South Carolina are partnering to create a multidisciplinary nuclear workforce development programme to support US fleet deployment of AP1000 plants. Meanwhile, the New York Power Authority has awarded USD10 million in funding to support nuclear workforce development programmes across the state.",
+              "importance_score": 32
+            },
             {
               "date": "2026-10-02",
               "title": "Polish entrepreneurs invest in SGE's BWRX-300 projects",
@@ -995,6 +1249,35 @@
               "importance_score": 10
             },
             {
+              "date": "2026-10-01",
+              "title": "Constellation, Amazon agree nuclear-focused power purchase deal",
+              "summary": "A 20-year power purchase agreement signed by tech giant Amazon will enable Constellation to add 190 MW of capacity and extend the operating life of the Calvert Cliffs nuclear power plant in Maryland in the US.",
+              "category": "Nuclear PPAs & offtake",
+              "url": "https://www.world-nuclear-news.org/articles/constellation-amazon-agree-nuclear-focused-power-purchase-deal",
+              "links": [
+                {
+                  "label": "signed a pledge last year supporting the…",
+                  "url": "https://www.world-nuclear-news.org/articles/amazon-google-meta-and-dow-back-tripling-nuclear-goal"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [
+                "Constellation Energy",
+                "Amazon",
+                "Calvert Cliffs"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Offtakes & customers",
+                "Restarts & uprates",
+                "Capital & financing"
+              ],
+              "search_text": "Amazon Constellation 20-year nuclear power purchase agreement 690 MW 190 MW Calvert Cliffs uprate Constellation Energy Amazon Calvert Cliffs",
+              "importance_score": 56
+            },
+            {
               "date": "2026-09-30",
               "title": "Sellafield selects partners for asset care framework",
               "summary": "The successful partners have been identified for a new delivery framework, valued at up to GBP3.6 billion (USD4.8 billion), for asset care and asset creation activities at the UK's Sellafield site in Cumbria, in northwest England.",
@@ -1032,13 +1315,238 @@
               ],
               "search_text": "Westinghouse Polimex Mostostal to build Polish AP1000 assembly halls Polish construction engineering firm Polimex Mostostal has been selected by Bechtel to deliver, assemble and commission two large-scale assembly halls as part of the project to construct the country's first nuclear power plant.",
               "importance_score": 10
+            },
+            {
+              "date": "2026-09-28",
+              "title": "NRC completes environmental review of Crane restart",
+              "summary": "The US regulator, together with the Department of Energy Office of Energy Dominance Financing, has issued an environmental assessment and finding of no significant impact for environmental effects from proposed Federal actions related to reauthorising power operations at the Christopher Crane Clean Energy Center in Pennsylvania.",
+              "category": "Operations & restarts",
+              "url": "https://www.world-nuclear-news.org/articles/nrc-completes-environmental-review-of-crane-restart",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "US Nuclear Regulatory Commission"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Restarts & uprates",
+                "Policy & international",
+                "Capital & financing"
+              ],
+              "search_text": "US Nuclear Regulatory Commission NRC completes environmental review of Crane restart The US regulator, together with the Department of Energy Office of Energy Dominance Financing, has issued an environmental assessment and finding of no significant impact for environmental effects from proposed Federal actions related to reauthorising power operations at the Christopher Crane Clean Energy Center in Pennsylvania.",
+              "importance_score": 58
+            },
+            {
+              "date": "2026-09-28",
+              "title": "UK aims to build on fusion research record to establish industrial base",
+              "summary": "The UK is seeking to translate its position in fusion research into industrial and commercial leadership, with government, industry and the UK Atomic Energy Authority highlighting the need to develop supply chains, skills, regulation and investment alongside fusion technology.",
+              "category": "Fusion & research",
+              "url": "https://www.world-nuclear-news.org/articles/uk-aims-to-build-on-fusion-research-record-to-establish-industrial-base",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Fusion"
+              ],
+              "categories": [
+                "Capital & financing",
+                "Policy & international"
+              ],
+              "search_text": "UK aims to build on fusion research record to establish industrial base The UK is seeking to translate its position in fusion research into industrial and commercial leadership, with government, industry and the UK Atomic Energy Authority highlighting the need to develop supply chains, skills, regulation and investment alongside fusion technology.",
+              "importance_score": 17
             }
           ]
         },
         {
-          "category": "Operations & restarts",
-          "takeaway": "4 source-linked development(s) in this sector, including Armenia to make new nuclear decision 'in near future'; Legislative amendment paves way for continued operation of Borssele.",
+          "category": "Policy & international",
+          "takeaway": "7 source-linked development(s) in this sector, including Second part of construction permit application submitted for SMRs at Palisades; Armenia to make new nuclear decision 'in near future'.",
           "items": [
+            {
+              "date": "2026-10-02",
+              "title": "Second part of construction permit application submitted for SMRs at Palisades",
+              "summary": "Holtec has submitted the Preliminary Safety Analysis Report to the US Nuclear Regulatory Commission for two small modular reactor units at the Palisades Energy Center in Michigan, completing the second phase of the Construction Permit Application process.",
+              "category": "Policy & regulation",
+              "url": "https://www.world-nuclear-news.org/articles/second-part-of-construction-permit-application-submitted-for-pioneer-smrs",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Holtec",
+                "Palisades"
+              ],
+              "technologies": [
+                "Traditional fission",
+                "Advanced fission"
+              ],
+              "categories": [
+                "Construction & licensing",
+                "Policy & international"
+              ],
+              "search_text": "Holtec Palisades Second part of construction permit application submitted for SMRs at Palisades Holtec has submitted the Preliminary Safety Analysis Report to the US Nuclear Regulatory Commission for two small modular reactor units at the Palisades Energy Center in Michigan, completing the second phase of the Construction Permit Application process.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-30",
+              "title": "Armenia to make new nuclear decision 'in near future'",
+              "summary": "Armenian Prime Minister Nikol Pashinyan met with Rosatom Director General Alexey Likhachev to discuss further life extension options for the Armenian Nuclear Power Plant, as well as options for new nuclear capacity.",
+              "category": "Operations & restarts",
+              "url": "https://www.world-nuclear-news.org/articles/armenia-to-make-new-nuclear-plant-decision-in-near-future",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Rosatom"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Restarts & uprates",
+                "Policy & international"
+              ],
+              "search_text": "Rosatom Armenia to make new nuclear decision 'in near future' Armenian Prime Minister Nikol Pashinyan met with Rosatom Director General Alexey Likhachev to discuss further life extension options for the Armenian Nuclear Power Plant, as well as options for new nuclear capacity.",
+              "importance_score": 35
+            },
+            {
+              "date": "2026-09-30",
+              "title": "Saskatchewan firms up nuclear power ambitions",
+              "summary": "The Government of Saskatchewan has released a plan that establishes a goal of having at least 2,600 MWe of nuclear generating capacity online in the Canadian province by 2050.",
+              "category": "Other nuclear",
+              "url": "https://www.world-nuclear-news.org/articles/saskatchewan-firms-up-nuclear-power-ambitions",
+              "links": [
+                {
+                  "label": "Delivering Energy Security Through Nuclear…",
+                  "url": "https://www.saskatchewan.ca/-/media/news-release-backgrounders/2026/sep/26-6080-delivering-energy-security-through-nuclear-power-update.pdf"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [
+                "GE Vernova",
+                "Westinghouse",
+                "BWRX-300"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Policy & international"
+              ],
+              "search_text": "GE Vernova Westinghouse BWRX-300 Saskatchewan firms up nuclear power ambitions The Government of Saskatchewan has released a plan that establishes a goal of having at least 2,600 MWe of nuclear generating capacity online in the Canadian province by 2050.",
+              "importance_score": 23
+            },
+            {
+              "date": "2026-09-29",
+              "title": "Legislative amendment paves way for continued operation of Borssele",
+              "summary": "As the Dutch Senate approves an amendment to the Nuclear Energy Act, allowing a possible life extension of the Borssele nuclear power plant beyond 2033, the government said it has reached an agreement on acquiring 70% of the shares of operator EPZ.",
+              "category": "Operations & restarts",
+              "url": "https://www.world-nuclear-news.org/articles/legislative-amendment-paves-way-for-continued-operation-of-borssele",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Restarts & uprates",
+                "Policy & international"
+              ],
+              "search_text": "Legislative amendment paves way for continued operation of Borssele As the Dutch Senate approves an amendment to the Nuclear Energy Act, allowing a possible life extension of the Borssele nuclear power plant beyond 2033, the government said it has reached an agreement on acquiring 70% of the shares of operator EPZ.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-28",
+              "title": "NRC completes environmental review of Crane restart",
+              "summary": "The US regulator, together with the Department of Energy Office of Energy Dominance Financing, has issued an environmental assessment and finding of no significant impact for environmental effects from proposed Federal actions related to reauthorising power operations at the Christopher Crane Clean Energy Center in Pennsylvania.",
+              "category": "Operations & restarts",
+              "url": "https://www.world-nuclear-news.org/articles/nrc-completes-environmental-review-of-crane-restart",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "US Nuclear Regulatory Commission"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Restarts & uprates",
+                "Policy & international",
+                "Capital & financing"
+              ],
+              "search_text": "US Nuclear Regulatory Commission NRC completes environmental review of Crane restart The US regulator, together with the Department of Energy Office of Energy Dominance Financing, has issued an environmental assessment and finding of no significant impact for environmental effects from proposed Federal actions related to reauthorising power operations at the Christopher Crane Clean Energy Center in Pennsylvania.",
+              "importance_score": 58
+            },
+            {
+              "date": "2026-09-28",
+              "title": "Inter-American Development Bank and IAEA sign nuclear energy MoU",
+              "summary": "The Inter-American Development Bank and the International Atomic Energy Agency have signed a memorandum of understanding to strengthen cooperation on the use of nuclear energy in Latin America and the Caribbean.",
+              "category": "Policy & regulation",
+              "url": "https://www.world-nuclear-news.org/articles/inter-american-development-bank-and-iaea-nuclear-energy-mou",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Policy & international"
+              ],
+              "search_text": "Inter-American Development Bank and IAEA sign nuclear energy MoU The Inter-American Development Bank and the International Atomic Energy Agency have signed a memorandum of understanding to strengthen cooperation on the use of nuclear energy in Latin America and the Caribbean.",
+              "importance_score": 28
+            },
+            {
+              "date": "2026-09-28",
+              "title": "UK aims to build on fusion research record to establish industrial base",
+              "summary": "The UK is seeking to translate its position in fusion research into industrial and commercial leadership, with government, industry and the UK Atomic Energy Authority highlighting the need to develop supply chains, skills, regulation and investment alongside fusion technology.",
+              "category": "Fusion & research",
+              "url": "https://www.world-nuclear-news.org/articles/uk-aims-to-build-on-fusion-research-record-to-establish-industrial-base",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Fusion"
+              ],
+              "categories": [
+                "Capital & financing",
+                "Policy & international"
+              ],
+              "search_text": "UK aims to build on fusion research record to establish industrial base The UK is seeking to translate its position in fusion research into industrial and commercial leadership, with government, industry and the UK Atomic Energy Authority highlighting the need to develop supply chains, skills, regulation and investment alongside fusion technology.",
+              "importance_score": 17
+            }
+          ]
+        },
+        {
+          "category": "Restarts & uprates",
+          "takeaway": "5 source-linked development(s) in this sector, including Constellation, Amazon agree nuclear-focused power purchase deal; Armenia to make new nuclear decision 'in near future'.",
+          "items": [
+            {
+              "date": "2026-10-01",
+              "title": "Constellation, Amazon agree nuclear-focused power purchase deal",
+              "summary": "A 20-year power purchase agreement signed by tech giant Amazon will enable Constellation to add 190 MW of capacity and extend the operating life of the Calvert Cliffs nuclear power plant in Maryland in the US.",
+              "category": "Nuclear PPAs & offtake",
+              "url": "https://www.world-nuclear-news.org/articles/constellation-amazon-agree-nuclear-focused-power-purchase-deal",
+              "links": [
+                {
+                  "label": "signed a pledge last year supporting the…",
+                  "url": "https://www.world-nuclear-news.org/articles/amazon-google-meta-and-dow-back-tripling-nuclear-goal"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [
+                "Constellation Energy",
+                "Amazon",
+                "Calvert Cliffs"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Offtakes & customers",
+                "Restarts & uprates",
+                "Capital & financing"
+              ],
+              "search_text": "Amazon Constellation 20-year nuclear power purchase agreement 690 MW 190 MW Calvert Cliffs uprate Constellation Energy Amazon Calvert Cliffs",
+              "importance_score": 56
+            },
             {
               "date": "2026-09-30",
               "title": "Armenia to make new nuclear decision 'in near future'",
@@ -1123,7 +1631,7 @@
         },
         {
           "category": "Other nuclear",
-          "takeaway": "3 source-linked development(s) in this sector, including WANO stresses importance of collaboration for nuclear growth; Four key issues when building nuclear in different countries, according to Rosatom.",
+          "takeaway": "2 source-linked development(s) in this sector, including WANO stresses importance of collaboration for nuclear growth; Four key issues when building nuclear in different countries, according to Rosatom.",
           "items": [
             {
               "date": "2026-10-01",
@@ -1158,85 +1666,11 @@
               "categories": [],
               "search_text": "Rosatom Four key issues when building nuclear in different countries, according to Rosatom Scaling-up nuclear capacity remains one of the major challenges for the global nuclear industry, and Polina Lion, chief sustainability officer of Russia’s state nuclear corporation Rosatom, outlined four priority areas for action at World Nuclear Symposium in London.",
               "importance_score": 10
-            },
-            {
-              "date": "2026-09-30",
-              "title": "Saskatchewan firms up nuclear power ambitions",
-              "summary": "The Government of Saskatchewan has released a plan that establishes a goal of having at least 2,600 MWe of nuclear generating capacity online in the Canadian province by 2050.",
-              "category": "Other nuclear",
-              "url": "https://www.world-nuclear-news.org/articles/saskatchewan-firms-up-nuclear-power-ambitions",
-              "links": [
-                {
-                  "label": "Delivering Energy Security Through Nuclear…",
-                  "url": "https://www.saskatchewan.ca/-/media/news-release-backgrounders/2026/sep/26-6080-delivering-energy-security-through-nuclear-power-update.pdf"
-                }
-              ],
-              "source": "World Nuclear News",
-              "entities": [
-                "GE Vernova",
-                "Westinghouse",
-                "BWRX-300"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Policy & international"
-              ],
-              "search_text": "GE Vernova Westinghouse BWRX-300 Saskatchewan firms up nuclear power ambitions The Government of Saskatchewan has released a plan that establishes a goal of having at least 2,600 MWe of nuclear generating capacity online in the Canadian province by 2050.",
-              "importance_score": 23
             }
           ]
         },
         {
-          "category": "Policy & regulation",
-          "takeaway": "2 source-linked development(s) in this sector, including Second part of construction permit application submitted for SMRs at Palisades; Inter-American Development Bank and IAEA sign nuclear energy MoU.",
-          "items": [
-            {
-              "date": "2026-10-02",
-              "title": "Second part of construction permit application submitted for SMRs at Palisades",
-              "summary": "Holtec has submitted the Preliminary Safety Analysis Report to the US Nuclear Regulatory Commission for two small modular reactor units at the Palisades Energy Center in Michigan, completing the second phase of the Construction Permit Application process.",
-              "category": "Policy & regulation",
-              "url": "https://www.world-nuclear-news.org/articles/second-part-of-construction-permit-application-submitted-for-pioneer-smrs",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "Holtec",
-                "Palisades"
-              ],
-              "technologies": [
-                "Traditional fission",
-                "Advanced fission"
-              ],
-              "categories": [
-                "Construction & licensing",
-                "Policy & international"
-              ],
-              "search_text": "Holtec Palisades Second part of construction permit application submitted for SMRs at Palisades Holtec has submitted the Preliminary Safety Analysis Report to the US Nuclear Regulatory Commission for two small modular reactor units at the Palisades Energy Center in Michigan, completing the second phase of the Construction Permit Application process.",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-09-28",
-              "title": "Inter-American Development Bank and IAEA sign nuclear energy MoU",
-              "summary": "The Inter-American Development Bank and the International Atomic Energy Agency have signed a memorandum of understanding to strengthen cooperation on the use of nuclear energy in Latin America and the Caribbean.",
-              "category": "Policy & regulation",
-              "url": "https://www.world-nuclear-news.org/articles/inter-american-development-bank-and-iaea-nuclear-energy-mou",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Policy & international"
-              ],
-              "search_text": "Inter-American Development Bank and IAEA sign nuclear energy MoU The Inter-American Development Bank and the International Atomic Energy Agency have signed a memorandum of understanding to strengthen cooperation on the use of nuclear energy in Latin America and the Caribbean.",
-              "importance_score": 28
-            }
-          ]
-        },
-        {
-          "category": "Nuclear PPAs & offtake",
+          "category": "Offtakes & customers",
           "takeaway": "1 source-linked development(s) in this sector, including Constellation, Amazon agree nuclear-focused power purchase deal.",
           "items": [
             {
@@ -1271,40 +1705,7 @@
           ]
         },
         {
-          "category": "SMRs & advanced reactors",
-          "takeaway": "1 source-linked development(s) in this sector, including First construction permit issued for BWRX-300 SMR in the US.",
-          "items": [
-            {
-              "date": "2026-09-30",
-              "title": "First construction permit issued for BWRX-300 SMR in the US",
-              "summary": "The US Nuclear Regulatory Commission has issued a construction permit for the Tennessee Valley Authority's planned GE Vernova Hitachi BWRX‑300 small modular reactor at the Clinch River site.",
-              "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/first-construction-permit-issued-for-bwrx300-smr-in-us",
-              "links": [
-                {
-                  "label": "for its gas-plus-nuclear project in Texas",
-                  "url": "https://www.world-nuclear-news.org/articles/blue-energy-submits-first-construction-application-to-nrc"
-                }
-              ],
-              "source": "World Nuclear News",
-              "entities": [
-                "GE Vernova",
-                "Tennessee Valley Authority",
-                "BWRX-300"
-              ],
-              "technologies": [
-                "Advanced fission"
-              ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "GE Vernova Tennessee Valley Authority BWRX-300 First construction permit issued for BWRX-300 SMR in the US The US Nuclear Regulatory Commission has issued a construction permit for the Tennessee Valley Authority's planned GE Vernova Hitachi BWRX‑300 small modular reactor at the Clinch River site.",
-              "importance_score": 33
-            }
-          ]
-        },
-        {
-          "category": "Uranium & fuel",
+          "category": "Fuel & supply chain",
           "takeaway": "1 source-linked development(s) in this sector, including General Matter submits licence application for enrichment plant.",
           "items": [
             {
@@ -1330,31 +1731,6 @@
               "importance_score": 10
             }
           ]
-        },
-        {
-          "category": "Fusion & research",
-          "takeaway": "1 source-linked development(s) in this sector, including UK aims to build on fusion research record to establish industrial base.",
-          "items": [
-            {
-              "date": "2026-09-28",
-              "title": "UK aims to build on fusion research record to establish industrial base",
-              "summary": "The UK is seeking to translate its position in fusion research into industrial and commercial leadership, with government, industry and the UK Atomic Energy Authority highlighting the need to develop supply chains, skills, regulation and investment alongside fusion technology.",
-              "category": "Fusion & research",
-              "url": "https://www.world-nuclear-news.org/articles/uk-aims-to-build-on-fusion-research-record-to-establish-industrial-base",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Fusion"
-              ],
-              "categories": [
-                "Capital & financing",
-                "Policy & international"
-              ],
-              "search_text": "UK aims to build on fusion research record to establish industrial base The UK is seeking to translate its position in fusion research into industrial and commercial leadership, with government, industry and the UK Atomic Energy Authority highlighting the need to develop supply chains, skills, regulation and investment alongside fusion technology.",
-              "importance_score": 17
-            }
-          ]
         }
       ]
     },
@@ -1367,27 +1743,9 @@
       "generated_at": "2026-10-20",
       "sections": [
         {
-          "category": "Uranium & fuel",
-          "takeaway": "5 source-linked development(s) in this sector, including Agreement clears way for resumption of Niger uranium project; Milestone for X-Energy's TRISO-X fuel facility.",
+          "category": "Construction & licensing",
+          "takeaway": "13 source-linked development(s) in this sector, including Milestone for X-Energy's TRISO-X fuel facility; Polish plant contract negotiations move to next stage.",
           "items": [
-            {
-              "date": "2026-09-25",
-              "title": "Agreement clears way for resumption of Niger uranium project",
-              "summary": "The Mining Convention for the Madouela project formalises a framework agreement announced in August and triggers the process to discontinue international arbitration proceedings over the project in Niger.",
-              "category": "Uranium & fuel",
-              "url": "https://www.world-nuclear-news.org/articles/agreement-clears-way-for-resumption-of-niger-uranium-project",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Fuel & supply chain"
-              ],
-              "search_text": "Agreement clears way for resumption of Niger uranium project The Mining Convention for the Madouela project formalises a framework agreement announced in August and triggers the process to discontinue international arbitration proceedings over the project in Niger.",
-              "importance_score": 15
-            },
             {
               "date": "2026-09-25",
               "title": "Milestone for X-Energy's TRISO-X fuel facility",
@@ -1411,74 +1769,6 @@
             },
             {
               "date": "2026-09-24",
-              "title": "Second reactor manufactured for floating nuclear plant",
-              "summary": "The second RITM-200C small modular reactor unit has been manufactured for the floating nuclear power plant destined to supply electricity to a copper mining centre in Chukotka.",
-              "category": "Uranium & fuel",
-              "url": "https://www.world-nuclear-news.org/articles/second-reactor-manufactured-for-floating-nuclear-plant",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission",
-                "Advanced fission"
-              ],
-              "categories": [
-                "Fuel & supply chain"
-              ],
-              "search_text": "Second reactor manufactured for floating nuclear plant The second RITM-200C small modular reactor unit has been manufactured for the floating nuclear power plant destined to supply electricity to a copper mining centre in Chukotka.",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-09-22",
-              "title": "Framatome secures first contract for higher enriched fuel",
-              "summary": "Framatome announced it has signed a commercial contract to deliver the world's first nuclear fuel reload with uranium-235 enrichment above the industry standard of 5%, to an operating nuclear reactor in the USA.",
-              "category": "Uranium & fuel",
-              "url": "https://www.world-nuclear-news.org/articles/framatome-secures-first-contract-for-higher-enriched-fuel",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "Framatome"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Fuel & supply chain"
-              ],
-              "search_text": "Framatome Framatome secures first contract for higher enriched fuel Framatome announced it has signed a commercial contract to deliver the world's first nuclear fuel reload with uranium-235 enrichment above the industry standard of 5%, to an operating nuclear reactor in the USA.",
-              "importance_score": 33
-            },
-            {
-              "date": "2026-09-21",
-              "title": "Indian plants celebrate fuel loading milestones",
-              "summary": "As fuel loading begins at Rajasthan Atomic Power Project unit 8, Nuclear Power Corporation of India Ltd has started geotechnical investigations for the next two units at the plant. Meanwhile, fuel loading has begun at Kaiga unit 1 as the unit begins the process to return to service after refurbishment.",
-              "category": "Uranium & fuel",
-              "url": "https://www.world-nuclear-news.org/articles/indian-plants-celebrate-fuel-loading-milestones",
-              "links": [
-                {
-                  "label": "summary of the current status of India's…",
-                  "url": "https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AS360_7GaY3g.pdf"
-                }
-              ],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Fuel & supply chain"
-              ],
-              "search_text": "Indian plants celebrate fuel loading milestones As fuel loading begins at Rajasthan Atomic Power Project unit 8, Nuclear Power Corporation of India Ltd has started geotechnical investigations for the next two units at the plant. Meanwhile, fuel loading has begun at Kaiga unit 1 as the unit begins the process to return to service after refurbishment.",
-              "importance_score": 10
-            }
-          ]
-        },
-        {
-          "category": "New build & milestones",
-          "takeaway": "4 source-linked development(s) in this sector, including Polish plant contract negotiations move to next stage; Power start-up for Mochovce 4.",
-          "items": [
-            {
-              "date": "2026-09-24",
               "title": "Polish plant contract negotiations move to next stage",
               "summary": "The Westinghouse-Bechtel consortium and Polskie Elektrownie Jądrowe have agreed the main commercial and legal terms of the Engineering, Procurement and Construction contract that will deliver Poland's first nuclear power plant, and plan to complete the contract negotiation process by the end of this year.",
               "category": "New build & milestones",
@@ -1497,6 +1787,174 @@
               ],
               "search_text": "Westinghouse Polish plant contract negotiations move to next stage The Westinghouse-Bechtel consortium and Polskie Elektrownie Jądrowe have agreed the main commercial and legal terms of the Engineering, Procurement and Construction contract that will deliver Poland's first nuclear power plant, and plan to complete the contract negotiation process by the end of this year.",
               "importance_score": 38
+            },
+            {
+              "date": "2026-09-24",
+              "title": "US-Turkey agreement to accelerate SMR deployment",
+              "summary": "The US Trade and Development Agency has signed an agreement with Turkey's state-owned nuclear development enterprise TÜNAŞ to fund technical assistance to create the regulatory, institutional, and financial roadmap needed for Turkish private sector companies to deploy small modular reactor nuclear technology.",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/us-turkey-agreement-to-accelerate-smr-deployment",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "US-Turkey agreement to accelerate SMR deployment The US Trade and Development Agency has signed an agreement with Turkey's state-owned nuclear development enterprise TÜNAŞ to fund technical assistance to create the regulatory, institutional, and financial roadmap needed for Turkish private sector companies to deploy small modular reactor nuclear technology.",
+              "importance_score": 33
+            },
+            {
+              "date": "2026-09-23",
+              "title": "GE Vernova, Hitachi, SGE and Samsung C&T sign BWRX-300s MoU",
+              "summary": "An agreement to work together to identify and develop market opportunities for the deployment of BWRX-300 small modular reactors in Europe was signed on the sidelines of the United Nations General Assembly in New York.",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/ge-vernova-hitachi-sge-and-samsung-ct-sign-mou-on-bwrx-300s-in-europe",
+              "links": [
+                {
+                  "label": "SGE confident of UK SMR fleet prospects",
+                  "url": "https://www.world-nuclear-news.org/articles/sge-confident-of-uk-smr-fleet-prospects"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [
+                "GE Vernova",
+                "Darlington",
+                "BWRX-300"
+              ],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "GE Vernova Darlington BWRX-300 GE Vernova, Hitachi, SGE and Samsung C&T sign BWRX-300s MoU An agreement to work together to identify and develop market opportunities for the deployment of BWRX-300 small modular reactors in Europe was signed on the sidelines of the United Nations General Assembly in New York.",
+              "importance_score": 28
+            },
+            {
+              "date": "2026-09-23",
+              "title": "Contracts announced as Pickering refurb approaches",
+              "summary": "The Province of Ontario has announced the signature of more than CAD3 billion (USD2.1 billion) worth of contracts for the refurbishment of four units at Ontario Power Generation's Pickering plant as site construction for the project gets under way.",
+              "category": "Operations & restarts",
+              "url": "https://www.world-nuclear-news.org/articles/contracts-announced-as-pickering-refurb-approaches",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Restarts & uprates",
+                "Construction & licensing"
+              ],
+              "search_text": "Contracts announced as Pickering refurb approaches The Province of Ontario has announced the signature of more than CAD3 billion (USD2.1 billion) worth of contracts for the refurbishment of four units at Ontario Power Generation's Pickering plant as site construction for the project gets under way.",
+              "importance_score": 22
+            },
+            {
+              "date": "2026-09-23",
+              "title": "China's giant crane for nuclear power plant construction",
+              "summary": "China General Nuclear says the 250,000-ton-metre lifting torque ring-rail crane rolled off the production line last month to support the construction of Hualong One 2.0 nuclear power plants.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/china-launches-giant-crane-for-nuclear-power-plant-construction",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing",
+                "Capital & financing"
+              ],
+              "search_text": "China's giant crane for nuclear power plant construction China General Nuclear says the 250,000-ton-metre lifting torque ring-rail crane rolled off the production line last month to support the construction of Hualong One 2.0 nuclear power plants.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-23",
+              "title": "SGE confident of UK SMR fleet prospects",
+              "summary": "The team behind plans for a fleet of 14 BWRX-300 small modular reactors in the UK says they are confident of the economic model and supply chain capability to deliver these units.",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/sge-confident-of-uk-smr-fleet-prospects",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "BWRX-300"
+              ],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Construction & licensing",
+                "Fuel & supply chain"
+              ],
+              "search_text": "BWRX-300 SGE confident of UK SMR fleet prospects The team behind plans for a fleet of 14 BWRX-300 small modular reactors in the UK says they are confident of the economic model and supply chain capability to deliver these units.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-23",
+              "title": "Škoda JS to supply control rod drives for Rolls-Royce SMR's reactors",
+              "summary": "Czech company Škoda JS has been chosen as sole supplier of control rod drive mechanisms for Rolls-Royce SMR's future small modular reactors.",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/skoda-js-to-supply-control-rod-drives-for-rolls-royce-smrs",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Rolls-Royce SMR"
+              ],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Rolls-Royce SMR Škoda JS to supply control rod drives for Rolls-Royce SMR's reactors Czech company Škoda JS has been chosen as sole supplier of control rod drive mechanisms for Rolls-Royce SMR's future small modular reactors.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-22",
+              "title": "Bechtel steps away from TerraPower project",
+              "summary": "TerraPower says it intends to rebid the engineering, procurement and construction contract for the project to build the first-of-a-kind Natrium reactor in Kemmerer, Wyoming, following the two companies' decision to move forward separately.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/bechtel-steps-away-from-terrapower-project",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "US Nuclear Regulatory Commission",
+                "TerraPower"
+              ],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Capital & financing",
+                "Construction & licensing",
+                "Fuel & supply chain"
+              ],
+              "search_text": "US Nuclear Regulatory Commission TerraPower Bechtel steps away from TerraPower project TerraPower says it intends to rebid the engineering, procurement and construction contract for the project to build the first-of-a-kind Natrium reactor in Kemmerer, Wyoming, following the two companies' decision to move forward separately.",
+              "importance_score": 28
+            },
+            {
+              "date": "2026-09-22",
+              "title": "Samsung C&T invests in Kairos Power",
+              "summary": "Kairos Power and Samsung C&T have announced the signing of a binding term sheet for the South Korean engineering and construction firm to make a strategic investment in Kairos Power and for the companies to collaborate on the commercial deployment of Kairos Power's fluoride salt-cooled, high-temperature reactor technology.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/samsung-ct-invests-in-kairos-power",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Kairos Power"
+              ],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Capital & financing",
+                "Construction & licensing"
+              ],
+              "search_text": "Kairos Power Samsung C&T invests in Kairos Power Kairos Power and Samsung C&T have announced the signing of a binding term sheet for the South Korean engineering and construction firm to make a strategic investment in Kairos Power and for the companies to collaborate on the commercial deployment of Kairos Power's fluoride salt-cooled, high-temperature reactor technology.",
+              "importance_score": 10
             },
             {
               "date": "2026-09-22",
@@ -1561,53 +2019,87 @@
           ]
         },
         {
-          "category": "SMRs & advanced reactors",
-          "takeaway": "4 source-linked development(s) in this sector, including US-Turkey agreement to accelerate SMR deployment; GE Vernova, Hitachi, SGE and Samsung C&T sign BWRX-300s MoU.",
+          "category": "Fuel & supply chain",
+          "takeaway": "8 source-linked development(s) in this sector, including Agreement clears way for resumption of Niger uranium project; Milestone for X-Energy's TRISO-X fuel facility.",
           "items": [
             {
-              "date": "2026-09-24",
-              "title": "US-Turkey agreement to accelerate SMR deployment",
-              "summary": "The US Trade and Development Agency has signed an agreement with Turkey's state-owned nuclear development enterprise TÜNAŞ to fund technical assistance to create the regulatory, institutional, and financial roadmap needed for Turkish private sector companies to deploy small modular reactor nuclear technology.",
-              "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/us-turkey-agreement-to-accelerate-smr-deployment",
+              "date": "2026-09-25",
+              "title": "Agreement clears way for resumption of Niger uranium project",
+              "summary": "The Mining Convention for the Madouela project formalises a framework agreement announced in August and triggers the process to discontinue international arbitration proceedings over the project in Niger.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/agreement-clears-way-for-resumption-of-niger-uranium-project",
               "links": [],
               "source": "World Nuclear News",
               "entities": [],
               "technologies": [
-                "Advanced fission"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing"
+                "Fuel & supply chain"
               ],
-              "search_text": "US-Turkey agreement to accelerate SMR deployment The US Trade and Development Agency has signed an agreement with Turkey's state-owned nuclear development enterprise TÜNAŞ to fund technical assistance to create the regulatory, institutional, and financial roadmap needed for Turkish private sector companies to deploy small modular reactor nuclear technology.",
-              "importance_score": 33
+              "search_text": "Agreement clears way for resumption of Niger uranium project The Mining Convention for the Madouela project formalises a framework agreement announced in August and triggers the process to discontinue international arbitration proceedings over the project in Niger.",
+              "importance_score": 15
             },
             {
-              "date": "2026-09-23",
-              "title": "GE Vernova, Hitachi, SGE and Samsung C&T sign BWRX-300s MoU",
-              "summary": "An agreement to work together to identify and develop market opportunities for the deployment of BWRX-300 small modular reactors in Europe was signed on the sidelines of the United Nations General Assembly in New York.",
-              "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/ge-vernova-hitachi-sge-and-samsung-ct-sign-mou-on-bwrx-300s-in-europe",
-              "links": [
-                {
-                  "label": "SGE confident of UK SMR fleet prospects",
-                  "url": "https://www.world-nuclear-news.org/articles/sge-confident-of-uk-smr-fleet-prospects"
-                }
-              ],
+              "date": "2026-09-25",
+              "title": "Milestone for X-Energy's TRISO-X fuel facility",
+              "summary": "Construction of the 214,000-square-foot building which will house the TX-1 advanced nuclear fuel facility in Oak Ridge, Tennessee, has been completed.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/milestone-for-x-energys-triso-xs-fuel-facility",
+              "links": [],
               "source": "World Nuclear News",
               "entities": [
-                "GE Vernova",
-                "Darlington",
-                "BWRX-300"
+                "X-energy"
               ],
               "technologies": [
                 "Advanced fission"
               ],
               "categories": [
+                "Fuel & supply chain",
                 "Construction & licensing"
               ],
-              "search_text": "GE Vernova Darlington BWRX-300 GE Vernova, Hitachi, SGE and Samsung C&T sign BWRX-300s MoU An agreement to work together to identify and develop market opportunities for the deployment of BWRX-300 small modular reactors in Europe was signed on the sidelines of the United Nations General Assembly in New York.",
-              "importance_score": 28
+              "search_text": "X-energy Milestone for X-Energy's TRISO-X fuel facility Construction of the 214,000-square-foot building which will house the TX-1 advanced nuclear fuel facility in Oak Ridge, Tennessee, has been completed.",
+              "importance_score": 15
+            },
+            {
+              "date": "2026-09-24",
+              "title": "Polish plant contract negotiations move to next stage",
+              "summary": "The Westinghouse-Bechtel consortium and Polskie Elektrownie Jądrowe have agreed the main commercial and legal terms of the Engineering, Procurement and Construction contract that will deliver Poland's first nuclear power plant, and plan to complete the contract negotiation process by the end of this year.",
+              "category": "New build & milestones",
+              "url": "https://www.world-nuclear-news.org/articles/polish-plant-contract-negotiations-move-to-next-stage",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Westinghouse"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing",
+                "Fuel & supply chain"
+              ],
+              "search_text": "Westinghouse Polish plant contract negotiations move to next stage The Westinghouse-Bechtel consortium and Polskie Elektrownie Jądrowe have agreed the main commercial and legal terms of the Engineering, Procurement and Construction contract that will deliver Poland's first nuclear power plant, and plan to complete the contract negotiation process by the end of this year.",
+              "importance_score": 38
+            },
+            {
+              "date": "2026-09-24",
+              "title": "Second reactor manufactured for floating nuclear plant",
+              "summary": "The second RITM-200C small modular reactor unit has been manufactured for the floating nuclear power plant destined to supply electricity to a copper mining centre in Chukotka.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/second-reactor-manufactured-for-floating-nuclear-plant",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission",
+                "Advanced fission"
+              ],
+              "categories": [
+                "Fuel & supply chain"
+              ],
+              "search_text": "Second reactor manufactured for floating nuclear plant The second RITM-200C small modular reactor unit has been manufactured for the floating nuclear power plant destined to supply electricity to a copper mining centre in Chukotka.",
+              "importance_score": 10
             },
             {
               "date": "2026-09-23",
@@ -1631,29 +2123,75 @@
               "importance_score": 10
             },
             {
-              "date": "2026-09-23",
-              "title": "Škoda JS to supply control rod drives for Rolls-Royce SMR's reactors",
-              "summary": "Czech company Škoda JS has been chosen as sole supplier of control rod drive mechanisms for Rolls-Royce SMR's future small modular reactors.",
-              "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/skoda-js-to-supply-control-rod-drives-for-rolls-royce-smrs",
+              "date": "2026-09-22",
+              "title": "Framatome secures first contract for higher enriched fuel",
+              "summary": "Framatome announced it has signed a commercial contract to deliver the world's first nuclear fuel reload with uranium-235 enrichment above the industry standard of 5%, to an operating nuclear reactor in the USA.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/framatome-secures-first-contract-for-higher-enriched-fuel",
               "links": [],
               "source": "World Nuclear News",
               "entities": [
-                "Rolls-Royce SMR"
+                "Framatome"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Fuel & supply chain"
+              ],
+              "search_text": "Framatome Framatome secures first contract for higher enriched fuel Framatome announced it has signed a commercial contract to deliver the world's first nuclear fuel reload with uranium-235 enrichment above the industry standard of 5%, to an operating nuclear reactor in the USA.",
+              "importance_score": 33
+            },
+            {
+              "date": "2026-09-22",
+              "title": "Bechtel steps away from TerraPower project",
+              "summary": "TerraPower says it intends to rebid the engineering, procurement and construction contract for the project to build the first-of-a-kind Natrium reactor in Kemmerer, Wyoming, following the two companies' decision to move forward separately.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/bechtel-steps-away-from-terrapower-project",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "US Nuclear Regulatory Commission",
+                "TerraPower"
               ],
               "technologies": [
                 "Advanced fission"
               ],
               "categories": [
-                "Construction & licensing"
+                "Capital & financing",
+                "Construction & licensing",
+                "Fuel & supply chain"
               ],
-              "search_text": "Rolls-Royce SMR Škoda JS to supply control rod drives for Rolls-Royce SMR's reactors Czech company Škoda JS has been chosen as sole supplier of control rod drive mechanisms for Rolls-Royce SMR's future small modular reactors.",
+              "search_text": "US Nuclear Regulatory Commission TerraPower Bechtel steps away from TerraPower project TerraPower says it intends to rebid the engineering, procurement and construction contract for the project to build the first-of-a-kind Natrium reactor in Kemmerer, Wyoming, following the two companies' decision to move forward separately.",
+              "importance_score": 28
+            },
+            {
+              "date": "2026-09-21",
+              "title": "Indian plants celebrate fuel loading milestones",
+              "summary": "As fuel loading begins at Rajasthan Atomic Power Project unit 8, Nuclear Power Corporation of India Ltd has started geotechnical investigations for the next two units at the plant. Meanwhile, fuel loading has begun at Kaiga unit 1 as the unit begins the process to return to service after refurbishment.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/indian-plants-celebrate-fuel-loading-milestones",
+              "links": [
+                {
+                  "label": "summary of the current status of India's…",
+                  "url": "https://sansad.in/getFile/lsapps/loksabhaquestions/annex/188/AS360_7GaY3g.pdf"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Fuel & supply chain"
+              ],
+              "search_text": "Indian plants celebrate fuel loading milestones As fuel loading begins at Rajasthan Atomic Power Project unit 8, Nuclear Power Corporation of India Ltd has started geotechnical investigations for the next two units at the plant. Meanwhile, fuel loading has begun at Kaiga unit 1 as the unit begins the process to return to service after refurbishment.",
               "importance_score": 10
             }
           ]
         },
         {
-          "category": "Corporate & financing",
+          "category": "Capital & financing",
           "takeaway": "4 source-linked development(s) in this sector, including China's giant crane for nuclear power plant construction; Google agreement to support Georgia plant uprates.",
           "items": [
             {
@@ -1754,67 +2292,6 @@
           ]
         },
         {
-          "category": "Other nuclear",
-          "takeaway": "2 source-linked development(s) in this sector, including White Paper aims to facilitate safe and secure transport of radioactive materials; Italy's Senate approves a return to nuclear power.",
-          "items": [
-            {
-              "date": "2026-09-25",
-              "title": "White Paper aims to facilitate safe and secure transport of radioactive materials",
-              "summary": "A series of recommendations have been made to mitigate the denial or delay of transport of radioactive materials which nuclear power plants, hospitals, industries and researchers rely on.",
-              "category": "Other nuclear",
-              "url": "https://www.world-nuclear-news.org/articles/white-paper-aims-to-facilitate-safe-transport-of-radioactive-materials",
-              "links": [
-                {
-                  "label": "White Paper on the Facilitation of the Safe…",
-                  "url": "https://gnssn.iaea.org/main/fastram/Documents/White%20Paper%20files/WP%20Facilitation%20Safe%20Secure%20Transport%20Radioactive%20Material%2020260710%20final.pdf"
-                },
-                {
-                  "label": "which was established for a four year…",
-                  "url": "https://gnssn.iaea.org/main/fastram/Pages/Working-Group.aspx"
-                },
-                {
-                  "label": "National Competent Authorities for the Safe…",
-                  "url": "https://gnssn.iaea.org/main/GlobalTransportNetworks/Pages/CompetentAuthorities.aspx"
-                }
-              ],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [],
-              "search_text": "White Paper aims to facilitate safe and secure transport of radioactive materials A series of recommendations have been made to mitigate the denial or delay of transport of radioactive materials which nuclear power plants, hospitals, industries and researchers rely on.",
-              "importance_score": 17
-            },
-            {
-              "date": "2026-09-24",
-              "title": "Italy's Senate approves a return to nuclear power",
-              "summary": "Prime Minister Giorgia Meloni's bill paving the way for a return to nuclear power in Italy after four decades was passed in the Senate by 81 votes to 51, with seven abstentions.",
-              "category": "Other nuclear",
-              "url": "https://www.world-nuclear-news.org/articles/italys-senate-approves-a-return-to-nuclear-power",
-              "links": [
-                {
-                  "label": "a fleet of 10 of its SMRs across five…",
-                  "url": "https://www.world-nuclear-news.org/articles/edfs-nuward-smr-planning-10-units-in-five-eu-countries"
-                }
-              ],
-              "source": "World Nuclear News",
-              "entities": [
-                "EDF",
-                "newcleo"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Policy & international"
-              ],
-              "search_text": "EDF newcleo Italy's Senate approves a return to nuclear power Prime Minister Giorgia Meloni's bill paving the way for a return to nuclear power in Italy after four decades was passed in the Senate by 81 votes to 51, with seven abstentions.",
-              "importance_score": 10
-            }
-          ]
-        },
-        {
           "category": "Waste & decommissioning",
           "takeaway": "2 source-linked development(s) in this sector, including Demolition of exhaust stack changes Stade skyline; France prepares to start dismantling first UNGG reactor.",
           "items": [
@@ -1855,7 +2332,74 @@
           ]
         },
         {
-          "category": "Operations & restarts",
+          "category": "Other nuclear",
+          "takeaway": "1 source-linked development(s) in this sector, including White Paper aims to facilitate safe and secure transport of radioactive materials.",
+          "items": [
+            {
+              "date": "2026-09-25",
+              "title": "White Paper aims to facilitate safe and secure transport of radioactive materials",
+              "summary": "A series of recommendations have been made to mitigate the denial or delay of transport of radioactive materials which nuclear power plants, hospitals, industries and researchers rely on.",
+              "category": "Other nuclear",
+              "url": "https://www.world-nuclear-news.org/articles/white-paper-aims-to-facilitate-safe-transport-of-radioactive-materials",
+              "links": [
+                {
+                  "label": "White Paper on the Facilitation of the Safe…",
+                  "url": "https://gnssn.iaea.org/main/fastram/Documents/White%20Paper%20files/WP%20Facilitation%20Safe%20Secure%20Transport%20Radioactive%20Material%2020260710%20final.pdf"
+                },
+                {
+                  "label": "which was established for a four year…",
+                  "url": "https://gnssn.iaea.org/main/fastram/Pages/Working-Group.aspx"
+                },
+                {
+                  "label": "National Competent Authorities for the Safe…",
+                  "url": "https://gnssn.iaea.org/main/GlobalTransportNetworks/Pages/CompetentAuthorities.aspx"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [],
+              "search_text": "White Paper aims to facilitate safe and secure transport of radioactive materials A series of recommendations have been made to mitigate the denial or delay of transport of radioactive materials which nuclear power plants, hospitals, industries and researchers rely on.",
+              "importance_score": 17
+            }
+          ]
+        },
+        {
+          "category": "Policy & international",
+          "takeaway": "1 source-linked development(s) in this sector, including Italy's Senate approves a return to nuclear power.",
+          "items": [
+            {
+              "date": "2026-09-24",
+              "title": "Italy's Senate approves a return to nuclear power",
+              "summary": "Prime Minister Giorgia Meloni's bill paving the way for a return to nuclear power in Italy after four decades was passed in the Senate by 81 votes to 51, with seven abstentions.",
+              "category": "Other nuclear",
+              "url": "https://www.world-nuclear-news.org/articles/italys-senate-approves-a-return-to-nuclear-power",
+              "links": [
+                {
+                  "label": "a fleet of 10 of its SMRs across five…",
+                  "url": "https://www.world-nuclear-news.org/articles/edfs-nuward-smr-planning-10-units-in-five-eu-countries"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [
+                "EDF",
+                "newcleo"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Policy & international"
+              ],
+              "search_text": "EDF newcleo Italy's Senate approves a return to nuclear power Prime Minister Giorgia Meloni's bill paving the way for a return to nuclear power in Italy after four decades was passed in the Senate by 81 votes to 51, with seven abstentions.",
+              "importance_score": 10
+            }
+          ]
+        },
+        {
+          "category": "Restarts & uprates",
           "takeaway": "1 source-linked development(s) in this sector, including Contracts announced as Pickering refurb approaches.",
           "items": [
             {
@@ -1885,13 +2429,13 @@
       "week_start": "2026-09-14",
       "week_end": "2026-09-20",
       "title": "Global nuclear developments — week of September 14, 2026",
-      "overview": "26 World Nuclear News articles across 10 nuclear-industry sectors. The report groups developments by topic and links to each original article; it does not claim independent verification.",
+      "overview": "26 World Nuclear News articles across 9 nuclear-industry sectors. The report groups developments by topic and links to each original article; it does not claim independent verification.",
       "article_count": 26,
       "generated_at": "2026-10-20",
       "sections": [
         {
-          "category": "New build & milestones",
-          "takeaway": "7 source-linked development(s) in this sector, including Natural draft cooling tower is preferred JEK2 option; Containment tests completed at Lufeng unit 5.",
+          "category": "Construction & licensing",
+          "takeaway": "11 source-linked development(s) in this sector, including Natural draft cooling tower is preferred JEK2 option; Containment tests completed at Lufeng unit 5.",
           "items": [
             {
               "date": "2026-09-18",
@@ -1998,6 +2542,89 @@
               "importance_score": 10
             },
             {
+              "date": "2026-09-16",
+              "title": "Blue Energy submits first construction application to NRC",
+              "summary": "Blue Energy has submitted the first part of its construction permit application to the US Nuclear Regulatory Commission for its planned gas-to-nuclear project in Texas.",
+              "category": "Policy & regulation",
+              "url": "https://www.world-nuclear-news.org/articles/blue-energy-submits-first-construction-application-to-nrc",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "US Nuclear Regulatory Commission"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Policy & international",
+                "Construction & licensing"
+              ],
+              "search_text": "US Nuclear Regulatory Commission Blue Energy submits first construction application to NRC Blue Energy has submitted the first part of its construction permit application to the US Nuclear Regulatory Commission for its planned gas-to-nuclear project in Texas.",
+              "importance_score": 25
+            },
+            {
+              "date": "2026-09-15",
+              "title": "eVinci sets temperature record during zero-power criticality tests",
+              "summary": "Westinghouse says the completion of zero-power high-temperature criticality testing for the microreactor, which saw it reach criticality at 663 degrees Celsius, is a defining milestone in the programme's build-test-learn development journey.",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/evinci-sets-temperature-record-during-zero-power-criticality-tests",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Westinghouse"
+              ],
+              "technologies": [
+                "Microreactors"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Westinghouse eVinci sets temperature record during zero-power criticality tests Westinghouse says the completion of zero-power high-temperature criticality testing for the microreactor, which saw it reach criticality at 663 degrees Celsius, is a defining milestone in the programme's build-test-learn development journey.",
+              "importance_score": 20
+            },
+            {
+              "date": "2026-09-15",
+              "title": "China launches Global Network for SMR Innovation",
+              "summary": "China Atomic Energy Authority has launched the Global Network for SMR Innovation with the aim of supporting small modular reactor technology progress, standards and deployment \"helping make nuclear energy safer, more affordable and more accessible in support of climate action and sustainable development\".",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/china-launches-global-network-for-smr-innovation",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "China launches Global Network for SMR Innovation China Atomic Energy Authority has launched the Global Network for SMR Innovation with the aim of supporting small modular reactor technology progress, standards and deployment \"helping make nuclear energy safer, more affordable and more accessible in support of climate action and sustainable development\".",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-15",
+              "title": "UK regulators to begin Xe-100 design assessment",
+              "summary": "The Department for Energy Security and Net Zero has directed UK regulators to begin the Generic Design Assessment of the X-energy Xe-100 high-temperature gas-cooled reactor, after completing reviews of X-energy UK Holdings Ltd's application.",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/uk-regulators-to-begin-xe-100-design-assessment",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Amazon",
+                "X-energy",
+                "US Nuclear Regulatory Commission",
+                "EDF",
+                "Xe-100"
+              ],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Amazon X-energy US Nuclear Regulatory Commission EDF Xe-100 UK regulators to begin Xe-100 design assessment The Department for Energy Security and Net Zero has directed UK regulators to begin the Generic Design Assessment of the X-energy Xe-100 high-temperature gas-cooled reactor, after completing reviews of X-energy UK Holdings Ltd's application.",
+              "importance_score": 10
+            },
+            {
               "date": "2026-09-14",
               "title": "Indiana to get its first power-producing nuclear reactor",
               "summary": "A commercially owned and operated micromodular reactor is to be installed at Naval Weapons Station Crane, becoming the US Navy's first shore-based advanced micromodular reactor as well as the state of Indiana's first power-producing reactor.",
@@ -2036,8 +2663,8 @@
           ]
         },
         {
-          "category": "Fusion & research",
-          "takeaway": "3 source-linked development(s) in this sector, including China sets out fusion progress, collaboration opportunities; China begins building hydrogen-boron fusion device.",
+          "category": "Policy & international",
+          "takeaway": "4 source-linked development(s) in this sector, including China sets out fusion progress, collaboration opportunities; Blue Energy submits first construction application to NRC.",
           "items": [
             {
               "date": "2026-09-18",
@@ -2057,108 +2684,6 @@
               "search_text": "China sets out fusion progress, collaboration opportunities China's aim to achieve the commercial utilisation of fusion energy by 2050, and the benefits to be gained from international collaboration, have been set out at Fusion for the Future: Engineering the Key Pathway to Realising Fusion Energy, a side event at the 70th IAEA General Conference.",
               "importance_score": 10
             },
-            {
-              "date": "2026-09-16",
-              "title": "China begins building hydrogen-boron fusion device",
-              "summary": "The ENN Group has held a groundbreaking ceremony for the ENN Fusion Spherical Ring Hydrogen-Boron Plasma Platform (Helong-2) project at the group's fusion R&D centre in the Langfang Economic and Technological Development Zone in China's Hebei Province.",
-              "category": "Fusion & research",
-              "url": "https://www.world-nuclear-news.org/articles/china-begins-building-hydrogen-boron-fusion-device",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Fusion"
-              ],
-              "categories": [],
-              "search_text": "China begins building hydrogen-boron fusion device The ENN Group has held a groundbreaking ceremony for the ENN Fusion Spherical Ring Hydrogen-Boron Plasma Platform (Helong-2) project at the group's fusion R&D centre in the Langfang Economic and Technological Development Zone in China's Hebei Province.",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-09-15",
-              "title": "UK, USA enhance cooperation on fusion energy",
-              "summary": "A number of collaboration agreements have been announced between US and UK partners aimed at accelerating the commercial deployment of nuclear fusion power plants around the world.",
-              "category": "Fusion & research",
-              "url": "https://www.world-nuclear-news.org/articles/uk-usa-enhance-cooperation-on-fusion-energy",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Fusion"
-              ],
-              "categories": [],
-              "search_text": "UK, USA enhance cooperation on fusion energy A number of collaboration agreements have been announced between US and UK partners aimed at accelerating the commercial deployment of nuclear fusion power plants around the world.",
-              "importance_score": 10
-            }
-          ]
-        },
-        {
-          "category": "Corporate & financing",
-          "takeaway": "3 source-linked development(s) in this sector, including Holtec postpones planned stock market launch; US funding for Thai SMR feasibility study.",
-          "items": [
-            {
-              "date": "2026-09-17",
-              "title": "Holtec postpones planned stock market launch",
-              "summary": "Holtec Nuclear Corporation is postponing the initial public offering it announced in July, due to market conditions. The company's CEO has said market concerns about the AI sector have played a part in the decision.",
-              "category": "Corporate & financing",
-              "url": "https://www.world-nuclear-news.org/articles/holtec-postpones-market-launch",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "EDF",
-                "Holtec",
-                "Palisades"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Capital & financing"
-              ],
-              "search_text": "EDF Holtec Palisades Holtec postpones planned stock market launch Holtec Nuclear Corporation is postponing the initial public offering it announced in July, due to market conditions. The company's CEO has said market concerns about the AI sector have played a part in the decision.",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-09-16",
-              "title": "US funding for Thai SMR feasibility study",
-              "summary": "The Electricity Generating Authority of Thailand has signed an agreement with the US Trade and Development Agency for a feasibility study on the deployment of US small modular reactor technologies in Thailand.",
-              "category": "Corporate & financing",
-              "url": "https://www.world-nuclear-news.org/articles/us-funding-for-thai-smr-feasibility-study",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Advanced fission"
-              ],
-              "categories": [
-                "Capital & financing"
-              ],
-              "search_text": "US funding for Thai SMR feasibility study The Electricity Generating Authority of Thailand has signed an agreement with the US Trade and Development Agency for a feasibility study on the deployment of US small modular reactor technologies in Thailand.",
-              "importance_score": 28
-            },
-            {
-              "date": "2026-09-15",
-              "title": "First SMR funding agreed by European Investment Bank",
-              "summary": "The European Investment Bank is to invest up to EUR40 million (USD46 million) in Finland's small modular reactor company Steady Energy, whose LDR-50 reactor is designed specifically for district heating networks.",
-              "category": "Corporate & financing",
-              "url": "https://www.world-nuclear-news.org/articles/first-smr-investment-by-european-investment-bank",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Advanced fission"
-              ],
-              "categories": [
-                "Capital & financing"
-              ],
-              "search_text": "First SMR funding agreed by European Investment Bank The European Investment Bank is to invest up to EUR40 million (USD46 million) in Finland's small modular reactor company Steady Energy, whose LDR-50 reactor is designed specifically for district heating networks.",
-              "importance_score": 45
-            }
-          ]
-        },
-        {
-          "category": "Policy & regulation",
-          "takeaway": "3 source-linked development(s) in this sector, including Blue Energy submits first construction application to NRC; Holtec SMR project gets regulatory nod for early site work.",
-          "items": [
             {
               "date": "2026-09-16",
               "title": "Blue Energy submits first construction application to NRC",
@@ -2232,35 +2757,37 @@
           ]
         },
         {
-          "category": "SMRs & advanced reactors",
-          "takeaway": "3 source-linked development(s) in this sector, including eVinci sets temperature record during zero-power criticality tests; China launches Global Network for SMR Innovation.",
+          "category": "Capital & financing",
+          "takeaway": "4 source-linked development(s) in this sector, including Holtec postpones planned stock market launch; US funding for Thai SMR feasibility study.",
           "items": [
             {
-              "date": "2026-09-15",
-              "title": "eVinci sets temperature record during zero-power criticality tests",
-              "summary": "Westinghouse says the completion of zero-power high-temperature criticality testing for the microreactor, which saw it reach criticality at 663 degrees Celsius, is a defining milestone in the programme's build-test-learn development journey.",
-              "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/evinci-sets-temperature-record-during-zero-power-criticality-tests",
+              "date": "2026-09-17",
+              "title": "Holtec postpones planned stock market launch",
+              "summary": "Holtec Nuclear Corporation is postponing the initial public offering it announced in July, due to market conditions. The company's CEO has said market concerns about the AI sector have played a part in the decision.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/holtec-postpones-market-launch",
               "links": [],
               "source": "World Nuclear News",
               "entities": [
-                "Westinghouse"
+                "EDF",
+                "Holtec",
+                "Palisades"
               ],
               "technologies": [
-                "Microreactors"
+                "Traditional fission"
               ],
               "categories": [
-                "Construction & licensing"
+                "Capital & financing"
               ],
-              "search_text": "Westinghouse eVinci sets temperature record during zero-power criticality tests Westinghouse says the completion of zero-power high-temperature criticality testing for the microreactor, which saw it reach criticality at 663 degrees Celsius, is a defining milestone in the programme's build-test-learn development journey.",
-              "importance_score": 20
+              "search_text": "EDF Holtec Palisades Holtec postpones planned stock market launch Holtec Nuclear Corporation is postponing the initial public offering it announced in July, due to market conditions. The company's CEO has said market concerns about the AI sector have played a part in the decision.",
+              "importance_score": 10
             },
             {
-              "date": "2026-09-15",
-              "title": "China launches Global Network for SMR Innovation",
-              "summary": "China Atomic Energy Authority has launched the Global Network for SMR Innovation with the aim of supporting small modular reactor technology progress, standards and deployment \"helping make nuclear energy safer, more affordable and more accessible in support of climate action and sustainable development\".",
-              "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/china-launches-global-network-for-smr-innovation",
+              "date": "2026-09-16",
+              "title": "US funding for Thai SMR feasibility study",
+              "summary": "The Electricity Generating Authority of Thailand has signed an agreement with the US Trade and Development Agency for a feasibility study on the deployment of US small modular reactor technologies in Thailand.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/us-funding-for-thai-smr-feasibility-study",
               "links": [],
               "source": "World Nuclear News",
               "entities": [],
@@ -2268,39 +2795,57 @@
                 "Advanced fission"
               ],
               "categories": [
-                "Construction & licensing"
+                "Capital & financing"
               ],
-              "search_text": "China launches Global Network for SMR Innovation China Atomic Energy Authority has launched the Global Network for SMR Innovation with the aim of supporting small modular reactor technology progress, standards and deployment \"helping make nuclear energy safer, more affordable and more accessible in support of climate action and sustainable development\".",
-              "importance_score": 10
+              "search_text": "US funding for Thai SMR feasibility study The Electricity Generating Authority of Thailand has signed an agreement with the US Trade and Development Agency for a feasibility study on the deployment of US small modular reactor technologies in Thailand.",
+              "importance_score": 28
             },
             {
               "date": "2026-09-15",
-              "title": "UK regulators to begin Xe-100 design assessment",
-              "summary": "The Department for Energy Security and Net Zero has directed UK regulators to begin the Generic Design Assessment of the X-energy Xe-100 high-temperature gas-cooled reactor, after completing reviews of X-energy UK Holdings Ltd's application.",
-              "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/uk-regulators-to-begin-xe-100-design-assessment",
+              "title": "First SMR funding agreed by European Investment Bank",
+              "summary": "The European Investment Bank is to invest up to EUR40 million (USD46 million) in Finland's small modular reactor company Steady Energy, whose LDR-50 reactor is designed specifically for district heating networks.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/first-smr-investment-by-european-investment-bank",
               "links": [],
               "source": "World Nuclear News",
-              "entities": [
-                "Amazon",
-                "X-energy",
-                "US Nuclear Regulatory Commission",
-                "EDF",
-                "Xe-100"
-              ],
+              "entities": [],
               "technologies": [
                 "Advanced fission"
               ],
               "categories": [
-                "Construction & licensing"
+                "Capital & financing"
               ],
-              "search_text": "Amazon X-energy US Nuclear Regulatory Commission EDF Xe-100 UK regulators to begin Xe-100 design assessment The Department for Energy Security and Net Zero has directed UK regulators to begin the Generic Design Assessment of the X-energy Xe-100 high-temperature gas-cooled reactor, after completing reviews of X-energy UK Holdings Ltd's application.",
+              "search_text": "First SMR funding agreed by European Investment Bank The European Investment Bank is to invest up to EUR40 million (USD46 million) in Finland's small modular reactor company Steady Energy, whose LDR-50 reactor is designed specifically for district heating networks.",
+              "importance_score": 45
+            },
+            {
+              "date": "2026-09-14",
+              "title": "Red Book confident on uranium resources to meet future growth",
+              "summary": "The global uranium sector is responding to growing interest in nuclear capacity expansion, according to the latest assessment by the OECD Nuclear Energy Agency and the International Atomic Energy Agency. But investment is needed to turn resources into supply.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/red-book-confident-on-uranium-resources-to-meet-future-growth",
+              "links": [
+                {
+                  "label": "here",
+                  "url": "https://www.oecd-nea.org/jcms/pl_121658/uranium-2026-resources-production-and-demand"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Fuel & supply chain",
+                "Capital & financing"
+              ],
+              "search_text": "Red Book confident on uranium resources to meet future growth The global uranium sector is responding to growing interest in nuclear capacity expansion, according to the latest assessment by the OECD Nuclear Energy Agency and the International Atomic Energy Agency. But investment is needed to turn resources into supply.",
               "importance_score": 10
             }
           ]
         },
         {
-          "category": "Uranium & fuel",
+          "category": "Fuel & supply chain",
           "takeaway": "2 source-linked development(s) in this sector, including Antares, Centrus sign multi-year HALEU contract; Red Book confident on uranium resources to meet future growth.",
           "items": [
             {
@@ -2408,6 +2953,44 @@
           ]
         },
         {
+          "category": "Fusion & research",
+          "takeaway": "2 source-linked development(s) in this sector, including China begins building hydrogen-boron fusion device; UK, USA enhance cooperation on fusion energy.",
+          "items": [
+            {
+              "date": "2026-09-16",
+              "title": "China begins building hydrogen-boron fusion device",
+              "summary": "The ENN Group has held a groundbreaking ceremony for the ENN Fusion Spherical Ring Hydrogen-Boron Plasma Platform (Helong-2) project at the group's fusion R&D centre in the Langfang Economic and Technological Development Zone in China's Hebei Province.",
+              "category": "Fusion & research",
+              "url": "https://www.world-nuclear-news.org/articles/china-begins-building-hydrogen-boron-fusion-device",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Fusion"
+              ],
+              "categories": [],
+              "search_text": "China begins building hydrogen-boron fusion device The ENN Group has held a groundbreaking ceremony for the ENN Fusion Spherical Ring Hydrogen-Boron Plasma Platform (Helong-2) project at the group's fusion R&D centre in the Langfang Economic and Technological Development Zone in China's Hebei Province.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-15",
+              "title": "UK, USA enhance cooperation on fusion energy",
+              "summary": "A number of collaboration agreements have been announced between US and UK partners aimed at accelerating the commercial deployment of nuclear fusion power plants around the world.",
+              "category": "Fusion & research",
+              "url": "https://www.world-nuclear-news.org/articles/uk-usa-enhance-cooperation-on-fusion-energy",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Fusion"
+              ],
+              "categories": [],
+              "search_text": "UK, USA enhance cooperation on fusion energy A number of collaboration agreements have been announced between US and UK partners aimed at accelerating the commercial deployment of nuclear fusion power plants around the world.",
+              "importance_score": 10
+            }
+          ]
+        },
+        {
           "category": "Waste & decommissioning",
           "takeaway": "1 source-linked development(s) in this sector, including First transfer from Chernobyl's new waste processing facility.",
           "items": [
@@ -2435,7 +3018,7 @@
           ]
         },
         {
-          "category": "Nuclear PPAs & offtake",
+          "category": "Offtakes & customers",
           "takeaway": "1 source-linked development(s) in this sector, including Cameco in offtake agreement for US laser enrichment plant.",
           "items": [
             {
@@ -2459,7 +3042,7 @@
           ]
         },
         {
-          "category": "Operations & restarts",
+          "category": "Restarts & uprates",
           "takeaway": "1 source-linked development(s) in this sector, including Chubu withdraws restart applications for Hamaoka units.",
           "items": [
             {
@@ -2493,7 +3076,388 @@
       "generated_at": "2026-10-20",
       "sections": [
         {
-          "category": "Uranium & fuel",
+          "category": "Construction & licensing",
+          "takeaway": "11 source-linked development(s) in this sector, including Tips from China's 56-month nuclear construction schedule; Deep Fission completes borehole demonstration.",
+          "items": [
+            {
+              "date": "2026-09-11",
+              "title": "Tips from China's 56-month nuclear construction schedule",
+              "summary": "The President of China's State Nuclear Power Technology Corporation, Ma Yuanhua, shared their \"thinking and practice\" in developing a fleet-based construction process which now has a target of 56 months for new nuclear power units.",
+              "category": "New build & milestones",
+              "url": "https://www.world-nuclear-news.org/articles/tips-from-china-for-56-month-nuclear-construction-schedule",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Tips from China's 56-month nuclear construction schedule The President of China's State Nuclear Power Technology Corporation, Ma Yuanhua, shared their \"thinking and practice\" in developing a fleet-based construction process which now has a target of 56 months for new nuclear power units.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-11",
+              "title": "Deep Fission completes borehole demonstration",
+              "summary": "A full-sized prototype of the canister that will hold the Gravity reactor has been installed and then retrieved from a borehole using standard equipment already in commercial service in the drilling industry.",
+              "category": "New build & milestones",
+              "url": "https://www.world-nuclear-news.org/articles/deep-fission-completes-borehole-demonstration",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Deep Fission completes borehole demonstration A full-sized prototype of the canister that will hold the Gravity reactor has been installed and then retrieved from a borehole using standard equipment already in commercial service in the drilling industry.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-10",
+              "title": "Bannerman completes Etango funding, moves towards FID",
+              "summary": "Bannerman Energy has completed an AUD124 million (USD89 million) underwritten placement which - together with the company's other financial arrangements - is expected to fully fund the Namibian Etango project through construction and ramp-up as the company moves towards a Final Investment Decision.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/bannerman-completes-Etango-funding",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Capital & financing",
+                "Fuel & supply chain",
+                "Construction & licensing"
+              ],
+              "search_text": "Bannerman completes Etango funding, moves towards FID Bannerman Energy has completed an AUD124 million (USD89 million) underwritten placement which - together with the company's other financial arrangements - is expected to fully fund the Namibian Etango project through construction and ramp-up as the company moves towards a Final Investment Decision.",
+              "importance_score": 22
+            },
+            {
+              "date": "2026-09-10",
+              "title": "Norman Foster says nuclear is key for 'Electrical Revolution'",
+              "summary": "Architect Norman Foster says that nuclear's ability to provide a \"vast amount of power\" with \"a tiny imprint\" means that micro-modular power units should be being produced at \"industrial-scale, like jet engines\" with the potential to autonomously power new developments and move beyond the \"obsolete idea of a grid\".",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/norman-foster-says-nuclear-key-for-electrical-revolution",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Norman Foster says nuclear is key for 'Electrical Revolution' Architect Norman Foster says that nuclear's ability to provide a \"vast amount of power\" with \"a tiny imprint\" means that micro-modular power units should be being produced at \"industrial-scale, like jet engines\" with the potential to autonomously power new developments and move beyond the \"obsolete idea of a grid\".",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-09",
+              "title": "Groundwork begins at new Chinese plant site",
+              "summary": "Full-scale site levelling work for the initial phase of the Laiyang nuclear power plant in China's Shandong Province has begun, State Power Investment Corporation announced. The site will eventually house six Guohe One (CAP1400) units.",
+              "category": "New build & milestones",
+              "url": "https://www.world-nuclear-news.org/articles/groundwork-begins-at-new-chinese-plant-site",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing",
+                "Capital & financing"
+              ],
+              "search_text": "Groundwork begins at new Chinese plant site Full-scale site levelling work for the initial phase of the Laiyang nuclear power plant in China's Shandong Province has begun, State Power Investment Corporation announced. The site will eventually house six Guohe One (CAP1400) units.",
+              "importance_score": 15
+            },
+            {
+              "date": "2026-09-08",
+              "title": "Zaporizhzhia reconnected to external power after 18 days",
+              "summary": "A local ceasefire brokered by the International Atomic Energy Agency has allowed work to successfully take place to restore off-site power to the Zaporizhzhia nuclear power plant.",
+              "category": "New build & milestones",
+              "url": "https://www.world-nuclear-news.org/articles/zaporizhzhia-reconnected-to-external-power-after-18-days",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Zaporizhzhia reconnected to external power after 18 days A local ceasefire brokered by the International Atomic Energy Agency has allowed work to successfully take place to restore off-site power to the Zaporizhzhia nuclear power plant.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-08",
+              "title": "Key commissioning tests completed at Changjiang 4",
+              "summary": "Cold functional tests have been completed at unit 4 of the Changjiang nuclear power plant in China's Hainan province, China National Nuclear Corporation has announced.",
+              "category": "New build & milestones",
+              "url": "https://www.world-nuclear-news.org/articles/key-commissioning-tests-completed-at-changjiang-4",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Key commissioning tests completed at Changjiang 4 Cold functional tests have been completed at unit 4 of the Changjiang nuclear power plant in China's Hainan province, China National Nuclear Corporation has announced.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-07",
+              "title": "Argentina aims for 2027 launch of RA-10 multipurpose reactor",
+              "summary": "The National Atomic Energy Commission and the Secretariat for Nuclear Affairs say commissioning of the RA-10 multipurpose reactor will begin before the end of the year - and outlined plans for private financing for the associated production plant.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/argentina-aims-for-2027-launch-of-ra-10-multipurpose-reactor",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Capital & financing",
+                "Construction & licensing"
+              ],
+              "search_text": "Argentina aims for 2027 launch of RA-10 multipurpose reactor The National Atomic Energy Commission and the Secretariat for Nuclear Affairs say commissioning of the RA-10 multipurpose reactor will begin before the end of the year - and outlined plans for private financing for the associated production plant.",
+              "importance_score": 17
+            },
+            {
+              "date": "2026-09-07",
+              "title": "Kairos completes first phase of testing in ETU 3 reactor mockup",
+              "summary": "Testing at the mockup of the Hermes 2 reactor cavity has validated aspects of the precast concrete shielding design and remote handling and maintenance capabilities to support Kairos Power's Hermes 2 Demonstration Plant and future commercial fleet.",
+              "category": "SMRs & advanced reactors",
+              "url": "https://www.world-nuclear-news.org/articles/kairos-completes-first-phase-of-testing-in-etu-3-reactor-mockup",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Kairos Power"
+              ],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Kairos Power Kairos completes first phase of testing in ETU 3 reactor mockup Testing at the mockup of the Hermes 2 reactor cavity has validated aspects of the precast concrete shielding design and remote handling and maintenance capabilities to support Kairos Power's Hermes 2 Demonstration Plant and future commercial fleet.",
+              "importance_score": 15
+            },
+            {
+              "date": "2026-09-07",
+              "title": "Construction under way of second Zhaoyuan unit",
+              "summary": "The first safety-related concrete has been poured for the reactor building of unit 2 at the Zhaoyuan nuclear power plant. It is the second of six HPR1000 (Hualong One) units planned for the site in China's Shandong province.",
+              "category": "New build & milestones",
+              "url": "https://www.world-nuclear-news.org/articles/construction-under-way-of-second-zhaoyuan-unit",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Construction under way of second Zhaoyuan unit The first safety-related concrete has been poured for the reactor building of unit 2 at the Zhaoyuan nuclear power plant. It is the second of six HPR1000 (Hualong One) units planned for the site in China's Shandong province.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-07",
+              "title": "Local ceasefire in place for Zaporizhzhia power line repairs",
+              "summary": "The International Atomic Energy Agency says that a seventh ceasefire is in place to allow demining and repair work to take place to restore external power to the Zaporizhzhia Nuclear Power Plant.",
+              "category": "New build & milestones",
+              "url": "https://www.world-nuclear-news.org/articles/local-ceasefire-in-place-for-zaporizhzhia-power-line-repairs",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing"
+              ],
+              "search_text": "Local ceasefire in place for Zaporizhzhia power line repairs The International Atomic Energy Agency says that a seventh ceasefire is in place to allow demining and repair work to take place to restore external power to the Zaporizhzhia Nuclear Power Plant.",
+              "importance_score": 10
+            }
+          ]
+        },
+        {
+          "category": "Capital & financing",
+          "takeaway": "8 source-linked development(s) in this sector, including Bannerman completes Etango funding, moves towards FID; Groundwork begins at new Chinese plant site.",
+          "items": [
+            {
+              "date": "2026-09-10",
+              "title": "Bannerman completes Etango funding, moves towards FID",
+              "summary": "Bannerman Energy has completed an AUD124 million (USD89 million) underwritten placement which - together with the company's other financial arrangements - is expected to fully fund the Namibian Etango project through construction and ramp-up as the company moves towards a Final Investment Decision.",
+              "category": "Uranium & fuel",
+              "url": "https://www.world-nuclear-news.org/articles/bannerman-completes-Etango-funding",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Capital & financing",
+                "Fuel & supply chain",
+                "Construction & licensing"
+              ],
+              "search_text": "Bannerman completes Etango funding, moves towards FID Bannerman Energy has completed an AUD124 million (USD89 million) underwritten placement which - together with the company's other financial arrangements - is expected to fully fund the Namibian Etango project through construction and ramp-up as the company moves towards a Final Investment Decision.",
+              "importance_score": 22
+            },
+            {
+              "date": "2026-09-09",
+              "title": "Groundwork begins at new Chinese plant site",
+              "summary": "Full-scale site levelling work for the initial phase of the Laiyang nuclear power plant in China's Shandong Province has begun, State Power Investment Corporation announced. The site will eventually house six Guohe One (CAP1400) units.",
+              "category": "New build & milestones",
+              "url": "https://www.world-nuclear-news.org/articles/groundwork-begins-at-new-chinese-plant-site",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Construction & licensing",
+                "Capital & financing"
+              ],
+              "search_text": "Groundwork begins at new Chinese plant site Full-scale site levelling work for the initial phase of the Laiyang nuclear power plant in China's Shandong Province has begun, State Power Investment Corporation announced. The site will eventually house six Guohe One (CAP1400) units.",
+              "importance_score": 15
+            },
+            {
+              "date": "2026-09-09",
+              "title": "Summit hears of surging interest in investing in nuclear projects",
+              "summary": "The growing interest in investing in nuclear energy, and how to ensure projects are structured to attract it, were key themes at the World Nuclear Symposium Finance Summit, which was also told that financiers feel like they are missing out if they haven't done nuclear deals.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/finance-summit-surging-interest-inverting-in-nuclear",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Google",
+                "Fortum"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Capital & financing"
+              ],
+              "search_text": "Google Fortum Summit hears of surging interest in investing in nuclear projects The growing interest in investing in nuclear energy, and how to ensure projects are structured to attract it, were key themes at the World Nuclear Symposium Finance Summit, which was also told that financiers feel like they are missing out if they haven't done nuclear deals.",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-09-08",
+              "title": "US Department of Energy closes loan for Duane Arnold restart",
+              "summary": "The US Department of Energy's Office of Energy Dominance Financing has closed a loan of up to USD1.9 billion to NextEra Energy to help finance the restart of the Duane Arnold Energy Center, taking the company closer to bringing Iowa's only nuclear power plant back into operation.",
+              "category": "Operations & restarts",
+              "url": "https://www.world-nuclear-news.org/articles/us-department-of-energy-closes-loan-for-duane-arnold-restart",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "NextEra Energy",
+                "Duane Arnold"
+              ],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Restarts & uprates",
+                "Capital & financing"
+              ],
+              "search_text": "NextEra Energy Duane Arnold US Department of Energy closes loan for Duane Arnold restart The US Department of Energy's Office of Energy Dominance Financing has closed a loan of up to USD1.9 billion to NextEra Energy to help finance the restart of the Duane Arnold Energy Center, taking the company closer to bringing Iowa's only nuclear power plant back into operation.",
+              "importance_score": 42
+            },
+            {
+              "date": "2026-09-08",
+              "title": "Rolls-Royce SMR, ABB agree to collaborate",
+              "summary": "ABB has signed a memorandum of understanding with the UK's Rolls-Royce SMR through which ABB will explore how its automation and electrification solutions can be used in the delivery of company's standardised, factory-built small modular reactors.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/rolls-royce-smr-abb-agree-to-collaborate",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Rolls-Royce SMR"
+              ],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Capital & financing"
+              ],
+              "search_text": "Rolls-Royce SMR Rolls-Royce SMR, ABB agree to collaborate ABB has signed a memorandum of understanding with the UK's Rolls-Royce SMR through which ABB will explore how its automation and electrification solutions can be used in the delivery of company's standardised, factory-built small modular reactors.",
+              "importance_score": 28
+            },
+            {
+              "date": "2026-09-08",
+              "title": "US maritime nuclear energy company raises USD50 million",
+              "summary": "Bluecore Energy, a developer of small modular, water-cooled reactors designed to operate aboard floating barges, has announced the close of a USD50 million seed financing to accelerate development, testing, and deployment of its floating nuclear energy systems.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/us-maritime-nuclear-energy-company-raises-usd50-million",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [
+                "Google",
+                "Amazon"
+              ],
+              "technologies": [
+                "Advanced fission"
+              ],
+              "categories": [
+                "Capital & financing"
+              ],
+              "search_text": "Google Amazon US maritime nuclear energy company raises USD50 million Bluecore Energy, a developer of small modular, water-cooled reactors designed to operate aboard floating barges, has announced the close of a USD50 million seed financing to accelerate development, testing, and deployment of its floating nuclear energy systems.",
+              "importance_score": 22
+            },
+            {
+              "date": "2026-09-08",
+              "title": "Guide aims to 'unlock mainstream finance' for nuclear",
+              "summary": "The World Nuclear Investment Guide sets out the value nuclear provides to energy systems, as well as providing practical guidance and checklists for governments and project teams and proposed developer and investment models.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/guide-aims-to-unlock-mainstream-finance-for-nuclear",
+              "links": [
+                {
+                  "label": "full guide",
+                  "url": "https://worldnuclearassociation.foleon.com/nuclear-investment-guide/nuclear-investment-guide/"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Capital & financing"
+              ],
+              "search_text": "Guide aims to 'unlock mainstream finance' for nuclear The World Nuclear Investment Guide sets out the value nuclear provides to energy systems, as well as providing practical guidance and checklists for governments and project teams and proposed developer and investment models.",
+              "importance_score": 17
+            },
+            {
+              "date": "2026-09-07",
+              "title": "Argentina aims for 2027 launch of RA-10 multipurpose reactor",
+              "summary": "The National Atomic Energy Commission and the Secretariat for Nuclear Affairs say commissioning of the RA-10 multipurpose reactor will begin before the end of the year - and outlined plans for private financing for the associated production plant.",
+              "category": "Corporate & financing",
+              "url": "https://www.world-nuclear-news.org/articles/argentina-aims-for-2027-launch-of-ra-10-multipurpose-reactor",
+              "links": [],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Capital & financing",
+                "Construction & licensing"
+              ],
+              "search_text": "Argentina aims for 2027 launch of RA-10 multipurpose reactor The National Atomic Energy Commission and the Secretariat for Nuclear Affairs say commissioning of the RA-10 multipurpose reactor will begin before the end of the year - and outlined plans for private financing for the associated production plant.",
+              "importance_score": 17
+            }
+          ]
+        },
+        {
+          "category": "Fuel & supply chain",
           "takeaway": "7 source-linked development(s) in this sector, including Uranium companies see new chapter for the market; New study sets 'robust' pathway for Honeymoon project.",
           "items": [
             {
@@ -2643,283 +3607,9 @@
           ]
         },
         {
-          "category": "New build & milestones",
-          "takeaway": "7 source-linked development(s) in this sector, including Tips from China's 56-month nuclear construction schedule; Deep Fission completes borehole demonstration.",
-          "items": [
-            {
-              "date": "2026-09-11",
-              "title": "Tips from China's 56-month nuclear construction schedule",
-              "summary": "The President of China's State Nuclear Power Technology Corporation, Ma Yuanhua, shared their \"thinking and practice\" in developing a fleet-based construction process which now has a target of 56 months for new nuclear power units.",
-              "category": "New build & milestones",
-              "url": "https://www.world-nuclear-news.org/articles/tips-from-china-for-56-month-nuclear-construction-schedule",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "Tips from China's 56-month nuclear construction schedule The President of China's State Nuclear Power Technology Corporation, Ma Yuanhua, shared their \"thinking and practice\" in developing a fleet-based construction process which now has a target of 56 months for new nuclear power units.",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-09-11",
-              "title": "Deep Fission completes borehole demonstration",
-              "summary": "A full-sized prototype of the canister that will hold the Gravity reactor has been installed and then retrieved from a borehole using standard equipment already in commercial service in the drilling industry.",
-              "category": "New build & milestones",
-              "url": "https://www.world-nuclear-news.org/articles/deep-fission-completes-borehole-demonstration",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "Deep Fission completes borehole demonstration A full-sized prototype of the canister that will hold the Gravity reactor has been installed and then retrieved from a borehole using standard equipment already in commercial service in the drilling industry.",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-09-09",
-              "title": "Groundwork begins at new Chinese plant site",
-              "summary": "Full-scale site levelling work for the initial phase of the Laiyang nuclear power plant in China's Shandong Province has begun, State Power Investment Corporation announced. The site will eventually house six Guohe One (CAP1400) units.",
-              "category": "New build & milestones",
-              "url": "https://www.world-nuclear-news.org/articles/groundwork-begins-at-new-chinese-plant-site",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Construction & licensing",
-                "Capital & financing"
-              ],
-              "search_text": "Groundwork begins at new Chinese plant site Full-scale site levelling work for the initial phase of the Laiyang nuclear power plant in China's Shandong Province has begun, State Power Investment Corporation announced. The site will eventually house six Guohe One (CAP1400) units.",
-              "importance_score": 15
-            },
-            {
-              "date": "2026-09-08",
-              "title": "Zaporizhzhia reconnected to external power after 18 days",
-              "summary": "A local ceasefire brokered by the International Atomic Energy Agency has allowed work to successfully take place to restore off-site power to the Zaporizhzhia nuclear power plant.",
-              "category": "New build & milestones",
-              "url": "https://www.world-nuclear-news.org/articles/zaporizhzhia-reconnected-to-external-power-after-18-days",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "Zaporizhzhia reconnected to external power after 18 days A local ceasefire brokered by the International Atomic Energy Agency has allowed work to successfully take place to restore off-site power to the Zaporizhzhia nuclear power plant.",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-09-08",
-              "title": "Key commissioning tests completed at Changjiang 4",
-              "summary": "Cold functional tests have been completed at unit 4 of the Changjiang nuclear power plant in China's Hainan province, China National Nuclear Corporation has announced.",
-              "category": "New build & milestones",
-              "url": "https://www.world-nuclear-news.org/articles/key-commissioning-tests-completed-at-changjiang-4",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "Key commissioning tests completed at Changjiang 4 Cold functional tests have been completed at unit 4 of the Changjiang nuclear power plant in China's Hainan province, China National Nuclear Corporation has announced.",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-09-07",
-              "title": "Construction under way of second Zhaoyuan unit",
-              "summary": "The first safety-related concrete has been poured for the reactor building of unit 2 at the Zhaoyuan nuclear power plant. It is the second of six HPR1000 (Hualong One) units planned for the site in China's Shandong province.",
-              "category": "New build & milestones",
-              "url": "https://www.world-nuclear-news.org/articles/construction-under-way-of-second-zhaoyuan-unit",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "Construction under way of second Zhaoyuan unit The first safety-related concrete has been poured for the reactor building of unit 2 at the Zhaoyuan nuclear power plant. It is the second of six HPR1000 (Hualong One) units planned for the site in China's Shandong province.",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-09-07",
-              "title": "Local ceasefire in place for Zaporizhzhia power line repairs",
-              "summary": "The International Atomic Energy Agency says that a seventh ceasefire is in place to allow demining and repair work to take place to restore external power to the Zaporizhzhia Nuclear Power Plant.",
-              "category": "New build & milestones",
-              "url": "https://www.world-nuclear-news.org/articles/local-ceasefire-in-place-for-zaporizhzhia-power-line-repairs",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "Local ceasefire in place for Zaporizhzhia power line repairs The International Atomic Energy Agency says that a seventh ceasefire is in place to allow demining and repair work to take place to restore external power to the Zaporizhzhia Nuclear Power Plant.",
-              "importance_score": 10
-            }
-          ]
-        },
-        {
-          "category": "Corporate & financing",
-          "takeaway": "5 source-linked development(s) in this sector, including Summit hears of surging interest in investing in nuclear projects; Rolls-Royce SMR, ABB agree to collaborate.",
-          "items": [
-            {
-              "date": "2026-09-09",
-              "title": "Summit hears of surging interest in investing in nuclear projects",
-              "summary": "The growing interest in investing in nuclear energy, and how to ensure projects are structured to attract it, were key themes at the World Nuclear Symposium Finance Summit, which was also told that financiers feel like they are missing out if they haven't done nuclear deals.",
-              "category": "Corporate & financing",
-              "url": "https://www.world-nuclear-news.org/articles/finance-summit-surging-interest-inverting-in-nuclear",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "Google",
-                "Fortum"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Capital & financing"
-              ],
-              "search_text": "Google Fortum Summit hears of surging interest in investing in nuclear projects The growing interest in investing in nuclear energy, and how to ensure projects are structured to attract it, were key themes at the World Nuclear Symposium Finance Summit, which was also told that financiers feel like they are missing out if they haven't done nuclear deals.",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-09-08",
-              "title": "Rolls-Royce SMR, ABB agree to collaborate",
-              "summary": "ABB has signed a memorandum of understanding with the UK's Rolls-Royce SMR through which ABB will explore how its automation and electrification solutions can be used in the delivery of company's standardised, factory-built small modular reactors.",
-              "category": "Corporate & financing",
-              "url": "https://www.world-nuclear-news.org/articles/rolls-royce-smr-abb-agree-to-collaborate",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "Rolls-Royce SMR"
-              ],
-              "technologies": [
-                "Advanced fission"
-              ],
-              "categories": [
-                "Capital & financing"
-              ],
-              "search_text": "Rolls-Royce SMR Rolls-Royce SMR, ABB agree to collaborate ABB has signed a memorandum of understanding with the UK's Rolls-Royce SMR through which ABB will explore how its automation and electrification solutions can be used in the delivery of company's standardised, factory-built small modular reactors.",
-              "importance_score": 28
-            },
-            {
-              "date": "2026-09-08",
-              "title": "US maritime nuclear energy company raises USD50 million",
-              "summary": "Bluecore Energy, a developer of small modular, water-cooled reactors designed to operate aboard floating barges, has announced the close of a USD50 million seed financing to accelerate development, testing, and deployment of its floating nuclear energy systems.",
-              "category": "Corporate & financing",
-              "url": "https://www.world-nuclear-news.org/articles/us-maritime-nuclear-energy-company-raises-usd50-million",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "Google",
-                "Amazon"
-              ],
-              "technologies": [
-                "Advanced fission"
-              ],
-              "categories": [
-                "Capital & financing"
-              ],
-              "search_text": "Google Amazon US maritime nuclear energy company raises USD50 million Bluecore Energy, a developer of small modular, water-cooled reactors designed to operate aboard floating barges, has announced the close of a USD50 million seed financing to accelerate development, testing, and deployment of its floating nuclear energy systems.",
-              "importance_score": 22
-            },
-            {
-              "date": "2026-09-08",
-              "title": "Guide aims to 'unlock mainstream finance' for nuclear",
-              "summary": "The World Nuclear Investment Guide sets out the value nuclear provides to energy systems, as well as providing practical guidance and checklists for governments and project teams and proposed developer and investment models.",
-              "category": "Corporate & financing",
-              "url": "https://www.world-nuclear-news.org/articles/guide-aims-to-unlock-mainstream-finance-for-nuclear",
-              "links": [
-                {
-                  "label": "full guide",
-                  "url": "https://worldnuclearassociation.foleon.com/nuclear-investment-guide/nuclear-investment-guide/"
-                }
-              ],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Capital & financing"
-              ],
-              "search_text": "Guide aims to 'unlock mainstream finance' for nuclear The World Nuclear Investment Guide sets out the value nuclear provides to energy systems, as well as providing practical guidance and checklists for governments and project teams and proposed developer and investment models.",
-              "importance_score": 17
-            },
-            {
-              "date": "2026-09-07",
-              "title": "Argentina aims for 2027 launch of RA-10 multipurpose reactor",
-              "summary": "The National Atomic Energy Commission and the Secretariat for Nuclear Affairs say commissioning of the RA-10 multipurpose reactor will begin before the end of the year - and outlined plans for private financing for the associated production plant.",
-              "category": "Corporate & financing",
-              "url": "https://www.world-nuclear-news.org/articles/argentina-aims-for-2027-launch-of-ra-10-multipurpose-reactor",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Capital & financing",
-                "Construction & licensing"
-              ],
-              "search_text": "Argentina aims for 2027 launch of RA-10 multipurpose reactor The National Atomic Energy Commission and the Secretariat for Nuclear Affairs say commissioning of the RA-10 multipurpose reactor will begin before the end of the year - and outlined plans for private financing for the associated production plant.",
-              "importance_score": 17
-            }
-          ]
-        },
-        {
           "category": "Other nuclear",
-          "takeaway": "3 source-linked development(s) in this sector, including Podcast: World Nuclear Outlook Report's key findings; Africa must be part of global nuclear renaissance, says Togolese leader.",
+          "takeaway": "2 source-linked development(s) in this sector, including Africa must be part of global nuclear renaissance, says Togolese leader; Fresh record set for nuclear generation in 2025.",
           "items": [
-            {
-              "date": "2026-09-11",
-              "title": "Podcast: World Nuclear Outlook Report's key findings",
-              "summary": "The World Nuclear Outlook Report outlines a record year for nuclear energy generation in 2025, highlights where that growth is coming from, assesses the progress towards ambitious future capacity goals, and also makes policy recommendations to help achieve them. Its author, Jonathan Cobb, joined the World Nuclear News podcast to discuss its findings in depth.",
-              "category": "Other nuclear",
-              "url": "https://www.world-nuclear-news.org/articles/podcast-world-nuclear-outlook-reports-key-findings",
-              "links": [
-                {
-                  "label": "World Nuclear News podcast homepage",
-                  "url": "https://www.buzzsprout.com/1976153"
-                },
-                {
-                  "label": "Apple",
-                  "url": "https://podcasts.apple.com/us/podcast/world-nuclear-news/id1621952595"
-                },
-                {
-                  "label": "Spotify",
-                  "url": "https://open.spotify.com/show/4s1Jg4XoaR7xVGc8zLO9n7"
-                }
-              ],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Policy & international"
-              ],
-              "search_text": "Podcast: World Nuclear Outlook Report's key findings The World Nuclear Outlook Report outlines a record year for nuclear energy generation in 2025, highlights where that growth is coming from, assesses the progress towards ambitious future capacity goals, and also makes policy recommendations to help achieve them. Its author, Jonathan Cobb, joined the World Nuclear News podcast to discuss its findings in depth.",
-              "importance_score": 0
-            },
             {
               "date": "2026-09-10",
               "title": "Africa must be part of global nuclear renaissance, says Togolese leader",
@@ -2964,50 +3654,6 @@
           ]
         },
         {
-          "category": "SMRs & advanced reactors",
-          "takeaway": "2 source-linked development(s) in this sector, including Norman Foster says nuclear is key for 'Electrical Revolution'; Kairos completes first phase of testing in ETU 3 reactor mockup.",
-          "items": [
-            {
-              "date": "2026-09-10",
-              "title": "Norman Foster says nuclear is key for 'Electrical Revolution'",
-              "summary": "Architect Norman Foster says that nuclear's ability to provide a \"vast amount of power\" with \"a tiny imprint\" means that micro-modular power units should be being produced at \"industrial-scale, like jet engines\" with the potential to autonomously power new developments and move beyond the \"obsolete idea of a grid\".",
-              "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/norman-foster-says-nuclear-key-for-electrical-revolution",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "Norman Foster says nuclear is key for 'Electrical Revolution' Architect Norman Foster says that nuclear's ability to provide a \"vast amount of power\" with \"a tiny imprint\" means that micro-modular power units should be being produced at \"industrial-scale, like jet engines\" with the potential to autonomously power new developments and move beyond the \"obsolete idea of a grid\".",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-09-07",
-              "title": "Kairos completes first phase of testing in ETU 3 reactor mockup",
-              "summary": "Testing at the mockup of the Hermes 2 reactor cavity has validated aspects of the precast concrete shielding design and remote handling and maintenance capabilities to support Kairos Power's Hermes 2 Demonstration Plant and future commercial fleet.",
-              "category": "SMRs & advanced reactors",
-              "url": "https://www.world-nuclear-news.org/articles/kairos-completes-first-phase-of-testing-in-etu-3-reactor-mockup",
-              "links": [],
-              "source": "World Nuclear News",
-              "entities": [
-                "Kairos Power"
-              ],
-              "technologies": [
-                "Advanced fission"
-              ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "Kairos Power Kairos completes first phase of testing in ETU 3 reactor mockup Testing at the mockup of the Hermes 2 reactor cavity has validated aspects of the precast concrete shielding design and remote handling and maintenance capabilities to support Kairos Power's Hermes 2 Demonstration Plant and future commercial fleet.",
-              "importance_score": 15
-            }
-          ]
-        },
-        {
           "category": "Fusion & research",
           "takeaway": "1 source-linked development(s) in this sector, including Proxima announces plan for German HTS production facility.",
           "items": [
@@ -3030,7 +3676,44 @@
           ]
         },
         {
-          "category": "Nuclear PPAs & offtake",
+          "category": "Policy & international",
+          "takeaway": "1 source-linked development(s) in this sector, including Podcast: World Nuclear Outlook Report's key findings.",
+          "items": [
+            {
+              "date": "2026-09-11",
+              "title": "Podcast: World Nuclear Outlook Report's key findings",
+              "summary": "The World Nuclear Outlook Report outlines a record year for nuclear energy generation in 2025, highlights where that growth is coming from, assesses the progress towards ambitious future capacity goals, and also makes policy recommendations to help achieve them. Its author, Jonathan Cobb, joined the World Nuclear News podcast to discuss its findings in depth.",
+              "category": "Other nuclear",
+              "url": "https://www.world-nuclear-news.org/articles/podcast-world-nuclear-outlook-reports-key-findings",
+              "links": [
+                {
+                  "label": "World Nuclear News podcast homepage",
+                  "url": "https://www.buzzsprout.com/1976153"
+                },
+                {
+                  "label": "Apple",
+                  "url": "https://podcasts.apple.com/us/podcast/world-nuclear-news/id1621952595"
+                },
+                {
+                  "label": "Spotify",
+                  "url": "https://open.spotify.com/show/4s1Jg4XoaR7xVGc8zLO9n7"
+                }
+              ],
+              "source": "World Nuclear News",
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Policy & international"
+              ],
+              "search_text": "Podcast: World Nuclear Outlook Report's key findings The World Nuclear Outlook Report outlines a record year for nuclear energy generation in 2025, highlights where that growth is coming from, assesses the progress towards ambitious future capacity goals, and also makes policy recommendations to help achieve them. Its author, Jonathan Cobb, joined the World Nuclear News podcast to discuss its findings in depth.",
+              "importance_score": 0
+            }
+          ]
+        },
+        {
+          "category": "Offtakes & customers",
           "takeaway": "1 source-linked development(s) in this sector, including Google signs up for electricity from Finnish nuclear power plant.",
           "items": [
             {
@@ -3057,7 +3740,7 @@
           ]
         },
         {
-          "category": "Operations & restarts",
+          "category": "Restarts & uprates",
           "takeaway": "1 source-linked development(s) in this sector, including US Department of Energy closes loan for Duane Arnold restart.",
           "items": [
             {

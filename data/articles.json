@@ -3,6 +3,95 @@
   "methodology": "All discovered in-scope World Nuclear News articles, without a monthly or quarterly quota; metadata and multi-label tags inferred from source text. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.",
   "articles": [
     {
+      "date": "2026-10-20",
+      "title": "Korean concern over proposed 'Made in EU' act's impact on nuclear power projects",
+      "summary": "Progress on the Dukovany new nuclear project is continuing on schedule, but South Korea has concerns about the potential impact of the European Union's proposed Industrial Accelerator Act on non-member countries participating in the EU's nuclear power market.",
+      "category": "New build & milestones",
+      "url": "https://www.world-nuclear-news.org/articles/korean-concerns-over-proposed-made-in-eu-acts-impact-nuclear-power-projects",
+      "links": [
+        {
+          "label": "proposed by the European Commission in March",
+          "url": "https://single-market-economy.ec.europa.eu/publications/industrial-accelerator-act_en"
+        }
+      ],
+      "source": "World Nuclear News",
+      "entities": [
+        "Rolls-Royce SMR",
+        "CEZ"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Construction & licensing"
+      ],
+      "search_text": "Rolls-Royce SMR CEZ Korean concern over proposed 'Made in EU' act's impact on nuclear power projects Progress on the Dukovany new nuclear project is continuing on schedule, but South Korea has concerns about the potential impact of the European Union's proposed Industrial Accelerator Act on non-member countries participating in the EU's nuclear power market.",
+      "importance_score": 53
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Indiana considering 6 GW Candu nuclear project",
+      "summary": "AtkinsRéalis Group, Hoosier Energy Rural Electric Cooperative and the State of Indiana in the US are to explore a potential project featuring up to eight Candu nuclear power units, with a combined 6 GW capacity.",
+      "category": "New build & milestones",
+      "url": "https://www.world-nuclear-news.org/articles/indiana-considering-6-gw-candu-nuclear-project",
+      "links": [],
+      "source": "World Nuclear News",
+      "entities": [
+        "Amazon",
+        "X-energy",
+        "US Nuclear Regulatory Commission"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Construction & licensing"
+      ],
+      "search_text": "Amazon X-energy US Nuclear Regulatory Commission Indiana considering 6 GW Candu nuclear project AtkinsRéalis Group, Hoosier Energy Rural Electric Cooperative and the State of Indiana in the US are to explore a potential project featuring up to eight Candu nuclear power units, with a combined 6 GW capacity.",
+      "importance_score": 51
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Philippines advances plans for nuclear power as energy demand rises",
+      "summary": "The Philippines is working to establish the policy, regulatory and commercial foundations for its first nuclear power project, with a target of 1.2 GW of capacity by 2032 and a longer-term ambition to reach 4.8 GW by 2050, the World Nuclear Supply Chain conference in Manila heard.",
+      "category": "New build & milestones",
+      "url": "https://www.world-nuclear-news.org/articles/philippines-advances-plans-for-nuclear-power-as-energy-demand-rises",
+      "links": [],
+      "source": "World Nuclear News",
+      "entities": [
+        "US Department of Energy"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Construction & licensing",
+        "Fuel & supply chain",
+        "Policy & international"
+      ],
+      "search_text": "US Department of Energy Philippines advances plans for nuclear power as energy demand rises The Philippines is working to establish the policy, regulatory and commercial foundations for its first nuclear power project, with a target of 1.2 GW of capacity by 2032 and a longer-term ambition to reach 4.8 GW by 2050, the World Nuclear Supply Chain conference in Manila heard.",
+      "importance_score": 40
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Aura aims for final investment decision on Mauritania project this year",
+      "summary": "Aura Energy Limited says it is targeting a final investment decision by the end of the year for the Tiris uranium project in Mauritania as a newly released bankable feasibility study confirms the project's economics. But Deep Yellow says current equity market conditions don't support a final investment decision for its Tumas project in Namibia during the current…",
+      "category": "Uranium & fuel",
+      "url": "https://www.world-nuclear-news.org/articles/aura-aims-fid-mauritania-project-this-year",
+      "links": [],
+      "source": "World Nuclear News",
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Fuel & supply chain",
+        "Capital & financing"
+      ],
+      "search_text": "Aura aims for final investment decision on Mauritania project this year Aura Energy Limited says it is targeting a final investment decision by the end of the year for the Tiris uranium project in Mauritania as a newly released bankable feasibility study confirms the project's economics. But Deep Yellow says current equity market conditions don't support a final investment decision for its Tumas project in Namibia during the current…",
+      "importance_score": 40
+    },
+    {
       "date": "2026-10-19",
       "title": "AEP, Amazon and X-energy planning 12-SMR plant",
       "category": "New build & milestones",
