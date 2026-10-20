@@ -1,0 +1,66 @@
+name: Refresh and publish nuclear digest
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'styles.css'
+      - 'app.js'
+      - 'data/**'
+      - 'scripts/**'
+      - '.github/workflows/refresh.yml'
+  workflow_dispatch:
+  schedule:
+    # 7 AM America/Chicago = 12 UTC summer, 13 UTC winter.
+    # The Python script ignores the other DST cron run.
+    - cron: '0 12 * * 1'
+    - cron: '0 13 * * 1'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: nuclear-digest-publishing
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install source reader
+        run: pip install --disable-pip-version-check -r requirements.txt
+      - name: Refresh WNN archive and weekly briefing
+        run: python scripts/refresh.py
+      - name: Commit source-linked data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/articles.json data/briefings.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh World Nuclear News archive [skip ci]"
+            git push
+          fi
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
