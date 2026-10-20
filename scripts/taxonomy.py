@@ -43,7 +43,13 @@ OLD={
 'SMRs & advanced reactors':'Construction & licensing',
 'Uranium & fuel':'Fuel & supply chain',
 'Corporate & financing':'Capital & financing',
-'Policy & regulation':'Policy & international'
+'Policy & regulation':'Policy & international',
+'Offtake & customers':'Offtakes & customers',
+'Restarts & uprates':'Restarts & uprates',
+'Construction & licensing':'Construction & licensing',
+'Fuel & supply chain':'Fuel & supply chain',
+'Capital & financing':'Capital & financing',
+'Policy & international':'Policy & international'
 }
 def entities_for(s):
     found=[]
