@@ -12,7 +12,7 @@ A source-attributed nuclear-sector research website, built on the existing World
 | American Nuclear Society (ANS) Nuclear Newswire | Nuclear news | Official RSS https://www.ans.org/news/feed/ |
 | Nuclear Innovation Alliance (NIA) Resources | Reports and policy research | Resources listing, **Reports**-marked publications only |
 | Breakthrough Institute — Nuclear Energy Innovation | Nuclear research and analysis | Published research pages, verifying each date and abstract |
-| NCEA Energy Policy Research Library | Nuclear policy research | **Not enabled:** exact linked library URL must be verified before ingestion |
+| National Center for Energy Analytics (NCEA) | Nuclear energy studies, issue briefs and policy research | [Publisher's Nuclear Energy library](https://energyanalytics.org/research-library?topic_equal=Nuclear+Energy); verify **each document's Nuclear Energy tag, original date and description** (the filtered URL can still expose unrelated studies in page HTML) |
 
 The separate Neutron Bytes feed is excluded entirely. Do not ingest it in this application.
 
@@ -52,7 +52,7 @@ Safeguards:
 
 ## Stack and limits
 
-HTML, CSS, vanilla JS; Python Requests, BeautifulSoup and XML; GitHub Actions; Vercel with a Git-linked main branch. This independent site is not affiliated with its publishers. Keep publisher excerpts concise and link to originals. Publisher availability, metadata completeness and changing page layouts constrain historical coverage. The NCEA feed must remain disabled until its exact **Nuclear Energy** topic-filtered research library URL is identified.
+HTML, CSS, vanilla JS; Python Requests, BeautifulSoup and XML; GitHub Actions; Vercel with a Git-linked main branch. This independent site is not affiliated with its publishers. Keep publisher excerpts concise and link to originals. Publisher availability, metadata completeness and changing page layouts constrain historical coverage. NCEA uses the user-confirmed **Nuclear Energy** research library and a strict per-document topic/date check. Since the library HTML can include unrelated energy studies, never trust the query parameter alone.
 
 ### Files
 
