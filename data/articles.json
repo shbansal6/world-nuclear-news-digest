@@ -157,23 +157,6 @@
     },
     {
       "date": "2026-10-20",
-      "title": "In latest Indiana power plant proposal, parties to explore CANDU reactors",
-      "summary": "Indiana, the Hoosier Energy Rural Electric Cooperative, and Montreal-based nuclear engineering company AtkinsRéalis have signed a memorandum of understanding (MOU) to partner up and explore the feasibility of an Indiana nuclear power plant with up to eight CANDU reactors. If deployed, the nuclear facility could provide up to 6 GW of new nuclear capacity.",
-      "category": "Nuclear developments",
-      "url": "https://www.ans.org/news/2026-10-20/article-8504/in-latest-indiana-power-plant-proposal-parties-to-explore-candu-reactors/",
-      "source": "ANS Nuclear Newswire",
-      "kind": "news",
-      "links": [],
-      "entities": [],
-      "technologies": [
-        "Traditional fission"
-      ],
-      "categories": [],
-      "search_text": "In latest Indiana power plant proposal, parties to explore CANDU reactors Indiana, the Hoosier Energy Rural Electric Cooperative, and Montreal-based nuclear engineering company AtkinsRéalis have signed a memorandum of understanding (MOU) to partner up and explore the feasibility of an Indiana nuclear power plant with up to eight CANDU reactors. If deployed, the nuclear facility could provide up to 6 GW of new nuclear capacity.",
-      "importance_score": 61
-    },
-    {
-      "date": "2026-10-20",
       "title": "Korean concern over proposed 'Made in EU' act's impact on nuclear power projects",
       "summary": "Progress on the Dukovany new nuclear project is continuing on schedule, but South Korea has concerns about the potential impact of the European Union's proposed Industrial Accelerator Act on non-member countries participating in the EU's nuclear power market.",
       "category": "New build & milestones",
@@ -208,8 +191,8 @@
       "source": "World Nuclear News",
       "entities": [
         "Amazon",
-        "X-energy",
-        "US Nuclear Regulatory Commission"
+        "US Nuclear Regulatory Commission",
+        "X-energy"
       ],
       "technologies": [
         "Traditional fission"
@@ -217,8 +200,15 @@
       "categories": [
         "Construction & licensing"
       ],
-      "search_text": "Amazon X-energy US Nuclear Regulatory Commission Indiana considering 6 GW Candu nuclear project AtkinsRéalis Group, Hoosier Energy Rural Electric Cooperative and the State of Indiana in the US are to explore a potential project featuring up to eight Candu nuclear power units, with a combined 6 GW capacity.",
-      "importance_score": 51
+      "search_text": "Amazon X-energy US Nuclear Regulatory Commission Indiana considering 6 GW Candu nuclear project AtkinsRéalis Group, Hoosier Energy Rural Electric Cooperative and the State of Indiana in the US are to explore a potential project featuring up to eight Candu nuclear power units, with a combined 6 GW capacity. In latest Indiana power plant proposal, parties to explore CANDU reactors Indiana, the Hoosier Energy Rural Electric Cooperative, and Montreal-based nuclear engineering company AtkinsRéalis have signed a memorandum of understanding (MOU) to partner up and explore the feasibility of an Indiana nuclear power plant with up to eight CANDU reactors. If deployed, the nuclear facility could provide up to 6 GW of new nuclear capacity.",
+      "importance_score": 51,
+      "alternate_sources": [
+        {
+          "source": "ANS Nuclear Newswire",
+          "url": "https://www.ans.org/news/2026-10-20/article-8504/in-latest-indiana-power-plant-proposal-parties-to-explore-candu-reactors/",
+          "title": "In latest Indiana power plant proposal, parties to explore CANDU reactors"
+        }
+      ]
     },
     {
       "date": "2026-10-20",
@@ -707,16 +697,15 @@
     },
     {
       "date": "2026-10-15",
-      "title": "Molten salt–fueled reactor experiment approved for DOE cost-shared funding",
-      "summary": "Yesterday, Southern Company and Core Power announced that the Department of Energy approved cost-shared funding through the Advanced Reactor Demonstration Program (ARDP) for an accelerated final stage of the Molten Chloride Reactor Experiment (MCRE), which the companies are conducting in collaboration with Idaho National Laboratory. According to the announcement, MCRE could achieve criticality as early as 2027,…",
-      "category": "Nuclear developments",
-      "url": "https://www.ans.org/news/2026-10-15/article-8491/molten-saltfueled-reactor-experiment-approved-for-doe-costshared-funding/",
-      "source": "ANS Nuclear Newswire",
-      "kind": "news",
+      "title": "US DOE funding to accelerate molten salt reactor development",
+      "category": "SMRs & advanced reactors",
+      "summary": "US DOE approved cost-shared funding for the Molten Chloride Reactor Experiment, which is targeting first criticality in 2027.",
+      "url": "https://www.world-nuclear-news.org/articles/us-doe-funding-to-accelerate-molten-chloride-reactor-development",
       "links": [],
+      "source": "World Nuclear News",
       "entities": [
-        "US Department of Energy",
-        "Southern Company"
+        "Southern Company",
+        "US Department of Energy"
       ],
       "technologies": [
         "Advanced fission"
@@ -725,29 +714,15 @@
         "Capital & financing",
         "Construction & licensing"
       ],
-      "search_text": "US Department of Energy Southern Company Molten salt–fueled reactor experiment approved for DOE cost-shared funding Yesterday, Southern Company and Core Power announced that the Department of Energy approved cost-shared funding through the Advanced Reactor Demonstration Program (ARDP) for an accelerated final stage of the Molten Chloride Reactor Experiment (MCRE), which the companies are conducting in collaboration with Idaho National Laboratory. According to the announcement, MCRE could achieve criticality as early as 2027,…",
-      "importance_score": 38
-    },
-    {
-      "date": "2026-10-15",
-      "title": "US DOE funding to accelerate molten salt reactor development",
-      "category": "SMRs & advanced reactors",
-      "summary": "US DOE approved cost-shared funding for the Molten Chloride Reactor Experiment, which is targeting first criticality in 2027.",
-      "url": "https://www.world-nuclear-news.org/articles/us-doe-funding-to-accelerate-molten-chloride-reactor-development",
-      "links": [],
-      "source": "World Nuclear News",
-      "entities": [
-        "US Department of Energy"
-      ],
-      "technologies": [
-        "Advanced fission"
-      ],
-      "categories": [
-        "Construction & licensing",
-        "Capital & financing"
-      ],
-      "search_text": "US Department of Energy US DOE funding to accelerate molten salt reactor development US DOE approved cost-shared funding for the Molten Chloride Reactor Experiment, which is targeting first criticality in 2027.",
-      "importance_score": 38
+      "search_text": "US Department of Energy US DOE funding to accelerate molten salt reactor development US DOE approved cost-shared funding for the Molten Chloride Reactor Experiment, which is targeting first criticality in 2027. Molten salt–fueled reactor experiment approved for DOE cost-shared funding Yesterday, Southern Company and Core Power announced that the Department of Energy approved cost-shared funding through the Advanced Reactor Demonstration Program (ARDP) for an accelerated final stage of the Molten Chloride Reactor Experiment (MCRE), which the companies are conducting in collaboration with Idaho National Laboratory. According to the announcement, MCRE could achieve criticality as early as 2027,…",
+      "importance_score": 38,
+      "alternate_sources": [
+        {
+          "source": "ANS Nuclear Newswire",
+          "url": "https://www.ans.org/news/2026-10-15/article-8491/molten-saltfueled-reactor-experiment-approved-for-doe-costshared-funding/",
+          "title": "Molten salt–fueled reactor experiment approved for DOE cost-shared funding"
+        }
+      ]
     },
     {
       "date": "2026-10-15",
@@ -2097,7 +2072,7 @@
       "categories": [
         "Construction & licensing"
       ],
-      "search_text": "BWXT BWXT's BANR microreactor selected for Canadian project BWX Technologies says that its BANR microreactor has been selected by Prodigy Clean Energy, Pabineau First Nation and Eel River Bar First Nation for a proposed project in Belledune in New Brunswick. BWXT’s BANR selected for Canadian project The BWX Technologies Advanced Nuclear Reactor (BANR) has been selected for a power plant project in the Canadian province of New Brunswick, the company announced on Monday. This project—which will progress through a partnership with Prodigy Clean Energy and the Pabineau and Eel River Bar First Nations—will mark two significant milestones for BANR: its first commercial deployment and its first international… BWXT’s BANR selected for Canadian project The BWX Technologies Advanced Nuclear Reactor (BANR) has been selected for a power plant project in the Canadian province of New Brunswick, the company announced on Monday. This project—which will progress through a partnership with Prodigy Clean Energy and the Pabineau and Eel River Bar First Nations—will mark two significant milestones for BANR: its first commercial deployment and its first international…",
+      "search_text": "BWXT BWXT's BANR microreactor selected for Canadian project BWX Technologies says that its BANR microreactor has been selected by Prodigy Clean Energy, Pabineau First Nation and Eel River Bar First Nation for a proposed project in Belledune in New Brunswick. BWXT’s BANR selected for Canadian project The BWX Technologies Advanced Nuclear Reactor (BANR) has been selected for a power plant project in the Canadian province of New Brunswick, the company announced on Monday. This project—which will progress through a partnership with Prodigy Clean Energy and the Pabineau and Eel River Bar First Nations—will mark two significant milestones for BANR: its first commercial deployment and its first international… BWXT’s BANR selected for Canadian project The BWX Technologies Advanced Nuclear Reactor (BANR) has been selected for a power plant project in the Canadian province of New Brunswick, the company announced on Monday. This project—which will progress through a partnership with Prodigy Clean Energy and the Pabineau and Eel River Bar First Nations—will mark two significant milestones for BANR: its first commercial deployment and its first international… BWXT’s BANR selected for Canadian project The BWX Technologies Advanced Nuclear Reactor (BANR) has been selected for a power plant project in the Canadian province of New Brunswick, the company announced on Monday. This project—which will progress through a partnership with Prodigy Clean Energy and the Pabineau and Eel River Bar First Nations—will mark two significant milestones for BANR: its first commercial deployment and its first international…",
       "importance_score": 10,
       "alternate_sources": [
         {
