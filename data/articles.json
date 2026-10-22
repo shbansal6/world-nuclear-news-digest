@@ -1,7 +1,177 @@
 {
-  "updated_at": "2026-10-20",
-  "methodology": "All discovered in-scope World Nuclear News articles, without a monthly or quarterly quota; metadata and multi-label tags inferred from source text. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.",
+  "updated_at": "2026-10-21",
+  "methodology": "In-scope WNN + ANS source-linked news with conservative event-level deduplication and individually catalogued research from NIA and Breakthrough; NCEA library awaits verified URL. No quota; metadata and multi-label tags inferred from public descriptions. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.",
   "articles": [
+    {
+      "date": "2026-10-21",
+      "title": "Westinghouse invests USD1 billion in US LEU+ fuel plant",
+      "summary": "Westinghouse has announced a USD1 billion investment in the first new fleet-scale nuclear fuel factory to be built in the USA in more than 50 years, at the Columbia Fuel Fabrication Facility in Hopkins, South Carolina.",
+      "category": "Uranium & fuel",
+      "url": "https://www.world-nuclear-news.org/articles/westinghouse-invests-usd1-billion-in-us-leu-fuel-plant",
+      "links": [],
+      "source": "World Nuclear News",
+      "entities": [
+        "Westinghouse",
+        "Vogtle"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Fuel & supply chain",
+        "Capital & financing"
+      ],
+      "search_text": "Westinghouse Vogtle Westinghouse invests USD1 billion in US LEU+ fuel plant Westinghouse has announced a USD1 billion investment in the first new fleet-scale nuclear fuel factory to be built in the USA in more than 50 years, at the Columbia Fuel Fabrication Facility in Hopkins, South Carolina.",
+      "importance_score": 45
+    },
+    {
+      "date": "2026-10-21",
+      "title": "The Nuclear Company proposes 6.6 GW Kentucky project",
+      "summary": "The Nuclear Company has outlined plans for an energy campus in Lewis County, Kentucky, which could feature up to six AP1000 reactors - this would make its 6.6 GW capacity larger than any current nuclear power plant in the USA.",
+      "category": "New build & milestones",
+      "url": "https://www.world-nuclear-news.org/articles/nuclear-company-proposes-66-gw-kentucky-project",
+      "links": [],
+      "source": "World Nuclear News",
+      "entities": [
+        "Westinghouse"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Construction & licensing"
+      ],
+      "search_text": "Westinghouse The Nuclear Company proposes 6.6 GW Kentucky project The Nuclear Company has outlined plans for an energy campus in Lewis County, Kentucky, which could feature up to six AP1000 reactors - this would make its 6.6 GW capacity larger than any current nuclear power plant in the USA.",
+      "importance_score": 33
+    },
+    {
+      "date": "2026-10-21",
+      "title": "ASEAN nations assessing nuclear energy option",
+      "summary": "Southeast Asian countries are taking a pragmatic look at nuclear power as they seek to meet rapidly growing electricity demand, strengthen energy security and diversify their power generation mix, delegates heard at the World Nuclear Supply Chain conference in Manila.",
+      "category": "Other nuclear",
+      "url": "https://www.world-nuclear-news.org/articles/asean-nations-assessing-nuclear-energy-option",
+      "links": [],
+      "source": "World Nuclear News",
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Fuel & supply chain"
+      ],
+      "search_text": "ASEAN nations assessing nuclear energy option Southeast Asian countries are taking a pragmatic look at nuclear power as they seek to meet rapidly growing electricity demand, strengthen energy security and diversify their power generation mix, delegates heard at the World Nuclear Supply Chain conference in Manila.",
+      "importance_score": 23
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Second round of Genesis Mission selections includes 12 Phase II awards",
+      "summary": "The Department of Energy has announced the selection of 12 new Phase II awards and six new Phase I awards through its Genesis Mission, including projects related to fusion energy and high-radiation environments. In July, the DOE announced the selection of 278 projects under the Genesis Mission, most of which were Phase I projects. Phase II awards are intended to scale up and expand projects that have already…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-21/article-8506/second-round-of-genesis-mission-selections-includes-12-phase-ii-awards/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Department of Energy"
+      ],
+      "technologies": [
+        "Fusion"
+      ],
+      "categories": [],
+      "search_text": "US Department of Energy Second round of Genesis Mission selections includes 12 Phase II awards The Department of Energy has announced the selection of 12 new Phase II awards and six new Phase I awards through its Genesis Mission, including projects related to fusion energy and high-radiation environments. In July, the DOE announced the selection of 278 projects under the Genesis Mission, most of which were Phase I projects. Phase II awards are intended to scale up and expand projects that have already…",
+      "importance_score": 20
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Nuclear developments in Wyoming, Kentucky, and Louisiana",
+      "summary": "Many regions of the country remain in the headlines with new or developing nuclear projects. Earlier this week, Nuclear News reported on recent goings-on in Indiana. In other updates, TerraPower hosted top-level government officials at its Natrium site in Kemmerer, Wyo.; Kentucky is putting out feelers to gauge interest in available funding for new nuclear projects; and Louisiana’s Advanced Nuclear Exploration…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-21/article-8508/nuclear-developments-in-wyoming-kentucky-and-louisiana/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "TerraPower"
+      ],
+      "technologies": [
+        "Advanced fission"
+      ],
+      "categories": [
+        "Capital & financing",
+        "Policy & international"
+      ],
+      "search_text": "TerraPower Nuclear developments in Wyoming, Kentucky, and Louisiana Many regions of the country remain in the headlines with new or developing nuclear projects. Earlier this week, Nuclear News reported on recent goings-on in Indiana. In other updates, TerraPower hosted top-level government officials at its Natrium site in Kemmerer, Wyo.; Kentucky is putting out feelers to gauge interest in available funding for new nuclear projects; and Louisiana’s Advanced Nuclear Exploration…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-21",
+      "title": "IPP, Columbia University establish international fusion research center",
+      "summary": "The Max Planck Institute for Plasma Physics (IPP) in Germany and Columbia University have established a new, “virtual,” joint transatlantic fusion energy research center called the Max Planck Columbia Center. The center is being directed by both IPP director Thomas Klinger and Columbia University associate professor of applied physics and applied mathematics Carlos Paz-Soldan. Paz-Soldan also serves as director of…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-21/article-8507/ipp-columbia-university-establish-international-fusion-research-center/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Fusion"
+      ],
+      "categories": [],
+      "search_text": "IPP, Columbia University establish international fusion research center The Max Planck Institute for Plasma Physics (IPP) in Germany and Columbia University have established a new, “virtual,” joint transatlantic fusion energy research center called the Max Planck Columbia Center. The center is being directed by both IPP director Thomas Klinger and Columbia University associate professor of applied physics and applied mathematics Carlos Paz-Soldan. Paz-Soldan also serves as director of…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Canada: City opposes deep repository designation; court denies NSDF challenge",
+      "summary": "Two recent developments in Ontario, Canada, could have ramifications for the country’s efforts to dispose of its legacy nuclear waste. In the province’s western half, the city of Dryden voted to formally request that Canada’s Major Projects Office deny “project of national interest” status for a proposal for a nearby deep geological repository. To the east, Canada’s Federal Court of Appeal ruled that the Canadian…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-21/article-8505/canada-city-opposes-deep-repository-designation-court-denies-nsdf-challenge/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Canada: City opposes deep repository designation; court denies NSDF challenge Two recent developments in Ontario, Canada, could have ramifications for the country’s efforts to dispose of its legacy nuclear waste. In the province’s western half, the city of Dryden voted to formally request that Canada’s Major Projects Office deny “project of national interest” status for a proposal for a nearby deep geological repository. To the east, Canada’s Federal Court of Appeal ruled that the Canadian…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-21",
+      "title": "IAEA says Barakah drone-strike response was effective",
+      "summary": "An International Atomic Energy Agency mission to the United Arab Emirates has said that effective action was taken following the loss of off-site power to Barakah Nuclear Power Plant's unit 3 following a drone strike in May which caused a fire in a generator located outside the inner perimeter of the plant.",
+      "category": "Policy & regulation",
+      "url": "https://www.world-nuclear-news.org/articles/iaea-says-barakah-drone-strike-response-was-effective",
+      "links": [],
+      "source": "World Nuclear News",
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international"
+      ],
+      "search_text": "IAEA says Barakah drone-strike response was effective An International Atomic Energy Agency mission to the United Arab Emirates has said that effective action was taken following the loss of off-site power to Barakah Nuclear Power Plant's unit 3 following a drone strike in May which caused a fire in a generator located outside the inner perimeter of the plant.",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-20",
+      "title": "In latest Indiana power plant proposal, parties to explore CANDU reactors",
+      "summary": "Indiana, the Hoosier Energy Rural Electric Cooperative, and Montreal-based nuclear engineering company AtkinsRéalis have signed a memorandum of understanding (MOU) to partner up and explore the feasibility of an Indiana nuclear power plant with up to eight CANDU reactors. If deployed, the nuclear facility could provide up to 6 GW of new nuclear capacity.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-20/article-8504/in-latest-indiana-power-plant-proposal-parties-to-explore-candu-reactors/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "In latest Indiana power plant proposal, parties to explore CANDU reactors Indiana, the Hoosier Energy Rural Electric Cooperative, and Montreal-based nuclear engineering company AtkinsRéalis have signed a memorandum of understanding (MOU) to partner up and explore the feasibility of an Indiana nuclear power plant with up to eight CANDU reactors. If deployed, the nuclear facility could provide up to 6 GW of new nuclear capacity.",
+      "importance_score": 61
+    },
     {
       "date": "2026-10-20",
       "title": "Korean concern over proposed 'Made in EU' act's impact on nuclear power projects",
@@ -92,6 +262,85 @@
       "importance_score": 40
     },
     {
+      "date": "2026-10-20",
+      "title": "SRS fills first mega-volume disposal unit with grout",
+      "summary": "Saltstone Disposal Unit (SDU) 6, the first of seven mega-volume disposal units built at the Savannah River Site near Aiken, S.C., has been filled with grouted legacy tank waste, according to the Department of Energy. Last week’s announcement from the DOE marked a milestone in efforts to clean up nuclear waste that for decades had been stored underground in 51 carbon-steel tanks at the site. SDU 6, which accepted its…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-20/article-8503/srs-fills-first-megavolume-disposal-unit-with-grout/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Department of Energy"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "US Department of Energy SRS fills first mega-volume disposal unit with grout Saltstone Disposal Unit (SDU) 6, the first of seven mega-volume disposal units built at the Savannah River Site near Aiken, S.C., has been filled with grouted legacy tank waste, according to the Department of Energy. Last week’s announcement from the DOE marked a milestone in efforts to clean up nuclear waste that for decades had been stored underground in 51 carbon-steel tanks at the site. SDU 6, which accepted its…",
+      "importance_score": 25
+    },
+    {
+      "date": "2026-10-20",
+      "title": "NRC reviews first 100 days after reorganization",
+      "summary": "Roughly 100 days ago, the Nuclear Regulatory Commission began a massive structural reorganization, which included, among other changes, a reorganization around core business lines and the establishment of two new offices: the Office of the Chief Nuclear Reactor Inspector and the Office of Advanced Reactors. On October 15, NRC officials and staff met with the five commissioners at the NRC Region IV offices in…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-20/article-8502/nrc-reviews-first-100-days-after-reorganization/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international",
+        "Construction & licensing"
+      ],
+      "search_text": "US Nuclear Regulatory Commission NRC reviews first 100 days after reorganization Roughly 100 days ago, the Nuclear Regulatory Commission began a massive structural reorganization, which included, among other changes, a reorganization around core business lines and the establishment of two new offices: the Office of the Chief Nuclear Reactor Inspector and the Office of Advanced Reactors. On October 15, NRC officials and staff met with the five commissioners at the NRC Region IV offices in…",
+      "importance_score": 25
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Grants Reclamation Project: One remediation, multiple regulators",
+      "summary": "The history of Homestake Mining Company’s Grants Reclamation Project traces its roots to 1950, when a Navajo sheepherder and prospector named Patricio “Paddy” Martinez discovered uranium at Haystack Mesa in the San Juan Basin near Grants, N.M., leading to a uranium mining boom in western New Mexico that lasted decades.1 Beginning in 1958, uranium mined from the area was brought to the Homestake uranium mill near…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-20/article-8428/grants-reclamation-project-one-remediation-multiple-regulators/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Fuel & supply chain"
+      ],
+      "search_text": "Grants Reclamation Project: One remediation, multiple regulators The history of Homestake Mining Company’s Grants Reclamation Project traces its roots to 1950, when a Navajo sheepherder and prospector named Patricio “Paddy” Martinez discovered uranium at Haystack Mesa in the San Juan Basin near Grants, N.M., leading to a uranium mining boom in western New Mexico that lasted decades.1 Beginning in 1958, uranium mined from the area was brought to the Homestake uranium mill near…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Choosing the Right LTO Partner Matters Now More Than Ever",
+      "summary": "Surging electricity demand. Favorable economics. Paired LTO and uprates. These are just some of the compelling reasons Long-Term Operation programs are gaining momentum among U.S. utilities. As nuclear energy demand continues to grow, many utilities are turning to LTO to transform aging assets into expanded capacity.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-20/article-8458/choosing-the-right-lto-partner-matters-now-more-than-ever/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Restarts & uprates"
+      ],
+      "search_text": "Choosing the Right LTO Partner Matters Now More Than Ever Surging electricity demand. Favorable economics. Paired LTO and uprates. These are just some of the compelling reasons Long-Term Operation programs are gaining momentum among U.S. utilities. As nuclear energy demand continues to grow, many utilities are turning to LTO to transform aging assets into expanded capacity.",
+      "importance_score": 10
+    },
+    {
       "date": "2026-10-19",
       "title": "AEP, Amazon and X-energy planning 12-SMR plant",
       "category": "New build & milestones",
@@ -113,6 +362,26 @@
       ],
       "search_text": "Amazon X-energy Xe-100 AEP, Amazon and X-energy planning 12-SMR plant American Electric Power and X-energy agreed to assess a 960 MW, 12-unit Xe-100 project in Indiana, with Amazon expected to support development and power offtake.",
       "importance_score": 51
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Amazon, AEP, X-energy explore SMR feasibility in Indiana",
+      "summary": "Amazon, American Electric Power, and X-energy are partnering up to potentially bring a 960-MW nuclear power plant to western Indiana as the state’s first commercial nuclear generation. The three announced earlier today a joint development agreement to explore the feasibility of a nuclear power project at the former Breed coal-fired power plant in Sullivan County, Ind., that would involve the deployment of 12…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-19/article-8501/amazon-aep-xenergy-explore-smr-feasibility-in-indiana/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "Amazon",
+        "X-energy"
+      ],
+      "technologies": [
+        "Advanced fission"
+      ],
+      "categories": [],
+      "search_text": "Amazon X-energy Amazon, AEP, X-energy explore SMR feasibility in Indiana Amazon, American Electric Power, and X-energy are partnering up to potentially bring a 960-MW nuclear power plant to western Indiana as the state’s first commercial nuclear generation. The three announced earlier today a joint development agreement to explore the feasibility of a nuclear power project at the former Breed coal-fired power plant in Sullivan County, Ind., that would involve the deployment of 12…",
+      "importance_score": 27
     },
     {
       "date": "2026-10-19",
@@ -156,6 +425,61 @@
     },
     {
       "date": "2026-10-19",
+      "title": "Merkley and Markey introduce resolution to block U.S.-Saudi deal",
+      "summary": "In the latest update in the ongoing pushback to the proposed civil nuclear cooperation agreement between the United States and Saudia Arabia, Sens. Jeff Merkley (D., Ore.) and Edward Markey (D., Mass.) have officially introduced a Joint Resolution of Disapproval (JRD) in an effort to block the deal from going into effect.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-19/article-8500/merkley-and-markey-introduce-resolution-to-block-ussaudi-deal/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Merkley and Markey introduce resolution to block U.S.-Saudi deal In the latest update in the ongoing pushback to the proposed civil nuclear cooperation agreement between the United States and Saudia Arabia, Sens. Jeff Merkley (D., Ore.) and Edward Markey (D., Mass.) have officially introduced a Joint Resolution of Disapproval (JRD) in an effort to block the deal from going into effect.",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-19",
+      "title": "IBA and Framatome form Ekalia for At-211 production",
+      "summary": "On Friday, Framatome and Ion Beam Applications announced the next step in their plan to advance the industrial-scale production of astatine-211 in Europe and the United States. The partners have formed a jointly owned company, Ekalia, through which they will deploy a network of At-211 production sites close to customers. According to IBA, the first production site is planned in Nantes, France, and Ekalia expects to…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-19/article-8498/iba-and-framatome-form-ekalia-for-at211-production/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "Framatome"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Framatome IBA and Framatome form Ekalia for At-211 production On Friday, Framatome and Ion Beam Applications announced the next step in their plan to advance the industrial-scale production of astatine-211 in Europe and the United States. The partners have formed a jointly owned company, Ekalia, through which they will deploy a network of At-211 production sites close to customers. According to IBA, the first production site is planned in Nantes, France, and Ekalia expects to…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-19",
+      "title": "IAEA publishes report on isotope tracing for water pollution monitoring",
+      "summary": "After a four-year coordinated research project involving 14 countries to develop and test new isotope-based methods for tracing nitrate pollution in river and groundwater systems led by the International Atomic Energy Agency, a report has been published describing the outcomes. The countries that participated in the study were Argentina, Australia, Burkina Faso, Cameroon, Ecuador, Finland, France, Greece, Italy,…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-19/article-8497/iaea-publishes-report-on-isotope-tracing-for-water-pollution-monitoring/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international"
+      ],
+      "search_text": "IAEA publishes report on isotope tracing for water pollution monitoring After a four-year coordinated research project involving 14 countries to develop and test new isotope-based methods for tracing nitrate pollution in river and groundwater systems led by the International Atomic Energy Agency, a report has been published describing the outcomes. The countries that participated in the study were Argentina, Australia, Burkina Faso, Cameroon, Ecuador, Finland, France, Greece, Italy,…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-19",
       "title": "Joint venture to produce HALEU in South Africa",
       "category": "Uranium & fuel",
       "summary": "Quantum Leap Energy and South Africa's Necsa set out a proposed Pelindaba venture to develop test and commercial production of high-assay low-enriched uranium.",
@@ -175,6 +499,54 @@
     },
     {
       "date": "2026-10-16",
+      "title": "NRC allows alternate approach to removing tilted fuel assembly at Palisades",
+      "summary": "Roughly two weeks after Holtec submitted a license amendment request (LAR) following a fuel loading incident at the Palisades nuclear power plant, the Nuclear Regulatory Commission approved Holtec’s emergency request to remove a tilted fuel assembly from the power plant’s reactor vessel using custom-made equipment.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-16/article-8495/nrc-allows-alternate-approach-to-removing-tilted-fuel-assembly-at-palisades/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission",
+        "Holtec",
+        "Palisades"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international",
+        "Construction & licensing"
+      ],
+      "search_text": "US Nuclear Regulatory Commission Holtec Palisades NRC allows alternate approach to removing tilted fuel assembly at Palisades Roughly two weeks after Holtec submitted a license amendment request (LAR) following a fuel loading incident at the Palisades nuclear power plant, the Nuclear Regulatory Commission approved Holtec’s emergency request to remove a tilted fuel assembly from the power plant’s reactor vessel using custom-made equipment.",
+      "importance_score": 38
+    },
+    {
+      "date": "2026-10-16",
+      "title": "NRC OKs Westinghouse AP1000 design certification revision, renewal",
+      "summary": "The Nuclear Regulatory Commission has approved Westinghouse’s request to renew and update the standard design certification (DC) for its AP1000 reactor. Wednesday’s renewal allows Westinghouse to incorporate the lessons learned from the construction of Vogtle-3 and -4 in Georgia into the design of the AP1000, establishing Vogtle-4 as the standard AP1000 reference plant for U.S. deployment. The DC renewal should…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-16/article-8493/nrc-oks-westinghouse-ap1000-design-certification-revision-renewal/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission",
+        "Westinghouse",
+        "Vogtle"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Construction & licensing",
+        "Policy & international"
+      ],
+      "search_text": "US Nuclear Regulatory Commission Westinghouse Vogtle NRC OKs Westinghouse AP1000 design certification revision, renewal The Nuclear Regulatory Commission has approved Westinghouse’s request to renew and update the standard design certification (DC) for its AP1000 reactor. Wednesday’s renewal allows Westinghouse to incorporate the lessons learned from the construction of Vogtle-3 and -4 in Georgia into the design of the AP1000, establishing Vogtle-4 as the standard AP1000 reference plant for U.S. deployment. The DC renewal should…",
+      "importance_score": 38
+    },
+    {
+      "date": "2026-10-16",
       "title": "Mochovce 4 connected to the grid",
       "category": "New build & milestones",
       "summary": "Slovakia's Mochovce 4 began supplying electricity to the grid, marking a commissioning milestone.",
@@ -190,6 +562,57 @@
       ],
       "search_text": "Mochovce 4 connected to the grid Slovakia's Mochovce 4 began supplying electricity to the grid, marking a commissioning milestone.",
       "importance_score": 35
+    },
+    {
+      "date": "2026-10-16",
+      "title": "New 3D imaging technique supports detailed analysis of cladding stability",
+      "summary": "A team of researchers at Switzerland’s Paul Scherrer Institute has published a paper outlining a novel method of assessing the structural integrity of zirconium alloy fuel rod cladding. In the paper, published in the journal Advanced Engineering Materials , the team describes using a process called ptychographic X-ray computed tomography (PXCT) that was developed at PSI’s Swiss Light Source facility. The lens-less…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-16/article-8494/new-3d-imaging-technique-supports-detailed-analysis-of-cladding-stability/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "New 3D imaging technique supports detailed analysis of cladding stability A team of researchers at Switzerland’s Paul Scherrer Institute has published a paper outlining a novel method of assessing the structural integrity of zirconium alloy fuel rod cladding. In the paper, published in the journal Advanced Engineering Materials , the team describes using a process called ptychographic X-ray computed tomography (PXCT) that was developed at PSI’s Swiss Light Source facility. The lens-less…",
+      "importance_score": 15
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Browns Ferry and the fight against eelgrass",
+      "summary": "Opportunities to improve maintenance efficiency can arise unexpectedly at nuclear power plants. At Browns Ferry in Athens, Ala., one opportunity arose when an unexpected surge of nonnative eelgrass in the Tennessee River clogged the cooling water intake, prompting the shutdown of two reactors and the derating of a third to about 78 percent power. Power plant engineers said the single surge reportedly cost the…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-16/article-8413/browns-ferry-and-the-fight-against-eelgrass/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Browns Ferry and the fight against eelgrass Opportunities to improve maintenance efficiency can arise unexpectedly at nuclear power plants. At Browns Ferry in Athens, Ala., one opportunity arose when an unexpected surge of nonnative eelgrass in the Tennessee River clogged the cooling water intake, prompting the shutdown of two reactors and the derating of a third to about 78 percent power. Power plant engineers said the single surge reportedly cost the…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Three universities launch nuclear education consortium",
+      "summary": "Three universities are coming together to meet the emerging need to fill gaps in the nuclear workforce by developing microcredentials and immersive training tools that bring nuclear education to a broader group of students. Arizona State University, Purdue University, and the University of Tennessee–Knoxville announced they have launched the New Nuclear Academic Consortium.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-16/article-8496/three-universities-launch-nuclear-education-consortium/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Three universities launch nuclear education consortium Three universities are coming together to meet the emerging need to fill gaps in the nuclear workforce by developing microcredentials and immersive training tools that bring nuclear education to a broader group of students. Arizona State University, Purdue University, and the University of Tennessee–Knoxville announced they have launched the New Nuclear Academic Consortium.",
+      "importance_score": 10
     },
     {
       "date": "2026-10-16",
@@ -284,6 +707,29 @@
     },
     {
       "date": "2026-10-15",
+      "title": "Molten salt–fueled reactor experiment approved for DOE cost-shared funding",
+      "summary": "Yesterday, Southern Company and Core Power announced that the Department of Energy approved cost-shared funding through the Advanced Reactor Demonstration Program (ARDP) for an accelerated final stage of the Molten Chloride Reactor Experiment (MCRE), which the companies are conducting in collaboration with Idaho National Laboratory. According to the announcement, MCRE could achieve criticality as early as 2027,…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-15/article-8491/molten-saltfueled-reactor-experiment-approved-for-doe-costshared-funding/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Department of Energy",
+        "Southern Company"
+      ],
+      "technologies": [
+        "Advanced fission"
+      ],
+      "categories": [
+        "Capital & financing",
+        "Construction & licensing"
+      ],
+      "search_text": "US Department of Energy Southern Company Molten salt–fueled reactor experiment approved for DOE cost-shared funding Yesterday, Southern Company and Core Power announced that the Department of Energy approved cost-shared funding through the Advanced Reactor Demonstration Program (ARDP) for an accelerated final stage of the Molten Chloride Reactor Experiment (MCRE), which the companies are conducting in collaboration with Idaho National Laboratory. According to the announcement, MCRE could achieve criticality as early as 2027,…",
+      "importance_score": 38
+    },
+    {
+      "date": "2026-10-15",
       "title": "US DOE funding to accelerate molten salt reactor development",
       "category": "SMRs & advanced reactors",
       "summary": "US DOE approved cost-shared funding for the Molten Chloride Reactor Experiment, which is targeting first criticality in 2027.",
@@ -305,6 +751,67 @@
     },
     {
       "date": "2026-10-15",
+      "title": "Oklo announces plans for Groves-2",
+      "summary": "This week, Oklo revealed the details of the next chapter of its Groves project. Those plans will build on the company’s previous progress through the Department of Energy’s Reactor Pilot Program, will be enabled by the DOE’s follow-on Nuclear Energy Launch Pad Program, and will focus initially on medical isotope production.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-15/article-8492/oklo-announces-plans-for-groves2/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Department of Energy",
+        "Oklo"
+      ],
+      "technologies": [
+        "Advanced fission"
+      ],
+      "categories": [],
+      "search_text": "US Department of Energy Oklo Oklo announces plans for Groves-2 This week, Oklo revealed the details of the next chapter of its Groves project. Those plans will build on the company’s previous progress through the Department of Energy’s Reactor Pilot Program, will be enabled by the DOE’s follow-on Nuclear Energy Launch Pad Program, and will focus initially on medical isotope production.",
+      "importance_score": 27
+    },
+    {
+      "date": "2026-10-15",
+      "title": "NRC finds “chilled work environment” at Palisades",
+      "summary": "Employees in the supply chain and quality assurance departments at the Palisades nuclear plant may be hesitant to raise safety concerns using the avenues at their disposal for fear of retaliation, a report from the Nuclear Regulatory Commission has concluded. The findings in the report published Tuesday stem from a July inspection of the Covert, Mich., plant, which is trying to become the first U.S. nuclear power…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-15/article-8490/nrc-finds-chilled-work-environment-at-palisades/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission",
+        "Palisades"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international",
+        "Construction & licensing",
+        "Fuel & supply chain"
+      ],
+      "search_text": "US Nuclear Regulatory Commission Palisades NRC finds “chilled work environment” at Palisades Employees in the supply chain and quality assurance departments at the Palisades nuclear plant may be hesitant to raise safety concerns using the avenues at their disposal for fear of retaliation, a report from the Nuclear Regulatory Commission has concluded. The findings in the report published Tuesday stem from a July inspection of the Covert, Mich., plant, which is trying to become the first U.S. nuclear power…",
+      "importance_score": 20
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Public-private partnership to bring new exhaust system to DIII-D",
+      "summary": "The DIII-D National Fusion Facility announced last week that it will partner with Kyoto Fusioneering to design, manufacture, install, and operate a new power exhaust system in the DIII-D tokamak to advance a negative triangularity approach for commercialization. This effort builds on the company’s partnership with Oak Ridge National Laboratory, which was announced earlier this year.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-15/article-8489/publicprivate-partnership-to-bring-new-exhaust-system-to-diiid/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Fusion"
+      ],
+      "categories": [],
+      "search_text": "Public-private partnership to bring new exhaust system to DIII-D The DIII-D National Fusion Facility announced last week that it will partner with Kyoto Fusioneering to design, manufacture, install, and operate a new power exhaust system in the DIII-D tokamak to advance a negative triangularity approach for commercialization. This effort builds on the company’s partnership with Oak Ridge National Laboratory, which was announced earlier this year.",
+      "importance_score": 15
+    },
+    {
+      "date": "2026-10-15",
       "title": "Milestone for Bruce 4 refurbishment",
       "category": "Operations & restarts",
       "summary": "Bruce Power completed installation of 480 calandria tubes for the unit 4 refurbishment, progressing its major component replacement programme.",
@@ -322,6 +829,23 @@
       ],
       "search_text": "Bruce Power Milestone for Bruce 4 refurbishment Bruce Power completed installation of 480 calandria tubes for the unit 4 refurbishment, progressing its major component replacement programme.",
       "importance_score": 15
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Supplier Showcase: Nuclearn talks equipment AI",
+      "summary": "The American Nuclear Society recently hosted a Supplier Showcase webinar, “From Alarm to Answer: How AI Can Reduce Equipment Load and Enhance Performance,” in partnership with Nuclearn, a provider of AI tools built for the nuclear industry.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-15/article-8488/supplier-showcase-nuclearn-talks-equipment-ai/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Supplier Showcase: Nuclearn talks equipment AI The American Nuclear Society recently hosted a Supplier Showcase webinar, “From Alarm to Answer: How AI Can Reduce Equipment Load and Enhance Performance,” in partnership with Nuclearn, a provider of AI tools built for the nuclear industry.",
+      "importance_score": 10
     },
     {
       "date": "2026-10-15",
@@ -382,6 +906,83 @@
       ],
       "search_text": "Westinghouse Westinghouse places initial orders for Polish plant Westinghouse issued conditional orders for safety-related AP1000 modules to four Polish companies, an early supply-chain milestone for Poland's first plant.",
       "importance_score": 43
+    },
+    {
+      "date": "2026-10-14",
+      "title": "ABS, DOE-NE sign maritime nuclear MOU",
+      "summary": "The American Bureau of Shipping and the Department of Energy’s Office of Nuclear Energy have signed a memorandum of understanding to advance modern commercial nuclear technology at sea, whether as floating nuclear power plants; nuclear-powered vessels; or at ports, shipyards, or industrial bases.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-14/article-8487/abs-doene-sign-maritime-nuclear-mou/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Department of Energy"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "US Department of Energy ABS, DOE-NE sign maritime nuclear MOU The American Bureau of Shipping and the Department of Energy’s Office of Nuclear Energy have signed a memorandum of understanding to advance modern commercial nuclear technology at sea, whether as floating nuclear power plants; nuclear-powered vessels; or at ports, shipyards, or industrial bases.",
+      "importance_score": 38
+    },
+    {
+      "date": "2026-10-14",
+      "title": "UEC names National Security Advisory Council to support conversion plans",
+      "summary": "On Tuesday, Uranium Energy Corporation announced that it had selected four members for its National Security Advisory Council, a consulting body that will provide guidance for the company’s recently formed subsidiary, the United States Uranium Refining & Conversion Corporation (UR&C). Two of the chosen members served as admirals in the U.S. Navy, while two have experience as administrators with the National Nuclear…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-14/article-8486/uec-names-national-security-advisory-council-to-support-conversion-plans/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Fuel & supply chain"
+      ],
+      "search_text": "UEC names National Security Advisory Council to support conversion plans On Tuesday, Uranium Energy Corporation announced that it had selected four members for its National Security Advisory Council, a consulting body that will provide guidance for the company’s recently formed subsidiary, the United States Uranium Refining & Conversion Corporation (UR&C). Two of the chosen members served as admirals in the U.S. Navy, while two have experience as administrators with the National Nuclear…",
+      "importance_score": 17
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Germany launches its own fusion milestone program",
+      "summary": "Germany’s Federal Agency for Breakthrough Innovation (SPRIND) has established a milestone-based fusion program on behalf of the Federal Ministry of Research, Technology, and Space (BMFTR) and as part of the government’s High-Tech Agenda Germany (HTAD). The initiative is designed to help the HTAD in its efforts to use technology-specific roadmaps and flagship programs to strengthen Germany’s high-performing…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-14/article-8485/germany-launches-its-own-fusion-milestone-program/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Fusion"
+      ],
+      "categories": [
+        "Policy & international"
+      ],
+      "search_text": "Germany launches its own fusion milestone program Germany’s Federal Agency for Breakthrough Innovation (SPRIND) has established a milestone-based fusion program on behalf of the Federal Ministry of Research, Technology, and Space (BMFTR) and as part of the government’s High-Tech Agenda Germany (HTAD). The initiative is designed to help the HTAD in its efforts to use technology-specific roadmaps and flagship programs to strengthen Germany’s high-performing…",
+      "importance_score": 15
+    },
+    {
+      "date": "2026-10-14",
+      "title": "CoP webinar lays out timeline of RIPB policy",
+      "summary": "The American Nuclear Society’s Risk-informed, Performance-based Principles and Policy Committee (RP3C) recently held another presentation in its monthly Community of Practice (CoP) series. Former RP3C chair N. Prasad Kadambi opened the meeting with brief introductory remarks about the RP3C, the value of risk-informed, performance-based (RIPB) techniques, and the Nuclear Regulatory Commission’s current interest in…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-14/article-8484/cop-webinar-lays-out-timeline-of-ripb-policy/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international",
+        "Construction & licensing"
+      ],
+      "search_text": "CoP webinar lays out timeline of RIPB policy The American Nuclear Society’s Risk-informed, Performance-based Principles and Policy Committee (RP3C) recently held another presentation in its monthly Community of Practice (CoP) series. Former RP3C chair N. Prasad Kadambi opened the meeting with brief introductory remarks about the RP3C, the value of risk-informed, performance-based (RIPB) techniques, and the Nuclear Regulatory Commission’s current interest in…",
+      "importance_score": 10
     },
     {
       "date": "2026-10-14",
@@ -480,6 +1081,49 @@
     },
     {
       "date": "2026-10-13",
+      "title": "Westinghouse moves forward on Polish, Dutch power plant projects",
+      "summary": "Westinghouse continues to make progress on building the first nuclear power plant in Poland, having begun the long-lead-item procurement process and signed conditional purchase orders for the first of three planned AP1000 units. The company also announced recently that it will be partnering with Hyundai Engineering & Construction on the front-end engineering design (FEED) phase of a project to deploy two large-scale…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-13/article-8483/westinghouse-moves-forward-on-polish-dutch-power-plant-projects/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "Westinghouse"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Construction & licensing",
+        "Fuel & supply chain"
+      ],
+      "search_text": "Westinghouse Westinghouse moves forward on Polish, Dutch power plant projects Westinghouse continues to make progress on building the first nuclear power plant in Poland, having begun the long-lead-item procurement process and signed conditional purchase orders for the first of three planned AP1000 units. The company also announced recently that it will be partnering with Hyundai Engineering & Construction on the front-end engineering design (FEED) phase of a project to deploy two large-scale…",
+      "importance_score": 38
+    },
+    {
+      "date": "2026-10-13",
+      "title": "NASA and DOE sign space nuclear MOU",
+      "summary": "NASA Administrator Jared Isaacman, seated left, and Secretary of Energy Chris Wright, seated right, hold the signed MOU as Director of the White House Office of Science and Technology Policy Michael Kratsios, looks on. (Photo: NASA/Bill Ingalls) Last week, NASA and the Department of Energy signed a memorandum of understanding establishing a framework for cooperation on space nuclear power and propulsion, replacing…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-13/article-8482/nasa-and-doe-sign-space-nuclear-mou/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Department of Energy"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international"
+      ],
+      "search_text": "US Department of Energy NASA and DOE sign space nuclear MOU NASA Administrator Jared Isaacman, seated left, and Secretary of Energy Chris Wright, seated right, hold the signed MOU as Director of the White House Office of Science and Technology Policy Michael Kratsios, looks on. (Photo: NASA/Bill Ingalls) Last week, NASA and the Department of Energy signed a memorandum of understanding establishing a framework for cooperation on space nuclear power and propulsion, replacing…",
+      "importance_score": 38
+    },
+    {
+      "date": "2026-10-13",
       "title": "Agreement signed on second Polish nuclear power plant",
       "category": "New build & milestones",
       "summary": "Polish state entities agreed on responsibilities for preparatory work for the country's proposed second nuclear power station.",
@@ -495,6 +1139,86 @@
       ],
       "search_text": "Agreement signed on second Polish nuclear power plant Polish state entities agreed on responsibilities for preparatory work for the country's proposed second nuclear power station.",
       "importance_score": 33
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Durability where it counts",
+      "summary": "Craig Piercycpiercy@ans.org Durability. It’s a major objective of nuclear plant maintenance, and it’s also the new watchword in Washington when it comes to nuclear policy. In this month's issue of Nuclear News , there are descriptions of Energy Northwest undertaking a massive uprate project at Columbia, the Tennessee Valley Authority investing in new equipment to maintain water intake systems at Browns Ferry, and…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-13/article-8407/durability-where-it-counts/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "Tennessee Valley Authority"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Restarts & uprates",
+        "Policy & international"
+      ],
+      "search_text": "Tennessee Valley Authority Durability where it counts Craig Piercycpiercy@ans.org Durability. It’s a major objective of nuclear plant maintenance, and it’s also the new watchword in Washington when it comes to nuclear policy. In this month's issue of Nuclear News , there are descriptions of Energy Northwest undertaking a massive uprate project at Columbia, the Tennessee Valley Authority investing in new equipment to maintain water intake systems at Browns Ferry, and…",
+      "importance_score": 30
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Three fusion companies in DOE’s Milestone program have updates",
+      "summary": "Three U.S. companies participating in the Department of Energy’s public-private Milestone-Based Fusion Development Program recently have reported new developments. Xcimer Energy, Zap Energy, and Commonwealth Fusion Systems are among the eight companies that the DOE selected in 2023 to develop fusion pilot plant designs and resolve related scientific and technological challenges within 5–10 years. The goal of the…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-13/article-8481/three-fusion-companies-in-does-milestone-program-have-updates/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Department of Energy"
+      ],
+      "technologies": [
+        "Fusion"
+      ],
+      "categories": [],
+      "search_text": "US Department of Energy Three fusion companies in DOE’s Milestone program have updates Three U.S. companies participating in the Department of Energy’s public-private Milestone-Based Fusion Development Program recently have reported new developments. Xcimer Energy, Zap Energy, and Commonwealth Fusion Systems are among the eight companies that the DOE selected in 2023 to develop fusion pilot plant designs and resolve related scientific and technological challenges within 5–10 years. The goal of the…",
+      "importance_score": 25
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Public Comment for NRC’s In Situ Recovery Monitoring and Decommissioning Timeliness",
+      "summary": "NIA submitted a public comment for NRC’s In Situ Recovery Monitoring and Decommissioning Timeliness proposed rule. NIA appreciates the opportunity to comment on the proposed rule. We commend the staff for its efforts to create more flexible decommissioning timelines. Our comments focus mostly on the decommissioning portion of the proposed rule as NIA has expertise in this area.",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/index.php/public-comment-nrcs-situ-recovery-monitoring-and-decommissioning-timeliness",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission",
+        "EDF"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international"
+      ],
+      "search_text": "US Nuclear Regulatory Commission EDF Public Comment for NRC’s In Situ Recovery Monitoring and Decommissioning Timeliness NIA submitted a public comment for NRC’s In Situ Recovery Monitoring and Decommissioning Timeliness proposed rule. NIA appreciates the opportunity to comment on the proposed rule. We commend the staff for its efforts to create more flexible decommissioning timelines. Our comments focus mostly on the decommissioning portion of the proposed rule as NIA has expertise in this area.",
+      "importance_score": 20
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Chernobyl updates: Stable fuel particles, solid waste disposal",
+      "summary": "More than 40 years after the meltdown of Unit 4 at Ukraine’s Chernobyl nuclear power plant, research into radioactive material at the site continues, as do efforts toward cleanup and decommissioning. In a paper published in the March 2026 issue of the Journal of Hazardous Materials and disseminated widely last week, a team of researchers from the Leibniz University Hannover and Helmholtz-Zentrum Dresden-Rossendorf…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-13/article-8480/chernobyl-updates-stable-fuel-particles-solid-waste-disposal/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Chernobyl updates: Stable fuel particles, solid waste disposal More than 40 years after the meltdown of Unit 4 at Ukraine’s Chernobyl nuclear power plant, research into radioactive material at the site continues, as do efforts toward cleanup and decommissioning. In a paper published in the March 2026 issue of the Journal of Hazardous Materials and disseminated widely last week, a team of researchers from the Leibniz University Hannover and Helmholtz-Zentrum Dresden-Rossendorf…",
+      "importance_score": 10
     },
     {
       "date": "2026-10-13",
@@ -670,6 +1394,95 @@
     },
     {
       "date": "2026-10-09",
+      "title": "Researchers in Vienna and Beijing report nuclear clock “milestone”",
+      "summary": "Two papers published recently in Nature report what the journal describes as “the first implementation of a nuclear clock, a milestone in the field of metrology.” The research behind both papers involve the radioisotope thorium-229. “A thorium-229 optical nuclear clock with feedback loop,” by Luca Toscani de Col et al., describes research led by a team from the Vienna Center for Quantum Science and Technology in…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-09/article-8477/researchers-in-vienna-and-beijing-report-nuclear-clock-milestone/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Researchers in Vienna and Beijing report nuclear clock “milestone” Two papers published recently in Nature report what the journal describes as “the first implementation of a nuclear clock, a milestone in the field of metrology.” The research behind both papers involve the radioisotope thorium-229. “A thorium-229 optical nuclear clock with feedback loop,” by Luca Toscani de Col et al., describes research led by a team from the Vienna Center for Quantum Science and Technology in…",
+      "importance_score": 15
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Seeing more, repairing smarter: How advanced NDE and repair technologies are changing nuclear asset management",
+      "summary": "A single ultrasonic inspection of reactor vessel upper head penetrations can generate more than 7 kilometers of inspection data. Historically, analysts have spent days—even weeks—reviewing those results to identify the few indications that might require further evaluation. In 2025, Vattenfall Nuclear in Sweden demonstrated a different approach. By qualifying and deploying an artificial intelligence/machine learning…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-09/article-8411/seeing-more-repairing-smarter-how-advanced-nde-and-repair-technologies-are-changing-nuclear-asset-management/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Seeing more, repairing smarter: How advanced NDE and repair technologies are changing nuclear asset management A single ultrasonic inspection of reactor vessel upper head penetrations can generate more than 7 kilometers of inspection data. Historically, analysts have spent days—even weeks—reviewing those results to identify the few indications that might require further evaluation. In 2025, Vattenfall Nuclear in Sweden demonstrated a different approach. By qualifying and deploying an artificial intelligence/machine learning…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Fermi America, Blue Energy make strides in Texas",
+      "summary": "A draft environmental impact statement is now complete for Fermi America’s plan to construct and operate four AP1000 reactors at its Project Matador Advanced Energy and Intelligence Campus in Texas, a project that has seen upheaval along the way, including the ouster of cofounders from their leadership roles.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-09/article-8479/fermi-america-blue-energy-make-strides-in-texas/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Construction & licensing"
+      ],
+      "search_text": "Fermi America, Blue Energy make strides in Texas A draft environmental impact statement is now complete for Fermi America’s plan to construct and operate four AP1000 reactors at its Project Matador Advanced Energy and Intelligence Campus in Texas, a project that has seen upheaval along the way, including the ouster of cofounders from their leadership roles.",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-09",
+      "title": "General Fusion reports electron temperatures exceeding 1 keV",
+      "summary": "General Fusion announced it has achieved compressional plasma heating that produced electron temperatures exceeding 1 keV, measured using Thomson scattering in collaboration with the U.K. Atomic Energy Authority. The 1 keV threshold is regarded as a key milestone, because it demonstrates the ability to produce and control fusion-relevant plasma temperatures. It was first reported on the Soviet T3 tokamak, announced…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-09/article-8478/general-fusion-reports-electron-temperatures-exceeding-1-kev/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Fusion"
+      ],
+      "categories": [],
+      "search_text": "General Fusion reports electron temperatures exceeding 1 keV General Fusion announced it has achieved compressional plasma heating that produced electron temperatures exceeding 1 keV, measured using Thomson scattering in collaboration with the U.K. Atomic Energy Authority. The 1 keV threshold is regarded as a key milestone, because it demonstrates the ability to produce and control fusion-relevant plasma temperatures. It was first reported on the Soviet T3 tokamak, announced…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Danish Decommissioning files final repository proposal",
+      "summary": "Plans for Denmark to establish a final repository for its nuclear waste moved forward on October 2, when state-owned entity Danish Decommissioning announced that it had submitted a proposal for such a facility to the Danish Agency for Civil Security. The proposal marks a continuation of efforts that began in 2018 with the Danish Parliament’s passage of Proposal B 90. That legislation called for geological…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-09/article-8476/danish-decommissioning-files-final-repository-proposal/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international"
+      ],
+      "search_text": "Danish Decommissioning files final repository proposal Plans for Denmark to establish a final repository for its nuclear waste moved forward on October 2, when state-owned entity Danish Decommissioning announced that it had submitted a proposal for such a facility to the Danish Agency for Civil Security. The proposal marks a continuation of efforts that began in 2018 with the Danish Parliament’s passage of Proposal B 90. That legislation called for geological…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-09",
       "title": "Framatome to continue maintaining Sizewell B plant",
       "summary": "Framatome and EDF have renewed their long-term service agreement covering a comprehensive range of maintenance and outage services to support the long-term operation strategy of the Sizewell B nuclear power plant in Suffolk, England.",
       "category": "Operations & restarts",
@@ -780,6 +1593,32 @@
     },
     {
       "date": "2026-10-08",
+      "title": "NRC reviews LAR on Palisades fuel loading incident, as Pioneer SMR application advances",
+      "summary": "The Nuclear Regulatory Commission is reviewing a license amendment request (LAR) Holtec submitted in the aftermath of a fuel loading incident that has paused some of the restart work at the Palisades nuclear power plant in Covert, Mich.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-08/article-8474/nrc-reviews-lar-on-palisades-fuel-loading-incident-as-pioneer-smr-application-advances/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission",
+        "Holtec",
+        "Palisades"
+      ],
+      "technologies": [
+        "Traditional fission",
+        "Advanced fission"
+      ],
+      "categories": [
+        "Policy & international",
+        "Restarts & uprates",
+        "Construction & licensing"
+      ],
+      "search_text": "US Nuclear Regulatory Commission Holtec Palisades NRC reviews LAR on Palisades fuel loading incident, as Pioneer SMR application advances The Nuclear Regulatory Commission is reviewing a license amendment request (LAR) Holtec submitted in the aftermath of a fuel loading incident that has paused some of the restart work at the Palisades nuclear power plant in Covert, Mich.",
+      "importance_score": 40
+    },
+    {
+      "date": "2026-10-08",
       "title": "China's Tianwan 7 connected to the grid",
       "category": "New build & milestones",
       "summary": "Unit 7 at China's Tianwan plant connected to the grid in another commissioning milestone.",
@@ -795,6 +1634,25 @@
       ],
       "search_text": "China's Tianwan 7 connected to the grid Unit 7 at China's Tianwan plant connected to the grid in another commissioning milestone.",
       "importance_score": 35
+    },
+    {
+      "date": "2026-10-08",
+      "title": "DOE announces grants for SiC cladding research and testing",
+      "summary": "On October 5, the Department of Energy announced that it plans to award up to $50 million in grants over three years to support research on the use of silicon carbide (SiC) as fuel cladding material. The DOE touts SiC for what it says is the material’s potential to improve the safety and cost efficiency of light water reactors currently operating in the United States and said that research into SiC cladding could…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-08/article-8473/doe-announces-grants-for-sic-cladding-research-and-testing/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Department of Energy"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "US Department of Energy DOE announces grants for SiC cladding research and testing On October 5, the Department of Energy announced that it plans to award up to $50 million in grants over three years to support research on the use of silicon carbide (SiC) as fuel cladding material. The DOE touts SiC for what it says is the material’s potential to improve the safety and cost efficiency of light water reactors currently operating in the United States and said that research into SiC cladding could…",
+      "importance_score": 32
     },
     {
       "date": "2026-10-08",
@@ -862,6 +1720,60 @@
     },
     {
       "date": "2026-10-08",
+      "title": "Study proposes more efficient path to fusion ignition",
+      "summary": "Researchers at Princeton Plasma Physics Laboratory reformulated the criterion to ignite and sustain fusion plasma, and their calculations indicate a pathway to make the process more energy efficient while also demonstrating the impact of effects that can make ignition more difficult, such as small amounts of tungsten in the plasma.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-08/article-8475/study-proposes-more-efficient-path-to-fusion-ignition/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Fusion"
+      ],
+      "categories": [],
+      "search_text": "Study proposes more efficient path to fusion ignition Researchers at Princeton Plasma Physics Laboratory reformulated the criterion to ignite and sustain fusion plasma, and their calculations indicate a pathway to make the process more energy efficient while also demonstrating the impact of effects that can make ignition more difficult, such as small amounts of tungsten in the plasma.",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Rising together: Collaborative project delivery for the nuclear fleet",
+      "summary": "Karen Fili As the nuclear industry enters one of the most significant investment periods in its history, utilities are managing unprecedented capital portfolios while simultaneously preparing for long-term operation, plant modernization, extended power uprates, digital transformation, workforce challenges, and new nuclear opportunities. No single utility can solve these challenges alone. For the past 30 years,…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-08/article-8405/rising-together-collaborative-project-delivery-for-the-nuclear-fleet/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Restarts & uprates",
+        "Capital & financing"
+      ],
+      "search_text": "Rising together: Collaborative project delivery for the nuclear fleet Karen Fili As the nuclear industry enters one of the most significant investment periods in its history, utilities are managing unprecedented capital portfolios while simultaneously preparing for long-term operation, plant modernization, extended power uprates, digital transformation, workforce challenges, and new nuclear opportunities. No single utility can solve these challenges alone. For the past 30 years,…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Supplier Showcase focus: AI-driven diagnostics",
+      "summary": "The American Nuclear Society is hosting a Supplier Showcase webinar, “From Alarm to Answer: How AI Can Reduce Equipment Load and Enhance Performance,” on October 13, from 1:00 p.m. to 2:00 p.m. (CDT) in partnership with Nuclearn, a provider of AI tools purpose-built for the nuclear industry.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-08/article-8472/supplier-showcase-focus-aidriven-diagnostics/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Supplier Showcase focus: AI-driven diagnostics The American Nuclear Society is hosting a Supplier Showcase webinar, “From Alarm to Answer: How AI Can Reduce Equipment Load and Enhance Performance,” on October 13, from 1:00 p.m. to 2:00 p.m. (CDT) in partnership with Nuclearn, a provider of AI tools purpose-built for the nuclear industry.",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-10-08",
       "title": "Last Energy's Texas micro-modular reactor clears safety analysis",
       "summary": "The Department of Energy's approval of the Documented Safety Analysis clears Last Energy's planned pilot reactor at Texas A&M-RELLIS to move into the readiness review, the final step before authorisation for criticality and reactor operations.",
       "category": "Policy & regulation",
@@ -911,6 +1823,63 @@
     },
     {
       "date": "2026-10-07",
+      "title": "GAIN announces fourth round of 2026 vouchers",
+      "summary": "This week, the Department of Energy’s Gateway for Accelerated Innovation in Nuclear (GAIN) announced three fourth-round fiscal year 2026 vouchers to support the development of innovative nuclear technologies. Each company will get access to specific capabilities and expertise in the DOE’s national laboratory complex—in this round of awards, Oak Ridge, Argonne, and Pacific Northwest National Laboratories are…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-07/article-8470/iter-welcomes-last-major-component-needed-for-core-machine-assembly/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Department of Energy"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "US Department of Energy GAIN announces fourth round of 2026 vouchers This week, the Department of Energy’s Gateway for Accelerated Innovation in Nuclear (GAIN) announced three fourth-round fiscal year 2026 vouchers to support the development of innovative nuclear technologies. Each company will get access to specific capabilities and expertise in the DOE’s national laboratory complex—in this round of awards, Oak Ridge, Argonne, and Pacific Northwest National Laboratories are…",
+      "importance_score": 20
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Eliminating Heat Risks in Nuclear Cleanup: A DOE Contractor’s High-Tech Blueprint",
+      "summary": "For organizations like the Savannah River Mission Completion (SRMC), a liquid waste contractor for the U.S. Department of Energy (DOE) Office of Environmental Management at the Savannah River Site (SRS) in Aiken, South Carolina, the summer season poses significant challenges for their workforce. In 2025, safety leaders sought to expand the current heat safety program and find a solution that would integrate…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-07/article-8457/eliminating-heat-risks-in-nuclear-cleanup-a-doe-contractors-hightech-blueprint/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Department of Energy"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "US Department of Energy Eliminating Heat Risks in Nuclear Cleanup: A DOE Contractor’s High-Tech Blueprint For organizations like the Savannah River Mission Completion (SRMC), a liquid waste contractor for the U.S. Department of Energy (DOE) Office of Environmental Management at the Savannah River Site (SRS) in Aiken, South Carolina, the summer season poses significant challenges for their workforce. In 2025, safety leaders sought to expand the current heat safety program and find a solution that would integrate…",
+      "importance_score": 20
+    },
+    {
+      "date": "2026-10-07",
+      "title": "State roundup: New developments in Midwest, New England",
+      "summary": "Power purchase agreements, statewide energy plans, and nuclear energy summits are among the developments in Wisconsin, Missouri, and New England that you may have missed during the early days of fall.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-07/article-8468/state-roundup-new-developments-in-midwest-new-england/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Offtakes & customers"
+      ],
+      "search_text": "State roundup: New developments in Midwest, New England Power purchase agreements, statewide energy plans, and nuclear energy summits are among the developments in Wisconsin, Missouri, and New England that you may have missed during the early days of fall.",
+      "importance_score": 15
+    },
+    {
+      "date": "2026-10-07",
       "title": "Swiss citizens may get to vote on construction of new reactors",
       "summary": "The Alliance for Secure Electricity Supply has launched a campaign for the lifting of the ban on new nuclear power plant construction in Switzerland. It comes as a broad coalition claims to have collected enough signatures in support of a referendum against the construction of new plants.",
       "category": "Nuclear PPAs & offtake",
@@ -927,6 +1896,25 @@
       ],
       "search_text": "Swiss citizens may get to vote on construction of new reactors The Alliance for Secure Electricity Supply has launched a campaign for the lifting of the ban on new nuclear power plant construction in Switzerland. It comes as a broad coalition claims to have collected enough signatures in support of a referendum against the construction of new plants.",
       "importance_score": 15
+    },
+    {
+      "date": "2026-10-07",
+      "title": "ITER welcomes last major component needed for core machine assembly",
+      "summary": "The ninth and final vacuum vessel segment for the ITER fusion machine—vacuum vessel sector #2—has been delivered to the ITER Organization’s site at Cadarache, in southern France. With this delivery, all major components are now on-site for the construction of the “core machine” of the international project—including the vacuum vessel, superconducting magnets, and cryostat.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-07/article-8469/iter-welcomes-last-major-component-needed-for-core-machine-assembly/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Fusion"
+      ],
+      "categories": [
+        "Construction & licensing"
+      ],
+      "search_text": "ITER welcomes last major component needed for core machine assembly The ninth and final vacuum vessel segment for the ITER fusion machine—vacuum vessel sector #2—has been delivered to the ITER Organization’s site at Cadarache, in southern France. With this delivery, all major components are now on-site for the construction of the “core machine” of the international project—including the vacuum vessel, superconducting magnets, and cryostat.",
+      "importance_score": 10
     },
     {
       "date": "2026-10-07",
@@ -992,6 +1980,29 @@
     },
     {
       "date": "2026-10-06",
+      "title": "Google, Constellation reach 11-unit uprate plan; Constellation to invest $4.3 billion",
+      "summary": "Google has signed a 20-year power purchase agreement (PPA) with Constellation to support adding 890 MW of new nuclear capacity to 11 reactors across the PJM Interconnection region, including in Illinois, Pennsylvania, and New Jersey.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-06/article-8467/google-constellation-reach-11unit-uprate-plan-constellation-to-invest-43-billion/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "Constellation Energy",
+        "Google"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Offtakes & customers",
+        "Restarts & uprates"
+      ],
+      "search_text": "Constellation Energy Google Google, Constellation reach 11-unit uprate plan; Constellation to invest $4.3 billion Google has signed a 20-year power purchase agreement (PPA) with Constellation to support adding 890 MW of new nuclear capacity to 11 reactors across the PJM Interconnection region, including in Illinois, Pennsylvania, and New Jersey.",
+      "importance_score": 88
+    },
+    {
+      "date": "2026-10-06",
       "title": "Google and Oracle deals support long-term US plant operations",
       "summary": "Google and Constellation Energy have announced a long-term collaboration to bring 890 MW of new nuclear capacity onto the PJM Interconnection grid, as well as a power purchase agreement. Meanwhile, Oracle is to subscribe to output from the Point Beach nuclear power plant.",
       "category": "Nuclear PPAs & offtake",
@@ -1047,6 +2058,29 @@
     },
     {
       "date": "2026-10-06",
+      "title": "General Matter’s NRC license application materials publicly available",
+      "summary": "Efforts to revive domestic uranium enrichment at the site of the former Gaseous Diffusion Plant in Paducah, Ky., are continuing: On September 28, General Matter announced that it had applied for a Nuclear Regulatory Commission license to begin facility construction on the site. Several documents related to the application, including an environmental report, became accessible to the public on October 5 in NRC’s ADAMS…",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-06/article-8465/general-matters-nrc-license-application-materials-publicly-available/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international",
+        "Construction & licensing",
+        "Fuel & supply chain"
+      ],
+      "search_text": "US Nuclear Regulatory Commission General Matter’s NRC license application materials publicly available Efforts to revive domestic uranium enrichment at the site of the former Gaseous Diffusion Plant in Paducah, Ky., are continuing: On September 28, General Matter announced that it had applied for a Nuclear Regulatory Commission license to begin facility construction on the site. Several documents related to the application, including an environmental report, became accessible to the public on October 5 in NRC’s ADAMS…",
+      "importance_score": 20
+    },
+    {
+      "date": "2026-10-06",
       "title": "BWXT's BANR microreactor selected for Canadian project",
       "summary": "BWX Technologies says that its BANR microreactor has been selected by Prodigy Clean Energy, Pabineau First Nation and Eel River Bar First Nation for a proposed project in Belledune in New Brunswick.",
       "category": "SMRs & advanced reactors",
@@ -1057,12 +2091,37 @@
         "BWXT"
       ],
       "technologies": [
-        "Microreactors"
+        "Microreactors",
+        "Traditional fission"
       ],
       "categories": [
         "Construction & licensing"
       ],
-      "search_text": "BWXT BWXT's BANR microreactor selected for Canadian project BWX Technologies says that its BANR microreactor has been selected by Prodigy Clean Energy, Pabineau First Nation and Eel River Bar First Nation for a proposed project in Belledune in New Brunswick.",
+      "search_text": "BWXT BWXT's BANR microreactor selected for Canadian project BWX Technologies says that its BANR microreactor has been selected by Prodigy Clean Energy, Pabineau First Nation and Eel River Bar First Nation for a proposed project in Belledune in New Brunswick. BWXT’s BANR selected for Canadian project The BWX Technologies Advanced Nuclear Reactor (BANR) has been selected for a power plant project in the Canadian province of New Brunswick, the company announced on Monday. This project—which will progress through a partnership with Prodigy Clean Energy and the Pabineau and Eel River Bar First Nations—will mark two significant milestones for BANR: its first commercial deployment and its first international…",
+      "importance_score": 10,
+      "alternate_sources": [
+        {
+          "source": "ANS Nuclear Newswire",
+          "url": "https://www.ans.org/news/2026-10-07/article-8471/bwxts-banr-selected-for-canadian-project/",
+          "title": "BWXT’s BANR selected for Canadian project"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Tritium detector for continuous underground monitoring",
+      "summary": "Thomas Jefferson National Accelerator Facility announced yesterday that it has entered a cooperative research and development agreement (CRADA) with Canary Instruments to commercialize a tritium detector it developed for monitoring groundwater near nuclear facilities.",
+      "category": "Nuclear developments",
+      "url": "https://www.ans.org/news/2026-10-06/article-8466/tritium-detector-for-continuous-underground-monitoring/",
+      "source": "ANS Nuclear Newswire",
+      "kind": "news",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Tritium detector for continuous underground monitoring Thomas Jefferson National Accelerator Facility announced yesterday that it has entered a cooperative research and development agreement (CRADA) with Canary Instruments to commercialize a tritium detector it developed for monitoring groundwater near nuclear facilities.",
       "importance_score": 10
     },
     {
@@ -2027,6 +3086,28 @@
     },
     {
       "date": "2026-09-21",
+      "title": "Utilizing Department of Energy Loans to Build U.S. Nuclear Projects",
+      "summary": "The Office of Energy Dominance Financing (EDF) has been instrumental in the commercial deployment of nuclear technology in the United States. This paper provides recommendations to build on that success and fully realize EDF’s potential going forward, especially with respect to investing in early mover technology. NIA believes that in parallel with achieving the critical near-term goals of affordability and…",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/index.php/utilizing-department-energy-loans-build-us-nuclear-projects",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission",
+        "EDF"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Capital & financing"
+      ],
+      "search_text": "US Nuclear Regulatory Commission EDF Utilizing Department of Energy Loans to Build U.S. Nuclear Projects The Office of Energy Dominance Financing (EDF) has been instrumental in the commercial deployment of nuclear technology in the United States. This paper provides recommendations to build on that success and fully realize EDF’s potential going forward, especially with respect to investing in early mover technology. NIA believes that in parallel with achieving the critical near-term goals of affordability and…",
+      "importance_score": 20
+    },
+    {
+      "date": "2026-09-21",
       "title": "France prepares to start dismantling first UNGG reactor",
       "summary": "EDF subsidiary Cyclife announced the Chinon A nuclear power plant dismantling project has reached a major milestone with the validation of the contractual strategy for dismantling the Chinon A2 plant's heat exchangers.",
       "category": "Waste & decommissioning",
@@ -2762,6 +3843,27 @@
     },
     {
       "date": "2026-09-10",
+      "title": "Public Comment on Nuclear Regulatory Commission Modernization: Rulemaking Procedure, Federal Advisory Committee Act Alignment, Access, and Security",
+      "summary": "NIA submitted a comment on the proposed Nuclear Regulatory Commission Modernization: Rulemaking Procedure, Federal Advisory Committee Act (FACA) Alignment, Access, and Security rule issued on August 11, 2025.",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/index.php/public-comment-nuclear-regulatory-commission-modernization-rulemaking-procedure-federal-advisory",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Construction & licensing"
+      ],
+      "search_text": "US Nuclear Regulatory Commission Public Comment on Nuclear Regulatory Commission Modernization: Rulemaking Procedure, Federal Advisory Committee Act Alignment, Access, and Security NIA submitted a comment on the proposed Nuclear Regulatory Commission Modernization: Rulemaking Procedure, Federal Advisory Committee Act (FACA) Alignment, Access, and Security rule issued on August 11, 2025.",
+      "importance_score": 38
+    },
+    {
+      "date": "2026-09-10",
       "title": "Westinghouse fuel approved for Czech Temelín units",
       "summary": "The Czech Republic's State Office for Nuclear Security has given the go-ahead for Westinghouse's fuel to be used at ČEZ's VVER-1000 units at Temelín Nuclear Power Plant.",
       "category": "Uranium & fuel",
@@ -2800,6 +3902,23 @@
       ],
       "search_text": "Bannerman completes Etango funding, moves towards FID Bannerman Energy has completed an AUD124 million (USD89 million) underwritten placement which - together with the company's other financial arrangements - is expected to fully fund the Namibian Etango project through construction and ramp-up as the company moves towards a Final Investment Decision.",
       "importance_score": 22
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Fuel Transportation Readiness for New Nuclear Commercialization",
+      "summary": "As advanced reactor technologies move toward commercialization, the nuclear fuel transportation system will face new demands. Package certification, regulatory adjustments, logistics, and infrastructure are all key elements of a resilient fuel transportation system. Proactively adapting the U.S. fuel transportation system to the demands of new fuels and reactor types is necessary for successful reactor deployment.…",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/index.php/fuel-transportation-readiness-new-nuclear-commercialization",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Advanced fission"
+      ],
+      "categories": [],
+      "search_text": "Fuel Transportation Readiness for New Nuclear Commercialization As advanced reactor technologies move toward commercialization, the nuclear fuel transportation system will face new demands. Package certification, regulatory adjustments, logistics, and infrastructure are all key elements of a resilient fuel transportation system. Proactively adapting the U.S. fuel transportation system to the demands of new fuels and reactor types is necessary for successful reactor deployment.…",
+      "importance_score": 15
     },
     {
       "date": "2026-09-10",
@@ -2962,6 +4081,27 @@
       ],
       "search_text": "Google Fortum Summit hears of surging interest in investing in nuclear projects The growing interest in investing in nuclear energy, and how to ensure projects are structured to attract it, were key themes at the World Nuclear Symposium Finance Summit, which was also told that financiers feel like they are missing out if they haven't done nuclear deals.",
       "importance_score": 10
+    },
+    {
+      "date": "2026-09-08",
+      "title": "New Nuclear Reactors for Military Purposes",
+      "summary": "The U.S. government has substantial efforts underway to develop new nuclear reactors for military purposes. Recent executive orders, together with congressional mandates, establish a coordinated strategy that links national security with mission assurance. This updated NIA publication outlines the federal policy framework and the projects, concepts, and solicitations underway to translate policy direction and…",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/index.php/new-nuclear-reactors-military-purposes",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international"
+      ],
+      "search_text": "US Nuclear Regulatory Commission New Nuclear Reactors for Military Purposes The U.S. government has substantial efforts underway to develop new nuclear reactors for military purposes. Recent executive orders, together with congressional mandates, establish a coordinated strategy that links national security with mission assurance. This updated NIA publication outlines the federal policy framework and the projects, concepts, and solicitations underway to translate policy direction and…",
+      "importance_score": 43
     },
     {
       "date": "2026-09-08",
@@ -4624,6 +5764,23 @@
     },
     {
       "date": "2026-08-12",
+      "title": "New Nuclear Energy Guide for State Policymakers",
+      "summary": "States and local policymakers are playing an increasingly important role in enabling the development and commercialization of new nuclear energy projects. The 2026 update to the NIA New Nuclear Energy Guide for State Policymakers answers the key question, \"What can states do?\" by highlighting the policies, partnerships, and initiatives that can help advance new nuclear energy projects in states. The first part of…",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/new-nuclear-energy-guide-state-policymakers-0",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "New Nuclear Energy Guide for State Policymakers States and local policymakers are playing an increasingly important role in enabling the development and commercialization of new nuclear energy projects. The 2026 update to the NIA New Nuclear Energy Guide for State Policymakers answers the key question, \"What can states do?\" by highlighting the policies, partnerships, and initiatives that can help advance new nuclear energy projects in states. The first part of…",
+      "importance_score": 15
+    },
+    {
+      "date": "2026-08-12",
       "title": "First fuel loaded into Tianwan unit 7",
       "category": "New build & milestones",
       "summary": "China began loading fuel for Tianwan unit 7, a VVER-1200 reactor, ahead of initial criticality.",
@@ -5814,6 +6971,25 @@
     },
     {
       "date": "2026-07-27",
+      "title": "NIA Comment on Modernizing Security Rulemaking",
+      "summary": "NIA submitted a public comment on the proposed rule modernizing security requirements. The flexible framework proposed in this rulemaking achieves important objectives for addressing security for advanced reactors in a responsible manner without unnecessarily limiting the use of civilian nuclear technology for society’s benefit. NIA's comment makes one recommendation to further foster technology-inclusive…",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/nia-comment-modernizing-security-rulemaking",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "US Nuclear Regulatory Commission NIA Comment on Modernizing Security Rulemaking NIA submitted a public comment on the proposed rule modernizing security requirements. The flexible framework proposed in this rulemaking achieves important objectives for addressing security for advanced reactors in a responsible manner without unnecessarily limiting the use of civilian nuclear technology for society’s benefit. NIA's comment makes one recommendation to further foster technology-inclusive…",
+      "importance_score": 20
+    },
+    {
+      "date": "2026-07-27",
       "title": "First port signs up to US initiative on maritime SMRs",
       "summary": "The Port of Long Beach in California has become the first port in the USA to sign a memorandum of cooperation with the Department of Transportation's Maritime Administration to advance work on development of small modular reactor technology to power commercial vessels, ports and other maritime assets.",
       "category": "SMRs & advanced reactors",
@@ -5939,6 +7115,27 @@
       ],
       "search_text": "US Department of Energy Rosatom Saudi Arabia, USA sign nuclear agreements An intergovernmental agreement on the peaceful uses of nuclear energy and an accompanying bilateral safeguards agreement has been signed by Saudi Minister of Energy and Minister of Industry and Mineral Resources Prince Abdulaziz bin Salman bin Abdulaziz and US Secretary of Energy Chris Wright.",
       "importance_score": 28
+    },
+    {
+      "date": "2026-07-23",
+      "title": "Update on Nuclear Regulatory Commission Licensing Efficiency 2026: Summary Report",
+      "summary": "The Nuclear Innovation Alliance (NIA) conducted anonymized interviews in 2025 with various new reactor applicants to gauge the licensing process and build on our prior licensing efficiency reports. This report summarizes the major insights with respect to progress against prior licensing efficiency recommendations, as well as new recommendations. The summary and recommendations presented in this report do not…",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/update-nuclear-regulatory-commission-licensing-efficiency-2026-summary-report",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Construction & licensing"
+      ],
+      "search_text": "US Nuclear Regulatory Commission Update on Nuclear Regulatory Commission Licensing Efficiency 2026: Summary Report The Nuclear Innovation Alliance (NIA) conducted anonymized interviews in 2025 with various new reactor applicants to gauge the licensing process and build on our prior licensing efficiency reports. This report summarizes the major insights with respect to progress against prior licensing efficiency recommendations, as well as new recommendations. The summary and recommendations presented in this report do not…",
+      "importance_score": 20
     },
     {
       "date": "2026-07-23",
@@ -11672,6 +12869,29 @@
     },
     {
       "date": "2026-04-29",
+      "title": "History of Nuclear Power Plant Construction Moratoria",
+      "summary": "This timeline and 1-pager track the evolution of state-level nuclear construction moratoria, which states have lifted them, and the status of existing restrictions. Beginning in the 1970's, a number of U.S. states adopted restrictions on the construction of nuclear power plants. In the last ten years, nearly half of the states with these moratoria have removed them. Recent repeals reflect a broader shift in policy…",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/history-nuclear-moratoria",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [
+        "US Department of Energy",
+        "EDF"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Construction & licensing",
+        "Policy & international"
+      ],
+      "search_text": "US Department of Energy EDF History of Nuclear Power Plant Construction Moratoria This timeline and 1-pager track the evolution of state-level nuclear construction moratoria, which states have lifted them, and the status of existing restrictions. Beginning in the 1970's, a number of U.S. states adopted restrictions on the construction of nuclear power plants. In the last ten years, nearly half of the states with these moratoria have removed them. Recent repeals reflect a broader shift in policy…",
+      "importance_score": 20
+    },
+    {
+      "date": "2026-04-29",
       "title": "First unit at San'ao enters commercial operation",
       "summary": "Unit 1 of the San'ao nuclear power plant has entered commercial operation, China General Nuclear announced. The unit is the first of six Hualong One (HPR1000) reactors planned for the site in Zhejiang province.",
       "category": "New build & milestones",
@@ -11929,6 +13149,29 @@
       ],
       "search_text": "Rosatom Operating licence issued for Bangladesh's first nuclear power unit The inspection of primary equipment at Rooppur Nuclear Power Plant unit 1 has been completed, showing the unit in Bangladesh is now ready for first criticality, and an operating licence issued.",
       "importance_score": 33
+    },
+    {
+      "date": "2026-04-24",
+      "title": "The Role of DOE’s Office of Energy Dominance Financing in U.S. Nuclear Energy Leadership",
+      "summary": "Nuclear energy is an important technology for U.S. energy security and competitiveness, and the U.S. Department of Energy Office of Energy Dominance Financing (EDF) is essential to nuclear energy’s success. By investing in early-stage projects, EDF accelerates technological advancement, attracts private capital, and ensures U.S. leadership in meeting rapidly growing global energy demand, enhancing our economic…",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/role-does-office-energy-dominance-financing-us-nuclear-energy-leadership",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission",
+        "US Department of Energy",
+        "EDF"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Capital & financing"
+      ],
+      "search_text": "US Nuclear Regulatory Commission US Department of Energy EDF The Role of DOE’s Office of Energy Dominance Financing in U.S. Nuclear Energy Leadership Nuclear energy is an important technology for U.S. energy security and competitiveness, and the U.S. Department of Energy Office of Energy Dominance Financing (EDF) is essential to nuclear energy’s success. By investing in early-stage projects, EDF accelerates technological advancement, attracts private capital, and ensures U.S. leadership in meeting rapidly growing global energy demand, enhancing our economic…",
+      "importance_score": 20
     },
     {
       "date": "2026-04-24",
@@ -17550,6 +18793,25 @@
     },
     {
       "date": "2026-01-30",
+      "title": "Right-Sizing Reactors: Balancing trade-offs between economies of scale and volume",
+      "summary": "If a country wants to build a lot of nuclear power fast, should the industry follow the mantra of bigger is better, or shift to focus on small modular reactors, or even microreactors, to follow the promise of factory fabrication? The new NIA report, “Right-Sizing Reactors: Balancing trade-offs between economies of scale and volume,” by Dr. Jessica Lovering explores this question through economics literature and…",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/right-sizing-reactors-balancing-trade-offs-between-economies-scale-and-volume",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [
+        "Kairos Power"
+      ],
+      "technologies": [
+        "Advanced fission"
+      ],
+      "categories": [],
+      "search_text": "Kairos Power Right-Sizing Reactors: Balancing trade-offs between economies of scale and volume If a country wants to build a lot of nuclear power fast, should the industry follow the mantra of bigger is better, or shift to focus on small modular reactors, or even microreactors, to follow the promise of factory fabrication? The new NIA report, “Right-Sizing Reactors: Balancing trade-offs between economies of scale and volume,” by Dr. Jessica Lovering explores this question through economics literature and…",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-01-30",
       "title": "Type One Energy initiates licensing of fusion power plant",
       "summary": "US fusion energy developer Type One Energy has submitted the initial licensing application in preparation for the construction of a fusion power plant at Tennessee Valley Authority's former Bull Run fossil plant site in Clinton, Tennessee.",
       "category": "Fusion & research",
@@ -19628,6 +20890,23 @@
       "categories": [],
       "search_text": "Rosatom Darlington In quotes: What to watch out for in 2026 What are the main priorities, the key events and the likely big developments in new nuclear capacity in 2026? Here’s an edited transcript of World Nuclear Association Director General Sama Bilbao y León's World Nuclear News podcast interview.",
       "importance_score": 30
+    },
+    {
+      "date": "2025-12-29",
+      "title": "Nuclear Innovation Bootcamp Impact Report",
+      "summary": "Since 2016, The Nuclear Innovation Bootcamp (NIB) has enhanced the careers of students and young professionals working or looking to work in the advanced nuclear energy sector. As the demand for experienced leadership, new ideas, and professional development in this field continues to grow, NIB will be an increasingly important recruitment pipeline for multi-disciplined, creative, and energetic young talent. Looking…",
+      "category": "Research & analysis",
+      "url": "https://nuclearinnovationalliance.org/nuclear-innovation-bootcamp-impact-report",
+      "source": "Nuclear Innovation Alliance",
+      "kind": "report",
+      "links": [],
+      "entities": [],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [],
+      "search_text": "Nuclear Innovation Bootcamp Impact Report Since 2016, The Nuclear Innovation Bootcamp (NIB) has enhanced the careers of students and young professionals working or looking to work in the advanced nuclear energy sector. As the demand for experienced leadership, new ideas, and professional development in this field continues to grow, NIB will be an increasingly important recruitment pipeline for multi-disciplined, creative, and energetic young talent. Looking…",
+      "importance_score": 10
     },
     {
       "date": "2025-12-28",
@@ -24990,6 +26269,27 @@
       ],
       "search_text": "NANO to build Illinois MMR facility Nuclear energy and technology company NANO Nuclear Energy Inc has announced it is to invest more than USD12 million to establish a manufacturing and research and development facility in Illinois, with support from a state incentive programme.",
       "importance_score": 22
+    },
+    {
+      "date": "2025-10-08",
+      "title": "Quantitative Health Objectives in a Performance-based Regulation",
+      "summary": "In January 2022, Adam Stein submitted the following white paper as a comment disagreeing with the use of Quantitative Health Objectives (QHO) as a risk metric for performance-based assessment. The NRC’s draft Part 53 rule aims to establish a modern, risk-informed, and technology-inclusive licensing framework to facilitate the approval and deployment of advanced nuclear reactors. This new regulatory approach,…",
+      "category": "Research & analysis",
+      "url": "https://thebreakthrough.org/issues/nuclear-energy-innovation/quantitative-health-objectives-in-a-performance-based-regulation",
+      "source": "Breakthrough Institute",
+      "kind": "report",
+      "links": [],
+      "entities": [
+        "US Nuclear Regulatory Commission"
+      ],
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Policy & international"
+      ],
+      "search_text": "US Nuclear Regulatory Commission Quantitative Health Objectives in a Performance-based Regulation In January 2022, Adam Stein submitted the following white paper as a comment disagreeing with the use of Quantitative Health Objectives (QHO) as a risk metric for performance-based assessment. The NRC’s draft Part 53 rule aims to establish a modern, risk-informed, and technology-inclusive licensing framework to facilitate the approval and deployment of advanced nuclear reactors. This new regulatory approach,…",
+      "importance_score": 20
     },
     {
       "date": "2025-10-08",
@@ -55753,25 +57053,6 @@
     {
       "date": "2024-07-15",
       "title": "Construction begins on China's largest uranium mining project",
-      "category": "Uranium & fuel",
-      "summary": "China began work on a major in-situ uranium mining development in Inner Mongolia, intended to support domestic nuclear-fuel security.",
-      "url": "https://www.world-nuclear-news.org/Articles/Construction-begins-on-China-s-largest-uranium-min",
-      "links": [],
-      "source": "World Nuclear News",
-      "entities": [],
-      "technologies": [
-        "Traditional fission"
-      ],
-      "categories": [
-        "Fuel & supply chain",
-        "Construction & licensing"
-      ],
-      "search_text": "Construction begins on China's largest uranium mining project China began work on a major in-situ uranium mining development in Inner Mongolia, intended to support domestic nuclear-fuel security.",
-      "importance_score": 15
-    },
-    {
-      "date": "2024-07-15",
-      "title": "Construction begins on China's largest uranium mining project",
       "summary": "The project in Ordos in the Inner Mongolia Autonomous Region is being developed by China National Nuclear Corporation, with work beginning on Friday, according to the China Atomic Energy Authority.",
       "category": "Uranium & fuel",
       "url": "https://www.world-nuclear-news.org/articles/construction-begins-on-china-s-largest-uranium-min",
@@ -64329,27 +65610,6 @@
         "Capital & financing"
       ],
       "search_text": "Start up of Chinese industrial nuclear steam project begins Commissioning has begun of China's first industrial-use nuclear energy steam supply project, China National Nuclear Corporation announced. The project at the Tianwan nuclear power plant in China's Jiangsu province will supply steam to a nearby petrochemical plant.",
-      "importance_score": 10
-    },
-    {
-      "date": "2024-03-04",
-      "title": "Grid connection for Vogtle 4",
-      "category": "New build & milestones",
-      "summary": "Georgia Power's Vogtle 4 AP1000 began delivering electricity to the grid as part of start-up testing.",
-      "url": "https://www.world-nuclear-news.org/Articles/Grid-connection-for-Vogtle-4",
-      "links": [],
-      "source": "World Nuclear News",
-      "entities": [
-        "Georgia Power",
-        "Vogtle"
-      ],
-      "technologies": [
-        "Traditional fission"
-      ],
-      "categories": [
-        "Construction & licensing"
-      ],
-      "search_text": "Georgia Power Vogtle Grid connection for Vogtle 4 Georgia Power's Vogtle 4 AP1000 began delivering electricity to the grid as part of start-up testing.",
       "importance_score": 10
     },
     {
