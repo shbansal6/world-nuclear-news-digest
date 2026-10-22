@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Basic completeness and source attribution checks for uncapped WNN archive."""
+"""Archive integrity and source provenance checks for unified nuclear intelligence."""
 import datetime as dt
 import json
 from pathlib import Path
@@ -13,7 +13,10 @@ for x in items:
     dt.date.fromisoformat(x["date"])
     assert x.get("title") and x.get("url"),"Missing title or original source"
     u=x["url"].lower().rstrip("/")
-    assert "world-nuclear-news.org/articles/" in u, "Non-WNN first source: "+u
+    assert (("world-nuclear-news.org/articles/" in u and x.get("source")=="World Nuclear News") or ("ans.org/news/" in u and x.get("source")=="ANS Nuclear Newswire") or (x.get("kind")=="report" and x.get("source") in ("Nuclear Innovation Alliance","Breakthrough Institute") and u.startswith("https://"))), "Invalid source attribution: "+u
+    assert x.get("kind","news") in ("news","report"), "Invalid content kind"
+    for alternate in x.get("alternate_sources",[]):
+        assert alternate.get("url","").startswith("https://"),"Missing alternate publisher provenance"
     assert u not in urls, "Duplicate WNN source: "+u
     urls.add(u)
 for u in ("https://www.world-nuclear-news.org/articles/new-end-user-agreements-support-long-term-us-plant-operations",
@@ -24,4 +27,4 @@ for u in ("https://www.world-nuclear-news.org/articles/new-end-user-agreements-s
     assert "Offtakes & customers" in labels and "Restarts & uprates" in labels,"Nuclear PPA materiality tags missing: "+u
 counts={k:sum(1 for x in items if x["date"].startswith(k)) for k in ["2026-10","2026-09","2025-10"]}
 assert counts["2026-10"]>=50,"October WNN archive suspiciously sparse"
-print("WNN QA PASSED:",len(items),"news reports; full-month counts:",counts,"no 48/75 monthly record cap")
+print("NUCLEAR QA PASSED:",len(items),"source-linked records including",sum(x.get("kind")=="report" for x in items),"research reports;",counts)
