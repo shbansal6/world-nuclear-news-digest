@@ -63,7 +63,7 @@ def same_event(a,b):
     title=sim(a.get('title'),b.get('title'))
     body=sim(a.get('summary'),b.get('summary'))
     ordered=pct(a.get('title'),b.get('title'))
-    return (title>=.68 and body>=.22) or (title>=.48 and body>=.50) or (ordered>=.76 and body>=.20)
+    return ((title>=.68 and body>=.22) or (title>=.48 and body>=.50) or (ordered>=.76 and body>=.20) or (delta<=2 and title>=.28 and body>=.24) or (delta<=2 and title>=.36 and body>=.12 and len(na&nb)>=2))
 def reconcile(records):
     """Stable preference for WNN summary, ANS as secondary source link.
     Source duplicates are exposed via alternate_sources for audits, never discarded silently.
