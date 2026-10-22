@@ -300,7 +300,7 @@
       "sections": [
         {
           "category": "Nuclear developments",
-          "takeaway": "13 distinct development(s), including Researchers in Vienna and Beijing report nuclear clock “milestone”; Seeing more, repairing smarter: How advanced NDE and repair technologies are changing nuclear asset management.",
+          "takeaway": "13 distinct development(s), including Researchers in Vienna and Beijing report nuclear clock “milestone”; General Fusion reports electron temperatures exceeding 1 keV.",
           "items": [
             {
               "date": "2026-10-09",
@@ -321,23 +321,6 @@
             },
             {
               "date": "2026-10-09",
-              "title": "Seeing more, repairing smarter: How advanced NDE and repair technologies are changing nuclear asset management",
-              "summary": "A single ultrasonic inspection of reactor vessel upper head penetrations can generate more than 7 kilometers of inspection data. Historically, analysts have spent days—even weeks—reviewing those results to identify the few indications that might require further evaluation. In 2025, Vattenfall Nuclear in Sweden demonstrated a different approach. By qualifying and deploying an artificial intelligence/machine learning…",
-              "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-09/article-8411/seeing-more-repairing-smarter-how-advanced-nde-and-repair-technologies-are-changing-nuclear-asset-management/",
-              "source": "ANS Nuclear Newswire",
-              "kind": "news",
-              "links": [],
-              "entities": [],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [],
-              "search_text": "Seeing more, repairing smarter: How advanced NDE and repair technologies are changing nuclear asset management A single ultrasonic inspection of reactor vessel upper head penetrations can generate more than 7 kilometers of inspection data. Historically, analysts have spent days—even weeks—reviewing those results to identify the few indications that might require further evaluation. In 2025, Vattenfall Nuclear in Sweden demonstrated a different approach. By qualifying and deploying an artificial intelligence/machine learning…",
-              "importance_score": 10
-            },
-            {
-              "date": "2026-10-09",
               "title": "General Fusion reports electron temperatures exceeding 1 keV",
               "summary": "General Fusion announced it has achieved compressional plasma heating that produced electron temperatures exceeding 1 keV, measured using Thomson scattering in collaboration with the U.K. Atomic Energy Authority. The 1 keV threshold is regarded as a key milestone, because it demonstrates the ability to produce and control fusion-relevant plasma temperatures. It was first reported on the Soviet T3 tokamak, announced…",
               "category": "Nuclear developments",
@@ -351,6 +334,23 @@
               ],
               "categories": [],
               "search_text": "General Fusion reports electron temperatures exceeding 1 keV General Fusion announced it has achieved compressional plasma heating that produced electron temperatures exceeding 1 keV, measured using Thomson scattering in collaboration with the U.K. Atomic Energy Authority. The 1 keV threshold is regarded as a key milestone, because it demonstrates the ability to produce and control fusion-relevant plasma temperatures. It was first reported on the Soviet T3 tokamak, announced…",
+              "importance_score": 10
+            },
+            {
+              "date": "2026-10-09",
+              "title": "Seeing more, repairing smarter: How advanced NDE and repair technologies are changing nuclear asset management",
+              "summary": "A single ultrasonic inspection of reactor vessel upper head penetrations can generate more than 7 kilometers of inspection data. Historically, analysts have spent days—even weeks—reviewing those results to identify the few indications that might require further evaluation. In 2025, Vattenfall Nuclear in Sweden demonstrated a different approach. By qualifying and deploying an artificial intelligence/machine learning…",
+              "category": "Nuclear developments",
+              "url": "https://www.ans.org/news/2026-10-09/article-8411/seeing-more-repairing-smarter-how-advanced-nde-and-repair-technologies-are-changing-nuclear-asset-management/",
+              "source": "ANS Nuclear Newswire",
+              "kind": "news",
+              "links": [],
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [],
+              "search_text": "Seeing more, repairing smarter: How advanced NDE and repair technologies are changing nuclear asset management A single ultrasonic inspection of reactor vessel upper head penetrations can generate more than 7 kilometers of inspection data. Historically, analysts have spent days—even weeks—reviewing those results to identify the few indications that might require further evaluation. In 2025, Vattenfall Nuclear in Sweden demonstrated a different approach. By qualifying and deploying an artificial intelligence/machine learning…",
               "importance_score": 10
             },
             {
@@ -3525,11 +3525,58 @@
       "week_start": "2026-09-14",
       "week_end": "2026-09-20",
       "title": "Global nuclear developments — week of September 14, 2026",
-      "overview": "49 distinct nuclear news events and 0 newly released research reports from monitored publishers; all have original source links.",
-      "article_count": 49,
-      "report_count": 0,
+      "overview": "49 distinct nuclear news events and 2 newly released research reports from monitored publishers; all have original source links.",
+      "article_count": 51,
+      "report_count": 2,
       "generated_at": "2026-10-21",
       "sections": [
+        {
+          "category": "New research reports",
+          "takeaway": "2 new source-attributed nuclear research publication(s) released this week. Each entry describes what the publication covers.",
+          "items": [
+            {
+              "date": "2026-09-16",
+              "title": "U.S. Nuclear Energy Project Tracker Update – September 2026",
+              "summary": "In February of 2026, NIA released the U.S. Nuclear Energy Project Tracker to help stakeholders understand the status of early mover projects in the United States with respect to five key indicators: (1) site selection and site work, (2) licensing, (3) project teaming, (4) offtake, and (5) funding. The September 2026 update to that tracker is available today. Here are a few highlights:",
+              "category": "Research & analysis",
+              "url": "https://nuclearinnovationalliance.org/us-nuclear-energy-project-tracker-update-september-2026",
+              "source": "Nuclear Innovation Alliance",
+              "kind": "report",
+              "links": [],
+              "coverage_detail": 774,
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [
+                "Offtakes & customers",
+                "Capital & financing"
+              ],
+              "search_text": "U.S. Nuclear Energy Project Tracker Update – September 2026 In February of 2026, NIA released the U.S. Nuclear Energy Project Tracker to help stakeholders understand the status of early mover projects in the United States with respect to five key indicators: (1) site selection and site work, (2) licensing, (3) project teaming, (4) offtake, and (5) funding. The September 2026 update to that tracker is available today. Here are a few highlights:",
+              "importance_score": 10,
+              "publication_type": "Blog"
+            },
+            {
+              "date": "2026-09-15",
+              "title": "The Cloud Has to Be Built Somewhere: The AI and nuclear buildout depends on community trust",
+              "summary": "For years, the “cloud” sounded weightless, as if data floated above us and the digital economy existed everywhere and nowhere at once. But the cloud was never in the sky. It has always been on land, plugged into the grid, cooled by water and air, and built in communities. That reality has become impossible to ignore. The International Energy Agency projects that global electricity use by data centers will roughly…",
+              "category": "Research & analysis",
+              "url": "https://nuclearinnovationalliance.org/cloud-has-be-built-somewhere-ai-and-nuclear-buildout-depends-community-trust",
+              "source": "Nuclear Innovation Alliance",
+              "kind": "report",
+              "links": [],
+              "coverage_detail": 1250,
+              "entities": [],
+              "technologies": [
+                "Traditional fission"
+              ],
+              "categories": [],
+              "search_text": "The Cloud Has to Be Built Somewhere: The AI and nuclear buildout depends on community trust For years, the “cloud” sounded weightless, as if data floated above us and the digital economy existed everywhere and nowhere at once. But the cloud was never in the sky. It has always been on land, plugged into the grid, cooled by water and air, and built in communities. That reality has become impossible to ignore. The International Energy Agency projects that global electricity use by data centers will roughly…",
+              "importance_score": 10,
+              "publication_type": "Blog"
+            }
+          ]
+        },
         {
           "category": "Nuclear developments",
           "takeaway": "12 distinct development(s), including MSRE FLiBe arrives in Texas for reuse after decades in storage; Hanford’s TSCR system restarted after extended downtime.",
