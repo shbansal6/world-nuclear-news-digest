@@ -1,51 +1,66 @@
-# World Nuclear News Digest
+# Nuclear Intelligence — news and research archive
 
-An independent, source-linked research archive drawing on public [World Nuclear News](https://www.world-nuclear-news.org/) reporting, with a website design inspired by the Neutron Bytes tracker.
+A source-attributed nuclear-sector research website, built on the existing World Nuclear News digest. The live application preserves the existing editorial visual design and month/year navigation.
 
-**Planned public URL:** https://shbansal6.github.io/world-nuclear-news-digest/
+**Production site:** https://world-nuclear-news-digest.vercel.app/
 
-## Coverage
+## Source policy
 
-| Year | Organization |
-| --- | --- |
-| 2024 | 4 quarterly archives (Q1–Q4) |
-| 2025 | 12 monthly archives |
-| 2026 | Monthly archives to the present |
-| Weekly Updates | Detailed Monday briefings, reverse chronological, with a weekly sidebar |
+| Publisher | Content role | Ingestion |
+| --- | --- | --- |
+| World Nuclear News (WNN) | Global nuclear news | Public RSS + publisher XML sitemap; dated article pages |
+| American Nuclear Society (ANS) Nuclear Newswire | Nuclear news | Official RSS https://www.ans.org/news/feed/ |
+| Nuclear Innovation Alliance (NIA) Resources | Reports and policy research | Resources listing, **Reports**-marked publications only |
+| Breakthrough Institute — Nuclear Energy Innovation | Nuclear research and analysis | Published research pages, verifying each date and abstract |
+| NCEA Energy Policy Research Library | Nuclear policy research | **Not enabled:** exact linked library URL must be verified before ingestion |
 
-The archive uses a consistent industry classification: new build and milestones, SMRs and advanced reactors, nuclear PPAs/offtake, existing fleet and restarts, uranium/fuel, policy/regulation, corporate/financing, waste/decommissioning, and fusion/research. Every record links to the original WNN article first and adds other sourced hyperlinks when verified.
+The separate Neutron Bytes feed is excluded entirely. Do not ingest it in this application.
 
-## Automatic Monday update
+Content categories are **News** and **Research reports**; both appear in the single latest-first main archive. Research reports also have a dedicated filter and a **New research reports** section within the appropriate dated weekly briefing. Each report includes a source-linked title and a plain description of the publication's contents.
 
-The GitHub Actions workflow [Refresh and publish nuclear digest](.github/workflows/refresh.yml) is configured for **Mondays at 7:00 AM America/Chicago**, automatically adjusting between CST and CDT. It also refreshes on source/workflow changes and can be run manually.
+## Event-level duplicate policy
 
-It performs the following:
-1. Finds article URLs in WNN public RSS and XML sitemap, without a paid API, key or LLM API.
-2. Extracts article dates, concise attributed descriptions and direct sources; classifies each item and retains a limited selection of material articles per historical period.
-3. Keeps **all verified in-scope articles**, without a 48-article monthly or 75-article quarterly cap, and assigns multiple contextual technology and commercial tags; materiality scores are for optional sorting, never inclusion.
-4. Maintains a globally searchable archive with year/month/technology/category filters and up to seven September-2026-onward weekly editions, including a researched October 12–18 issue.
-4. Preserves hand-researched editorials (which are marked editorial) rather than replacing them with automatic summaries.
-5. Commits refreshed JSON data into the main branch and deploys GitHub Pages.
+- Normalize exact URL aliases. For WNN and ANS **news** in a ten-day event window, compare title and summary overlap, named transaction participants, MW/GW values, dates and event stage. The thresholds are intentionally conservative; if uncertain, preserve both rather than silently suppressing a distinct development.
+- Never collapse news about *different* customers, PPAs, plants, permits, approvals, construction starts or operating milestones just because company or project names overlap.
+- Prefer WNN as the canonical summary when two reports describe the same event; retain ANS's actual article as `alternate_sources` and surface its link on the news card.
+- Independent research is **never** deduplicated away as a news article. Revisions and substantive new analyses should remain discoverable as their own publications.
+- Preserve alternate links across recurring refreshes; the deduplicator eliminates repeated alternates.
 
-**Editorial distinction:** The initial Oct 12–18, 2026 briefing is hand-researched; automatically generated issues are attributed article roundups, not original analytical reporting. This service does not independently verify each report and does not claim affiliation with WNN. Historical backfilling depends on the public source sitemap availability; sparse or missing periods will be shown transparently rather than populated with fabricated stories.
+## Taxonomy and filtering
 
-## Required one-time GitHub settings
+Technology tags: Traditional fission, Advanced fission, Microreactors, Fusion.
 
-1. Open [Settings → Pages](https://github.com/shbansal6/world-nuclear-news-digest/settings/pages).
-2. Select **Build and deployment → Source: GitHub Actions**.
-3. Ensure repository Actions are enabled, with workflow permission to write repository contents (the workflow explicitly requests contents: write).
-4. Open [Actions](https://github.com/shbansal6/world-nuclear-news-digest/actions) and select **Refresh and publish nuclear digest → Run workflow**. The first run performs the historical backfill and deploys the site.
+Activity tags: Restarts & uprates; Offtakes & customers; Construction & licensing; Fuel & supply chain; Capital & financing; Policy & international.
 
-The Pages site will not be accessible until publishing is enabled and a deployment has succeeded.
+Records can have more than one technology and activity tag. Filtering works across **every loaded archive record before pagination**, including company names, summaries, source and alternate-publisher metadata. Additional filters are publisher, content type and offtaker/customer, with Google/Alphabet, Amazon/AWS, Microsoft, Meta and Oracle grouped under consistent names.
 
-## Stack
+Export **Copy links** provides the filtered article list for presentation research; **Export CSV** includes date, title, publisher, record type, tags, original URL and additional source URLs.
 
-HTML, CSS, vanilla JavaScript; Python with BeautifulSoup and Requests; GitHub Actions/Pages. All article copyrights remain with original publishers; summaries are brief and link to the source. No externally provisioned services, API keys or database are required.
+## Scheduled publishing
 
-To check or change the selection cap, edit scripts/refresh.py. Archive content lives in data/articles.json and weekly reports in data/briefings.json.
+The workflow [Refresh and publish nuclear digest](.github/workflows/refresh.yml) runs each Monday at **7:00 AM America/Chicago** (both UTC offsets, with a local DST guard). It discovers new source records, preserves existing historical content on network errors, merges repeated WNN/ANS events, reapplies verified editorial overrides, rebuilds news/reports weekly sections, checks archive integrity, and publishes static files.
 
-## October 2026 Google–Constellation completeness check
-The October 6 Google–Constellation 20-year PPA (890 MW of proposed uprates) and Oracle–Point Beach reporting is included under its WNN source URL. Source-verified tags/aliases for this article and the Amazon–Constellation deal are maintained in `data/editorial_overrides.json`, so later automatic refreshes do not omit significant transaction classifications in generic-headline reports. This is not a general substitute for checking completeness against all published WNN articles.
+A separate weekly editorial ChatGPT task has the same Monday schedule. It may enrich the research commentary, but must re-read the latest repository data to avoid overwriting concurrent automated publisher discoveries. Human-researched weekly editions are retained, with new dated research reports merged in.
 
-## Integration and limitations
-The website is a plain static site. To update a live Vercel deployment, that Vercel project must be Git-linked to this repository's `main` branch. The archive JSON may be larger than the 1 MB GitHub Contents API fetch limit; GitHub workflows clone it normally, while other GitHub clients may need the Git Blob API. Public RSS and sitemaps may omit articles; discovery is tracked and improved over subsequent scheduled runs. The UI searches **the entire stored archive** (including named entities), not the publisher's live full-text website.
+Safeguards:
+- No materiality cutoff or arbitrary news cap.
+- No guessed publication dates, report names or article URLs.
+- No replacement of historical records with blank data after source failures.
+- GitHub Actions runs Python compilation, [dedupe regression tests](scripts/test_dedupe.py), archive/transaction integrity checks, JavaScript syntax checking and a UI smoke test before committing an updated archive.
+- If a publisher changes its page format, report the resulting ingestion gap rather than claim complete coverage.
+- Existing WNN historical archives begin in January 2024. ANS's official RSS only supplies its retained feed window; **a full historical ANS backfill is not yet complete**.
+
+## Stack and limits
+
+HTML, CSS, vanilla JS; Python Requests, BeautifulSoup and XML; GitHub Actions; Vercel with a Git-linked main branch. This independent site is not affiliated with its publishers. Keep publisher excerpts concise and link to originals. Publisher availability, metadata completeness and changing page layouts constrain historical coverage. The NCEA feed must remain disabled until its exact **Nuclear Energy** topic-filtered research library URL is identified.
+
+### Files
+
+- `data/articles.json`: all indexed records and report descriptions
+- `data/briefings.json`: weekly briefings, latest first
+- `data/editorial_overrides.json`: verified transaction-specific overrides
+- `scripts/refresh.py`: orchestrator and WNN collector
+- `scripts/sources.py`: ANS/NIA/Breakthrough source adapters
+- `scripts/dedupe.py`: real-world WNN/ANS news-event reconciliation
+- `scripts/taxonomy.py`: named entities, technology and activity tags
+- `scripts/audit.py`, `scripts/test_dedupe.py`, `scripts/smoke.js`: publishing checks
