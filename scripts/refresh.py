@@ -20,7 +20,7 @@ from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
 from taxonomy import enrich_record
-from comprehensive_sources import collect_all_sources as collect_other_sources
+from comprehensive_sources import collect_all_sources as collect_other_sources, canonical_url
 from dedupe import reconcile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -235,6 +235,41 @@ def read_articles():
     j=json.loads(p.read_text(encoding='utf-8'))
     return j if isinstance(j,list) else j.get('articles',[])
 
+
+def canonicalize_source_records(records):
+    """Unify NIA's /index.php/ aliases without losing original link provenance.
+
+    Multiple URLs that resolve to the same NIA document are a *single*
+    source publication, even when separately discovered via resources and
+    News & Blog. Keep both original URLs in source_url_aliases.
+    """
+    by_url={}
+    for source in records:
+        if not source.get('url') or not source.get('date'):continue
+        a=dict(source)
+        old=a['url'].rstrip('/')
+        parsed=urllib.parse.urlparse(old)
+        u=canonical_url(old) if parsed.hostname in (
+            'nuclearinnovationalliance.org','www.nuclearinnovationalliance.org'
+        ) else old
+        a['url']=u
+        aliases=list(a.get('source_url_aliases') or [])
+        if old!=u:aliases.append(old)
+        if u in by_url:
+            prev=by_url[u]
+            def rank(z):return (bool(z.get('publication_type')),len(z.get('summary','')))
+            keep=a if rank(a)>rank(prev) else prev
+            aliases+=list(prev.get('source_url_aliases') or [])
+            aliases+=list(a.get('source_url_aliases') or [])
+            if keep is a and prev.get('alternate_sources') and not keep.get('alternate_sources'):
+                keep['alternate_sources']=prev['alternate_sources']
+            a=keep
+        aliases=[v for v in dict.fromkeys(aliases) if v.rstrip('/')!=u]
+        if aliases:a['source_url_aliases']=aliases
+        else:a.pop('source_url_aliases',None)
+        by_url[u]=a
+    return by_url
+
 def bucket(a):
     d=a['date']
     if d[:4]=='2024':return d[:4]+'-Q'+str((int(d[5:7])-1)//3+1)
@@ -324,7 +359,7 @@ def main():
     DATA.mkdir(exist_ok=True)
     old=read_source_records()
     if len(old)<1000:raise RuntimeError('Refusing suspicious contraction of historical nuclear archive')
-    existing={a['url'].rstrip('/'):a for a in old if a.get('url') and a.get('date')}
+    existing=canonicalize_source_records(old)
     # Remove prior duplicate display cards before merging fresh source material.
     # Alternate source URLs stay attached to the canonical story.
     available=crawl_rss()
@@ -338,10 +373,27 @@ def main():
                     existing[rec['url']]=rec;changed+=1
     print('New WNN articles:',changed,flush=True)
     for rec in collect_other_sources(fetch):
-        u=rec['url'].rstrip('/')
+        original=rec['url'].rstrip('/')
+        host=urllib.parse.urlparse(original).hostname
+        u=canonical_url(original) if host in (
+            'nuclearinnovationalliance.org','www.nuclearinnovationalliance.org'
+        ) else original
+        rec['url']=u
+        if original!=u:
+            rec['source_url_aliases']=list(dict.fromkeys(
+                list(rec.get('source_url_aliases') or [])+[original]))
         if u not in existing:
             existing[u]=rec
             changed+=1
+        else:
+            prev=existing[u]
+            if (bool(rec.get('publication_type')),len(rec.get('summary','')))>(
+                bool(prev.get('publication_type')),len(prev.get('summary',''))):
+                aliases=list(dict.fromkeys(
+                    list(prev.get('source_url_aliases') or [])+
+                    list(rec.get('source_url_aliases') or [])))
+                if aliases:rec['source_url_aliases']=aliases
+                existing[u]=rec
     print('Total new verified source records:',changed,flush=True)
     # Store every distinct publisher publication BEFORE reconciling public
     # cards. A canonical event can then link to its complete sources without
