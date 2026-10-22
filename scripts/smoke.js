@@ -22,7 +22,8 @@ const fetch=async url=>{const path=url.split('?')[0];if(!(path in files))throw E
  assert(el.typefilter.listeners.change && el.sourcefilter.listeners.change && el.buyerfilter.listeners.change,'New filters did not initialize');
  assert(el.copylinks.listeners.click && el.exportcsv.listeners.click,'Export controls not wired');
  el.typefilter.listeners.change({target:{value:'report'}});
- assert(el.results.textContent.startsWith('0 developments'),'Report filter must show zero until research records are ingested');
+ const expectedReports=(news.articles||news).filter(a=>a.kind==='report').length;
+ assert(el.results.textContent.startsWith(expectedReports.toLocaleString()+' developments'),'Report filter must display exactly the indexed research records');
  el.typefilter.listeners.change({target:{value:'all'}});
  el.q.listeners.input({target:{value:'Amazon Constellation'}});
  assert(!el.results.textContent.startsWith('0 developments'),'Amazon–Constellation transaction not globally searchable');
