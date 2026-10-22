@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 from taxonomy import enrich_record
 
 MONTHS={m.lower():i for i,m in enumerate(("January","February","March","April","May","June","July","August","September","October","November","December"),1)}
+MONTHS.update({m[:3].lower():v for m,v in list(MONTHS.items())})
 DATE_RX=re.compile(r'\b('+'|'.join(MONTHS)+r')\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(20\d{2})\b',re.I)
 START=dt.date(2024,1,1)
 def parse_date(value):
