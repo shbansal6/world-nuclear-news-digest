@@ -112,6 +112,9 @@ function renderNav(){
  $('yrfilter').innerHTML='<option value="all">All years</option>'+years.map(y=>'<option value="'+y+'">'+y+'</option>').join('');
  $('techfilter').innerHTML='<option value="all">All technologies</option>'+TECHNOLOGIES.map(t=>'<option>'+esc(t)+'</option>').join('');
  $('catfilter').innerHTML='<option value="all">All categories</option>'+THEMES.map(t=>'<option>'+esc(t)+'</option>').join('');
+ $('typefilter').innerHTML='<option value="all">News + reports</option><option value="news">News only</option><option value="report">Research reports only</option>';
+ $('sourcefilter').innerHTML='<option value="all">All sources</option>'+[...new Set(articles.flatMap(a=>[a.source,...a.alternate_sources.map(x=>x.source)]))].sort().map(t=>'<option value="'+esc(t)+'">'+esc(t)+'</option>').join('');
+ $('buyerfilter').innerHTML='<option value="all">All offtakers</option>'+Object.keys(BUYERS).filter(t=>articles.some(a=>a.buyers.includes(t))).map(t=>'<option value="'+esc(t)+'">'+esc(t)+'</option>').join('');
  $('yearnav').innerHTML=years.map(y=>'<a href="#year-'+y+'" data-year="'+y+'"><b>'+y+'</b><span>'+articles.filter(a=>a.date.startsWith(y)).length+'</span></a>').join('');
  $('total').textContent=articles.length.toLocaleString();
  $('periods').textContent=new Set(articles.map(periodKey)).size;
@@ -123,8 +126,8 @@ function renderNav(){
 function makeBriefing(st,ed){
  const items=articles.filter(a=>a.date>=st&&a.date<=ed);
  if(!items.length)return null;
- const grouped={};items.forEach(a=>{const key=a.categories[0]||'Other developments';(grouped[key]||(grouped[key]=[])).push(a)});
- return {week_start:st,week_end:ed,generated_at:'Source-record roundup',article_count:items.length,title:'Nuclear developments — week of '+dateLabel(st),overview:'Source-linked developments for the completed week, organized by sector. Refer to the original articles for the full reporting.',sections:Object.entries(grouped).map(([category,items])=>({category,takeaway:items.length+' developments indexed in '+category.toLowerCase()+'.',items}))};
+ const grouped={};items.forEach(a=>{const key=a.kind==='report'?'New research reports':a.categories[0]||'Other developments';(grouped[key]||(grouped[key]=[])).push(a)});
+ return {week_start:st,week_end:ed,generated_at:'Source-record roundup',article_count:items.length,title:'Nuclear developments — week of '+dateLabel(st),overview:'Distinct news events and newly released research reports for the completed week, with original links.',sections:Object.entries(grouped).map(([category,items])=>({category,takeaway:items.length+' developments indexed in '+category.toLowerCase()+'.',items}))};
 }
 function generateRecentWeeks(){
  const list=[];let d=new Date('2026-10-12T12:00:00Z');
@@ -153,9 +156,9 @@ function updateView(){
  const hash=decodeURIComponent(location.hash||'#archive');
  if(hash.startsWith('#weekly'))weekly(hash.replace('#weekly-',''));else{$('weekly').classList.remove('active');$('archive').classList.remove('hidden');if(hash.startsWith('#year-')){const y=hash.slice(6);if($('yrfilter').value!==y&&/^\d{4}$/.test(y)){state.year=y;$('yrfilter').value=y;updateMonth();}}renderList();}
 }
-function resetView(){state.year='all';state.month='all';state.tech='all';state.theme='all';state.q='';state.sort='recent';state.visible=100;$('sortfilter').value='recent';['yrfilter','monthfilter','techfilter','catfilter'].forEach(id=>$(id).value='all');$('q').value='';updateMonth();renderList();}
+function resetView(){state.year='all';state.month='all';state.tech='all';state.theme='all';state.kind='all';state.source='all';state.buyer='all';state.q='';state.sort='recent';state.visible=100;$('sortfilter').value='recent';['yrfilter','monthfilter','techfilter','catfilter','typefilter','sourcefilter','buyerfilter'].forEach(id=>$(id).value='all');$('q').value='';updateMonth();renderList();}
 function initEvents(){
- ['yrfilter','monthfilter','techfilter','catfilter'].forEach((id)=>$(id).addEventListener('change',e=>{const key={yrfilter:'year',monthfilter:'month',techfilter:'tech',catfilter:'theme'}[id];state[key]=e.target.value;state.visible=100;if(key==='year')updateMonth();if(location.hash.startsWith('#weekly'))location.hash='#archive';renderList();}));
+ ['yrfilter','monthfilter','techfilter','catfilter','typefilter','sourcefilter','buyerfilter'].forEach((id)=>$(id).addEventListener('change',e=>{const key={yrfilter:'year',monthfilter:'month',techfilter:'tech',catfilter:'theme',typefilter:'kind',sourcefilter:'source',buyerfilter:'buyer'}[id];state[key]=e.target.value;state.visible=100;if(key==='year')updateMonth();if(location.hash.startsWith('#weekly'))location.hash='#archive';renderList();}));
  $('sortfilter').addEventListener('change',e=>{state.sort=e.target.value;state.visible=100;renderList()});
  $('q').addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();state.visible=100;if(location.hash.startsWith('#weekly'))location.hash='#archive';renderList()});
  $('expand').addEventListener('click',()=>{state.expanded=!state.expanded;$('expand').textContent=state.expanded?'Show summaries':'Show detail';document.querySelectorAll('.news-card').forEach(c=>c.classList.toggle('expanded',state.expanded))});
