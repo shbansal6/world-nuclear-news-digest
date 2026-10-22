@@ -364,7 +364,7 @@ def main():
     briefings=list(editorial.values())+[x for x in briefings if x['week_start'] not in editorial]
     briefings.sort(key=lambda x:x['week_start'],reverse=True)
     briefings=[x for x in briefings if x['week_start']>='2026-09-07'][:7]
-    payload={'updated_at':TODAY.isoformat(),'methodology':'In-scope WNN + ANS source-linked news with conservative event-level deduplication and individually catalogued research from NIA and Breakthrough; NCEA library awaits verified URL. No quota; metadata and multi-label tags inferred from public descriptions. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.','articles':selected}
+    payload={'updated_at':TODAY.isoformat(),'methodology':'In-scope WNN + ANS source-linked news with conservative event-level deduplication and individually catalogued nuclear research from NIA, Breakthrough and NCEA (each NCEA publication requires explicit Nuclear Energy topic and verified date). No quota; metadata and multi-label tags inferred from public descriptions. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.','articles':selected}
     (DATA/'articles.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (DATA/'briefings.json').write_text(json.dumps({'generated_at':TODAY.isoformat(),'briefings':briefings},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Published:',len(selected),'articles in',len(groups),'periods;',len(briefings),'weekly briefings.',flush=True)
