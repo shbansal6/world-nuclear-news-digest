@@ -2,11 +2,12 @@
  * Every search runs across the FULL in-memory archive before pagination, not DOM cards.
  */
 (()=>{'use strict';
-const $=id=>document.getElementById(id), site=document.body.dataset.source==='nb'?'nb':'wnn';
+const $=id=>document.getElementById(id);
 const TECHNOLOGIES=['Traditional fission','Advanced fission','Microreactors','Fusion'];
 const THEMES=['Restarts & uprates','Offtakes & customers','Construction & licensing','Fuel & supply chain','Capital & financing','Policy & international'];
 const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
-const state={year:'all',month:'all',tech:'all',theme:'all',q:'',sort:'recent',expanded:false,visible:100};
+const state={year:'all',month:'all',tech:'all',theme:'all',kind:'all',source:'all',buyer:'all',q:'',sort:'recent',expanded:false,visible:100};
+const BUYERS={'Google / Alphabet':['google','alphabet'],'Amazon / AWS':['amazon','aws'],'Microsoft':['microsoft'],'Meta':['meta'],'Oracle':['oracle']};
 let articles=[],briefings=[],metadata={},overrides={};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function validUrl(u){try{const p=new URL(u);return p.protocol==='https:'||p.protocol==='http:'?p.href:''}catch{return ''}}
@@ -51,6 +52,9 @@ function tagsFor(a){
 function hydrate(x){
  const n=Object.assign({},x);
  n.date=String(n.date||'').slice(0,10);
+ n.kind=n.kind==='report'?'report':'news';
+ n.source=String(n.source||'World Nuclear News');
+ n.alternate_sources=Array.isArray(n.alternate_sources)?n.alternate_sources:[];
  n.title=String(n.title||'');
  n.summary=String(n.summary||'');
  n.entities=Array.isArray(n.entities)?n.entities:[];
@@ -63,18 +67,19 @@ function hydrate(x){
    n.technologies=edit.technologies||n.technologies;
    n.categories=edit.categories||n.categories;
  }
- n.searchblob=[n.title,n.summary,n.category,n.search_text,edit?.search_text,...n.entities,...n.technologies,...n.categories,n.url].join(' ').toLowerCase();
+ n.searchblob=[n.title,n.summary,n.category,n.search_text,edit?.search_text,n.source,...n.entities,...n.technologies,...n.categories,n.url,...n.alternate_sources.map(x=>x.title||'')].join(' ').toLowerCase();
+ n.buyers=Object.entries(BUYERS).filter(([name,terms])=>terms.some(t=>new RegExp('\\b'+t+'\\b','i').test([n.title,n.summary,...n.entities].join(' ')))).map(([name])=>name);
  return n;
 }
 function sourceLinks(a){
- const list=[{url:a.url,label:site==='nb'?'Neutron Bytes':'World Nuclear News'},...(Array.isArray(a.links)?a.links:[])];
+ const list=[{url:a.url,label:a.source||'Original publication'},...(a.alternate_sources||[]).map(x=>({url:x.url,label:x.source+' (other coverage)'})),...(Array.isArray(a.links)?a.links:[])];
  const seen=new Set();let result=[];
  list.forEach(l=>{const u=validUrl(l.url);if(!u||seen.has(u))return;seen.add(u);if(result.length<4)result.push('<a target="_blank" rel="noopener noreferrer" href="'+esc(u)+'">'+esc(l.label||'Original linked source')+' <span>↗</span></a>')});
  return '<div class="sources">'+result.join('')+'</div>';
 }
 function tagChips(a){return '<div class="taggroup">'+a.technologies.map(t=>'<button type="button" class="tagchip tech" data-tech="'+esc(t)+'">'+esc(t)+'</button>').join('')+a.categories.map(t=>'<button type="button" class="tagchip" data-cat="'+esc(t)+'">'+esc(t)+'</button>').join('')+'</div>';}
-function card(a){return '<article class="news-card'+(state.expanded?' expanded':'')+'"><div class="story-top"><span class="story-category">'+esc(a.categories[0]||a.category||'Nuclear developments')+'</span><span class="story-date">'+dateLabel(a.date)+'</span></div><h4>'+esc(a.title)+'</h4>'+tagChips(a)+'<div class="story-teaser">'+esc(compact(a.summary,250))+'</div><div class="story-full">'+esc(a.summary)+'</div>'+sourceLinks(a)+'</article>'}
-function filtered(){const result=articles.filter(a=>(state.year==='all'||a.date.slice(0,4)===state.year)&&(state.month==='all'||a.date.slice(5,7)===state.month)&&(state.tech==='all'||a.technologies.includes(state.tech))&&(state.theme==='all'||a.categories.includes(state.theme))&&(!state.q||state.q.split(/\s+/).every(term=>a.searchblob.includes(term))));if(state.sort==='significant')result.sort((a,b)=>(Number(b.importance_score)||0)-(Number(a.importance_score)||0)||b.date.localeCompare(a.date));return result;}
+function card(a){return '<article class="news-card'+(state.expanded?' expanded':'')+(a.kind==='report'?' research-card':'')+'"><div class="story-top"><span class="story-category">'+(a.kind==='report'?'RESEARCH REPORT · ':'')+esc(a.source)+' · '+esc(a.categories[0]||a.category||'Nuclear developments')+'</span><span class="story-date">'+dateLabel(a.date)+'</span></div><h4>'+esc(a.title)+'</h4>'+tagChips(a)+'<div class="story-teaser">'+esc(compact(a.summary,290))+'</div><div class="story-full">'+esc(a.summary)+'</div>'+sourceLinks(a)+'</article>'}
+function filtered(){const result=articles.filter(a=>(state.year==='all'||a.date.slice(0,4)===state.year)&&(state.month==='all'||a.date.slice(5,7)===state.month)&&(state.tech==='all'||a.technologies.includes(state.tech))&&(state.theme==='all'||a.categories.includes(state.theme))&&(state.kind==='all'||a.kind===state.kind)&&(state.source==='all'||a.source===state.source||a.alternate_sources.some(x=>x.source===state.source))&&(state.buyer==='all'||a.buyers.includes(state.buyer))&&(!state.q||state.q.split(/\s+/).every(term=>a.searchblob.includes(term))));if(state.sort==='significant')result.sort((a,b)=>(Number(b.importance_score)||0)-(Number(a.importance_score)||0)||b.date.localeCompare(a.date));return result;}
 function renderList(){
  const found=filtered(), subset=found.slice(0,state.visible), years=new Map();
  subset.forEach(a=>{const y=a.date.slice(0,4);if(!years.has(y))years.set(y,new Map());const k=periodKey(a);if(!years.get(y).has(k))years.get(y).set(k,[]);years.get(y).get(k).push(a)});
@@ -111,6 +116,7 @@ function renderNav(){
  $('total').textContent=articles.length.toLocaleString();
  $('periods').textContent=new Set(articles.map(periodKey)).size;
  $('briefcount').textContent=briefings.length;
+ $('reportcount').textContent=articles.filter(a=>a.kind==='report').length.toLocaleString();
  $('asof').textContent='Archive updated '+(metadata.updated_at||'—');
  updateMonth();
 }
