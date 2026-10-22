@@ -10,7 +10,7 @@ from difflib import SequenceMatcher
 from urllib.parse import urlsplit
 
 NOISE=set("a an the for of to in on at and with from by as says said new nuclear energy power plant plants reactor reactors us uk international news update latest is are its".split())
-CUSTOMERS={'google','alphabet','amazon','aws','microsoft','meta','oracle','constellation','vistra','nextera','kairos','oklo','x-energy','terrapower','tva','opg','palisades','calvert','cliffs','duane','arnold','point','beach','vogtle','darlington'}
+CUSTOMERS={'aep','google','alphabet','amazon','aws','microsoft','meta','oracle','constellation','vistra','nextera','kairos','oklo','x-energy','terrapower','tva','opg','palisades','calvert','cliffs','duane','arnold','point','beach','vogtle','darlington'}
 STAGES={
 'ppa':re.compile(r'\b(ppa|power purchase|offtake|power supply agreement|power sales agreement)\b',re.I),
 'restart':re.compile(r'\b(restart|reopening|reopen|recommission)\b',re.I),
