@@ -1,4 +1,5 @@
 name: One-time comprehensive nuclear source backfill
+# Extended source-backfill verification: official BTI sitemaps + unlinked NIA news titles.
 # Retry after correcting isolated regression-test fixture; no general push trigger.
 on:
   push:
