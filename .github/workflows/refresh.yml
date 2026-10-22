@@ -36,13 +36,15 @@ jobs:
       - name: Validate interactive website script before publishing
         run: node --check app.js
       - name: Check Python collector syntax
-        run: python -m py_compile scripts/refresh.py scripts/taxonomy.py scripts/sources.py scripts/comprehensive_sources.py scripts/dedupe.py scripts/test_dedupe.py scripts/test_sources.py scripts/test_comprehensive.py scripts/audit.py
+        run: python -m py_compile scripts/refresh.py scripts/taxonomy.py scripts/sources.py scripts/comprehensive_sources.py scripts/bti_sitemaps.py scripts/test_bti_sitemap.py scripts/dedupe.py scripts/test_dedupe.py scripts/test_sources.py scripts/test_comprehensive.py scripts/audit.py
       - name: Test duplicate-news classification before refreshing
         run: python scripts/test_dedupe.py
       - name: Test NCEA research topic and publication date validation
         run: python scripts/test_sources.py
       - name: Test comprehensive publisher collection and deduplication
         run: python scripts/test_comprehensive.py
+      - name: Test historical Breakthrough sitemap discovery
+        run: python scripts/test_bti_sitemap.py
       - name: Refresh nuclear news, reports and weekly briefings
         run: python scripts/refresh.py
       - name: Validate historical archive and critical PPAs
