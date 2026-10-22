@@ -1,0 +1,52 @@
+name: One-time comprehensive nuclear source backfill
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-backfill.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nuclear-digest-publishing
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install published-source collector dependencies
+        run: pip install --disable-pip-version-check -r requirements.txt
+      - name: Verify code syntax
+        run: |
+          python -m py_compile scripts/*.py
+          node --check app.js
+      - name: Regression tests
+        run: |
+          python scripts/test_dedupe.py
+          python scripts/test_sources.py
+          python scripts/test_comprehensive.py
+      - name: Ingest and reconcile all 5 source libraries
+        run: python scripts/refresh.py
+      - name: Validate non-destructive archival publishing
+        run: |
+          python scripts/audit.py
+          node scripts/smoke.js
+      - name: Save all source records and deduplicated timeline
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/
+          if ! git diff --cached --quiet; then
+            git commit -m "Backfill comprehensive five-source nuclear intelligence archive"
+            git push
+          fi
