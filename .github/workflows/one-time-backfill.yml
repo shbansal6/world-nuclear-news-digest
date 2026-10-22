@@ -1,4 +1,5 @@
 name: One-time comprehensive nuclear source backfill
+# Retry after correcting isolated regression-test fixture; no general push trigger.
 on:
   push:
     branches: [main]
