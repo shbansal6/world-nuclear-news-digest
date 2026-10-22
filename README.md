@@ -11,7 +11,7 @@ A source-attributed nuclear-sector research website, built on the existing World
 | World Nuclear News (WNN) | Global nuclear news | Public RSS + publisher XML sitemap; dated article pages |
 | American Nuclear Society (ANS) Nuclear Newswire | Nuclear news | RSS **plus publisher's paginated historical Newswire**, with a persistent backfill cursor |
 | Nuclear Innovation Alliance (NIA) | Resources and news | **All resource types** across all listing pages (reports, public comments, fact sheets, supporting materials, videos, letters, etc.) **plus News & Blog** |
-| Breakthrough Institute — Nuclear Energy Innovation | Nuclear news and research | **All four tabs: Articles, Blog, Press and Reports**; Articles/Press = news, Blog/Reports = research |
+| Breakthrough Institute — Nuclear Energy Innovation | Nuclear news and research | **All four tabs: Articles, Blog, Press and Reports**, plus official historical XML sitemaps (verified nuclear-topic breadcrumbs for sitemap-only blog/press); Articles/Press = news, Blog/Reports = research |
 | National Center for Energy Analytics (NCEA) | Nuclear energy studies, issue briefs and policy research | [Publisher's Nuclear Energy library](https://energyanalytics.org/research-library?topic_equal=Nuclear+Energy); verify **each document's Nuclear Energy tag, original date and description** (the filtered URL can still expose unrelated studies in page HTML) |
 
 The separate Neutron Bytes feed is excluded entirely. Do not ingest it in this application.
@@ -63,7 +63,8 @@ HTML, CSS, vanilla JS; Python Requests, BeautifulSoup and XML; GitHub Actions; V
 - `data/editorial_overrides.json`: verified transaction-specific overrides
 - `scripts/refresh.py`: orchestrator and WNN collector
 - `scripts/sources.py`: ANS/NIA/Breakthrough source adapters
-- `scripts/comprehensive_sources.py`: exhaustive-scope adapters for ANS archive, NIA resources/news, Breakthrough four tabs
+- `scripts/comprehensive_sources.py`: broad-source adapters for ANS archive, NIA resources/news and all four Breakthrough tabs
+- `scripts/bti_sitemaps.py`: official Breakthrough XML sitemap discovery beyond visible tab listings, with per-document nuclear-topic verification
 - `scripts/dedupe.py`: event-level multi-source news reconciliation
 - `scripts/taxonomy.py`: named entities, technology and activity tags
 - `scripts/audit.py`, `scripts/test_dedupe.py`, `scripts/smoke.js`: publishing checks
