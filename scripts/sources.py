@@ -44,8 +44,9 @@ def verified_date(soup, fallback=''):
     return parse_date(fallback)
 
 def article(title,summary,url,date,source,kind,body=''):
-    if not (date and START<=date<=dt.date.today() and 15<len(title)<=240 and len(summary)>=55 and url.startswith('https://')):return None
+    if not (date and START<=date<=dt.date.today() and 7<len(title)<=240 and len(summary)>=30 and url.startswith('https://')):return None
     a={'date':date.isoformat(),'title':short(title,230),'summary':short(summary),'category':'Research & analysis' if kind=='report' else 'Nuclear developments','url':url.split('#')[0],'source':source,'kind':kind,'links':[]}
+    a['coverage_detail']=len(str(body or ''))+len(str(summary or ''))
     return enrich_record(a,short(body,2500))
 
 def ans_feed(fetch):
