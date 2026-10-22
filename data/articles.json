@@ -1,6 +1,6 @@
 {
   "updated_at": "2026-10-21",
-  "methodology": "In-scope WNN + ANS source-linked news with conservative event-level deduplication and individually catalogued research from NIA and Breakthrough; NCEA library awaits verified URL. No quota; metadata and multi-label tags inferred from public descriptions. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.",
+  "methodology": "In-scope WNN + ANS source-linked news with conservative event-level deduplication and individually catalogued research from NIA and Breakthrough; NCEA nuclear research requires explicit publisher Nuclear Energy topic and verified publication dates. No quota; metadata and multi-label tags inferred from public descriptions. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.",
   "articles": [
     {
       "date": "2026-10-21",
@@ -11031,6 +11031,29 @@
       "importance_score": 10
     },
     {
+      "date": "2026-05-28",
+      "title": "The Nuclear Workforce: An Essential Energy Priority Facing the Nation",
+      "summary": "Examines the U.S. nuclear workforce needed for reactor restarts, power uprates and new builds, including projected demand by skilled trade, operator and technical role, training pipelines and licensing bottlenecks.",
+      "url": "https://energyanalytics.org/research/nuclear-workforce",
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Construction & licensing",
+        "Policy & international"
+      ],
+      "category": "Research & analysis",
+      "source": "National Center for Energy Analytics (NCEA)",
+      "kind": "report",
+      "links": [],
+      "publisher_topics": [
+        "Nuclear Energy"
+      ],
+      "entities": [],
+      "search_text": "The Nuclear Workforce: An Essential Energy Priority Facing the Nation Examines the U.S. nuclear workforce needed for reactor restarts, power uprates and new builds, including projected demand by skilled trade, operator and technical role, training pipelines and licensing bottlenecks. National Center for Energy Analytics (NCEA)",
+      "importance_score": 10
+    },
+    {
       "date": "2026-05-27",
       "title": "Agreement on UAE nuclear workforce development",
       "summary": "The Emirates Nuclear Energy Company has signed a strategic cooperation agreement with the Department of Government Enablement – Abu Dhabi, represented by the Mawaheb Talent Hub, to establish a comprehensive framework for the training and employment of UAE nationals in the growing civil nuclear energy sector.",
@@ -14483,6 +14506,29 @@
         "Policy & international"
       ],
       "search_text": "EDF UK plant transfers to government ownership Ownership of the Hunterston B nuclear power station in North Ayrshire, Scotland, has transferred from EDF Energy to the Nuclear Decommissioning Authority for the site's decommissioning.",
+      "importance_score": 10
+    },
+    {
+      "date": "2026-04-02",
+      "title": "Unlocking U.S. Nuclear Growth Requires a Waste Strategy",
+      "summary": "Reviews the unresolved national strategy for spent nuclear fuel and waste management, including long-term disposal, recycling, federal policy obligations and barriers to expanding U.S. nuclear power.",
+      "url": "https://energyanalytics.org/research/nuclear-waste",
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Fuel & supply chain",
+        "Policy & international"
+      ],
+      "category": "Research & analysis",
+      "source": "National Center for Energy Analytics (NCEA)",
+      "kind": "report",
+      "links": [],
+      "publisher_topics": [
+        "Nuclear Energy"
+      ],
+      "entities": [],
+      "search_text": "Unlocking U.S. Nuclear Growth Requires a Waste Strategy Reviews the unresolved national strategy for spent nuclear fuel and waste management, including long-term disposal, recycling, federal policy obligations and barriers to expanding U.S. nuclear power. National Center for Energy Analytics (NCEA)",
       "importance_score": 10
     },
     {
@@ -30116,6 +30162,29 @@
         "Fuel & supply chain"
       ],
       "search_text": "Oklo Oklo, Lightbridge extend collaboration to include legacy materials Nuclear technology company Oklo Inc and nuclear fuel company Lightbridge Corporation have announced a strategic collaboration to evaluate additional opportunities for the potential co-location of a Lightbridge fuel fabrication facility within Oklo's planned advanced fuel manufacturing facility.",
+      "importance_score": 10
+    },
+    {
+      "date": "2025-08-12",
+      "title": "A Strategy for Financing the Nuclear Future",
+      "summary": "Proposes an infrastructure private-equity and project-finance approach to funding new large-scale U.S. nuclear reactors through construction before sale to utility operators, addressing construction risk, cost overruns and regulatory certainty.",
+      "url": "https://energyanalytics.org/research/a-strategy-for-financing-the-nuclear-future-motion",
+      "technologies": [
+        "Traditional fission"
+      ],
+      "categories": [
+        "Capital & financing",
+        "Construction & licensing"
+      ],
+      "category": "Research & analysis",
+      "source": "National Center for Energy Analytics (NCEA)",
+      "kind": "report",
+      "links": [],
+      "publisher_topics": [
+        "Nuclear Energy"
+      ],
+      "entities": [],
+      "search_text": "A Strategy for Financing the Nuclear Future Proposes an infrastructure private-equity and project-finance approach to funding new large-scale U.S. nuclear reactors through construction before sale to utility operators, addressing construction risk, cost overruns and regulatory certainty. National Center for Energy Analytics (NCEA)",
       "importance_score": 10
     },
     {
