@@ -219,8 +219,16 @@ def nia_cards(fetch,base,resource=False):
     for page,soup,headings in listing_pages(fetch,base):
         for h in headings:
             a=h.find('a',href=True)
+            if not a:a=h.find_parent('a',href=True)
             if not a:
-                a=h.find_parent('a',href=True)
+                # NIA's News & Blog cards have PLAIN h2 headings. The
+                # canonical article URL is on a following "Read More" link,
+                # after the excerpt but before the next heading.
+                for node in h.next_elements:
+                    if getattr(node,'name',None) in ('h2','h3'):break
+                    if getattr(node,'name',None)=='a' and node.has_attr('href'):
+                        if re.search(r'\bread more\b',node.get_text(' ',strip=True),re.I):
+                            a=node;break
             if not a:continue
             url=canonical_url(urljoin(BASE_NIA,a['href']))
             p=urlparse(url)
