@@ -9,9 +9,9 @@ A source-attributed nuclear-sector research website, built on the existing World
 | Publisher | Content role | Ingestion |
 | --- | --- | --- |
 | World Nuclear News (WNN) | Global nuclear news | Public RSS + publisher XML sitemap; dated article pages |
-| American Nuclear Society (ANS) Nuclear Newswire | Nuclear news | Official RSS https://www.ans.org/news/feed/ |
-| Nuclear Innovation Alliance (NIA) Resources | Reports and policy research | Resources listing, **Reports**-marked publications only |
-| Breakthrough Institute — Nuclear Energy Innovation | Nuclear research and analysis | Published research pages, verifying each date and abstract |
+| American Nuclear Society (ANS) Nuclear Newswire | Nuclear news | RSS **plus publisher's paginated historical Newswire**, with a persistent backfill cursor |
+| Nuclear Innovation Alliance (NIA) | Resources and news | **All resource types** across all listing pages (reports, public comments, fact sheets, supporting materials, videos, letters, etc.) **plus News & Blog** |
+| Breakthrough Institute — Nuclear Energy Innovation | Nuclear news and research | **All four tabs: Articles, Blog, Press and Reports**; Articles/Press = news, Blog/Reports = research |
 | National Center for Energy Analytics (NCEA) | Nuclear energy studies, issue briefs and policy research | [Publisher's Nuclear Energy library](https://energyanalytics.org/research-library?topic_equal=Nuclear+Energy); verify **each document's Nuclear Energy tag, original date and description** (the filtered URL can still expose unrelated studies in page HTML) |
 
 The separate Neutron Bytes feed is excluded entirely. Do not ingest it in this application.
@@ -20,9 +20,9 @@ Content categories are **News** and **Research reports**; both appear in the sin
 
 ## Event-level duplicate policy
 
-- Normalize exact URL aliases. For WNN and ANS **news** in a ten-day event window, compare title and summary overlap, named transaction participants, MW/GW values, dates and event stage. The thresholds are intentionally conservative; if uncertain, preserve both rather than silently suppressing a distinct development.
+- Normalize exact URL aliases. For **news across WNN, ANS, NIA, and Breakthrough** in a ten-day event window, compare title and summary overlap, named transaction participants, MW/GW values, dates and event stage. The thresholds are intentionally conservative; if uncertain, preserve both rather than silently suppressing a distinct development.
 - Never collapse news about *different* customers, PPAs, plants, permits, approvals, construction starts or operating milestones just because company or project names overlap.
-- Prefer WNN as the canonical summary when two reports describe the same event; retain ANS's actual article as `alternate_sources` and surface its link on the news card.
+- Prefer the more detailed publisher summary for matching **news** events; retain **all other publishers' links** in `alternate_sources`. Independently authored research and reports do not collapse into a news article.
 - Independent research is **never** deduplicated away as a news article. Revisions and substantive new analyses should remain discoverable as their own publications.
 - Preserve alternate links across recurring refreshes; the deduplicator eliminates repeated alternates.
 
@@ -48,7 +48,7 @@ Safeguards:
 - No replacement of historical records with blank data after source failures.
 - GitHub Actions runs Python compilation, [dedupe regression tests](scripts/test_dedupe.py), archive/transaction integrity checks, JavaScript syntax checking and a UI smoke test before committing an updated archive.
 - If a publisher changes its page format, report the resulting ingestion gap rather than claim complete coverage.
-- Existing WNN historical archives begin in January 2024. ANS's official RSS only supplies its retained feed window; **a full historical ANS backfill is not yet complete**.
+- Existing WNN archives begin in January 2024. ANS pagination is incrementally backfilled via a persistent cursor until January 2024; source-retrieval and publisher-site limitations must be audited before calling the archive complete.
 
 ## Stack and limits
 
@@ -56,11 +56,18 @@ HTML, CSS, vanilla JS; Python Requests, BeautifulSoup and XML; GitHub Actions; V
 
 ### Files
 
-- `data/articles.json`: all indexed records and report descriptions
+- `data/source_records.json`: **all distinct publisher-source publication records before display deduplication** (titles, abstracts, dates, source URLs, metadata); no copyrighted full-text scraping
+- `data/source_cursors.json`: progress of multi-run ANS historical backfill
+- `data/articles.json`: merged public-display news event cards plus independent report cards
 - `data/briefings.json`: weekly briefings, latest first
 - `data/editorial_overrides.json`: verified transaction-specific overrides
 - `scripts/refresh.py`: orchestrator and WNN collector
 - `scripts/sources.py`: ANS/NIA/Breakthrough source adapters
-- `scripts/dedupe.py`: real-world WNN/ANS news-event reconciliation
+- `scripts/comprehensive_sources.py`: exhaustive-scope adapters for ANS archive, NIA resources/news, Breakthrough four tabs
+- `scripts/dedupe.py`: event-level multi-source news reconciliation
 - `scripts/taxonomy.py`: named entities, technology and activity tags
 - `scripts/audit.py`, `scripts/test_dedupe.py`, `scripts/smoke.js`: publishing checks
+
+## Comprehensive coverage limitations
+
+'Every item' means all source-discoverable nuclear publications dated from January 2024 onward; the site stores source-attributed metadata, brief descriptions and links, **not copies of full copyrighted articles**. The ingestion pipeline is deliberately broad without an importance threshold. Page-bound warnings and retrieval failures should be reviewed before claiming exhaustive historical coverage. A new collector isn't evidence that backfill succeeded; the first scheduled/manual GitHub Actions run must pass tests and produce the new source archive before expanded record counts can be claimed.
