@@ -139,9 +139,77 @@ def breakthrough_reports(fetch,max_pages=40):
         if a:out.append(a)
     return out
 
+
+NCEA_LIBRARY = 'https://energyanalytics.org/research-library?topic_equal=Nuclear+Energy'
+NCEA_HOSTS = ('energyanalytics.org', 'www.energyanalytics.org')
+
+def ncea_reports(fetch, max_pages=120):
+    """Collect ONLY NCEA studies/briefs explicitly tagged Nuclear Energy.
+
+    The query string is NOT an adequate server-side filter: the HTML currently
+    contains unrelated research too. Recheck topic on each publication page.
+    Also require a publisher-verifiable publication date (never crawl date).
+    """
+    raw = fetch(NCEA_LIBRARY)
+    if not raw:
+        print('NCEA research listing unavailable; retaining existing publications', flush=True)
+        return []
+    listing = BeautifulSoup(raw, 'html.parser')
+    urls = []
+    for link in listing.select('a[href]'):
+        u = urljoin(NCEA_LIBRARY, link.get('href', '')).split('#')[0].split('?')[0].rstrip('/')
+        parsed = urlparse(u)
+        if parsed.scheme == 'https' and parsed.hostname in NCEA_HOSTS and parsed.path.startswith('/research/') and u not in urls:
+            urls.append(u)
+    if not urls:
+        # Fail visibly if Webflow changes or hides listing links.
+        print('NCEA research listing yielded no direct publication URLs; check selector', flush=True)
+        return []
+    if len(urls)>max_pages:
+        print('NCEA: publication page safety bound reached ('+str(max_pages)+')',flush=True)
+    out=[]
+    for u in urls[:max_pages]:
+        raw=fetch(u)
+        if not raw:continue
+        page=BeautifulSoup(raw,'html.parser')
+        main=page.select_one('main') or page
+        # In the official NCEA design the topical tags immediately follow
+        # the article title/description. Restrict to that lead metadata, not
+        # an incidental nuclear reference deep inside an unrelated study.
+        lead=main.get_text(' ',strip=True)[:1250]
+        if not re.search(r'(?<![A-Za-z])Nuclear Energy(?![A-Za-z])',lead,re.I):
+            continue
+        title_node=main.find('h1')
+        title=title_node.get_text(' ',strip=True) if title_node else ''
+        if not title:
+            og=page.select_one('meta[property="og:title"]')
+            if og:title=(og.get('content') or '').split(' — NCEA')[0].split(' | NCEA')[0].strip()
+        if not title:
+            title_tag=page.find('title')
+            if title_tag:title=title_tag.get_text(' ',strip=True).split(' — NCEA')[0]
+        # Prefer structured metadata; otherwise the date printed in the
+        # publisher's article lead. Never infer publication from scrape time.
+        date=verified_date(page)
+        if not date:
+            anchor=lead.find(title)
+            around=lead[max(0,anchor):max(0,anchor)+900] if anchor>=0 else lead[:900]
+            date=parse_date(around)
+        if not date:continue
+        meta=page.select_one('meta[name="description"]') or page.select_one('meta[property="og:description"]')
+        summary=(meta.get('content') or '') if meta else ''
+        if len(summary)<55:
+            paras=[p.get_text(' ',strip=True) for p in main.find_all('p',limit=15)]
+            summary=next((p for p in paras if len(p)>=65 and 'Nuclear Energy' not in p[:25]),'')
+        a=article(title,summary,u,date,'National Center for Energy Analytics (NCEA)','report',summary)
+        if a:
+            a['publisher_topics']=['Nuclear Energy']
+            out.append(a)
+    print('NCEA: '+str(len(out))+' dated, Nuclear Energy-tagged research records out of '+str(len(urls))+' linked studies',flush=True)
+    return list({a['url']:a for a in out}.values())
+
 def collect(fetch):
     outputs=[]
-    for name,fn in [('ANS',ans_feed),('NIA',nia_reports),('Breakthrough',breakthrough_reports)]:
+    for name,fn in [('ANS',ans_feed),('NIA',nia_reports),('Breakthrough',breakthrough_reports),('NCEA',ncea_reports)]:
         try:
             items=fn(fetch)
             print(name+': '+str(len(items))+' verified new-source records',flush=True)
@@ -149,5 +217,4 @@ def collect(fetch):
         except Exception as exc:
             # Do not destroy saved records on transient source/network errors.
             print(name+' source unavailable: '+str(exc)[:180],flush=True)
-    # NCEA Energy Policy Research Library requires its actual URL. Never crawl a guessed library.
     return list({a['url']:a for a in outputs}.values())
