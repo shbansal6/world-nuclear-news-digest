@@ -2,6 +2,7 @@
 """Offline regressions for four-tab Breakthrough and all-type NIA collectors."""
 from comprehensive_sources import bti_all, nia_cards, canonical_url
 from dedupe import same_event, reconcile
+from refresh import canonicalize_source_records
 
 BTI='https://thebreakthrough.org'
 NIA='https://nuclearinnovationalliance.org'
@@ -59,6 +60,21 @@ def test():
     assert len(display)==1 and len(display[0]['alternate_sources'])==1
     report=dict(bt,url='https://thebreakthrough.org/issues/nuclear-energy-innovation/tva-analysis',kind='report')
     assert len(reconcile([w,bt,report]))==2
+    aliases=canonicalize_source_records([
+        {'url':'https://nuclearinnovationalliance.org/index.php/nuclear-supply-report',
+         'title':'Nuclear supply report','date':'2026-10-13','summary':long,'source':'Nuclear Innovation Alliance',
+         'kind':'report','publication_type':'Reports'},
+        {'url':'https://nuclearinnovationalliance.org/nuclear-supply-report',
+         'title':'Nuclear supply report','date':'2026-10-13','summary':long,'source':'Nuclear Innovation Alliance',
+         'kind':'report'}
+    ])
+    assert len(aliases)==1,aliases
+    item=next(iter(aliases.values()))
+    assert item['url']=='https://nuclearinnovationalliance.org/nuclear-supply-report'
+    assert item.get('publication_type')=='Reports'
+    assert item.get('source_url_aliases')==[
+        'https://nuclearinnovationalliance.org/index.php/nuclear-supply-report'
+    ], item.get('source_url_aliases')
     print('COMPREHENSIVE SOURCE REGRESSIONS PASSED')
 
 if __name__=='__main__':test()
