@@ -1,13 +1,7 @@
 name: Refresh and publish nuclear digest
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'index.html'
-      - 'styles.css'
-      - 'app.js'
-      - 'scripts/**'
-      - '.github/workflows/refresh.yml'
+  # Avoid running the full ingest/deploy workflow for every code push.
+  # Vercel handles website deployment independently on Git pushes.
   workflow_dispatch:
   schedule:
     # 7 AM America/Chicago = 12 UTC summer, 13 UTC winter.
