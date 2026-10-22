@@ -28,7 +28,7 @@ fixtures[NIA+'/resources']=(''.join(
                         ('Reports','Nuclear financing report','report-a')])).encode()
 for slug in ('comment-a','fact-a','report-a'):
     fixtures[NIA+'/'+slug]=page('Nuclear '+slug+' source material',long,'2026-10-14')
-fixtures[NIA+'/news']='<div class="views-row"><h2><a href="/news-a">Nuclear energy press release</a></h2><p>October 12th, 2026</p><p>'+long+'</p><p>Press Release</p></div>'.encode()
+fixtures[NIA+'/news']=('<div class="views-row"><h2><a href="/news-a">Nuclear energy press release</a></h2><p>October 12th, 2026</p><p>'+long+'</p><p>Press Release</p></div>').encode()
 fixtures[NIA+'/news-a']=page('Nuclear energy press release',long,'2026-10-12')
 
 def fetch(url):return fixtures.get(url,b'')
