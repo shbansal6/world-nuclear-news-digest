@@ -20,13 +20,15 @@ from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
 from taxonomy import enrich_record
+from sources import collect as collect_other_sources
+from dedupe import reconcile
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 BASE = "https://www.world-nuclear-news.org"
 TODAY = dt.datetime.now(ZoneInfo("America/Chicago")).date()
 START = dt.date(2024, 1, 1)
-END = min(TODAY, dt.date(2026, 12, 31))
+END = TODAY
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": "WNN-Research-Digest/1.0 (+source-attributed public news links; GitHub Pages)", "Accept": "text/html, application/rss+xml, application/xml, text/xml"})
 DATE_PATTERN = re.compile(r'\b(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})')
@@ -243,8 +245,11 @@ def select_candidates(found, existing):
 
 
 def build_briefs(stories):
-    # The Monday edition reviews the fully completed Mon–Sun week.
-    # Include recent weeks for navigation and retain historical generated editions.
+    """Every Monday covers the preceding complete Monday-Sunday week.
+
+    Each real-world news event occurs once; each newly published research report
+    has its own named section with a description of its actual contents.
+    """
     last_monday=TODAY-dt.timedelta(days=TODAY.weekday())
     output=[]
     earliest=max(dt.date(2026,9,7),last_monday-dt.timedelta(days=7*6))
@@ -255,19 +260,46 @@ def build_briefs(stories):
         selection=[a for a in stories if start.isoformat()<=a['date']<=finish.isoformat()]
         if selection:
             grouped=defaultdict(list)
-            for a in sorted(selection,key=lambda z:z['date'],reverse=True):
-                for label in (a.get('categories') or [a.get('category','Other nuclear')]):
-                    grouped[label].append(a)
+            news=[a for a in selection if a.get('kind','news')!='report']
+            reports=[a for a in selection if a.get('kind')=='report']
+            for a in sorted(news,key=lambda z:z['date'],reverse=True):
+                grouped[(a.get('categories') or [a.get('category','Other nuclear')])[0]].append(a)
             sections=[]
+            if reports:
+                reports.sort(key=lambda a:(a['date'],a['title']),reverse=True)
+                sections.append({'category':'New research reports',
+                    'takeaway':str(len(reports))+' new source-attributed nuclear research publication(s) released this week. Each entry describes what the publication covers.',
+                    'items':reports})
             for cat,items in sorted(grouped.items(),key=lambda kv:-len(kv[1])):
                 examples='; '.join(x['title'] for x in items[:2])
-                sections.append({'category':cat,'takeaway':f'{len(items)} source-linked development(s) in this sector, including {examples}.','items':items})
+                sections.append({'category':cat,'takeaway':f'{len(items)} distinct development(s), including {examples}.','items':items})
             output.append({'week_start':start.isoformat(),'week_end':finish.isoformat(),
                 'title':'Global nuclear developments — week of '+start.strftime('%B %-d, %Y'),
-                'overview':f'{len(selection)} World Nuclear News articles across {len(grouped)} nuclear-industry sectors. The report groups developments by topic and links to each original article; it does not claim independent verification.',
-                'article_count':len(selection),'generated_at':TODAY.isoformat(),'sections':sections})
+                'overview':f'{len(news)} distinct nuclear news events and {len(reports)} newly released research reports from monitored publishers; all have original source links.',
+                'article_count':len(selection),'report_count':len(reports),
+                'generated_at':TODAY.isoformat(),'sections':sections})
         monday-=dt.timedelta(days=7)
     return output
+def add_reports_to_editorial(editorial,generated):
+    """Keep human-authored commentary, but don't omit new reports from its dated issue."""
+    by_week={x['week_start']:x for x in generated}
+    for week,issue in editorial.items():
+        auto=by_week.get(week)
+        if not auto:continue
+        report_section=next((x for x in auto.get('sections',[]) if x.get('category')=='New research reports'),None)
+        if not report_section:continue
+        current=list(issue.get('sections') or [])
+        seen={item.get('url') for section in current for item in section.get('items',[])}
+        fresh=[a for a in report_section['items'] if a.get('url') not in seen]
+        if not fresh:continue
+        existing=next((x for x in current if x.get('category')=='New research reports'),None)
+        if existing:
+            existing['items'].extend(fresh)
+        else:
+            current.insert(0,{'category':'New research reports','takeaway':'Recently published research and policy analysis from monitored organizations.','items':fresh})
+        issue['sections']=current
+        issue['report_count']=len(report_section['items'])
+        issue['article_count']=sum(len(x.get('items',[])) for x in current)
 
 def main():
     # Scheduled workflow runs twice around US DST transition, but only the local 7am run updates.
@@ -275,7 +307,9 @@ def main():
         print('Not 7am Central; other DST cron handles this date.');return
     DATA.mkdir(exist_ok=True)
     old=read_articles()
-    existing={abs_url(a.get('url','')):a for a in old if a.get('url') and a.get('date')}
+    existing={a['url'].rstrip('/'):a for a in old if a.get('url') and a.get('date')}
+    # Remove prior duplicate display cards before merging fresh source material.
+    # Alternate source URLs stay attached to the canonical story.
     available=crawl_rss()
     available.update(crawl_sitemaps())
     todo=select_candidates(available,existing)
@@ -285,7 +319,13 @@ def main():
             for rec in pool.map(parse_article,todo):
                 if rec:
                     existing[rec['url']]=rec;changed+=1
-    print('New verified reports:',changed,flush=True)
+    print('New WNN articles:',changed,flush=True)
+    for rec in collect_other_sources(fetch):
+        u=rec['url'].rstrip('/')
+        if u not in existing:
+            existing[u]=rec
+            changed+=1
+    print('Total new verified source records:',changed,flush=True)
     groups=defaultdict(list)
     for a in existing.values():
         d=parse_date(a.get('date'))
@@ -293,6 +333,8 @@ def main():
             groups[bucket(a)].append(a)
     # Completeness first: keep all verified, distinct reports from all target periods.
     selected=list({a['url']:a for items in groups.values() for a in items}.values())
+    # Reconcile overlapping WNN and ANS reporting AFTER source collection.
+    selected=reconcile(selected)
     for a in selected:
         # A source-fetched record has already been tagged with article-body context.
         # Do not retag it later using its generic headline/abstract alone.
@@ -318,10 +360,11 @@ def main():
     except (OSError,ValueError,AttributeError):
         pass
     editorial={x['week_start']:x for x in existing_issues if x.get('editorial') and x.get('week_start')}
+    add_reports_to_editorial(editorial,briefings)
     briefings=list(editorial.values())+[x for x in briefings if x['week_start'] not in editorial]
     briefings.sort(key=lambda x:x['week_start'],reverse=True)
     briefings=[x for x in briefings if x['week_start']>='2026-09-07'][:7]
-    payload={'updated_at':TODAY.isoformat(),'methodology':'All discovered in-scope World Nuclear News articles, without a monthly or quarterly quota; metadata and multi-label tags inferred from source text. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.','articles':selected}
+    payload={'updated_at':TODAY.isoformat(),'methodology':'In-scope WNN + ANS source-linked news with conservative event-level deduplication and individually catalogued research from NIA and Breakthrough; NCEA library awaits verified URL. No quota; metadata and multi-label tags inferred from public descriptions. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.','articles':selected}
     (DATA/'articles.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (DATA/'briefings.json').write_text(json.dumps({'generated_at':TODAY.isoformat(),'briefings':briefings},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Published:',len(selected),'articles in',len(groups),'periods;',len(briefings),'weekly briefings.',flush=True)
