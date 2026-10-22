@@ -75,7 +75,7 @@ def reconcile(records):
         if not u:continue
         if u not in by_url or len(a.get('summary',''))>len(by_url[u].get('summary','')):
             by_url[u]=dict(a)
-    source_records=sorted(by_url.values(),key=lambda a:(a.get('date',''),len(a.get('summary','')),a.get('source','')),reverse=True)
+    source_records=sorted(by_url.values(),key=lambda a:(a.get('date',''),int(a.get('coverage_detail') or len(a.get('summary',''))),a.get('source','')),reverse=True)
     by_day=defaultdict(list)
     result=[]
     for a in source_records:
@@ -96,7 +96,7 @@ def reconcile(records):
             b=result[target]
             # The fuller description becomes canonical, irrespective of publisher.
             # Reports are never merged as news and remain separate publications.
-            if len(a.get('summary',''))>len(b.get('summary','')):
+            if int(a.get('coverage_detail') or len(a.get('summary','')))>int(b.get('coverage_detail') or len(b.get('summary',''))):
                 b,a=a,b
                 result[target]=b
             aliases=b.setdefault('alternate_sources',[])
