@@ -42,7 +42,9 @@ jobs:
       - name: Validate interactive website script before publishing
         run: node --check app.js
       - name: Check Python collector syntax
-        run: python -m py_compile scripts/refresh.py scripts/taxonomy.py scripts/sources.py scripts/dedupe.py scripts/audit.py
+        run: python -m py_compile scripts/refresh.py scripts/taxonomy.py scripts/sources.py scripts/dedupe.py scripts/test_dedupe.py scripts/audit.py
+      - name: Test duplicate-news classification before refreshing
+        run: python scripts/test_dedupe.py
       - name: Refresh nuclear news, reports and weekly briefings
         run: python scripts/refresh.py
       - name: Validate historical archive and critical PPAs
