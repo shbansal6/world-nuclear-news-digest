@@ -1,4 +1,4 @@
-"""Event-level WNN/ANS reconciliation. Preserve every original link.
+"""Event-level multi-publisher news reconciliation. Preserve every original link.
 
 Only news-versus-news pairs are eligible. Reports remain separate intellectual works.
 Conservative gates stop unrelated Google/Amazon deals and lifecycle milestones merging.
@@ -45,7 +45,8 @@ def stages(a):
 def same_event(a,b):
     if a.get('kind','news')!='news' or b.get('kind','news')!='news':return False
     if a.get('source')==b.get('source'):return False
-    if {a.get('source'),b.get('source')}!={'World Nuclear News','ANS Nuclear Newswire'}:return False
+    valid_sources={'World Nuclear News','ANS Nuclear Newswire','Breakthrough Institute','Nuclear Innovation Alliance'}
+    if a.get('source') not in valid_sources or b.get('source') not in valid_sources:return False
     try:
         delta=abs((dt.date.fromisoformat(a['date'])-dt.date.fromisoformat(b['date'])).days)
     except (ValueError,KeyError):return False
@@ -65,8 +66,8 @@ def same_event(a,b):
     ordered=pct(a.get('title'),b.get('title'))
     return ((title>=.68 and body>=.22) or (title>=.48 and body>=.50) or (ordered>=.76 and body>=.20) or (delta<=2 and title>=.28 and body>=.24) or (delta<=2 and title>=.36 and body>=.12 and len(na&nb)>=2))
 def reconcile(records):
-    """Stable preference for WNN summary, ANS as secondary source link.
-    Source duplicates are exposed via alternate_sources for audits, never discarded silently.
+    """Show the more detailed news summary; retain every matching original URL.
+    The independent source_records.json archive is written before this pass.
     """
     by_url={}
     for a in records:
@@ -74,7 +75,7 @@ def reconcile(records):
         if not u:continue
         if u not in by_url or len(a.get('summary',''))>len(by_url[u].get('summary','')):
             by_url[u]=dict(a)
-    source_records=sorted(by_url.values(),key=lambda a:(a.get('date',''),a.get('source')!='World Nuclear News'),reverse=True)
+    source_records=sorted(by_url.values(),key=lambda a:(a.get('date',''),len(a.get('summary','')),a.get('source','')),reverse=True)
     by_day=defaultdict(list)
     result=[]
     for a in source_records:
@@ -93,8 +94,9 @@ def reconcile(records):
             result.append(a)
         else:
             b=result[target]
-            # WNN article is canonical; still display BOTH verified publisher links.
-            if a.get('source')=='World Nuclear News':
+            # The fuller description becomes canonical, irrespective of publisher.
+            # Reports are never merged as news and remain separate publications.
+            if len(a.get('summary',''))>len(b.get('summary','')):
                 b,a=a,b
                 result[target]=b
             aliases=b.setdefault('alternate_sources',[])
