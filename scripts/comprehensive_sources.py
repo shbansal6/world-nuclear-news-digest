@@ -125,6 +125,66 @@ def listing_pages(fetch,base,max_pages=150):
         if page==max_pages-1:print('WARNING pagination safety bound '+base,flush=True)
     return results
 
+def ans_archive(fetch, max_list_pages=160):
+    """Add ANS paginated Nuclear Newswire archive to its RSS records.
+
+    Step URLs are linked directly by the publisher ('More Articles').
+    Stop at January 2024, rather than an arbitrary number of displayed cards.
+    """
+    result={a['url']:a for a in ans_feed(fetch)}
+    visited=set()
+    next_page='https://www.ans.org/news/'
+    for page_index in range(max_list_pages):
+        if not next_page or next_page in visited:break
+        visited.add(next_page)
+        raw=fetch(next_page)
+        if not raw:
+            print('WARNING ANS pagination unavailable at '+next_page,flush=True)
+            break
+        soup=BeautifulSoup(raw,'html.parser')
+        seen_dates=[]
+        for h in soup.find_all(['h2','h3']):
+            link=h.find('a',href=True)
+            if not link:continue
+            u=canonical_url(urljoin('https://www.ans.org',link['href']))
+            pu=urlparse(u)
+            if pu.hostname not in ('ans.org','www.ans.org') or not pu.path.startswith('/news/') or '/step-' in pu.path:continue
+            title=h.get_text(' ',strip=True)
+            if len(title)<16:continue
+            # Avoid sidebar/recommended items missing published date.
+            parent=h.find_parent('article')
+            if parent is None:
+                parent=h
+                for _ in range(5):
+                    if not parent.parent:break
+                    parent=parent.parent
+                    if parse_date(parent.get_text(' ',strip=True)[:240]) and parent.find('p'):break
+            block=parent.get_text(' ',strip=True)[:2100]
+            date=parse_date(block[:280])
+            if not date:
+                # Headline precedes the dateline.
+                after=block.find(title)
+                if after>=0:date=parse_date(block[after+len(title):after+len(title)+160])
+            if not date:continue
+            seen_dates.append(date)
+            summ=next((p.get_text(' ',strip=True) for p in parent.find_all('p',limit=6) if len(p.get_text(' ',strip=True))>=55),'')
+            if len(summ)<55:
+                doc=fetch(u)
+                if doc:
+                    page=BeautifulSoup(doc,'html.parser')
+                    summ=description(page,page.find('h1'))
+                    date=verified_date(page) or date
+            rec=article(title,summ,u,date,SOURCE_ANS,'news',summ)
+            if rec and u not in result:result[u]=rec
+        if seen_dates and max(seen_dates)<START:break
+        links=[urljoin('https://www.ans.org',a['href']) for a in soup.find_all('a',href=True)
+               if 'more articles' in a.get_text(' ',strip=True).lower() and '/news/step-' in a['href']]
+        next_page=links[-1] if links else ''
+        if not next_page:break
+        if page_index==max_list_pages-1:print('WARNING ANS archive backfill page bound; continue next run',flush=True)
+    print('ANS: '+str(len(result))+' records from RSS and '+str(len(visited))+' archive listing pages',flush=True)
+    return list(result.values())
+
 def nia_cards(fetch,base,resource=False):
     """Collect NIA cards of every resource type, plus news and blog.
 
@@ -152,6 +212,18 @@ def nia_cards(fetch,base,resource=False):
             excerpt=card.get_text(' ',strip=True) if card else ''
             # Don't consume the following card's date or description.
             d=parse_date(excerpt[:450])
+            if not d:
+                # Views row wrappers vary by Drupal theme; take text only
+                # until the next heading, not the following publication card.
+                snippets=[]
+                for node in h.next_elements:
+                    if getattr(node,'name',None) in ('h2','h3'):break
+                    if getattr(node,'name',None) in ('p','time','div','span'):
+                        t=node.get_text(' ',strip=True)
+                        if 5<len(t)<900 and t not in snippets:snippets.append(t)
+                    if len(snippets)>18:break
+                excerpt=' '.join([title]+snippets)[:2500]
+                d=parse_date(excerpt[:950])
             preview=next((p.get_text(' ',strip=True) for p in card.select('p') if len(p.get_text(' ',strip=True))>=55), '') if card else ''
             typename=''
             if resource:
@@ -185,7 +257,7 @@ def nia_cards(fetch,base,resource=False):
 def collect_all_sources(fetch):
     out=[]
     for name,fn in (
-        ('ANS',ans_feed),
+        ('ANS RSS + archive',ans_archive),
         ('NIA resources',lambda f: nia_cards(f,BASE_NIA+'/resources',True)),
         ('NIA news and blog',lambda f: nia_cards(f,BASE_NIA+'/news',False)),
         ('Breakthrough all 4 tabs',bti_all),
