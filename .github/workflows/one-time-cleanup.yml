@@ -1,0 +1,48 @@
+name: One-time NIA publication alias cleanup
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-cleanup.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nuclear-digest-publishing
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install --disable-pip-version-check -r requirements.txt
+      - name: Test publisher matching and alias preservation
+        run: |
+          python scripts/test_comprehensive.py
+          python scripts/test_dedupe.py
+          python scripts/test_sources.py
+      - name: Clean five legacy NIA /index.php/ duplicate report aliases
+        run: python scripts/normalize_archive.py
+      - name: Check news archive, critical customer PPAs, weekly UI
+        run: |
+          python scripts/audit.py
+          node scripts/smoke.js
+      - name: Save cleaned archive
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/source_records.json data/articles.json data/briefings.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Normalize NIA original and public archives without duplicated reports"
+            git push
+          fi
