@@ -70,7 +70,7 @@ def reconcile(records):
     """
     by_url={}
     for a in records:
-        u=(a.get('url') or '').rstrip('/')
+        u=(a.get('url') or '').rstrip('/').lower()
         if not u:continue
         if u not in by_url or len(a.get('summary',''))>len(by_url[u].get('summary','')):
             by_url[u]=dict(a)
@@ -104,4 +104,11 @@ def reconcile(records):
             b['technologies']=sorted(set(b.get('technologies',[])+a.get('technologies',[])))
             b['categories']=sorted(set(b.get('categories',[])+a.get('categories',[])))
             b['search_text']=' '.join([b.get('search_text',''),a.get('title',''),a.get('summary','')])
+    for item in result:
+        links={}
+        for other in item.get('alternate_sources',[]):
+            if other.get('url') and other['url'].rstrip('/').lower()!=item['url'].rstrip('/').lower():
+                links[other['url'].rstrip('/').lower()]=other
+        if links:item['alternate_sources']=list(links.values())
+        elif 'alternate_sources' in item:del item['alternate_sources']
     return sorted(result,key=lambda x:(x.get('date',''),int(x.get('importance_score',0))),reverse=True)
