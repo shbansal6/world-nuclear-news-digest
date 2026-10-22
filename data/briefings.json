@@ -6,35 +6,13 @@
       "week_end": "2026-10-18",
       "title": "Commissioning gains, SMR development and fuel-cycle buildout",
       "overview": "The week combined two concrete reactor commissioning milestones with a broader pipeline of SMR development, Polish project supply-chain work, fuel-cycle investments, fleet refurbishment and policy decisions. This source-linked briefing separates operating or construction milestones from proposals, development agreements and regulatory steps.",
-      "article_count": 23,
+      "article_count": 22,
       "generated_at": "2026-10-19",
       "sections": [
         {
           "category": "New research reports",
           "takeaway": "Recently published research and policy analysis from monitored organizations.",
           "items": [
-            {
-              "date": "2026-10-13",
-              "title": "Public Comment for NRC’s In Situ Recovery Monitoring and Decommissioning Timeliness",
-              "summary": "NIA submitted a public comment for NRC’s In Situ Recovery Monitoring and Decommissioning Timeliness proposed rule. NIA appreciates the opportunity to comment on the proposed rule. We commend the staff for its efforts to create more flexible decommissioning timelines. Our comments focus mostly on the decommissioning portion of the proposed rule as NIA has expertise in this area.",
-              "category": "Research & analysis",
-              "url": "https://nuclearinnovationalliance.org/index.php/public-comment-nrcs-situ-recovery-monitoring-and-decommissioning-timeliness",
-              "source": "Nuclear Innovation Alliance",
-              "kind": "report",
-              "links": [],
-              "entities": [
-                "US Nuclear Regulatory Commission",
-                "EDF"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Policy & international"
-              ],
-              "search_text": "US Nuclear Regulatory Commission EDF Public Comment for NRC’s In Situ Recovery Monitoring and Decommissioning Timeliness NIA submitted a public comment for NRC’s In Situ Recovery Monitoring and Decommissioning Timeliness proposed rule. NIA appreciates the opportunity to comment on the proposed rule. We commend the staff for its efforts to create more flexible decommissioning timelines. Our comments focus mostly on the decommissioning portion of the proposed rule as NIA has expertise in this area.",
-              "importance_score": 20
-            },
             {
               "date": "2026-10-13",
               "title": "Public Comment for NRC’s In Situ Recovery Monitoring and Decommissioning Timeliness",
@@ -56,7 +34,10 @@
               ],
               "search_text": "US Nuclear Regulatory Commission Public Comment for NRC’s In Situ Recovery Monitoring and Decommissioning Timeliness NIA submitted a public comment for NRC’s In Situ Recovery Monitoring and Decommissioning Timeliness proposed rule. NIA appreciates the opportunity to comment on the proposed rule. We commend the staff for its efforts to create more flexible decommissioning timelines. Our comments focus mostly on the decommissioning portion of the proposed rule as NIA has expertise in this area.",
               "importance_score": 20,
-              "publication_type": "NIA Public Comments"
+              "publication_type": "NIA Public Comments",
+              "source_url_aliases": [
+                "https://nuclearinnovationalliance.org/index.php/public-comment-nrcs-situ-recovery-monitoring-and-decommissioning-timeliness"
+              ]
             }
           ]
         },
@@ -64,15 +45,6 @@
           "category": "Construction, commissioning & international new build",
           "takeaway": "Physical deployment milestones led the week: Bangladesh's Rooppur 1 reached criticality and Slovakia's Mochovce 4 connected to the grid. Elsewhere, India's PHWR construction preparations and Polish AP1000 procurement illustrate the work required well before a reactor generates electricity.",
           "items": [
-            {
-              "date": "2026-10-12",
-              "title": "Bangladesh's Rooppur 1 achieves criticality",
-              "category": "New build & milestones",
-              "summary": "Bangladesh's first commercial nuclear unit reached first criticality during commissioning.",
-              "url": "https://www.world-nuclear-news.org/articles/bangladeshs-rooppur-1-achieves-criticality",
-              "links": [],
-              "source": "World Nuclear News"
-            },
             {
               "date": "2026-10-16",
               "title": "Mochovce 4 connected to the grid",
@@ -108,6 +80,15 @@
               "url": "https://www.world-nuclear-news.org/articles/agreement-signed-on-second-polish-nuclear-power-plant",
               "links": [],
               "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-12",
+              "title": "Bangladesh's Rooppur 1 achieves criticality",
+              "category": "New build & milestones",
+              "summary": "Bangladesh's first commercial nuclear unit reached first criticality during commissioning.",
+              "url": "https://www.world-nuclear-news.org/articles/bangladeshs-rooppur-1-achieves-criticality",
+              "links": [],
+              "source": "World Nuclear News"
             }
           ]
         },
@@ -116,20 +97,20 @@
           "takeaway": "The sector saw progress at different levels of maturity rather than a single wave of firm build decisions. Poland announced a proposed six-unit BWRX-300 venture, China's ACP100 underwent pre-fuel hot testing, and the US provided further research support to a molten-chloride reactor experiment. Materials qualification and maritime applications remain development workstreams.",
           "items": [
             {
+              "date": "2026-10-16",
+              "title": "Thorizon, TNO launch MSR materials programme",
+              "category": "SMRs & advanced reactors",
+              "summary": "Thorizon and TNO launched corrosion and materials testing to support qualification and licensing of molten-salt reactor components.",
+              "url": "https://www.world-nuclear-news.org/articles/thorizon-tno-launch-msr-materials-programme",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
               "date": "2026-10-15",
               "title": "Joint venture formed for six-unit SMR plant in Poland",
               "category": "SMRs & advanced reactors",
               "summary": "SGE and ZE PAK agreed to create a venture for a potential 1,800 MW project at Pątnów comprising as many as six BWRX-300 reactors.",
               "url": "https://www.world-nuclear-news.org/articles/joint-venture-formed-for-six-unit-smr-plant-in-poland",
-              "links": [],
-              "source": "World Nuclear News"
-            },
-            {
-              "date": "2026-10-14",
-              "title": "Hot testing of Chinese SMR under way",
-              "category": "SMRs & advanced reactors",
-              "summary": "Hot functional testing began at the ACP100/Linglong One small reactor demonstration project in Hainan, a pre-fuel-loading commissioning step.",
-              "url": "https://www.world-nuclear-news.org/articles/hot-testing-of-chinese-smr-under-way",
               "links": [],
               "source": "World Nuclear News"
             },
@@ -143,11 +124,11 @@
               "source": "World Nuclear News"
             },
             {
-              "date": "2026-10-16",
-              "title": "Thorizon, TNO launch MSR materials programme",
+              "date": "2026-10-14",
+              "title": "Hot testing of Chinese SMR under way",
               "category": "SMRs & advanced reactors",
-              "summary": "Thorizon and TNO launched corrosion and materials testing to support qualification and licensing of molten-salt reactor components.",
-              "url": "https://www.world-nuclear-news.org/articles/thorizon-tno-launch-msr-materials-programme",
+              "summary": "Hot functional testing began at the ACP100/Linglong One small reactor demonstration project in Hainan, a pre-fuel-loading commissioning step.",
+              "url": "https://www.world-nuclear-news.org/articles/hot-testing-of-chinese-smr-under-way",
               "links": [],
               "source": "World Nuclear News"
             },
@@ -167,15 +148,6 @@
           "takeaway": "Fuel availability remained central to future capacity growth. Urenco's additional enrichment cascade represented installed operating capacity, while Newcleo's MOX development centre and Bluecore's uranium purchase were earlier-stage fuel readiness steps—not new commercial enrichment capacity.",
           "items": [
             {
-              "date": "2026-10-12",
-              "title": "Milestone for Urenco USA expansion project",
-              "category": "Uranium & fuel",
-              "summary": "Urenco USA brought a sixth new enrichment cascade into production, reaching 75% completion of its current capacity addition.",
-              "url": "https://www.world-nuclear-news.org/articles/milestone-for-urenco-usa-expansion-project",
-              "links": [],
-              "source": "World Nuclear News"
-            },
-            {
               "date": "2026-10-15",
               "title": "Newcleo opens MOX fuel development centre",
               "category": "Uranium & fuel",
@@ -190,6 +162,15 @@
               "category": "Uranium & fuel",
               "summary": "Bluecore Energy announced acquisition of low-enriched uranium as it advances its maritime nuclear development plans.",
               "url": "https://www.world-nuclear-news.org/articles/us-maritime-nuclear-firm-bluecore-energy-announces-uranium-purchase",
+              "links": [],
+              "source": "World Nuclear News"
+            },
+            {
+              "date": "2026-10-12",
+              "title": "Milestone for Urenco USA expansion project",
+              "category": "Uranium & fuel",
+              "summary": "Urenco USA brought a sixth new enrichment cascade into production, reaching 75% completion of its current capacity addition.",
+              "url": "https://www.world-nuclear-news.org/articles/milestone-for-urenco-usa-expansion-project",
               "links": [],
               "source": "World Nuclear News"
             }
@@ -233,11 +214,11 @@
           "takeaway": "New nuclear programmes and asset clean-up moved through institutional gates. The Czech Temelín SMR project entered environmental review, Namibia appointed a nuclear coordinator, and Norwegian authorities and contractors advanced plans for spent-fuel management and transfers of decommissioning responsibilities.",
           "items": [
             {
-              "date": "2026-10-13",
-              "title": "Czech SMR environmental impact assessment submitted",
-              "category": "Policy & regulation",
-              "summary": "ČEZ submitted environmental impact documentation for a proposed Rolls-Royce SMR at Temelín, advancing the project's permitting process.",
-              "url": "https://www.world-nuclear-news.org/articles/czech-smr-environmental-impact-assessment-submitted",
+              "date": "2026-10-16",
+              "title": "Norwegian used fuel to be stored in Sweden",
+              "category": "Waste & decommissioning",
+              "summary": "Norwegian Nuclear Decommissioning selected Studsvik to manage and process used research-reactor fuel under an agreement running through 2055.",
+              "url": "https://www.world-nuclear-news.org/articles/norwegian-used-fuel-to-be-stored-in-sweden",
               "links": [],
               "source": "World Nuclear News"
             },
@@ -251,11 +232,11 @@
               "source": "World Nuclear News"
             },
             {
-              "date": "2026-10-16",
-              "title": "Norwegian used fuel to be stored in Sweden",
-              "category": "Waste & decommissioning",
-              "summary": "Norwegian Nuclear Decommissioning selected Studsvik to manage and process used research-reactor fuel under an agreement running through 2055.",
-              "url": "https://www.world-nuclear-news.org/articles/norwegian-used-fuel-to-be-stored-in-sweden",
+              "date": "2026-10-13",
+              "title": "Czech SMR environmental impact assessment submitted",
+              "category": "Policy & regulation",
+              "summary": "ČEZ submitted environmental impact documentation for a proposed Rolls-Royce SMR at Temelín, advancing the project's permitting process.",
+              "url": "https://www.world-nuclear-news.org/articles/czech-smr-environmental-impact-assessment-submitted",
               "links": [],
               "source": "World Nuclear News"
             },
@@ -287,7 +268,7 @@
         }
       ],
       "editorial": true,
-      "report_count": 2
+      "report_count": 1
     },
     {
       "week_start": "2026-10-05",
@@ -307,7 +288,7 @@
               "title": "Researchers in Vienna and Beijing report nuclear clock “milestone”",
               "summary": "Two papers published recently in Nature report what the journal describes as “the first implementation of a nuclear clock, a milestone in the field of metrology.” The research behind both papers involve the radioisotope thorium-229. “A thorium-229 optical nuclear clock with feedback loop,” by Luca Toscani de Col et al., describes research led by a team from the Vienna Center for Quantum Science and Technology in…",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-09/article-8477/researchers-in-vienna-and-beijing-report-nuclear-clock-milestone/",
+              "url": "https://www.ans.org/news/2026-10-09/article-8477/researchers-in-vienna-and-beijing-report-nuclear-clock-milestone",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -324,7 +305,7 @@
               "title": "General Fusion reports electron temperatures exceeding 1 keV",
               "summary": "General Fusion announced it has achieved compressional plasma heating that produced electron temperatures exceeding 1 keV, measured using Thomson scattering in collaboration with the U.K. Atomic Energy Authority. The 1 keV threshold is regarded as a key milestone, because it demonstrates the ability to produce and control fusion-relevant plasma temperatures. It was first reported on the Soviet T3 tokamak, announced…",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-09/article-8478/general-fusion-reports-electron-temperatures-exceeding-1-kev/",
+              "url": "https://www.ans.org/news/2026-10-09/article-8478/general-fusion-reports-electron-temperatures-exceeding-1-kev",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -341,7 +322,7 @@
               "title": "Seeing more, repairing smarter: How advanced NDE and repair technologies are changing nuclear asset management",
               "summary": "A single ultrasonic inspection of reactor vessel upper head penetrations can generate more than 7 kilometers of inspection data. Historically, analysts have spent days—even weeks—reviewing those results to identify the few indications that might require further evaluation. In 2025, Vattenfall Nuclear in Sweden demonstrated a different approach. By qualifying and deploying an artificial intelligence/machine learning…",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-09/article-8411/seeing-more-repairing-smarter-how-advanced-nde-and-repair-technologies-are-changing-nuclear-asset-management/",
+              "url": "https://www.ans.org/news/2026-10-09/article-8411/seeing-more-repairing-smarter-how-advanced-nde-and-repair-technologies-are-changing-nuclear-asset-management",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -358,7 +339,7 @@
               "title": "DOE announces grants for SiC cladding research and testing",
               "summary": "On October 5, the Department of Energy announced that it plans to award up to $50 million in grants over three years to support research on the use of silicon carbide (SiC) as fuel cladding material. The DOE touts SiC for what it says is the material’s potential to improve the safety and cost efficiency of light water reactors currently operating in the United States and said that research into SiC cladding could…",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-08/article-8473/doe-announces-grants-for-sic-cladding-research-and-testing/",
+              "url": "https://www.ans.org/news/2026-10-08/article-8473/doe-announces-grants-for-sic-cladding-research-and-testing",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -377,7 +358,7 @@
               "title": "Study proposes more efficient path to fusion ignition",
               "summary": "Researchers at Princeton Plasma Physics Laboratory reformulated the criterion to ignite and sustain fusion plasma, and their calculations indicate a pathway to make the process more energy efficient while also demonstrating the impact of effects that can make ignition more difficult, such as small amounts of tungsten in the plasma.",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-08/article-8475/study-proposes-more-efficient-path-to-fusion-ignition/",
+              "url": "https://www.ans.org/news/2026-10-08/article-8475/study-proposes-more-efficient-path-to-fusion-ignition",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -394,7 +375,7 @@
               "title": "Supplier Showcase focus: AI-driven diagnostics",
               "summary": "The American Nuclear Society is hosting a Supplier Showcase webinar, “From Alarm to Answer: How AI Can Reduce Equipment Load and Enhance Performance,” on October 13, from 1:00 p.m. to 2:00 p.m. (CDT) in partnership with Nuclearn, a provider of AI tools purpose-built for the nuclear industry.",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-08/article-8472/supplier-showcase-focus-aidriven-diagnostics/",
+              "url": "https://www.ans.org/news/2026-10-08/article-8472/supplier-showcase-focus-aidriven-diagnostics",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -411,7 +392,7 @@
               "title": "GAIN announces fourth round of 2026 vouchers",
               "summary": "This week, the Department of Energy’s Gateway for Accelerated Innovation in Nuclear (GAIN) announced three fourth-round fiscal year 2026 vouchers to support the development of innovative nuclear technologies. Each company will get access to specific capabilities and expertise in the DOE’s national laboratory complex—in this round of awards, Oak Ridge, Argonne, and Pacific Northwest National Laboratories are…",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-07/article-8470/iter-welcomes-last-major-component-needed-for-core-machine-assembly/",
+              "url": "https://www.ans.org/news/2026-10-07/article-8470/iter-welcomes-last-major-component-needed-for-core-machine-assembly",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -430,7 +411,7 @@
               "title": "Eliminating Heat Risks in Nuclear Cleanup: A DOE Contractor’s High-Tech Blueprint",
               "summary": "For organizations like the Savannah River Mission Completion (SRMC), a liquid waste contractor for the U.S. Department of Energy (DOE) Office of Environmental Management at the Savannah River Site (SRS) in Aiken, South Carolina, the summer season poses significant challenges for their workforce. In 2025, safety leaders sought to expand the current heat safety program and find a solution that would integrate…",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-07/article-8457/eliminating-heat-risks-in-nuclear-cleanup-a-doe-contractors-hightech-blueprint/",
+              "url": "https://www.ans.org/news/2026-10-07/article-8457/eliminating-heat-risks-in-nuclear-cleanup-a-doe-contractors-hightech-blueprint",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -467,7 +448,7 @@
               "title": "Tritium detector for continuous underground monitoring",
               "summary": "Thomas Jefferson National Accelerator Facility announced yesterday that it has entered a cooperative research and development agreement (CRADA) with Canary Instruments to commercialize a tritium detector it developed for monitoring groundwater near nuclear facilities.",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-06/article-8466/tritium-detector-for-continuous-underground-monitoring/",
+              "url": "https://www.ans.org/news/2026-10-06/article-8466/tritium-detector-for-continuous-underground-monitoring",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -562,7 +543,7 @@
               "title": "Fermi America, Blue Energy make strides in Texas",
               "summary": "A draft environmental impact statement is now complete for Fermi America’s plan to construct and operate four AP1000 reactors at its Project Matador Advanced Energy and Intelligence Campus in Texas, a project that has seen upheaval along the way, including the ouster of cofounders from their leadership roles.",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-09/article-8479/fermi-america-blue-energy-make-strides-in-texas/",
+              "url": "https://www.ans.org/news/2026-10-09/article-8479/fermi-america-blue-energy-make-strides-in-texas",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -656,7 +637,7 @@
               "title": "BWXT’s BANR selected for Canadian project",
               "summary": "The BWX Technologies Advanced Nuclear Reactor (BANR) has been selected for a power plant project in the Canadian province of New Brunswick, the company announced on Monday. This project—which will progress through a partnership with Prodigy Clean Energy and the Pabineau and Eel River Bar First Nations—will mark two significant milestones for BANR: its first commercial deployment and its first international…",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-07/article-8471/bwxts-banr-selected-for-canadian-project/",
+              "url": "https://www.ans.org/news/2026-10-07/article-8471/bwxts-banr-selected-for-canadian-project",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -686,7 +667,7 @@
               "title": "ITER welcomes last major component needed for core machine assembly",
               "summary": "The ninth and final vacuum vessel segment for the ITER fusion machine—vacuum vessel sector #2—has been delivered to the ITER Organization’s site at Cadarache, in southern France. With this delivery, all major components are now on-site for the construction of the “core machine” of the international project—including the vacuum vessel, superconducting magnets, and cryostat.",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-07/article-8469/iter-welcomes-last-major-component-needed-for-core-machine-assembly/",
+              "url": "https://www.ans.org/news/2026-10-07/article-8469/iter-welcomes-last-major-component-needed-for-core-machine-assembly",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -791,7 +772,7 @@
               "title": "Danish Decommissioning files final repository proposal",
               "summary": "Plans for Denmark to establish a final repository for its nuclear waste moved forward on October 2, when state-owned entity Danish Decommissioning announced that it had submitted a proposal for such a facility to the Danish Agency for Civil Security. The proposal marks a continuation of efforts that began in 2018 with the Danish Parliament’s passage of Proposal B 90. That legislation called for geological…",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-09/article-8476/danish-decommissioning-files-final-repository-proposal/",
+              "url": "https://www.ans.org/news/2026-10-09/article-8476/danish-decommissioning-files-final-repository-proposal",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -828,7 +809,7 @@
               "title": "NRC reviews LAR on Palisades fuel loading incident, as Pioneer SMR application advances",
               "summary": "The Nuclear Regulatory Commission is reviewing a license amendment request (LAR) Holtec submitted in the aftermath of a fuel loading incident that has paused some of the restart work at the Palisades nuclear power plant in Covert, Mich.",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-08/article-8474/nrc-reviews-lar-on-palisades-fuel-loading-incident-as-pioneer-smr-application-advances/",
+              "url": "https://www.ans.org/news/2026-10-08/article-8474/nrc-reviews-lar-on-palisades-fuel-loading-incident-as-pioneer-smr-application-advances",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -878,7 +859,7 @@
               "title": "General Matter’s NRC license application materials publicly available",
               "summary": "Efforts to revive domestic uranium enrichment at the site of the former Gaseous Diffusion Plant in Paducah, Ky., are continuing: On September 28, General Matter announced that it had applied for a Nuclear Regulatory Commission license to begin facility construction on the site. Several documents related to the application, including an environmental report, became accessible to the public on October 5 in NRC’s ADAMS…",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-06/article-8465/general-matters-nrc-license-application-materials-publicly-available/",
+              "url": "https://www.ans.org/news/2026-10-06/article-8465/general-matters-nrc-license-application-materials-publicly-available",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -967,7 +948,7 @@
               "title": "State roundup: New developments in Midwest, New England",
               "summary": "Power purchase agreements, statewide energy plans, and nuclear energy summits are among the developments in Wisconsin, Missouri, and New England that you may have missed during the early days of fall.",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-07/article-8468/state-roundup-new-developments-in-midwest-new-england/",
+              "url": "https://www.ans.org/news/2026-10-07/article-8468/state-roundup-new-developments-in-midwest-new-england",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -986,7 +967,7 @@
               "title": "Google, Constellation reach 11-unit uprate plan; Constellation to invest $4.3 billion",
               "summary": "Google has signed a 20-year power purchase agreement (PPA) with Constellation to support adding 890 MW of new nuclear capacity to 11 reactors across the PJM Interconnection region, including in Illinois, Pennsylvania, and New Jersey.",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-06/article-8467/google-constellation-reach-11unit-uprate-plan-constellation-to-invest-43-billion/",
+              "url": "https://www.ans.org/news/2026-10-06/article-8467/google-constellation-reach-11unit-uprate-plan-constellation-to-invest-43-billion",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -1070,7 +1051,7 @@
               "title": "Rising together: Collaborative project delivery for the nuclear fleet",
               "summary": "Karen Fili As the nuclear industry enters one of the most significant investment periods in its history, utilities are managing unprecedented capital portfolios while simultaneously preparing for long-term operation, plant modernization, extended power uprates, digital transformation, workforce challenges, and new nuclear opportunities. No single utility can solve these challenges alone. For the past 30 years,…",
               "category": "Nuclear developments",
-              "url": "https://www.ans.org/news/2026-10-08/article-8405/rising-together-collaborative-project-delivery-for-the-nuclear-fleet/",
+              "url": "https://www.ans.org/news/2026-10-08/article-8405/rising-together-collaborative-project-delivery-for-the-nuclear-fleet",
               "source": "ANS Nuclear Newswire",
               "kind": "news",
               "links": [],
@@ -2449,36 +2430,14 @@
       "week_end": "2026-09-27",
       "title": "Global nuclear developments — week of September 21, 2026",
       "overview": "45 distinct nuclear news events and 3 newly released research reports from monitored publishers; all have original source links.",
-      "article_count": 48,
-      "report_count": 3,
+      "article_count": 47,
+      "report_count": 2,
       "generated_at": "2026-10-21",
       "sections": [
         {
           "category": "New research reports",
           "takeaway": "3 new source-attributed nuclear research publication(s) released this week. Each entry describes what the publication covers.",
           "items": [
-            {
-              "date": "2026-09-21",
-              "title": "Utilizing Department of Energy Loans to Build U.S. Nuclear Projects",
-              "summary": "The Office of Energy Dominance Financing (EDF) has been instrumental in the commercial deployment of nuclear technology in the United States. This paper provides recommendations to build on that success and fully realize EDF’s potential going forward, especially with respect to investing in early mover technology. NIA believes that in parallel with achieving the critical near-term goals of affordability and…",
-              "category": "Research & analysis",
-              "url": "https://nuclearinnovationalliance.org/index.php/utilizing-department-energy-loans-build-us-nuclear-projects",
-              "source": "Nuclear Innovation Alliance",
-              "kind": "report",
-              "links": [],
-              "entities": [
-                "US Nuclear Regulatory Commission",
-                "EDF"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Capital & financing"
-              ],
-              "search_text": "US Nuclear Regulatory Commission EDF Utilizing Department of Energy Loans to Build U.S. Nuclear Projects The Office of Energy Dominance Financing (EDF) has been instrumental in the commercial deployment of nuclear technology in the United States. This paper provides recommendations to build on that success and fully realize EDF’s potential going forward, especially with respect to investing in early mover technology. NIA believes that in parallel with achieving the critical near-term goals of affordability and…",
-              "importance_score": 20
-            },
             {
               "date": "2026-09-21",
               "title": "Utilizing Department of Energy Loans to Build U.S. Nuclear Projects",
@@ -2500,7 +2459,10 @@
               ],
               "search_text": "EDF Utilizing Department of Energy Loans to Build U.S. Nuclear Projects The Office of Energy Dominance Financing (EDF) has been instrumental in the commercial deployment of nuclear technology in the United States. This paper provides recommendations to build on that success and fully realize EDF’s potential going forward, especially with respect to investing in early mover technology. NIA believes that in parallel with achieving the critical near-term goals of affordability and…",
               "importance_score": 10,
-              "publication_type": "Reports"
+              "publication_type": "Reports",
+              "source_url_aliases": [
+                "https://nuclearinnovationalliance.org/index.php/utilizing-department-energy-loans-build-us-nuclear-projects"
+              ]
             },
             {
               "date": "2026-09-21",
@@ -4623,35 +4585,14 @@
       "week_end": "2026-09-13",
       "title": "Global nuclear developments — week of September 7, 2026",
       "overview": "44 distinct nuclear news events and 6 newly released research reports from monitored publishers; all have original source links.",
-      "article_count": 50,
-      "report_count": 6,
+      "article_count": 47,
+      "report_count": 3,
       "generated_at": "2026-10-21",
       "sections": [
         {
           "category": "New research reports",
           "takeaway": "6 new source-attributed nuclear research publication(s) released this week. Each entry describes what the publication covers.",
           "items": [
-            {
-              "date": "2026-09-10",
-              "title": "Public Comment on Nuclear Regulatory Commission Modernization: Rulemaking Procedure, Federal Advisory Committee Act Alignment, Access, and Security",
-              "summary": "NIA submitted a comment on the proposed Nuclear Regulatory Commission Modernization: Rulemaking Procedure, Federal Advisory Committee Act (FACA) Alignment, Access, and Security rule issued on August 11, 2025.",
-              "category": "Research & analysis",
-              "url": "https://nuclearinnovationalliance.org/index.php/public-comment-nuclear-regulatory-commission-modernization-rulemaking-procedure-federal-advisory",
-              "source": "Nuclear Innovation Alliance",
-              "kind": "report",
-              "links": [],
-              "entities": [
-                "US Nuclear Regulatory Commission"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Construction & licensing"
-              ],
-              "search_text": "US Nuclear Regulatory Commission Public Comment on Nuclear Regulatory Commission Modernization: Rulemaking Procedure, Federal Advisory Committee Act Alignment, Access, and Security NIA submitted a comment on the proposed Nuclear Regulatory Commission Modernization: Rulemaking Procedure, Federal Advisory Committee Act (FACA) Alignment, Access, and Security rule issued on August 11, 2025.",
-              "importance_score": 38
-            },
             {
               "date": "2026-09-10",
               "title": "Public Comment on Nuclear Regulatory Commission Modernization: Rulemaking Procedure, Federal Advisory Committee Act Alignment, Access, and Security",
@@ -4671,7 +4612,10 @@
               ],
               "search_text": "Public Comment on Nuclear Regulatory Commission Modernization: Rulemaking Procedure, Federal Advisory Committee Act Alignment, Access, and Security NIA submitted a comment on the proposed Nuclear Regulatory Commission Modernization: Rulemaking Procedure, Federal Advisory Committee Act (FACA) Alignment, Access, and Security rule issued on August 11, 2025.",
               "importance_score": 28,
-              "publication_type": "NIA Public Comments"
+              "publication_type": "NIA Public Comments",
+              "source_url_aliases": [
+                "https://nuclearinnovationalliance.org/index.php/public-comment-nuclear-regulatory-commission-modernization-rulemaking-procedure-federal-advisory"
+              ]
             },
             {
               "date": "2026-09-10",
@@ -4690,45 +4634,10 @@
               "categories": [],
               "search_text": "Fuel Transportation Readiness for New Nuclear Commercialization As advanced reactor technologies move toward commercialization, the nuclear fuel transportation system will face new demands. Package certification, regulatory adjustments, logistics, and infrastructure are all key elements of a resilient fuel transportation system. Proactively adapting the U.S. fuel transportation system to the demands of new fuels and reactor types is necessary for successful reactor deployment.",
               "importance_score": 15,
-              "publication_type": "Reports"
-            },
-            {
-              "date": "2026-09-10",
-              "title": "Fuel Transportation Readiness for New Nuclear Commercialization",
-              "summary": "As advanced reactor technologies move toward commercialization, the nuclear fuel transportation system will face new demands. Package certification, regulatory adjustments, logistics, and infrastructure are all key elements of a resilient fuel transportation system. Proactively adapting the U.S. fuel transportation system to the demands of new fuels and reactor types is necessary for successful reactor deployment.…",
-              "category": "Research & analysis",
-              "url": "https://nuclearinnovationalliance.org/index.php/fuel-transportation-readiness-new-nuclear-commercialization",
-              "source": "Nuclear Innovation Alliance",
-              "kind": "report",
-              "links": [],
-              "entities": [],
-              "technologies": [
-                "Advanced fission"
-              ],
-              "categories": [],
-              "search_text": "Fuel Transportation Readiness for New Nuclear Commercialization As advanced reactor technologies move toward commercialization, the nuclear fuel transportation system will face new demands. Package certification, regulatory adjustments, logistics, and infrastructure are all key elements of a resilient fuel transportation system. Proactively adapting the U.S. fuel transportation system to the demands of new fuels and reactor types is necessary for successful reactor deployment.…",
-              "importance_score": 15
-            },
-            {
-              "date": "2026-09-08",
-              "title": "New Nuclear Reactors for Military Purposes",
-              "summary": "The U.S. government has substantial efforts underway to develop new nuclear reactors for military purposes. Recent executive orders, together with congressional mandates, establish a coordinated strategy that links national security with mission assurance. This updated NIA publication outlines the federal policy framework and the projects, concepts, and solicitations underway to translate policy direction and…",
-              "category": "Research & analysis",
-              "url": "https://nuclearinnovationalliance.org/index.php/new-nuclear-reactors-military-purposes",
-              "source": "Nuclear Innovation Alliance",
-              "kind": "report",
-              "links": [],
-              "entities": [
-                "US Nuclear Regulatory Commission"
-              ],
-              "technologies": [
-                "Traditional fission"
-              ],
-              "categories": [
-                "Policy & international"
-              ],
-              "search_text": "US Nuclear Regulatory Commission New Nuclear Reactors for Military Purposes The U.S. government has substantial efforts underway to develop new nuclear reactors for military purposes. Recent executive orders, together with congressional mandates, establish a coordinated strategy that links national security with mission assurance. This updated NIA publication outlines the federal policy framework and the projects, concepts, and solicitations underway to translate policy direction and…",
-              "importance_score": 43
+              "publication_type": "Reports",
+              "source_url_aliases": [
+                "https://nuclearinnovationalliance.org/index.php/fuel-transportation-readiness-new-nuclear-commercialization"
+              ]
             },
             {
               "date": "2026-09-08",
@@ -4749,7 +4658,10 @@
               ],
               "search_text": "New Nuclear Reactors for Military Purposes The U.S. government has substantial efforts underway to develop new nuclear reactors for military purposes. Recent executive orders, together with congressional mandates, establish a coordinated strategy that links national security with mission assurance.",
               "importance_score": 15,
-              "publication_type": "Reports"
+              "publication_type": "Reports",
+              "source_url_aliases": [
+                "https://nuclearinnovationalliance.org/index.php/new-nuclear-reactors-military-purposes"
+              ]
             }
           ]
         },
