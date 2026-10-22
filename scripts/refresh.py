@@ -20,7 +20,7 @@ from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
 from taxonomy import enrich_record
-from sources import collect as collect_other_sources
+from comprehensive_sources import collect_all_sources as collect_other_sources
 from dedupe import reconcile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -213,6 +213,21 @@ def crawl_rss():
     print('RSS articles:',len(results),flush=True)
     return results
 
+def read_source_records():
+    """Source-level archive is separate from event-level deduplicated display.
+    Preserve each publisher link/title/summary even when two news stories match.
+    """
+    path=DATA/'source_records.json'
+    if path.exists():
+        payload=json.loads(path.read_text(encoding='utf-8'))
+        records=payload if isinstance(payload,list) else payload.get('records',[])
+        if records:return records
+        raise RuntimeError('Refusing to replace an empty source-level archive')
+    # Migration from the existing display archive; canonical event records and
+    # their alternate-source provenance are not discarded. Previous alternates
+    # may have title+URL only, until backfill retrieves original abstracts.
+    return read_articles()
+
 def read_articles():
     p=DATA/'articles.json'
     if not p.exists():return []
@@ -306,7 +321,8 @@ def main():
     if os.getenv('GITHUB_EVENT_NAME')=='schedule' and dt.datetime.now(ZoneInfo('America/Chicago')).hour!=7:
         print('Not 7am Central; other DST cron handles this date.');return
     DATA.mkdir(exist_ok=True)
-    old=read_articles()
+    old=read_source_records()
+    if len(old)<1000:raise RuntimeError('Refusing suspicious contraction of historical nuclear archive')
     existing={a['url'].rstrip('/'):a for a in old if a.get('url') and a.get('date')}
     # Remove prior duplicate display cards before merging fresh source material.
     # Alternate source URLs stay attached to the canonical story.
@@ -326,6 +342,10 @@ def main():
             existing[u]=rec
             changed+=1
     print('Total new verified source records:',changed,flush=True)
+    # Store every distinct publisher publication BEFORE reconciling public
+    # cards. A canonical event can then link to its complete sources without
+    # destructively deleting an independent publisher's record.
+    originals=sorted(existing.values(),key=lambda r:(r['date'],r.get('source',''),r['url']),reverse=True)
     groups=defaultdict(list)
     for a in existing.values():
         d=parse_date(a.get('date'))
@@ -364,10 +384,15 @@ def main():
     briefings=list(editorial.values())+[x for x in briefings if x['week_start'] not in editorial]
     briefings.sort(key=lambda x:x['week_start'],reverse=True)
     briefings=[x for x in briefings if x['week_start']>='2026-09-07'][:7]
-    payload={'updated_at':TODAY.isoformat(),'methodology':'In-scope WNN + ANS source-linked news with conservative event-level deduplication and individually catalogued nuclear research from NIA, Breakthrough and NCEA (each NCEA publication requires explicit Nuclear Energy topic and verified date). No quota; metadata and multi-label tags inferred from public descriptions. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.','articles':selected}
+    payload={'updated_at':TODAY.isoformat(),'methodology':'All in-scope WNN and ANS news, NIA resources/news/blog, Breakthrough four nuclear innovation tabs, and Nuclear Energy-tagged NCEA publications; source_records.json retains every publication while visible news stories are event-level deduplicated with all publisher links. No quota; metadata and multi-label tags inferred from public descriptions. Historical discovery continues in 3,000-URL batches on recurring runs. Materiality scores affect ordering only.','articles':selected}
+    (DATA/'source_records.json').write_text(json.dumps({
+        'updated_at':TODAY.isoformat(),
+        'methodology':'Every source-attributed dated publication from WNN, ANS, NIA, Breakthrough and NCEA, BEFORE event-level deduplication. Publisher-original text excerpts/URLs only, not full copyrighted articles.',
+        'records':originals
+    },ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (DATA/'articles.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (DATA/'briefings.json').write_text(json.dumps({'generated_at':TODAY.isoformat(),'briefings':briefings},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print('Published:',len(selected),'articles in',len(groups),'periods;',len(briefings),'weekly briefings.',flush=True)
+    print('Published:',len(originals),'original source records;',len(selected),'deduplicated public cards in',len(groups),'periods;',len(briefings),'weekly briefings.',flush=True)
 
 if __name__=='__main__':
     main()
