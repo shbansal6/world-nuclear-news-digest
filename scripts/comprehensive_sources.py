@@ -13,6 +13,7 @@ from collections import deque
 from urllib.parse import urljoin, urlparse, urlsplit, urlunsplit, unquote
 from bs4 import BeautifulSoup
 from sources import article, ans_feed, ncea_reports, parse_date, verified_date, short
+from bti_sitemaps import candidates as bti_sitemap_candidates, belongs_to_nuclear_innovation
 
 SOURCE_BTI='Breakthrough Institute'
 SOURCE_NIA='Nuclear Innovation Alliance'
@@ -74,18 +75,25 @@ def bti_all(fetch, max_pages_per_tab=25):
                 old=candidates.get(u)
                 # Explicit report/blog classification takes precedence if same URL is
                 # exposed under multiple tab views.
-                if old is None or kind=='report':candidates[u]=(kind,doctype)
+                if old is None or kind=='report':candidates[u]=(kind,doctype,False)
             new=matched-seen
             seen.update(matched)
             if not matched or (page and not new):break
             if page==max_pages_per_tab-1:
                 print('WARNING Breakthrough '+tab+' page bound reached; review backfill',flush=True)
         print('Breakthrough '+tab+': '+str(len(seen))+' unique linked publications',flush=True)
+    # The Nuclear Energy Innovation tabs do not expose all historical pages.
+    # Supplement visible tab URLs with the official XML sitemap inventory.
+    # For general /blog and /press sitemap URLs, verify the article's
+    # Nuclear Energy Innovation breadcrumb before accepting the record.
+    for url,details in bti_sitemap_candidates(fetch).items():
+        candidates.setdefault(url,details)
     out=[]
-    for u,(kind,doctype) in candidates.items():
+    for u,(kind,doctype,needs_nuclear_topic) in candidates.items():
         raw=fetch(u)
         if not raw:continue
         page=BeautifulSoup(raw,'html.parser')
+        if needs_nuclear_topic and not belongs_to_nuclear_innovation(page):continue
         h=page.find('h1')
         if not h:continue
         title=h.get_text(' ',strip=True)
