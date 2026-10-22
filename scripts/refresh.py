@@ -167,6 +167,7 @@ def parse_article(u):
         val=p.get_text(' ',strip=True)
         if len(val)>35 and not any(q in val.lower() for q in ('cookies policy','subscribe to our newsletter')):paras.append(val)
     record={'date':date.isoformat(),'title':title,'summary':shorten(description),'category':category(title,description,orig),'url':u,'links':links,'source':'World Nuclear News'}
+    record['coverage_detail']=len(' '.join(paras[:14]))+len(description)
     return enrich_record(record,' '.join(paras[:14]))
 
 def crawl_sitemaps():
