@@ -6,9 +6,11 @@ Publisher-originated research, comments, fact sheets, blog and analysis are
 stored as reports; news and press releases as news. Both remain discoverable.
 """
 import datetime as dt
+import json
 import re
+from pathlib import Path
 from collections import deque
-from urllib.parse import urljoin, urlparse, urlsplit, urlunsplit
+from urllib.parse import urljoin, urlparse, urlsplit, urlunsplit, unquote
 from bs4 import BeautifulSoup
 from sources import article, ans_feed, ncea_reports, parse_date, verified_date, short
 
@@ -27,7 +29,7 @@ BTE_SECTIONS={
 
 def canonical_url(url):
     p=urlsplit(url)
-    return urlunsplit((p.scheme,p.netloc.lower(),p.path.rstrip('/').replace('/index.php/','/').replace('/index.php',''),'', ''))
+    return urlunsplit((p.scheme,p.netloc.lower(),unquote(p.path).rstrip('/').replace('/index.php/','/').replace('/index.php',''),'', ''))
 
 def description(page, heading=None):
     """Use actual publication deck, excerpt or description; never navigation text."""
@@ -133,7 +135,13 @@ def ans_archive(fetch, max_list_pages=160):
     """
     result={a['url']:a for a in ans_feed(fetch)}
     visited=set()
-    next_page='https://www.ans.org/news/'
+    cursor=Path(__file__).resolve().parents[1]/'data'/'source_cursors.json'
+    try:state=json.loads(cursor.read_text(encoding='utf-8'))
+    except (OSError,ValueError):state={}
+    if state.get('ans_archive_complete'):
+        return list(result.values())
+    next_page=state.get('ans_next_page') or 'https://www.ans.org/news/'
+    completed=False
     for page_index in range(max_list_pages):
         if not next_page or next_page in visited:break
         visited.add(next_page)
@@ -176,13 +184,22 @@ def ans_archive(fetch, max_list_pages=160):
                     date=verified_date(page) or date
             rec=article(title,summ,u,date,SOURCE_ANS,'news',summ)
             if rec and u not in result:result[u]=rec
-        if seen_dates and max(seen_dates)<START:break
+        if seen_dates and max(seen_dates)<START:
+            completed=True;next_page='';break
         links=[urljoin('https://www.ans.org',a['href']) for a in soup.find_all('a',href=True)
                if 'more articles' in a.get_text(' ',strip=True).lower() and '/news/step-' in a['href']]
         next_page=links[-1] if links else ''
-        if not next_page:break
-        if page_index==max_list_pages-1:print('WARNING ANS archive backfill page bound; continue next run',flush=True)
-    print('ANS: '+str(len(result))+' records from RSS and '+str(len(visited))+' archive listing pages',flush=True)
+        if not next_page:
+            completed=True;break
+        if page_index==max_list_pages-1:print('WARNING ANS archive backfill page bound; continuation saved',flush=True)
+    # Only checkpoint after successfully discovering pages; on failure retry
+    # the same boundary, rather than silently skipping historical coverage.
+    if visited:
+        if next_page and next_page in visited:next_page=''
+        state.update({'ans_next_page':next_page,'ans_archive_complete':completed,
+                      'ans_checkpoint_date':dt.date.today().isoformat()})
+        cursor.write_text(json.dumps(state,indent=2)+'\n',encoding='utf-8')
+    print('ANS: '+str(len(result))+' records from RSS and '+str(len(visited))+' archive listing pages; completed='+str(completed),flush=True)
     return list(result.values())
 
 def nia_cards(fetch,base,resource=False):
