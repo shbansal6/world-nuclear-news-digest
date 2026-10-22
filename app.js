@@ -157,6 +157,13 @@ function updateView(){
  if(hash.startsWith('#weekly'))weekly(hash.replace('#weekly-',''));else{$('weekly').classList.remove('active');$('archive').classList.remove('hidden');if(hash.startsWith('#year-')){const y=hash.slice(6);if($('yrfilter').value!==y&&/^\d{4}$/.test(y)){state.year=y;$('yrfilter').value=y;updateMonth();}}renderList();}
 }
 function resetView(){state.year='all';state.month='all';state.tech='all';state.theme='all';state.kind='all';state.source='all';state.buyer='all';state.q='';state.sort='recent';state.visible=100;$('sortfilter').value='recent';['yrfilter','monthfilter','techfilter','catfilter','typefilter','sourcefilter','buyerfilter'].forEach(id=>$(id).value='all');$('q').value='';updateMonth();renderList();}
+function downloadLinks(){
+ const cols=['date','title','source','content_type','categories','url','additional_sources'];
+ const rows=[cols,...filtered().map(a=>[a.date,a.title,a.source,a.kind,a.categories.join('; '),a.url,a.alternate_sources.map(x=>x.url).join('; ')])];
+ const csv=rows.map(row=>row.map(cell=>'"'+String(cell??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');
+ const blob=new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='nuclear-intelligence-links.csv';a.click();URL.revokeObjectURL(url);
+}
 function initEvents(){
  ['yrfilter','monthfilter','techfilter','catfilter','typefilter','sourcefilter','buyerfilter'].forEach((id)=>$(id).addEventListener('change',e=>{const key={yrfilter:'year',monthfilter:'month',techfilter:'tech',catfilter:'theme',typefilter:'kind',sourcefilter:'source',buyerfilter:'buyer'}[id];state[key]=e.target.value;state.visible=100;if(key==='year')updateMonth();if(location.hash.startsWith('#weekly'))location.hash='#archive';renderList();}));
  $('sortfilter').addEventListener('change',e=>{state.sort=e.target.value;state.visible=100;renderList()});
@@ -164,6 +171,9 @@ function initEvents(){
  $('expand').addEventListener('click',()=>{state.expanded=!state.expanded;$('expand').textContent=state.expanded?'Show summaries':'Show detail';document.querySelectorAll('.news-card').forEach(c=>c.classList.toggle('expanded',state.expanded))});
  $('reset').addEventListener('click',e=>{e.preventDefault();resetView();location.hash='#archive'});
  $('loadmore').addEventListener('click',()=>{state.visible+=100;renderList()});
+ $('copylinks').addEventListener('click',()=>{const value=filtered().map(a=>a.date+' | '+a.title+' | '+a.source+' | '+a.url).join('\n');if(navigator.clipboard?.writeText)navigator.clipboard.writeText(value).then(()=>{$('copylinks').textContent='Links copied';}).catch(downloadLinks);else downloadLinks()});
+ $('exportcsv').addEventListener('click',downloadLinks);
+ document.querySelectorAll('[data-show-kind]').forEach(link=>link.addEventListener('click',()=>{state.kind=link.dataset.showKind;$('typefilter').value=state.kind;state.visible=100;renderList()}));
  document.addEventListener('click',e=>{const tag=e.target.closest('.tagchip');if(!tag)return;const type=tag.hasAttribute('data-tech')?'tech':'theme';state[type]=tag.getAttribute(type==='tech'?'data-tech':'data-cat');$(type==='tech'?'techfilter':'catfilter').value=state[type];state.visible=100;location.hash='#archive';renderList();document.getElementById('archive').scrollIntoView({behavior:'smooth'})});
  window.addEventListener('hashchange',updateView);
 }
