@@ -74,3 +74,11 @@ a{color:var(--blue)}[hidden]{display:none!important}a:focus-visible,button:focus
 #archive .section-eyebrow{margin-top:7px}
 #archive .section-head{margin-bottom:13px}
 @media(max-width:700px){.status-strip{gap:10px}.status-strip .microhint{margin-left:0}}
+
+/* Unified source and report enhancements. Existing layout and palette retained. */
+.research-card{border-left:3px solid #3e809e}
+.research-card .story-category{color:#276b8d}
+.archive-control select{max-width:200px}
+#copylinks,#exportcsv{white-space:nowrap}
+@media(max-width:900px){.archive-control{flex-wrap:wrap}}
+@media print{#copylinks,#exportcsv{display:none}}
