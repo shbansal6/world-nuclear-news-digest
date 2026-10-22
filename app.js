@@ -59,8 +59,8 @@ function hydrate(x){
  n.summary=String(n.summary||'');
  n.entities=Array.isArray(n.entities)?n.entities:[];
  const inferred=tagsFor(n);
- n.technologies=[...new Set([...(Array.isArray(n.technologies)?n.technologies:[]),...inferred.technologies])].filter(t=>TECHNOLOGIES.includes(t));
- n.categories=[...new Set([...(Array.isArray(n.categories)?n.categories:[]),...inferred.categories])].filter(t=>THEMES.includes(t));
+ n.technologies=[...new Set((Array.isArray(n.technologies)&&n.technologies.length?n.technologies:inferred.technologies))].filter(t=>TECHNOLOGIES.includes(t));
+ n.categories=[...new Set((Array.isArray(n.categories)&&n.categories.length?n.categories:inferred.categories))].filter(t=>THEMES.includes(t));
  const edit=overrides[n.url];
  if(edit){
    n.entities=[...new Set([...n.entities,...(edit.entities||[])])];
